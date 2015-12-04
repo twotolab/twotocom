@@ -1,0 +1,15 @@
+.html {
+    height: 100%;
+    color: #404040;
+    font: 400 1em/1.4 'Open Sans',sans-serif;
+}
+.Demo {
+    width: 100%;
+    padding: .8em 1em 0;
+    background: rgba(147,128,108,.1);
+    border-radius: 3px;
+    /*border: 1px solid black;*/
+}
+.textCenter {
+    text-align: center!important;
+}
