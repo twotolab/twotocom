@@ -1,3 +1,4 @@
+
 @import 'variables';
 @import 'fontFaces';
 
@@ -351,7 +352,9 @@ header {
 	flex-grow: 1;
 
 }
-
+.cd-primary-nav .info{
+	color: $second_typo_info_color;
+}
 .cd-primary-nav .navigation-left{
 	position: fixed;
 	top: 0;
@@ -362,7 +365,7 @@ header {
 	font-style:italic;
 }
 
-.cd-primary-nav li a {
+.cd-primary-nav li a h3 {
 	text-transform:uppercase;
 }
 .cd-primary-nav li a h3 {
@@ -667,8 +670,9 @@ body {
 	h1 {
 		font-size:55px;
 		line-height:59px;
-		font-size:7.2vw;
-		line-height:7.7vw;
+		
+		font-size:6.8vw;
+		line-height:7.3vw;
 	}
 	
 	.info-dark-type .centered-elt,.info-type .centered-elt {
@@ -703,11 +707,7 @@ body {
 /* Mittlere Monitore */
 @media only screen and (min-width: 980px) {
 	/*header Big ON------------------*/
-	
-	.placeholder {
-		background-color:$first_lighter_background_color;
-	}
-	
+/*
 	.MenuWrapper {
 		display:flex;
 	}
@@ -717,7 +717,39 @@ body {
 		padding-top:13px;
 	}
 	
-	.MenuWrapper {
+*/
+
+	/*
+
+	header {
+		height:52px;
+		align-items:center;
+	}
+	*/
+
+	
+	/*	h1 {
+		font-size:64px;
+		line-height:68px;
+		font-size:6.5vw;
+		line-height:7vw;
+	}
+	
+	.intro-quote {
+		box-sizing:border-box;
+		padding:0 26px 26px;
+	}
+	*/
+	.grid-info-top,.grid-info-bottom,.info-type .centered-elt,.info-dark-type .centered-elt {
+		padding-left:26px;
+	}
+	
+}
+
+
+/* desktop Monitore */
+@media only screen and (min-width: 1025px) {
+		.MenuWrapper {
 		position:fixed;
 		top:13px;
 		left:0;
@@ -732,51 +764,9 @@ body {
 		bottom: 0;
 		
 	}
-
-	header {
-		height:52px;
-		align-items:center;
-	}
-	
 	.grid-content {
 		position:relative;
 	}
-	
-	/*------------------*/
-	h1 {
-		font-size:64px;
-		line-height:68px;
-		font-size:6.5vw;
-		line-height:7vw;
-	}
-	
-	.intro-quote {
-		box-sizing:border-box;
-		padding:0 26px 26px;
-	}
-	
-	.grid-info-top,.grid-info-bottom,.info-type .centered-elt,.info-dark-type .centered-elt {
-		padding-left:26px;
-	}
-	
-}
-/* desktop Monitore */
-@media only screen and (max-height: 572px) {
-
-	.MenuWrapper {
-		position:fixed;
-		left:0;
-		top: auto;
-		display:flex;
-		justify-content:flex-end;
-		right:26px;
-		bottom:26px;
-	}
-}
-
-/* desktop Monitore */
-@media only screen and (min-width: 1025px) and (min-height: 572px) {
-
 	.highlight-contact{
 		display:flex;
 	}
@@ -872,7 +862,7 @@ body {
 		padding-left: 26px;
 	}
 }
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: $max_widthStage) {
 
 	
 	.intro-quote h1 {
@@ -882,4 +872,15 @@ body {
 
 }
 
+@media only screen and (max-height: 701px) and (min-width: 1025px) {
+	.menu-out {
+		position:fixed;
+		left:auto;
+		top:auto;
+		display:flex;
+		justify-content:flex-end;
+		right:26px;
+		bottom:26px;
+	}
+}
 @import 'animations';
