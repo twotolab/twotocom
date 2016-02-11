@@ -1,0 +1,151 @@
+.line-Under-Link {
+	transition:width .5s;
+}
+
+.hover-effect:hover a > .line-Under-Link {
+	width:56px;
+}
+
+.hover-preview-effect:hover .centered-elt {
+	-webkit-box-shadow:inset 0 0 0 $frame_border_size $frame_border_color;
+	-moz-box-shadow:inset 0 0 0 $frame_border_size $frame_border_color;
+	box-shadow:inset 0 0 0 $frame_border_size $frame_border_color;
+	transition:box-shadow .4s;
+}
+
+.hover-preview-effect .centered-elt {
+	-webkit-box-shadow:inset 0 0 0 0 $frame_border_color;
+	-moz-box-shadow:inset 0 0 0 0 $frame_border_color;
+	box-shadow:inset 0 0 0 0 $frame_border_color;
+	transition:box-shadow .4s;
+}
+
+.hover-preview-effect {
+	overflow:hidden;
+}
+
+.hover-preview-effect .grid-image {
+	transform:scale(1);
+	transition:transform .4s;
+}
+
+.hover-preview-effect:hover .grid-image {
+	transform:scale(1.2);
+	transition:transform .4s;
+}
+
+.hover-zoomUp-effect {
+	transform:scale(1);
+	transition:transform .2s;
+}
+
+.hover-zoomUp-effect:hover {
+	transform:scale(1.4);
+	transition:transform .2s;
+}
+
+.line-under-effect .line-Under-Link {
+	transform:scale(0);
+	transition:transform .4s;
+}
+
+.line-under-effect:hover .line-Under-Link {
+	transform:scale(1);
+	transition:transform .4s;
+}
+
+a:hover .centered-elt .second-underlined-style,a:hover .centered-elt .first-underlined-style {
+	transform:scale(1.4);
+	transition:transform .4s;
+}
+
+a .centered-elt .second-underlined-style,a .centered-elt .first-underlined-style {
+	transform:scale(1);
+	transition:transform .4s;
+}
+
+.cd-primary-nav li a h3 {
+	position:relative;
+}
+
+.cd-primary-nav li a:hover h3 {
+	background-color:transparent;
+}
+
+.hover-background-effect {
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	background-color:$second_typo_hover_background_color;
+	z-index:-1;
+	transform:scaleX(0);
+	transition:transform .4s;
+	-webkit-transition-timing-function:ease-in-out;
+	-moz-transition-timing-function:ease-in-out;
+	transition-timing-function:ease-in-out;
+}
+
+.cd-primary-nav li a h3:hover .hover-background-effect {
+	transform:scaleX(1);
+	transition:transform .4s;
+	-webkit-transition-timing-function:ease-in-out;
+	-moz-transition-timing-function:ease-in-out;
+	transition-timing-function:ease-in-out;
+}
+
+.nav {
+	-webkit-backface-visibility:hidden;
+	backface-visibility:hidden;
+	-webkit-overflow-scrolling:touch;
+	-webkit-transform:translateY(+100%);
+	-moz-transform:translateY(+100%);
+	-ms-transform:translateY(+100%);
+	-o-transform:translateY(+100%);
+	transform:translateY(+100%);
+	-webkit-transition-property:-webkit-transform;
+	-moz-transition-property:-moz-transform;
+	transition-property:transform;
+	-webkit-transition-duration:.4s;
+	-moz-transition-duration:.4s;
+	transition-duration:.4s;
+	-webkit-transition-timing-function:ease;
+	-moz-transition-timing-function:ease;
+	transition-timing-function:ease;
+}
+
+.nav.is-visible {
+	transform:translateY(0);
+}
+
+.navi-logo {
+	-webkit-backface-visibility:hidden;
+	backface-visibility:hidden;
+	overflow:auto;
+	-webkit-overflow-scrolling:touch;
+	-webkit-transform:translateY(-100%);
+	-moz-transform:translateY(-100%);
+	-ms-transform:translateY(-100%);
+	-o-transform:translateY(-100%);
+	transform:translateY(-100%);
+	-webkit-transition-property:-webkit-transform;
+	-moz-transition-property:-moz-transform;
+	transition-property:transform;
+	-webkit-transition-duration:.4s;
+	-moz-transition-duration:.4s;
+	transition-duration:.4s;
+	-webkit-transition-delay:0;
+/* Safari */
+	transition-delay:0;
+	-webkit-transition-timing-function:ease;
+	-moz-transition-timing-function:ease;
+	transition-timing-function:ease;
+}
+
+.navi-logo.is-visible {
+	transform:translateY(0);
+	-webkit-transition-delay:.4s;
+/* Safari */
+	transition-delay:.4s;
+}

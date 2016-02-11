@@ -1,0 +1,73 @@
+/*------------------------------------*\
+    $VARIABLES in SCSS
+\*------------------------------------*/
+
+$height_grid:26px;
+$half_height_grid:$height_grid/2;
+
+$max_widthStage:1240px;
+
+/*local Colors definitions*/
+
+$grey_color:rgba(51, 51, 51, 1);
+$lightGrey_color:rgba(125, 122, 117,1);
+
+$beige_color:rgba(250, 249, 245, 1);
+$light_beige_color:rgba(243, 242, 238, 1);
+$featherlight_beige_color:rgba(250, 248, 244, 1);
+$lightHeavyBeige_color:rgba(215, 212, 206, 1);
+$heavyBeige_color:rgba(215, 212, 206, 1);
+
+/*
+transparentize($translucent-red, 0.25)
+*/
+$transparent_beige_color:transparentize($beige_color, 0.3); /*rgba(250,248,244,0.6);*/
+$transparent_dark_beige_color:transparentize($beige_color, 0.95);
+$transparent_grey_color:transparentize($grey_color, 0.3);
+
+$shadow_color:rgba(0,0,0,0.10);
+
+/*local Colors settings*/
+
+$first_color: $beige_color;
+$first_light_color: $light_beige_color;
+$first_featherlight_color: $featherlight_beige_color;
+$first_lightHeavy_color: $lightHeavyBeige_color;
+$first_heavy_color: $heavyBeige_color;
+$first_transparent_light_color: $transparent_beige_color;
+$first_transparent_dark_color: $transparent_dark_beige_color;
+
+
+$second_color: $grey_color;
+$second_lightHeavy_color: $lightGrey_color;
+$second_transparent_light_color:$transparent_grey_color;
+
+/*global use*/
+
+$first_typo_color: $second_color;
+$first_typo_hover_color: $second_transparent_light_color;
+$first_typo_line_color: $second_color;
+
+$second_typo_color: $first_color;
+$second_typo_selected_color: $second_lightHeavy_color;
+$second_typo_hover_color: $first_transparent_light_color;
+$second_typo_hover_background_color: $first_transparent_dark_color;
+$second_typo_line_color: $first_color;
+
+$second_circle_color: $transparent_beige_color;
+
+$first_background_color:$first_color;
+$first_lighter_background_color:$first_featherlight_color;
+$first_darker_background_color:$first_light_color;
+$second_background_color: $second_color;
+
+$first_shadow_color : $shadow_color;
+
+// frame
+
+$frame_border_size:$half_height_grid;
+$frame_border_color:$first_light_color;
+
+
+
+
