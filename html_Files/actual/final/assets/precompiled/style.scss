@@ -506,13 +506,11 @@ header {
 
 .grid-image {
 	position:relative;
-/*border:1px solid red;*/
 	display:flex;
 	justify-content:center;
-/* align horizontal */
 	align-items:center;
-/* align vertical */
 	overflow:hidden;
+	background-color: $first_color;
 }
 
 .intro-quote {

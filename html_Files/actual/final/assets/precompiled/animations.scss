@@ -11,6 +11,8 @@
 	-moz-box-shadow:inset 0 0 0 $frame_border_size $frame_border_color;
 	box-shadow:inset 0 0 0 $frame_border_size $frame_border_color;
 	transition:box-shadow .4s;
+	mix-blend-mode: screen;
+	//mix-blend-mode: multipy;
 }
 
 .hover-preview-effect .centered-elt {
@@ -18,10 +20,15 @@
 	-moz-box-shadow:inset 0 0 0 0 $frame_border_color;
 	box-shadow:inset 0 0 0 0 $frame_border_color;
 	transition:box-shadow .4s;
+	mix-blend-mode: screen;
+	//mix-blend-mode: multipy;
 }
 
 .hover-preview-effect {
 	overflow:hidden;
+}
+.grid-image img {
+	//mix-blend-mode: multiply;
 }
 
 .hover-preview-effect .grid-image {
