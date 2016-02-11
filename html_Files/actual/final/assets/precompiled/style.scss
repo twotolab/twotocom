@@ -299,7 +299,6 @@ header {
 	top:auto;
 }
 .nav {
-
 	position:fixed;
 	left:0;
 	top:auto;
@@ -309,20 +308,53 @@ header {
 	background-color:$second_background_color;
 	text-align:center;
 	overflow:auto;
-	
+}
+.nav span{
+	background-color:transparent;
+	font-size: 12px;
+	}
+
+.cd-primary-nav {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	height: inherit;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
+	
 }
-.cd-primary-nav {
-	padding:26px 0 78px 0;
+.cd-primary-nav li {
+				
+	display:flex;
+	flex-direction:column;
+	flex-grow: 1;
+
 }
+.cd-primary-nav li a{
+	
+	display:flex;
+	justify-content:center;
+	flex-direction:column;
+	
+	position: relative;
+	flex-grow: 1;
+
+
+}
+.cd-elt-container {
+
+	display:flex;
+	justify-content:center;
+	flex-direction:column;
+	flex-grow: 1;
+
+}
+
 .cd-primary-nav .navigation-left{
 	position: fixed;
 	top: 0;
-	
-
-	
 }
 
 .cd-primary-nav li,.cd-primary-nav li h3 {
@@ -333,14 +365,15 @@ header {
 .cd-primary-nav li a {
 	text-transform:uppercase;
 }
+.cd-primary-nav li a h3 {
+	padding-top:13px;
+	padding-bottom:13px;
+	position:relative;
+}
+
 
 .cd-primary-nav li a:hover h3 {
 	background-color:$second_typo_hover_background_color;
-}
-
-.cd-primary-nav li h3 {
-	padding-top:13px;
-	padding-bottom:13px;
 }
 
 .navi-selected a h3 {
@@ -358,9 +391,6 @@ header {
 	cursor:pointer;
 }
 
-.navi-menu h6 {
-
-}
 .navi-center-menu{
 	align-self:center;
 	cursor:pointer;
@@ -698,8 +728,9 @@ body {
 		bottom:0;
 	}
 	.menu-out {
-		top:auto;
-		bottom: 130px;
+		top:13px;
+		bottom: 0;
+		
 	}
 
 	header {
@@ -758,8 +789,9 @@ body {
 		top:22px;
 	}
 	.menu-out {
-		top:auto;
-		bottom: 130px;
+		top:26px;
+		bottom: 0;
+		
 	}
 	
 	.intro-quote h1 {

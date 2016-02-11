@@ -380,6 +380,19 @@ header {
   background-color: #333333;
   text-align: center;
   overflow: auto;
+}
+
+.nav span {
+  background-color: transparent;
+  font-size: 12px;
+}
+
+.cd-primary-nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: inherit;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -395,8 +408,61 @@ header {
           justify-content: flex-end;
 }
 
-.cd-primary-nav {
-  padding: 26px 0 78px 0;
+.cd-primary-nav li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.cd-primary-nav li a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.cd-elt-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .cd-primary-nav .navigation-left {
@@ -413,13 +479,14 @@ header {
   text-transform: uppercase;
 }
 
-.cd-primary-nav li a:hover h3 {
-  background-color: rgba(250, 249, 245, 0.05);
-}
-
-.cd-primary-nav li h3 {
+.cd-primary-nav li a h3 {
   padding-top: 13px;
   padding-bottom: 13px;
+  position: relative;
+}
+
+.cd-primary-nav li a:hover h3 {
+  background-color: rgba(250, 249, 245, 0.05);
 }
 
 .navi-selected a h3 {
@@ -905,8 +972,8 @@ body {
     bottom: 0;
   }
   .menu-out {
-    top: auto;
-    bottom: 130px;
+    top: 13px;
+    bottom: 0;
   }
   header {
     height: 52px;
@@ -968,8 +1035,8 @@ body {
     top: 22px;
   }
   .menu-out {
-    top: auto;
-    bottom: 130px;
+    top: 26px;
+    bottom: 0;
   }
   .intro-quote h1 {
     font-size: 64px;
@@ -1169,14 +1236,6 @@ a .centered-elt .second-underlined-style, a .centered-elt .first-underlined-styl
   transition: -webkit-transform .4s;
   transition: transform .4s;
   transition: transform .4s, -webkit-transform .4s;
-}
-
-.cd-primary-nav li a h3 {
-  position: relative;
-}
-
-.cd-elt-container {
-  position: relative;
 }
 
 .cd-primary-nav li a:hover h3 {
