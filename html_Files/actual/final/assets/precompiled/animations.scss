@@ -67,6 +67,7 @@ a .centered-elt .second-underlined-style,a .centered-elt .first-underlined-style
 .cd-primary-nav li a h3 {
 	position:relative;
 }
+
 .cd-elt-container {
 	position:relative;
 }
@@ -89,6 +90,7 @@ a .centered-elt .second-underlined-style,a .centered-elt .first-underlined-style
 	-moz-transition-timing-function:ease-in-out;
 	transition-timing-function:ease-in-out;
 }
+
 .cd-elt-container:hover .hover-background-effect {
 	transform:scaleX(1);
 	transition:transform .4s;
@@ -138,7 +140,6 @@ a .centered-elt .second-underlined-style,a .centered-elt .first-underlined-style
 	-moz-transition-duration:.4s;
 	transition-duration:.4s;
 	-webkit-transition-delay:0;
-/* Safari */
 	transition-delay:0;
 	-webkit-transition-timing-function:ease;
 	-moz-transition-timing-function:ease;
@@ -148,6 +149,5 @@ a .centered-elt .second-underlined-style,a .centered-elt .first-underlined-style
 .navi-logo.is-visible {
 	transform:translateY(0);
 	-webkit-transition-delay:.4s;
-/* Safari */
 	transition-delay:.4s;
 }
