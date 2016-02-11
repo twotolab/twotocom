@@ -411,7 +411,6 @@ header {
 }
 
 .navigation-elts {
-/*background-color: green;*/
 	display:flex;
 	flex:1 25%;
 	height:inherit;
@@ -420,23 +419,6 @@ header {
 .navigation-elts .placeholder {
 	flex:2 50%;
 	height:inherit;
-}
-.navigation-contact {
-	height: 104px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	background-color:$second_background_color;
-}
-
-.centered-contact {
-	box-sizing:border-box;
-	align-self:flex-start;
-}
-
-.contactButton {
-	color:$second_typo_color;
 }
 
 .navigation-right {
@@ -683,7 +665,7 @@ body {
 	.desktop-highlight-content .info-type {
 		background-color:$first_lighter_background_color
 	}
-	.navigation-contact {
+	.highlight-contact{
 		display:none;
 	}
 }
@@ -742,7 +724,7 @@ body {
 		padding:0 26px 26px;
 	}
 	
-	.grid-info-top,.grid-info-bottom,.info-type .centered-elt,.info-dark-type .centered-elt,.centered-contact {
+	.grid-info-top,.grid-info-bottom,.info-type .centered-elt,.info-dark-type .centered-elt {
 		padding-left:26px;
 	}
 	
@@ -763,9 +745,11 @@ body {
 
 /* desktop Monitore */
 @media only screen and (min-width: 1025px) and (min-height: 572px) {
-	.navigation-contact {
+
+	.highlight-contact{
 		display:flex;
 	}
+	
 	.navigation-container {
 		background-color:$first_darker_background_color;
 	}

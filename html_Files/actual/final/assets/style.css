@@ -519,7 +519,6 @@ header {
 }
 
 .navigation-elts {
-  /*background-color: green;*/
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -537,39 +536,6 @@ header {
       -ms-flex: 2 50%;
           flex: 2 50%;
   height: inherit;
-}
-
-.navigation-contact {
-  height: 104px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #333333;
-}
-
-.centered-contact {
-  box-sizing: border-box;
-  -webkit-align-self: flex-start;
-      -ms-flex-item-align: start;
-          align-self: flex-start;
-}
-
-.contactButton {
-  color: #faf9f5;
 }
 
 .navigation-right {
@@ -901,7 +867,7 @@ body {
   .desktop-highlight-content .info-type {
     background-color: #faf8f4;
   }
-  .navigation-contact {
+  .highlight-contact {
     display: none;
   }
 }
@@ -963,7 +929,7 @@ body {
     box-sizing: border-box;
     padding: 0 26px 26px;
   }
-  .grid-info-top, .grid-info-bottom, .info-type .centered-elt, .info-dark-type .centered-elt, .centered-contact {
+  .grid-info-top, .grid-info-bottom, .info-type .centered-elt, .info-dark-type .centered-elt {
     padding-left: 26px;
   }
 }
@@ -989,7 +955,7 @@ body {
 
 /* desktop Monitore */
 @media only screen and (min-width: 1025px) and (min-height: 572px) {
-  .navigation-contact {
+  .highlight-contact {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
