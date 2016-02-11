@@ -67,6 +67,9 @@ a .centered-elt .second-underlined-style,a .centered-elt .first-underlined-style
 .cd-primary-nav li a h3 {
 	position:relative;
 }
+.cd-elt-container {
+	position:relative;
+}
 
 .cd-primary-nav li a:hover h3 {
 	background-color:transparent;
@@ -86,8 +89,7 @@ a .centered-elt .second-underlined-style,a .centered-elt .first-underlined-style
 	-moz-transition-timing-function:ease-in-out;
 	transition-timing-function:ease-in-out;
 }
-
-.cd-primary-nav li a h3:hover .hover-background-effect {
+.cd-elt-container:hover .hover-background-effect {
 	transform:scaleX(1);
 	transition:transform .4s;
 	-webkit-transition-timing-function:ease-in-out;

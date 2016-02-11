@@ -221,7 +221,14 @@ sup.label-next {
     background-color: $second_color;
 }
 /*test--------------------------------------------------*/
+
 .line-Under-Link {
+	background-color:$first_typo_line_color;
+	width:26px;
+	height:1px;
+	top:13px;
+}
+.line-Under-Link-dos {
 	background-color:$first_typo_line_color;
 	width:26px;
 	height:1px;
@@ -352,6 +359,9 @@ header {
 }
 
 .navi-menu h6 {
+
+}
+.navi-center-menu{
 	align-self:center;
 	cursor:pointer;
 }

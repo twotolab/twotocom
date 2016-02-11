@@ -285,6 +285,13 @@ sup.label-next {
   top: 13px;
 }
 
+.line-Under-Link-dos {
+  background-color: #333333;
+  width: 26px;
+  height: 1px;
+  top: 13px;
+}
+
 .second-color .line-Under-Link {
   background-color: #faf9f5;
 }
@@ -440,7 +447,7 @@ header {
   cursor: pointer;
 }
 
-.navi-menu h6 {
+.navi-center-menu {
   -webkit-align-self: center;
       -ms-flex-item-align: center;
           align-self: center;
@@ -1202,6 +1209,10 @@ a .centered-elt .second-underlined-style, a .centered-elt .first-underlined-styl
   position: relative;
 }
 
+.cd-elt-container {
+  position: relative;
+}
+
 .cd-primary-nav li a:hover h3 {
   background-color: transparent;
 }
@@ -1225,7 +1236,7 @@ a .centered-elt .second-underlined-style, a .centered-elt .first-underlined-styl
   transition-timing-function: ease-in-out;
 }
 
-.cd-primary-nav li a h3:hover .hover-background-effect {
+.cd-elt-container:hover .hover-background-effect {
   -webkit-transform: scaleX(1);
       -ms-transform: scaleX(1);
           transform: scaleX(1);
