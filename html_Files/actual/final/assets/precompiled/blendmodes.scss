@@ -6,10 +6,18 @@
 	mix-blend-mode: screen;
 	//mix-blend-mode: multipy;
 }
-.grid-image img{
-	//background-color: $second_color;
-	mix-blend-mode: multiply;
+.grid-image img.with-blend-mode-effect{
+	//
 	//mix-blend-mode: screen;
 	//background-color:transparentize($second_color, 0.1);
-
+	mix-blend-mode: multiply;
+}
+.grid-image{
+	background-color: $blend-mode-color;
+}
+.testing{
+	//
+	//mix-blend-mode: screen;
+	//background-color:transparentize($second_color, 0.1);
+	//mix-blend-mode: multiply;
 }

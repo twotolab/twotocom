@@ -10,17 +10,38 @@ $max_widthStage:1240px;
 /*local Colors definitions*/
 
 // beige - grey
+/*
 $first_color: rgba(243, 242, 238, 1);
 $second_color: rgba(51, 51, 51, 1);
+*/
 // green - blue
+/*
 $first_color:#1CAF9A;
 $second_color:#1D2939;
+*/
 // white - grey
+/*
 $first_color:white;
 $second_color:#111;
+*/
+// pink - blue
+/**/
+$first_color:#FBDCE4; //pink
+$second_color:#E84135; //red
+$third_color:#252164; //blue
+/*
+$first_color:#1CAF9A; //pink
+$second_color:#1D2939; //red
+$third_color:white; //blue
+/**/
+$first_color:#1CAF9A;
+$second_color:#1D2939;
+$third_color:white; //blue
 
+$blend-mode-color: transparentize($second_color, 0.2);
 // shadow
 $shadow_color:rgba(0,0,0,0.10);
+
 
 
 /*local Colors settings*/
@@ -61,6 +82,7 @@ $first_shadow_color : $shadow_color;
 
 $frame_border_size:$half_height_grid;
 $frame_border_color:$first_light_color;
+$second_frame_border_color:$first_typo_color;
 
 
 
