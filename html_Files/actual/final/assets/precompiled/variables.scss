@@ -10,26 +10,30 @@ $max_widthStage:1240px;
 /*local Colors definitions*/
 
 // beige - grey
-$grey_color:rgba(51, 51, 51, 1);
-$light_beige_color:rgba(243, 242, 238, 1);
+$first_color: rgba(243, 242, 238, 1);
+$second_color: rgba(51, 51, 51, 1);
 // green - blue
-$grey_color:#1D2939;
-$light_beige_color:#1CAF9A;
+$first_color:#1CAF9A;
+$second_color:#1D2939;
+// white - grey
+$first_color:white;
+$second_color:#111;
+
 // shadow
 $shadow_color:rgba(0,0,0,0.10);
 
+
 /*local Colors settings*/
 
-$first_color: $light_beige_color;
-$first_light_color: lighten($light_beige_color, 1%);
-$first_featherlight_color: lighten($light_beige_color, 2%);
-$first_transparent_light_color: transparentize($light_beige_color, 0.3);
-$first_transparent_dark_color: transparentize($light_beige_color, 0.95);
+
+$first_light_color: lighten($first_color, 1%);
+$first_featherlight_color: lighten($first_color, 2%);
+$first_transparent_light_color: transparentize($first_color, 0.3);
+$first_transparent_dark_color: transparentize($first_color, 0.95);
 
 
-$second_color: $grey_color;
-$second_lightHeavy_color: lighten($grey_color, 30%);
-$second_transparent_light_color:transparentize($grey_color, 0.3);
+$second_lightHeavy_color: lighten($second_color, 30%);
+$second_transparent_light_color:transparentize($second_color, 0.3);
 
 /*global use*/
 

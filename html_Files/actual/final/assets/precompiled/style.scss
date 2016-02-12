@@ -273,17 +273,31 @@ header {
 
 .logo {
    /*Set font family style as sample*/
-    font-family: logo !important;
+    font-family: twotosymbols !important;
     color:$second_color;
     font-size: 34px;
 }
 .logo-inverted {
     /*Set font family style as sample*/
-    font-family: logo !important;
+    font-family: twotosymbols !important;
     color:$first_color;
     font-size: 34px;
     padding-bottom: 26px;
     font-style:normal;
+    /* cool effect
+    font-style: italic;
+    width: 56px;
+    */
+}
+.close-inverted {
+    /*Set font family style as sample*/
+    font-family: twotosymbols !important;
+    color:$first_color;
+    font-size: 20px;
+    padding-top: 19px;
+    padding-left: 1px;
+    font-style:normal;
+    text-align: center;
     /* cool effect
     font-style: italic;
     width: 56px;
@@ -326,12 +340,20 @@ header {
 	justify-content: flex-end;
 	
 }
+
 .cd-primary-nav li {
 				
 	display:flex;
 	flex-direction:column;
 	flex-grow: 1;
 
+}
+.cd-primary-nav li.info{
+				
+	display:flex;
+	flex-direction:column;
+	flex-grow: 0.1;
+	justify-content: center;
 }
 .cd-primary-nav li a{
 	
@@ -603,8 +625,8 @@ body {
 }
 
 .second-color {
-	background-color:$second_background_color;
-	color:$second_typo_line_color;
+	background-color:$second_background_color !important;
+	color:$second_typo_line_color !important;
 }
 
 .second-color a {
@@ -631,6 +653,50 @@ body {
 		line-height:9.5vw;
 	}
 }
+/*effects - without animations*/
+/*------------------------------------*/
+
+.hover-menu-bg-effect {
+	width:0;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	background-color:$second_typo_hover_background_color;
+	z-index:-1;
+	}
+.cd-elt-container:hover .hover-menu-bg-effect {
+	width:100%;
+}
+.hover-effect:hover a > .line-Under-Link {
+	width:56px;
+}
+
+
+.hover-preview-effect {
+	overflow:hidden;
+}
+
+
+.cd-primary-nav li a:hover h3 {
+	background-color:transparent;
+}
+.nav {
+	height: 0;
+}
+.nav.is-visible {
+	height: 100%;
+}
+
+.navi-logo {
+	top: -100%;
+}
+
+.navi-logo.is-visible {
+	top: 0;
+}
+
+/*-----------------*/
 
 /* Tabletts */
 @media only screen and (min-width: 760px) {
@@ -704,46 +770,12 @@ body {
 
 /* Mittlere Monitore */
 @media only screen and (min-width: 980px) {
-	/*header Big ON------------------*/
-/*
-	.MenuWrapper {
-		display:flex;
-	}
-	
-	.navigation-left {
-		padding-left:26px;
-		padding-top:13px;
-	}
-	
-*/
 
-	/*
-
-	header {
-		height:52px;
-		align-items:center;
-	}
-	*/
-
-	
-	/*	h1 {
-		font-size:64px;
-		line-height:68px;
-		font-size:6.5vw;
-		line-height:7vw;
-	}
-	
-	.intro-quote {
-		box-sizing:border-box;
-		padding:0 26px 26px;
-	}
-	*/
 	.grid-info-top,.grid-info-bottom,.info-type .centered-elt,.info-dark-type .centered-elt {
 		padding-left:26px;
 	}
 	
 }
-
 
 /* desktop Monitore */
 @media only screen and (min-width: 1025px) {
@@ -853,7 +885,7 @@ body {
 		line-height:6.3vw;
 	}
 	
-	.navigation-left,.intro-quote {
+	.intro-quote {
 		padding-left:0;
 	}
 	.cd-primary-nav .navigation-left{
@@ -882,3 +914,5 @@ body {
 	}
 }
 @import 'animations';
+@import 'blendmodes';
+

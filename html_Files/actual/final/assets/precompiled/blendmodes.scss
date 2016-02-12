@@ -1,0 +1,15 @@
+.hover-preview-effect:hover .centered-elt {
+	mix-blend-mode: screen;
+	//mix-blend-mode: multipy;
+}
+.hover-preview-effect .centered-elt {
+	mix-blend-mode: screen;
+	//mix-blend-mode: multipy;
+}
+.grid-image img{
+	//background-color: $second_color;
+	mix-blend-mode: multiply;
+	//mix-blend-mode: screen;
+	//background-color:transparentize($second_color, 0.1);
+
+}
