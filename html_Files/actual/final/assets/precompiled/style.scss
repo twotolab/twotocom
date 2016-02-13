@@ -301,6 +301,7 @@ header {
 	bottom:26px;
 	top:auto;
 }
+
 .nav {
 	position:fixed;
 	left:0;
@@ -311,6 +312,10 @@ header {
 	background-color:$second_background_color;
 	text-align:center;
 	overflow:auto;
+}
+.nav .removable-Info{
+	visibility:visible;
+		
 }
 .nav span{
 	background-color:transparent;
@@ -850,6 +855,10 @@ body {
 		bottom: 0;
 		
 	}
+	.nav .removable-Info{
+		visibility: hidden;
+		background-color: yellow;
+	}
 	.grid-content {
 		position:relative;
 	}
@@ -922,6 +931,9 @@ body {
 		justify-content:flex-end;
 		right:26px;
 		bottom:26px;
+	}
+	.nav .removable-Info{
+		visibility: visible;
 	}
 }
 

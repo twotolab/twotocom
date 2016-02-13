@@ -1401,7 +1401,7 @@
 		},
 	"\/assets\/precompiled\/style_content.scss": {
 		"createSourceMap": 0,
-		"debugStyle": 1,
+		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 0,
