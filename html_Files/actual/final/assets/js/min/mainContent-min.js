@@ -1,0 +1,1 @@
+jQuery(document).ready(function($){$(".open-side-navi").on("click",function(i){i.preventDefault(),$(".contextual-navi").hasClass("is-visible")?$(".contextual-navi").removeClass("is-visible"):$(".contextual-navi").addClass("is-visible")})});

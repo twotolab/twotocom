@@ -1,0 +1,123 @@
+html, body {
+  height: 100%;
+}
+
+body {
+	position:relative;
+	margin:0 auto;
+	width:100%;
+	height: 100%;
+	font-family:'Fira Sans',sans-serif;
+	font-size:16px;
+	font-weight:300;
+	line-height:26px;
+
+}
+.main-container{
+	min-height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	background-color: black;
+	width: 100%;
+}
+.grid-content{
+	background-color: yellow;
+	width: 100%;
+	
+
+}
+.open-side-navi{
+	position: fixed;
+	top: 0;
+	bottom: auto;
+	right: 0;
+	left: auto;
+	font-size:12px;
+	background-color: green;
+	z-index: 1000;
+	padding: 13px;
+}
+.open-side-navi a:hover .contextual-navi{
+	display:flex;
+	flex: 1;
+	background-color: fuchsia;
+}
+.open-side-navi a:hover .grid-content{
+	background-color: fuchsia;
+}
+.main-container{
+	height: 100%;
+	}
+
+.contextual-navi{
+	position: absolute;
+	right: 0;
+	top: 0;
+ 
+	height: 100%;
+	overflow: hidden;
+	overflow-y: scroll;
+		
+	background-color: red;
+
+	-webkit-transform: translateX(100%);
+	  -ms-transform: translateX(100%);
+	  transform: translateX(100%);
+	  -webkit-transition-property: -webkit-transform;
+	  transition-property: -webkit-transform;
+	  transition-property: transform;
+	  transition-property: transform, -webkit-transform;
+	  -webkit-transition-duration: .4s;
+	  transition-duration: .4s;
+	  -webkit-transition-timing-function: ease;
+	  transition-timing-function: ease; 
+  
+	  width: 100%;
+}
+.scroll-container{
+	
+	min-height: 1000px;
+		
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: stretch;
+}
+p{
+	width: 80%;
+	align-self: center;
+	background-color: gray;
+}
+.is-visible{
+	transform: translateX(0);
+	background-color: #095d28;
+}
+.preview{
+	flex-grow: 1;
+	flex: 1;
+
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	  
+	text-align: center;
+}
+.blue{
+	background-color: blue;
+}
+.scroll-container .blue{
+	background-color: blue;
+}
+@media only screen and (min-width: 760px) {
+	.contextual-navi{
+	  width: 320px;
+		}
+	
+}
+@media only screen and (min-width: 760px) {
+	.contextual-navi{
+	  width: 320px;
+		}
+	
+}
