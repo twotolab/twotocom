@@ -33,11 +33,12 @@ $third_color:#252164; //blue
 $first_color:#1CAF9A; //pink
 $second_color:#1D2939; //red
 $third_color:white; //blue
-/**/
+/*
+
 $first_color:#1CAF9A;
 $second_color:#1D2939;
 $third_color:white; //blue
-
+*/
 $blend-mode-color: transparentize($second_color, 0.2);
 // shadow
 $shadow_color:rgba(0,0,0,0.10);
