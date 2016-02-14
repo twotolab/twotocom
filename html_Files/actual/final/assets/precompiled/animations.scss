@@ -81,38 +81,28 @@ a .grid-centered-elt .second-underlined-style,a .grid-centered-elt .first-underl
 	transition:transform .4s;
 	transition-timing-function:ease-in-out;
 }
-/*
-.nav {
-	transform:translateY(100%);
-	transition-property:transform;
-	transition-duration:.4s;
-	transition-timing-function:ease;
+.nav-main {
+  transform: translateY(100%);
+  transition-property: transform;
+  transition-duration: 0.4s;
 }
 
-
-.nav.is-visible {
-	transform:translateY(0);
-	transition-property:transform;
-	transition-duration:.4s;
-	transition-timing-function:ease;
+.nav-main.is-visible {
+  transform: translateY(0);
 }
-*/
 
 .nav-close {
-	-webkit-backface-visibility:hidden;
-	backface-visibility:hidden;
-	overflow:auto;
-	-webkit-overflow-scrolling:touch;
-	transform:translateX(-100%);
-	transition-property:transform;
-	transition-duration:.4s;
-	transition-delay:0;
-	transition-timing-function:ease;
+	transform: translateY(-100%);
+	transition-property: transform;
+	transition-duration: 0.4s;
 }
+
 .nav-close.is-visible {
-	transform:translateX(0);
-	transition-delay:.4s;
+	transform: translateX(0);
+
+	transition-delay: 1s;
 }
+ 
 
 
 

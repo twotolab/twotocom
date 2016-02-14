@@ -20,29 +20,12 @@ header {
 
 .grid-content {
 	position:relative;
-	top:-117px;
-	width: 100%;
+	top:-65px;
+	width:100%;
 }
 
 .grid-content.hide-content {
 	display:none;
-}
-
-/* index*/
-header {
-	z-index:99;
-}
-
-.light-shadow {
-	z-index:1;
-}
-
-.menu-wrapper {
-	z-index:101;
-}
-
-.nav-main {
-	z-index:100;
 }
 
 .grid-centered-elt .simple-text-link {
@@ -159,24 +142,17 @@ header {
 
 .nav-main {
 /* by default it's hidden - on top of the viewport */
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  height: 100%;
-  width: 100%;
-  background-color:$second_background_color;
-  backface-visibility: hidden;
-  overflow: auto;
-  text-align: center;
-  /* this fixes the buggy scrolling on webkit browsers - mobile devices only - when overflow property is applied */
-  -webkit-overflow-scrolling: touch;
-  transform: translateY(100%);
-  transition-property: transform;
-  transition-duration: 0.4s;
-}
-
-.nav-main.is-visible {
-  transform: translateY(0);
+	position:fixed;
+	left:0;
+	bottom:0;
+	height:100%;
+	width:100%;
+	background-color:$second_background_color;
+	backface-visibility:hidden;
+	overflow:auto;
+	text-align:center;
+/* this fixes the buggy scrolling on webkit browsers - mobile devices only - when overflow property is applied */
+	-webkit-overflow-scrolling:touch;
 }
 
 .nav span {
@@ -250,6 +226,13 @@ header {
 
 .nav-main li a:hover h3 {
 	background-color:$second_typo_hover_background_color;
+}
+
+.nav-close {
+	position: absolute;
+	top: 0;
+	left: 0;
+	
 }
 
 .navi-selected a h3 {
@@ -378,6 +361,7 @@ header {
 	overflow:hidden;
 	background-color:$first_color;
 }
+
 .grid-centered-elt {
 	display:flex;
 	justify-content:center;
@@ -504,7 +488,6 @@ body {
 	top:0;
 	left:0;
 	background-color:$second_typo_hover_background_color;
-	z-index:-1;
 }
 
 .cd-elt-container:hover .nav-hover-bg-effect {
@@ -523,17 +506,12 @@ body {
 	background-color:transparent;
 }
 
-.nav.is-visible {
-	height:100%;
-	visibility:visible;
-}
-
 .nav-close {
-	top:-100%;
+	visibility: hidden;
 }
 
 .nav-close.is-visible {
-	top:0;
+	visibility: visible;
 }
 
 .nav-close .info {
@@ -541,13 +519,14 @@ body {
 }
 
 /*-----------------*/
+/* static-bg*/
+/*-----------------*/
 .static-bg {
 	position:absolute;
 	top:0;
 	left:0;
 	width:100%;
 	height:100%;
-	z-index:10000;
 	line-height:20vw;
 	margin-top:100px;
 	margin-top:15vw;
@@ -572,6 +551,39 @@ body {
 	font-style:italic;
 }
 
+/*-----------------*/
+/* index*/
+/*-----------------*/
+.nav-hover-bg-effect {
+	z-index:-1;
+}
+
+.light-shadow {
+	z-index:1;
+}
+header {
+	z-index:99;
+}
+
+.nav-main {
+	z-index:100;
+}
+.menu-wrapper {
+	z-index:101;
+}
+
+.nav-close {
+	z-index:104;
+}
+
+.static-bg {
+	z-index:10000;
+}
+
+/*-----------------*/
+/* @media
+/*-----------------*/
+
 @media only screen and (max-width: 761px) {
 	.intro-quote h1 {
 		font-size:24px;
@@ -579,13 +591,17 @@ body {
 		font-size:6vw;
 		line-height:6.5vw;
 	}
+	.grid-content {
+	top:-52px;
+	}
 }
 
 /* Tabletts */
 @media only screen and (min-width: 760px) {
 	.grid-content {
-		top:-130px;
+		top:-65px;
 	}
+	
 	.grid-one-unit {
 		flex:2 50%;
 		height:260px;
@@ -598,7 +614,6 @@ body {
 	
 	.grid-desktop-highlight .grid-two-unit,.grid-desktop-highlight .grid-headline,.grid-desktop-highlight .grid-image {
 		height:312px;
-
 	}
 	
 	.grid-desktop-highlight {
@@ -613,7 +628,6 @@ body {
 	.grid-four-unit {
 		flex:4 100%;
 		height:260px;
-		
 	}
 	
 	.grid-highlight {
@@ -628,12 +642,13 @@ body {
 	.no-mobil {
 		display:flex;
 	}
+	
 	/*
-	.nav {
-		justify-content:center;
-		height:100%;
-	}
-	*/
+		.nav {
+			justify-content:center;
+			height:100%;
+		}
+		*/
 	.intro-quote h1 {
 		font-size:55px;
 		line-height:59px;
@@ -718,7 +733,7 @@ body {
 	}
 	
 	.grid-content {
-		top:-65px;
+		top:0px;
 	}
 	
 	.highlight-contact {

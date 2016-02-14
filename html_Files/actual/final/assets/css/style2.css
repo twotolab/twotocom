@@ -1360,47 +1360,39 @@ a .grid-centered-elt .second-underlined-style, a .grid-centered-elt .first-under
   -webkit-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out; }
 
-/*
-.nav {
-	transform:translateY(100%);
-	transition-property:transform;
-	transition-duration:.4s;
-	transition-timing-function:ease;
-}
-
-
-.nav.is-visible {
-	transform:translateY(0);
-	transition-property:transform;
-	transition-duration:.4s;
-	transition-timing-function:ease;
-}
-*/
-/* line 101, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/animations.scss */
-.nav-close {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
+/* line 84, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/animations.scss */
+.nav-main {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
-  -webkit-transition-duration: .4s;
-          transition-duration: .4s;
-  -webkit-transition-delay: 0;
-          transition-delay: 0;
-  -webkit-transition-timing-function: ease;
-          transition-timing-function: ease; }
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s; }
 
-/* line 112, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/animations.scss */
+/* line 90, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/animations.scss */
+.nav-main.is-visible {
+  -webkit-transform: translateY(0);
+          transform: translateY(0); }
+
+/* line 94, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/animations.scss */
+.nav-close {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s; }
+
+/* line 100, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/animations.scss */
 .nav-close.is-visible {
   -webkit-transform: translateX(0);
           transform: translateX(0);
-  -webkit-transition-delay: .4s;
-          transition-delay: .4s; }
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s; }
 
 /* line 1, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/blendmodes.scss */
 .hover-preview-effect:hover .centered-elt {
