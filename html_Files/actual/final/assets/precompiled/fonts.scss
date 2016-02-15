@@ -133,7 +133,7 @@ sup {
 	color:$second_typo_color;
 }
 /*------------secondary Texts------------------*/
-.info {
+.info, .footer-txt, .footer-txt a {
 	font-family:'Fira Sans',sans-serif;
 	font-weight:300;
 	font-size:12px;
@@ -141,8 +141,13 @@ sup {
 	line-height:14px;
 	font-style:italic;
 }
+.footer-txt, .footer-txt a {
+	font-size:10px;
+	text-transform: none !important;
+}
 
 sup.label-next {
 	font-size:.75rem;
 	line-height:inherit;
 }
+

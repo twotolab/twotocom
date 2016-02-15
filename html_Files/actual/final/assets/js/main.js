@@ -8,6 +8,8 @@ jQuery(document).ready(function($) {
 			$('.menu-close').removeClass('is-visible');
 			$('.menu-open').removeClass('is-invisible');
 			$('.nav-close').removeClass('is-visible');
+			$('.quote-bg').removeClass('is-visible');
+			$('.nav-bg-quote').removeClass('is-visible');
 			$('.menu-wrapper').removeClass('menu-out');
 			//$('.grid-content').removeClass('hide-content');
 		} else{
@@ -15,6 +17,8 @@ jQuery(document).ready(function($) {
 			$('.menu-open').addClass('is-invisible');
 			$('.menu-close').addClass('is-visible');
 			$('.nav-close').addClass('is-visible');
+			$('.quote-bg').addClass('is-visible');
+			$('.nav-bg-quote').addClass('is-visible');
 			$('.menu-wrapper').addClass('menu-out');
 			//$('.grid-content').addClass('hide-content');
 		}
