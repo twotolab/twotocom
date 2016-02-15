@@ -540,9 +540,10 @@ body {
 	font-weight:800;
 	font-size:348px;
 	margin:0;
-	color:transparentize($third_color,0.96);
+	color:transparentize($third_color,0.86);
 	font-size:18vw;
 	text-shadow:10px 10px 5px transparentize($second_color,0.95);
+
 /*
 	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='transparent.png', sizingMethod='scale');
 	background:none !important;
@@ -566,18 +567,18 @@ header {
 }
 
 .nav-main {
-	z-index:100;
+	z-index:110;
 }
 .menu-wrapper {
-	z-index:101;
+	z-index:111;
 }
 
 .nav-close {
-	z-index:104;
+	z-index:114;
 }
 
 .static-bg {
-	z-index:10000;
+	z-index:101;
 }
 
 /*-----------------*/

@@ -16,8 +16,48 @@
 	background-color: $blend-mode-color;
 }
 .testing{
+	position: fixed;
+	top:0;
+	bottom: auto;
+	left: 0;
+	right: auto;
+	height: 100%;
+	width: 50%;
+	//background-color:transparentize(blue, 0.4);
+	background-color:blue;
+/*	
+	background: rgba(73,155,234,1);
+background: -moz-linear-gradient(-45deg, rgba(73,155,234,1) 0%, rgba(227,32,32,1) 100%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(73,155,234,1)), color-stop(100%, rgba(227,32,32,1)));
+background: -webkit-linear-gradient(-45deg, rgba(73,155,234,1) 0%, rgba(227,32,32,1) 100%);
+background: -o-linear-gradient(-45deg, rgba(73,155,234,1) 0%, rgba(227,32,32,1) 100%);
+background: -ms-linear-gradient(-45deg, rgba(73,155,234,1) 0%, rgba(227,32,32,1) 100%);
+background: linear-gradient(135deg, rgba(73,155,234,1) 0%, rgba(227,32,32,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#e32020', GradientType=1 );
+
+
+*/
+background: linear-gradient(135deg, rgba(73,155,234,0.8) 0%, rgba(227,32,32,0.3) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#e32020', GradientType=1 );
+
+
 	//
-	//mix-blend-mode: screen;
-	//background-color:transparentize($second_color, 0.1);
-	//mix-blend-mode: multiply;
+}
+.testing-second{
+	position: fixed;
+	top:0;
+	bottom: auto;
+	left: auto;
+	right:0;
+	height: 100%;
+	width: 50%;
+
+background: linear-gradient(-135deg,rgba(227,32,32,0.3)  0%, rgba(73,155,234,0.8) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#e32020', GradientType=1 );
+
+
+	//
+}
+.static-bg{
+	mix-blend-mode: multiply;
 }
