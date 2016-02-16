@@ -579,7 +579,9 @@ body {
 .cd-elt-container:hover .nav-hover-bg-effect {
 	width:inherit;
 }
-
+.hover-effect:hover{
+	background-color: yellow;
+}
 
 .hover-effect:hover a > .line-Under-Link {
 	width:56px;
