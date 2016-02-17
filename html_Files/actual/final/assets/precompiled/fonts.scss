@@ -54,6 +54,13 @@
 /*------------------------------------*/
 /* Typography */
 /*------------------------------------*/
+body,a .text-style {
+	font-family:'Fira Sans',sans-serif;
+	font-size:16px;
+	font-weight:300;
+	line-height:$height_grid;
+	color:$first_typo_color;
+}
 h1 {
 	font-family:'Majesti Banner Bold','heuristicabold',Georgia,serif;
 	font-size:48px;
