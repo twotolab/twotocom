@@ -105,10 +105,11 @@ $gradient_color:linear-gradient(135deg, rgba(28,175,154,1) 0%, rgba(231,56,39,1)
 $gradient_opposite_color:linear-gradient(135deg, rgba(73,155,234,0.4) 0%, rgba(227,32,32,0.2) 100%);
 /**/
 
-$gradient_first_color:rgba(0, 179, 255, 0.07);
-$gradient_second_color: rgba(255,  0,  196, 0.04);
-$gradient_color:linear-gradient(135deg, $gradient_first_color 0%,$gradient_second_color 100%);
-$gradient_opposite_color:linear-gradient(135deg, $gradient_second_color 0%, $gradient_first_color 100%);
+$gradient_first_color:transparentize($highlight_color, 0.4);//rgba(0, 179, 255, 1);
+$gradient_second_color: rgba(217, 137, 198, 0.01);
+$gradient_color:linear-gradient(165deg, $first_color 0%,$second_color 100%);
+$gradient_opposite_color:linear-gradient(100deg, $gradient_second_color 10%, $gradient_first_color 100%);
+$gradient_opposite_second_color:linear-gradient(20deg,transparentize($gradient_second_color, 0.4) 10%, transparentize($gradient_first_color,0.4) 100%);
 /**/
 /*local Colors settings*/
 

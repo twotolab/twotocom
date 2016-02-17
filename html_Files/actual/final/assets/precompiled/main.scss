@@ -125,7 +125,7 @@ header {
 	bottom:0;
 	height:100%;
 	width:100%;
-	background-color:$second_background_color;
+	background:transparentize($second_color, 0.02);
 	backface-visibility:hidden;
 	overflow:auto;
 	text-align:center;
@@ -589,18 +589,20 @@ body {
 	text-align:center;
 	pointer-events:none;
 }
-
+.static-bg{
+	position:absolute;
+	}
 .quote-bg h2 {
 	font-family:'heuristicabold',Georgia,serif;
 	font-family:'Fira Sans',sans-serif;
 	font-weight:800;
-	font-size:348px;
+	font-size:70px;
+	font-size:15vw;
 	margin:0;
 	box-sizing:border-box;
 	padding-top:104px;
-	padding-top:12vw;
-	color:transparentize($first_color,0.86);
-	font-size:18vw;
+	padding-top:17vw;
+	color:transparentize($highlight_color,0.90);
 	//text-shadow:10px 10px 5px transparentize($first_color,0.95);
 	text-transform:uppercase;
 	font-style:italic;
@@ -615,7 +617,7 @@ body {
 }
 
 .first-gradient-bg {
-	position:fixed;
+	position:absolute;
 	top:0;
 	bottom:auto;
 	left:0;
@@ -624,6 +626,11 @@ body {
 	width:100%;
 	background:transparent;
 }
+	.first-gradient-bg {
+		width:100%;
+		height: 26px*9;
+		margin-top: 0;
+	}
 
 .second-gradient-bg {
 	position:fixed;
@@ -649,7 +656,7 @@ body {
 }
 
 .static-bg {
-	z-index:30;
+	z-index:0;
 }
 
 .grid-image,.grid-headline,.grid-project .grid-center-elt,.grid-center-elt q,.grid-info a {
@@ -673,7 +680,7 @@ header {
 }
 
 .quote-bg {
-	z-index:2000;
+	z-index:112;
 }
 
 .nav-close {
@@ -745,6 +752,10 @@ header {
 		font-size:6.8vw;
 		line-height:7.3vw;
 	}
+	.quote-bg h2 {
+	font-size:120px;
+	font-size:15vw;
+	}
 	
 	.grid-desktop-highlight-content {
 		display:flex;
@@ -761,7 +772,9 @@ header {
 	}
 	
 	.first-gradient-bg {
-		width:50%;
+		width:100%;
+		height: 26px*9;
+		margin-top: 0;
 	}
 	
 	.second-gradient-bg {
@@ -771,7 +784,7 @@ header {
 }
 
 /* Mittlere Monitore */
-@media only screen and (max-width: 1025px) {
+@media only screen and (max-width: 1024px) {
 	.no-tablet {
 		display:none;
 	}
@@ -797,7 +810,11 @@ header {
 	.grid-one-unit {
 		flex:1 25%;
 	}
-	
+		.quote-bg h2 {
+	font-size:170px;
+	font-size:15vw;
+		padding-top:13vw;
+	}
 	.grid-intro,.grid-desktop-highlight {
 		flex:2 50%;
 		height:572px;
@@ -850,27 +867,10 @@ header {
 		font-size:6.2vw;
 		line-height:6.8vw;
 	}
-}
-
-/* Große Monitore */
-@media only screen and (min-width: 1280px) {
-	body {
-		background-color:$first_darker_background_color;
-	}
-	
-	.intro-quote h1 {
-		font-size:74px;
-		line-height:80px;
-		font-size:5.8vw;
-		line-height:6.3vw;
-	}
-	
-	.intro-quote {
-		padding-left:0;
-	}
-	
-	.nav-main .navigation-left {
-		padding-left:26px;
+			.first-gradient-bg {
+		width:75%;
+		height: 26px*24;
+		margin-top: 0;
 	}
 }
 
@@ -879,13 +879,22 @@ header {
 		font-size:84px;
 		line-height:90px;
 	}
-	
+		.intro-quote {
+		padding-left:0;
+	}
+
 	.static-bg h2 {
 		font-size:260px!important;
 	}
 	
 	.navigation-left {
 		padding-left:0;
+	}
+	.first-gradient-bg {
+		width:96%;
+		height: 26px*27;
+		margin-top: -26px*3;
+		margin-left: -26px*10;
 	}
 }
 
