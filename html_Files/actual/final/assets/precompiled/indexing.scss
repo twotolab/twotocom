@@ -1,0 +1,45 @@
+/*-----------------*/
+/* index*/
+/*-----------------*/
+
+.open-side-navi{
+	z-index: 1;
+}
+.nav-hover-bg-effect {
+	z-index:2;
+}
+.light-shadow {
+	z-index:4;
+}
+
+.static-bg {
+	z-index:5;
+}
+
+.grid-image,.grid-headline,.grid-project .grid-center-elt,.grid-center-elt q,.grid-info a {
+	z-index:49;
+}
+.grid-project .grid-center-elt{
+
+	z-index: 50;
+	}
+
+header {
+	z-index:99;
+}
+
+.nav-main {
+	z-index:110;
+}
+
+.menu-wrapper {
+	z-index:111;
+}
+
+.nav-quote-bg {
+	z-index:112;
+}
+
+.nav-close {
+	z-index:114;
+}

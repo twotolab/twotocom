@@ -1,0 +1,90 @@
+/*color*/
+/*------------------------------------*/
+body {
+	background-color:$first_background_color;
+}
+
+.second-color {
+	background-color:$second_background_color!important;
+	color:$second_typo_line_color!important;
+}
+
+.second-color a {
+	color:$second_typo_color;
+}
+.first-darker-background {
+	background-color:$first_darker_background_color;
+}
+
+.first-background {
+	background-color:$first_background_color !important;
+}
+.second-background {
+	background-color:$second_background_color !important;
+}
+
+.lighter-background {
+	background-color:$first_lighter_background_color;
+}
+
+/*-------------------*/
+
+.second-big-line {
+	background-color:$first_typo_line_color;
+	width:52px;
+	height:4px;
+}
+
+.light-shadow {
+	box-shadow:0 1px 10px 0 $first_shadow_color;
+}
+
+.circle {
+	border-radius:50%;
+	width:65px;
+	height:65px;
+}
+
+.dark-circle {
+	border-radius:50%;
+	width:65px;
+	height:65px;
+	border:1px solid $second_circle_color;
+}
+
+/*------------------*/
+.no-mobil {
+	display:none;
+}
+.underlined {
+	width: inherit;
+}
+.underlined::after {
+	content:'';
+	display:block;
+	height:1px;
+	max-width:26px;
+	margin:0;
+	background-color: $first_typo_line_color;
+}
+.second-color .underlined::after {
+	background-color: $second_typo_line_color;
+	}
+
+@media only screen and (min-width: 980px) {
+	
+	.only-mobil {
+		display:flex;
+	}
+}
+/* desktop Monitore */
+@media only screen and (min-width: 1025px) {
+	
+	.no-mobil {
+		display:flex;
+	}
+	
+	.only-mobil {
+		display:none!important;
+	}
+}

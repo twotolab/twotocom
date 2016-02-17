@@ -1,0 +1,19 @@
+@media only screen and (min-width: 980px) {
+  /* line 3, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/general.scss */
+  .only-mobil {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; } }
+
+/* desktop Monitore */
+@media only screen and (min-width: 1025px) {
+  /* line 10, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/general.scss */
+  .no-mobil {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  /* line 14, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/general.scss */
+  .only-mobil {
+    display: none !important; } }

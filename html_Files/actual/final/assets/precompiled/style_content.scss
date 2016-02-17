@@ -1,17 +1,22 @@
 @import 'variables';
+@import 'general';
 @import 'fonts';
 @import 'pattern';
+@import 'navigation';
 
+
+/*------------------------------------*\
+    $MAIN
+\*------------------------------------*/
 html,body {
 	height:100%;
 }
-
 body {
 	position:relative;
 	margin:0 auto;
 	width:100%;
-	height:100%;
-	}
+}
+
 
 .main-container {
 	position:fixed;
@@ -25,6 +30,7 @@ body {
 	justify-content:flex-start;
 	background-color:#f0f;
 }
+
 .open-side-navi {
 	position:fixed;
 	top:0;
@@ -32,17 +38,13 @@ body {
 	right:0;
 	left:auto;
 	font-size:12px;
-	background-color:green;
-	z-index:1000;
+	background-color:$first_color;
 	padding:13px;
 }
 
 .open-side-navi a:hover .contextual-navi {
 	display:flex;
 	flex:1;
-}
-
-.open-side-navi a:hover .grid-content {
 }
 
 .contextual-navi {
@@ -70,9 +72,13 @@ body {
 	background-color:$first_color;
 }
 
-.is-visible {
+.contextual-navi-is-visible {
 	width:100%;
+	
 	transform:translateX(0);
+	transition-property:transform;
+	transition-duration:.4s;
+	transition-timing-function:ease;
 	background-color:#095d28;
 	visibility:visible;
 }
@@ -88,17 +94,9 @@ body {
 	background-color:#ff0;
 }
 
-.blue {
-	background-color:blue;
-}
-
-.scroll-container .blue {
-	background-color:blue;
-}
-
 @media only screen and (min-width: 760px) {
 	.contextual-navi {
-		width:720px;
+		width:25%;
 	}
 }
 
@@ -113,8 +111,48 @@ body {
 	position:relative;
 	top:0;
 	width:100%;
+	
 }
-
+.movable, header{
+	position:relative;
+	margin:0 auto;
+	width:100%;
+	max-width:$max_widthStage;
+	
+	transform:translateX(0);
+	transition-property:transform;
+	transition-duration:.4s;
+	transition-timing-function:ease;
+	
+	padding: 0px 13px 0 13px;
+}
+.headline {
+	text-align: center;
+	margin:0 auto;
+	position:relative;
+	//margin:0 auto;
+	//width:inherit;
+	//max-width:$max_widthStage;
+	box-sizing: border-box;
+	padding-top: 26px*4;
+	max-width: 26px*34;
+	
+}
+.introduction{
+	text-align: center;
+	margin:0 auto;
+	padding-top: 26px*2;
+	max-width: 26px*24;
+}
+.simple-copy {
+	margin:0 auto;
+	max-width: 26px*24;
+	padding-top: 26px*2;
+	}
+.contextual-navi-is-hidden {
+	width:100%;
+	transform:translateX(-25%);
+}
 .grid-image {
 	position:relative;
 	display:flex;
@@ -138,7 +176,7 @@ body {
 .grid-center-elt .first-color-txt h4,.grid-center-elt .first-color-txt .info {
 	color:$first_typo_color;
 }
-.grid-info .grid-center-elt,.only-mobil .grid-center-elt {
+.grid-info .grid-center-elt {
 	box-sizing:border-box;
 	padding:13px;
 }
@@ -206,3 +244,4 @@ body {
 }
 @import 'animations';
 @import 'blendmodes';
+@import 'indexing';

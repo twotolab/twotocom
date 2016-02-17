@@ -108,13 +108,13 @@ a.hover-effect:hover  .underlined::after, .hover-effect:hover  .underlined::afte
   transform: translateY(0);
 }
 
-.nav-close, .quote-bg {
+.nav-close, .nav-quote-bg {
 	transform: translateY(-100%);
 	transition-property: transform;
 	transition-duration: 0.8s;
 }
 
-.nav-close.is-visible,.quote-bg.is-visible {
+.nav-close.is-visible,.nav-quote-bg.is-visible {
 	transform: translateX(0);
 	transition-delay: 1s;
 }
