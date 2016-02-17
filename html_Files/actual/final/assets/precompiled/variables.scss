@@ -56,6 +56,7 @@ $first_transparent_dark_color: transparentize($first_color, 0.95);
 
 
 $second_lightHeavy_color: lighten($second_color, 30%);
+$second_darker_color: darken($second_color, 10%);
 $second_transparent_light_color:transparentize($second_color, 0.3);
 
 /*global use*/

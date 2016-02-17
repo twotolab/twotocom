@@ -28,19 +28,11 @@ header {
 	display:none;
 }
 
-.grid-centered-elt .simple-text-link {
-	width:160px;
-	align-self:center;
-}
-
-.grid-centered-elt .second-text-link {
-	width:160px;
-	align-self:center;
-	color:$first_typo_color;
-}
-
-.grid-centered-elt .second-text-link h4,.grid-centered-elt .second-text-link .info {
+.grid-centered-elt-test .second-color-txt h4,.grid-centered-elt-test .second-color-txt .info {
 	color:$second_typo_color;
+}
+.grid-centered-elt-test .first-color-txt h4,.grid-centered-elt-test .first-color-txt .info {
+	color:$first_typo_color;
 }
 
 sup.label-next {
@@ -50,44 +42,6 @@ sup.label-next {
 	padding:1px 6px;
 	margin-left:0;
 	background-color:$second_color;
-}
-.grid-centered-elt{
-	position: relative;
-}
-.underlined,.underlined-second {
-	/*----weak!!!!!!---*/
-	position:absolute;
-	bottom: 52px;
-	height: auto;
-	/*----weak!!!!!!---*/
-}
-.underlined::after {
-	content:'';
-	display:block;
-	height:1px;
-	max-width:13px;
-	margin:0;
-	background-color: $first_typo_line_color;
-}
-
-.underlined-second::after {
-	content:'';
-	display:block;
-	height:1px;
-	max-width:13px;
-	margin:0;
-	background-color: $second_typo_line_color;
-}
-
-.line-Under-Link {
-	background-color:$first_typo_line_color;
-	width:26px;
-	height:1px;
-	top:13px;
-}
-
-.second-color .line-Under-Link {
-	background-color:$second_typo_line_color;
 }
 
 .second-big-line {
@@ -401,17 +355,11 @@ footer sup {
 	height:520px;
 }
 
-.only-mobil .grid-centered-elt,.grid-info .grid-centered-elt {
-	//height:234px;
+.grid-centered-elt-test{
 	height:260px;
 }
 
-.grid-highlight .grid-image,.grid-highlight .grid-headline {
-	height:260px;
-}
-
-.grid-project .grid-centered-elt,.grid-project .grid-image {
-	//height:234px;
+.grid-highlight .grid-image,.grid-highlight .grid-headline,.grid-project .grid-image {
 	height:260px;
 }
 
@@ -442,13 +390,6 @@ footer sup {
 	background:$gradient_opposite_color;
 }
 
-.grid-centered-elt {
-	display:flex;
-	justify-content:center;
-	flex-direction:column;
-	text-align:left;
-}
-
 .intro-quote {
 	box-sizing:border-box;
 	padding:0 13px 13px;
@@ -473,29 +414,7 @@ footer sup {
 	width:100%;
 }
 
-.grid-project .grid-centered-elt,.grid-highlight .grid-centered-elt {
-	position:absolute;
-	top:0;
-	left:0;
-	right:0;
-	text-align:center;
-}
-
-.grid-project .grid-centered-elt .first-underlined-style,.grid-highlight .grid-centered-elt .first-underlined-style {
-	align-self:center;
-	border-bottom:2px solid $second_typo_line_color;
-}
-
-.grid-project .grid-centered-elt .second-underlined-style,.grid-highlight .grid-centered-elt .second-underlined-style {
-	align-self:center;
-	border-bottom:2px solid $first_typo_line_color;
-}
-
-.first-underlined-style h4 {
-	color:$second_typo_line_color;
-}
-
-.grid-info .grid-centered-elt,.only-mobil .grid-centered-elt {
+.grid-info .grid-centered-elt-test,.only-mobil .grid-centered-elt-test {
 	box-sizing:border-box;
 	padding:13px;
 }
@@ -507,12 +426,19 @@ footer sup {
 .grid-headline {
 	margin-top:auto;
 	text-align:left;
+
+
+}
+a.hover-effect{	
+	height: inherit;
+	
 	display:flex;
+	flex-grow: 1;
 	flex-direction:column;
+	justify-content: space-between;
 }
 
 .grid-headline-top {
-	flex:1;
 	box-sizing:border-box;
 	padding:24px 13px 0;
 }
@@ -523,18 +449,79 @@ footer sup {
 }
 
 .grid-headline-bottom {
+	
 	box-sizing:border-box;
 	padding-bottom:19px;
 	padding-left:13px;
+	width: inherit;
 }
-.grid-headline-bottom .underlined{
-	padding-bottom: 26px;
+.grid-centered-elt-test{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	padding-left: 26px;
+}
+.grid-project .grid-centered-elt-test{
+	position: absolute;
+	top: 0;
 	bottom: 0;
+	left: 0;
+	right: 0;	text-align: center;
+	z-index: 49;
+	padding: 0;
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}	
+.grid-info .grid-centered-elt-test{
+	display: flex;
+	flex-direction: row;
+	
+	}
+
+.grid-headline-bottom .underlined-test,.grid-centered-elt-test .underlined-test, .menu-button .underlined-test{
+	display:inline-block;
+	width: inherit;
+	
 }
+.underlined-test {
+	width: inherit;
+}
+.underlined-test::after {
+	content:'';
+	display:block;
+	height:1px;
+	max-width:26px;
+	margin:0;
+	background-color: $first_typo_line_color;
+}
+.second-color .underlined-test::after {
+	background-color: $second_typo_line_color;
+	}
 .no-mobil {
 	display:none;
 }
 
+a.hover-effect:hover  .underlined-test::after, .hover-effect:hover  .underlined-test::after{
+	max-width:inherit;
+	}	
+.inverted-effect:hover .inverted-target-effect{
+	background-color: $first_transparent_dark_color !important;
+	
+}
+.inverted-second-effect:hover .inverted-target-second-effect{
+	background-color: $second_darker_color !important;
+	
+}
+.inverted-effect:hover h3,.inverted-effect:hover .info,.inverted-effect:hover sup.label-next,.inverted-effect:hover p{
+	//color: $second_typo_color !important;
+	
+}
+.inverted-effect:hover .underlined-test::after{
+	//background-color: $second_typo_color;
+}
 /*color*/
 /*------------------------------------*/
 body {
@@ -549,7 +536,6 @@ body {
 .second-color a {
 	color:$second_typo_color;
 }
-
 .first-darker-background {
 	background-color:$first_darker_background_color;
 }
@@ -578,13 +564,6 @@ body {
 
 .cd-elt-container:hover .nav-hover-bg-effect {
 	width:inherit;
-}
-.hover-effect:hover{
-	background-color: yellow;
-}
-
-.hover-effect:hover a > .line-Under-Link {
-	width:56px;
 }
 
 .hover-preview-effect {
@@ -683,7 +662,7 @@ body {
 	z-index:48;
 }
 
-.grid-image,.grid-headline,.grid-project .grid-centered-elt,.grid-centered-elt q,.grid-info a {
+.grid-image,.grid-headline,.grid-project .grid-centered-elt-test,.grid-centered-elt-test q,.grid-info a {
 	z-index:49;
 }
 
@@ -805,8 +784,9 @@ header {
 }
 
 @media only screen and (min-width: 980px) {
-	.grid-headline-top,.grid-headline-bottom,.grid-info .grid-centered-elt,.only-mobil .grid-centered-elt {
+	.grid-headline-top,.grid-headline-bottom,.grid-info .grid-centered-elt-test,.only-mobil .grid-centered-elt-test {
 		padding-left:26px;
+		padding-right: 26px;
 	}
 	
 	.grid-two-unit {

@@ -1,27 +1,65 @@
-
-.underlined:after,.underlined-second:after {
+.underlined-test:after {
+	max-width:52px; // trick to get initial 26px;
 	transition:width .5s;
-	max-width: 100%;
-	transform:scaleX(0.25);
+	transform:scaleX(0.5);
 	transform-origin:left;
 	transition:transform .4s;
 }
+.menu-button .underlined-test:after {
+	transform-origin: center;
+	transform:scaleX(0);
+}
 
-.hover-effect:hover  > .underlined:after,.hover-effect:hover  > .underlined-second:after {
+a.hover-effect:hover  .underlined-test::after, .hover-effect:hover  .underlined-test::after{
 	transform:scaleX(1);
-	transition:transform .4s;
+	transition:transform .4s;	
+}
+.inverted-effect:hover .inverted-target-effect{
+	box-shadow:inset 0 0 0 170px $first_transparent_dark_color;
+	transition:box-shadow .7s;
+	mix-blend-mode:screen;
+	
+}
+.inverted-effect .inverted-target-effect{
+	box-shadow:inset 0 0 0  $first_background_color;
+	transition:box-shadow .4s;
+	mix-blend-mode:screen;
+	
+}
+.inverted-second-effect:hover .inverted-target-second-effect{
+	box-shadow:inset 0 0 0 170px $second_darker_color;
+	transition:box-shadow .7s;
+	mix-blend-mode:screen;
+	
+}
+.inverted-second-effect .inverted-target-second-effect{
+	box-shadow:inset 0 0 0  $second_background_color;
+	transition:box-shadow .4s;
+	mix-blend-mode:screen;
+	
 }
 
-
-
-.hover-preview-effect:hover .grid-centered-elt {
-	box-shadow:inset 0 0 0 $frame_border_size $frame_border_color;
+.hover-preview-effect:hover .grid-centered-elt-test {
+	box-shadow:inset 0 0 0 140px $second_transparent_light_color;
+	transition:box-shadow .4s;
+	mix-blend-mode:screen;
+}
+.hover-preview-effect .grid-centered-elt-test {
+	box-shadow:inset 0 0 0 0 $second_transparent_light_color;
+	transition:box-shadow .4s;
+	mix-blend-mode:screen;
+}
+.hover-preview-effect.first-color-frame:hover .grid-centered-elt-test {
+	box-shadow:inset 0 0 0 150px $second_frame_border_color;
 	transition:box-shadow .4s;
 }
-
-.hover-preview-effect .grid-centered-elt {
-	box-shadow:inset 0 0 0 0 $frame_border_color;
+.hover-preview-effect.first-color-frame:hover .grid-centered-elt-test {
+	box-shadow:inset 0 0 0 150px $second_frame_border_color;
 	transition:box-shadow .4s;
+}
+.hover-preview-effect.first-color-frame:hover h4,.hover-preview-effect.first-color-frame:hover p {
+	color: $second_typo_color;
+
 }
 
 .hover-preview-effect .grid-image {
@@ -33,22 +71,14 @@
 	transform:scale(1.2);
 	transition:transform .4s;
 }
-.hover-zoomUp-less-effect .simple-text-link,.hover-preview-effect .second-text-link {
+.hover-preview-effect .first-color-txt,.hover-preview-effect .second-color-txt {
 	transform:scale(1);
 	transition:transform .2s;
 }
 
-.hover-zoomUp-less-effect:hover .simple-text-link,.hover-preview-effect:hover .second-text-link {
+.hover-preview-effect:hover .first-color-txt,.hover-preview-effect:hover .second-color-txt {
 	transform:scale(1.1);
 	transition:transform .8s;
-}
-.hover-zoomUp-less-effect:hover .grid-centered-elt{
-	box-shadow:inset 0 0 0 $frame_border_size $second_frame_border_color;
-	transition:box-shadow .4s;
-}
-.hover-zoomUp-less-effect .grid-centered-elt {
-	box-shadow:inset 0 0 0 0 $frame_border_color;
-	transition:box-shadow .4s;
 }
 
 .hover-zoomUp-effect {
@@ -60,28 +90,7 @@
 	transform:scale(1.4);
 	transition:transform .2s;
 }
-.line-Under-Link {
-	transition:width .5s;
-}
-.line-under-effect .line-Under-Link {
-	transform:scale(0);
-	transition:transform .4s;
-}
 
-.line-under-effect:hover .line-Under-Link {
-	transform:scale(1);
-	transition:transform .4s;
-}
-
-a:hover .grid-centered-elt .second-underlined-style,a:hover .grid-centered-elt .first-underlined-style {
-	transform:scale(1.4);
-	transition:transform .4s;
-}
-
-a .grid-centered-elt .second-underlined-style,a .grid-centered-elt .first-underlined-style {
-	transform:scale(1);
-	transition:transform .4s;
-}
 .nav-hover-bg-effect {
 	width:100%;
 	transform:scaleX(0);
