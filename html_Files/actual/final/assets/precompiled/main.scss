@@ -507,7 +507,7 @@ a.hover-effect:hover  .underlined::after, .hover-effect:hover  .underlined::afte
 	
 }
 .inverted-second-effect:hover .inverted-target-second-effect{
-	background-color: $second_darker_color !important;
+	background-color: darken($highlight_color,1);
 	
 }
 .inverted-effect:hover h3,.inverted-effect:hover .info,.inverted-effect:hover sup.label-next,.inverted-effect:hover p{
@@ -604,7 +604,7 @@ body {
 	box-sizing:border-box;
 	padding-top:104px;
 	padding-top:12vw;
-	color:transparentize($third_color,0.86);
+	color:transparentize($first_color,0.86);
 	font-size:18vw;
 	text-shadow:10px 10px 5px transparentize($second_color,0.95);
 	text-transform:uppercase;
@@ -654,12 +654,16 @@ body {
 }
 
 .static-bg {
-	z-index:48;
+	z-index:30;
 }
 
 .grid-image,.grid-headline,.grid-project .grid-center-elt,.grid-center-elt q,.grid-info a {
 	z-index:49;
 }
+.grid-project .grid-center-elt{
+
+	z-index: 50;
+	}
 
 header {
 	z-index:99;
@@ -875,7 +879,7 @@ header {
 	}
 }
 
-@media only screen and (min-width: max_widthStage) {
+@media only screen and (min-width: $max_widthStage) {
 	.intro-quote h1 {
 		font-size:84px;
 		line-height:90px;
