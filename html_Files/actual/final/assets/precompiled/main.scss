@@ -36,7 +36,8 @@ sup.label-next {
 	bottom:1px;
 	padding:1px 6px;
 	margin-left:0;
-	background-color:$second_color;
+	background-color:$highlight_color;
+	color: $first_typo_color;
 }
 
 .second-big-line {
@@ -507,15 +508,9 @@ a.hover-effect:hover  .underlined::after, .hover-effect:hover  .underlined::afte
 	
 }
 .inverted-second-effect:hover .inverted-target-second-effect{
-	background-color: darken($highlight_color,1);
+	background-color: $highlight_dark_color!important;
+	// just experimenting - background: url(../imgs/pattern.svg) repeat top left !important;
 	
-}
-.inverted-effect:hover h3,.inverted-effect:hover .info,.inverted-effect:hover sup.label-next,.inverted-effect:hover p{
-	//color: $second_typo_color !important;
-	
-}
-.inverted-effect:hover .underlined::after{
-	//background-color: $second_typo_color;
 }
 /*color*/
 /*------------------------------------*/
@@ -554,7 +549,7 @@ body {
 	position:absolute;
 	top:0;
 	left:0;
-	background-color:$second_typo_hover_background_color;
+	background-color:$highlight_color;
 }
 
 .cd-elt-container:hover .nav-hover-bg-effect {
@@ -606,7 +601,7 @@ body {
 	padding-top:12vw;
 	color:transparentize($first_color,0.86);
 	font-size:18vw;
-	text-shadow:10px 10px 5px transparentize($second_color,0.95);
+	//text-shadow:10px 10px 5px transparentize($first_color,0.95);
 	text-transform:uppercase;
 	font-style:italic;
 }

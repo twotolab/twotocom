@@ -25,6 +25,7 @@ a.hover-effect:hover  .underlined::after, .hover-effect:hover  .underlined::afte
 	//mix-blend-mode:screen;
 	
 }
+
 .inverted-second-effect:hover .inverted-target-second-effect{
 	box-shadow:inset 0 0 0 170px $highlight_dark_color;
 	transition:box-shadow .7s;
@@ -37,7 +38,6 @@ a.hover-effect:hover  .underlined::after, .hover-effect:hover  .underlined::afte
 	//mix-blend-mode:screen;
 	
 }
-
 .hover-preview-effect:hover .grid-center-elt.with-image  {
 	box-shadow:inset 0 0 0 140px $highlight_transparent_color;
 	transition:box-shadow .4s;
