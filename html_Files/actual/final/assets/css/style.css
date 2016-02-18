@@ -1616,46 +1616,46 @@ mix-blend-mode: luminosity; !!
 /*-----------------*/
 /* index*/
 /*-----------------*/
-/* line 5, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/indexing.scss */
-.open-side-navi {
-  z-index: 1; }
-
-/* line 8, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/indexing.scss */
-.nav-hover-bg-effect {
-  z-index: 2; }
-
-/* line 11, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/indexing.scss */
+/* line 7, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/indexing.scss */
 .light-shadow {
   z-index: 4; }
 
-/* line 15, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/indexing.scss */
+/* line 11, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/indexing.scss */
 .static-bg {
   z-index: 5; }
 
-/* line 19, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/indexing.scss */
+/* line 15, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/indexing.scss */
 .grid-image, .grid-headline, .grid-project .grid-center-elt, .grid-center-elt q, .grid-info a {
   z-index: 49; }
 
-/* line 22, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/indexing.scss */
+/* line 18, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/indexing.scss */
 .grid-project .grid-center-elt {
   z-index: 50; }
 
-/* line 27, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/indexing.scss */
+/* line 23, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/indexing.scss */
 header {
   z-index: 99; }
 
-/* line 31, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/indexing.scss */
+/* line 26, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/indexing.scss */
+.nav-hover-bg-effect {
+  z-index: -1; }
+
+/* line 29, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/indexing.scss */
+.open-side-navi {
+  z-index: 100; }
+
+/* line 32, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/indexing.scss */
 .nav-main {
   z-index: 110; }
 
-/* line 35, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/indexing.scss */
+/* line 37, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/indexing.scss */
 .menu-wrapper {
   z-index: 111; }
 
-/* line 39, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/indexing.scss */
+/* line 41, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/indexing.scss */
 .nav-quote-bg {
   z-index: 112; }
 
-/* line 43, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/indexing.scss */
+/* line 45, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/indexing.scss */
 .nav-close {
   z-index: 114; }

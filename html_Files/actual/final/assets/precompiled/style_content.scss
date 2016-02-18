@@ -28,7 +28,6 @@ body {
 	display:flex;
 	flex-direction:row;
 	justify-content:flex-start;
-	background-color:#f0f;
 }
 
 .open-side-navi {
@@ -39,7 +38,7 @@ body {
 	left:auto;
 	font-size:12px;
 	background-color:$first_color;
-	padding:13px;
+	padding:20px 13px 13px 13px;
 }
 
 .open-side-navi a:hover .contextual-navi {
@@ -73,8 +72,6 @@ body {
 }
 
 .contextual-navi-is-visible {
-	width:100%;
-	
 	transform:translateX(0);
 	transition-property:transform;
 	transition-duration:.4s;
@@ -96,7 +93,7 @@ body {
 
 @media only screen and (min-width: 760px) {
 	.contextual-navi {
-		width:25%;
+		width:364px;
 	}
 }
 
@@ -106,19 +103,25 @@ body {
 .grid-content {
 	display:flex;
 	flex-wrap:wrap;
+		
 }
 .grid-content {
 	position:relative;
 	top:0;
-	width:100%;
-	
+	width:100%;	
 }
-.movable, header{
+.header{
 	position:relative;
 	margin:0 auto;
-	width:100%;
+	width: inherit;
 	max-width:$max_widthStage;
-	
+
+}
+.movable{
+	position:relative;
+	margin:0 auto;
+	width: inherit;
+	max-width:$max_widthStage;
 	transform:translateX(0);
 	transition-property:transform;
 	transition-duration:.4s;
@@ -150,7 +153,6 @@ body {
 	padding-top: 26px*2;
 	}
 .contextual-navi-is-hidden {
-	width:100%;
 	transform:translateX(-25%);
 }
 .grid-image {

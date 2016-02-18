@@ -2,12 +2,8 @@
 /* index*/
 /*-----------------*/
 
-.open-side-navi{
-	z-index: 1;
-}
-.nav-hover-bg-effect {
-	z-index:2;
-}
+
+
 .light-shadow {
 	z-index:4;
 }
@@ -27,10 +23,16 @@
 header {
 	z-index:99;
 }
-
+.nav-hover-bg-effect {
+	z-index:-1;
+}
+.open-side-navi{
+	z-index: 100;
+}
 .nav-main {
 	z-index:110;
 }
+
 
 .menu-wrapper {
 	z-index:111;

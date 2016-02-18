@@ -5,12 +5,10 @@ jQuery(document).ready(function($) {
 		event.preventDefault();
 		if( $('.contextual-navi').hasClass('contextual-navi-is-visible') ) {
 			$('.contextual-navi').removeClass('contextual-navi-is-visible');	
-			$('.movable').removeClass('contextual-navi-is-hidden');		
-			$('.header').removeClass('contextual-navi-is-hidden');		
+			$('.movable').removeClass('contextual-navi-is-hidden');				
 		} else {
 			$('.contextual-navi').addClass('contextual-navi-is-visible');	
 			$('.movable').addClass('contextual-navi-is-hidden');	
-			$('.header').addClass('contextual-navi-is-hidden');	
 		}
 	});
 	

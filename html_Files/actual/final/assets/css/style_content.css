@@ -773,8 +773,7 @@ body {
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
-          justify-content: flex-start;
-  background-color: #f0f; }
+          justify-content: flex-start; }
 
 .open-side-navi {
   position: fixed;
@@ -784,7 +783,7 @@ body {
   left: auto;
   font-size: 12px;
   background-color: #f1f1f1;
-  padding: 13px; }
+  padding: 20px 13px 13px 13px; }
 
 .open-side-navi a:hover .contextual-navi {
   display: -webkit-box;
@@ -838,7 +837,6 @@ body {
   background-color: #f1f1f1; }
 
 .contextual-navi-is-visible {
-  width: 100%;
   -webkit-transform: translateX(0);
           transform: translateX(0);
   -webkit-transition-property: -webkit-transform;
@@ -879,7 +877,7 @@ body {
 
 @media only screen and (min-width: 760px) {
   .contextual-navi {
-    width: 25%; } }
+    width: 364px; } }
 
 /*grid*/
 /*------------------------------------*/
@@ -897,10 +895,16 @@ body {
   top: 0;
   width: 100%; }
 
-.movable, header {
+.header {
   position: relative;
   margin: 0 auto;
-  width: 100%;
+  width: inherit;
+  max-width: 1240px; }
+
+.movable {
+  position: relative;
+  margin: 0 auto;
+  width: inherit;
   max-width: 1240px;
   -webkit-transform: translateX(0);
           transform: translateX(0);
@@ -934,7 +938,6 @@ body {
   padding-top: 52px; }
 
 .contextual-navi-is-hidden {
-  width: 100%;
   -webkit-transform: translateX(-25%);
           transform: translateX(-25%); }
 
@@ -1273,12 +1276,6 @@ mix-blend-mode: luminosity; !!
 /*-----------------*/
 /* index*/
 /*-----------------*/
-.open-side-navi {
-  z-index: 1; }
-
-.nav-hover-bg-effect {
-  z-index: 2; }
-
 .light-shadow {
   z-index: 4; }
 
@@ -1293,6 +1290,12 @@ mix-blend-mode: luminosity; !!
 
 header {
   z-index: 99; }
+
+.nav-hover-bg-effect {
+  z-index: -1; }
+
+.open-side-navi {
+  z-index: 100; }
 
 .nav-main {
   z-index: 110; }
