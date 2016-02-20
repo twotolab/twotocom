@@ -2,16 +2,16 @@
 /* index*/
 /*-----------------*/
 
-
+.nav-hover-bg-effect {
+	z-index:-1;
+}
+.static-bg {
+	z-index:0;
+}
 
 .light-shadow {
 	z-index:4;
 }
-
-.static-bg {
-	z-index:5;
-}
-
 .grid-image,.grid-headline,.grid-project .grid-center-elt,.grid-center-elt q,.grid-info a {
 	z-index:49;
 }
@@ -23,25 +23,24 @@
 header {
 	z-index:99;
 }
-.nav-hover-bg-effect {
-	z-index:-1;
-}
+
 .open-side-navi{
 	z-index: 100;
 }
+
 .nav-main {
 	z-index:110;
 }
 
-
-.menu-wrapper {
-	z-index:111;
-}
-
-.nav-quote-bg {
+/*
+.nav-elt{
 	z-index:112;
 }
-
+*/
 .nav-close {
-	z-index:114;
+	z-index:113;
 }
+.menu-wrapper{
+	z-index: 500;
+}
+

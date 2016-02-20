@@ -34,7 +34,7 @@ sup.label-next {
 	padding:1px 6px;
 	margin-left:0;
 	background-color:$highlight_color;
-	color: $first_typo_color;
+	color: $second_typo_color;
 }
 
 
@@ -126,8 +126,6 @@ footer sup {
 	justify-content:center;
 	align-items:center;
 	overflow:hidden;
-	//background-color:$first_color;
-	background:$gradient_opposite_color;
 }
 
 .gradient-bg {
@@ -251,7 +249,7 @@ a.hover-effect:hover  .underlined::after, .hover-effect:hover  .underlined::afte
 /* static-bg*/
 /*-----------------*/
 .static-bg{
-	position:fixed;
+	position:absolute;
 	top:0;
 	left:0;
 	width:100%;
@@ -260,25 +258,13 @@ a.hover-effect:hover  .underlined::after, .hover-effect:hover  .underlined::afte
 	text-align:center;
 	pointer-events:none;
 }
-.static-bg{
-	position:absolute;
-	}
 .first-gradient-bg {
-	position:absolute;
-	top:0;
-	bottom:auto;
-	left:0;
-	right:auto;
-	height:100%;
+	height: 26px*9;
 	width:100%;
 	background:transparent;
+	margin-top: -52px;
 }
-	.first-gradient-bg {
-		width:100%;
-		height: 26px*9;
-		margin-top: 0;
-	}
-
+/*---not used
 .second-gradient-bg {
 	position:fixed;
 	top:0;
@@ -290,6 +276,7 @@ a.hover-effect:hover  .underlined::after, .hover-effect:hover  .underlined::afte
 	background:transparent;
 	display:none;
 }
+*/
 /*-----------------*/
 /* @media
 /*-----------------*/
@@ -374,7 +361,6 @@ a.hover-effect:hover  .underlined::after, .hover-effect:hover  .underlined::afte
 	.first-gradient-bg {
 		width:100%;
 		height: 26px*9;
-		margin-top: 0;
 	}
 	
 	.second-gradient-bg {
@@ -421,10 +407,9 @@ a.hover-effect:hover  .underlined::after, .hover-effect:hover  .underlined::afte
 		font-size:6.2vw;
 		line-height:6.8vw;
 	}
-			.first-gradient-bg {
+	.first-gradient-bg {
 		width:75%;
 		height: 26px*24;
-		margin-top: 0;
 	}
 }
 
@@ -439,12 +424,5 @@ a.hover-effect:hover  .underlined::after, .hover-effect:hover  .underlined::afte
 
 	.static-bg h2 {
 		font-size:260px!important;
-	}
-	
-	.first-gradient-bg {
-		width:96%;
-		height: 26px*27;
-		margin-top: -26px*3;
-		margin-left: -26px*10;
 	}
 }

@@ -54,7 +54,7 @@ body {
 
 /*------------------*/
 .no-mobil {
-	display:none;
+	display:none !important;
 }
 .underlined {
 	width: inherit;
@@ -74,14 +74,14 @@ body {
 @media only screen and (min-width: 980px) {
 	
 	.only-mobil {
-		display:flex;
+		display:flex !important;
 	}
 }
 /* desktop Monitore */
 @media only screen and (min-width: 1025px) {
 	
 	.no-mobil {
-		display:flex;
+		display:flex !important;
 	}
 	
 	.only-mobil {

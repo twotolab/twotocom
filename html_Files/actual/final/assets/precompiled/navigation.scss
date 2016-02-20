@@ -45,20 +45,16 @@ header {
     width: 56px;
     */
 }
-
 .menu-wrapper {
-	position:fixed;
-	left:auto;
-	display:flex;
-	justify-content:flex-end;
-	right:26px;
-	bottom:26px;
-	top:auto;
-	background:none;
-	pointer-events:none;
-	width: auto;
+	position: fixed;
+	right: 26px;
+	bottom: 26px;	
+	width: 65px;
+	height: 65px;
 }
-
+.nav{
+		
+}
 .nav-main {
 /* by default it's hidden - on top of the viewport */
 	position:fixed;
@@ -66,8 +62,8 @@ header {
 	bottom:0;
 	height:100%;
 	width:100%;
-	background:transparentize($second_color, 0.02);
 	backface-visibility:hidden;
+	background:transparentize($second_color, 0.02);
 	overflow:auto;
 	text-align:center;
 /* this fixes the buggy scrolling on webkit browsers - mobile devices only - when overflow property is applied */
@@ -247,25 +243,22 @@ header {
 	color:$second_typo_info_color;
 }
 
-.menu-button {
-	pointer-events:auto;
-	
-	}
+
 .menu-button .underlined{
 	display:inline-block;
 	width: inherit;
-	
 }
 /*av-quote-bg*/
 .nav-quote-bg {
 	position:fixed;
 	top:0;
 	left:0;
-	width:100%;
-	height:100%;
+	right:0;
+	width:0%;
+	height:0%;
 	line-height:20vw;
 	text-align:center;
-	pointer-events:none;
+	background: none;
 }
 .nav-quote-bg h2 {
 	font-family:'heuristicabold',Georgia,serif;
@@ -283,12 +276,15 @@ header {
 	font-style:italic;
 }
 
-.nav-bg-quote {
+.nav-quote-bg {
+	width:100%;
+	height:100%;
 	visibility:hidden;
 }
 
-.nav-bg-quote.is-visible {
+.nav-quote-bg.is-visible {
 	visibility:visible;
+
 }
 
 
@@ -320,30 +316,18 @@ header {
 	.nav-intro {
 		visibility:hidden;
 	}
-		
 	.menu-wrapper {
-		position:fixed;
-		top:22px;
-		left:0;
-		right:0;
-		bottom:0;
-		height:65px;
-		display:flex;
-		justify-content:center;
-	}
-	
-	.menu-out {
-		top:13px;
-		bottom:0;
-	}
+		margin: auto;
+		right: 0;
+		left: 0;
+		bottom: auto;
+		top: 26px;
+	}	
 }
 @media only screen and (max-height: 701px) and (min-width: 1025px) {
 	.menu-out {
-		position:fixed;
 		left:auto;
 		top:auto;
-		display:flex;
-		justify-content:flex-end;
 		right:26px;
 		bottom:26px;
 	}

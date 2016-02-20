@@ -84,11 +84,13 @@ $third_color:white; //blue
 }
 $first_color:rgba(241, 241, 241, 1); 
 $second_color:#333333; //red
-$third_color:#50E3C2; //blue
+//
+//$third_color:#50E3C2; //blue
+$third_color:red; //blue
 
 $highlight_color:$third_color; //
 $highlight_dark_color:darken($third_color,10%); //
-$highlight_transparent_color:rgba(0, 217, 170, 0.5); //
+$highlight_transparent_color:transparentize($third_color,0.5); //
 
 /**/
 $blend-mode-color: transparentize($highlight_color, 0.2);
