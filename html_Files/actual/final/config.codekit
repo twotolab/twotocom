@@ -1238,15 +1238,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/assets\/css\/style_content_neu.css": {
-		"fileType": 16,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/css\/style_content_neu.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/assets\/fonts\/fira\/fira.css": {
 		"fileType": 16,
 		"ignore": 0,
@@ -1862,6 +1853,22 @@
 		"shouldRunBless": 1,
 		"useLibsass": 1
 		},
+	"\/assets\/precompiled\/content.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 1,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/precompiled\/content.scss",
+		"outputAbbreviatedPath": "\/assets\/css\/content.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
+		"useLibsass": 1
+		},
 	"\/assets\/precompiled\/fonts.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 1,
@@ -2006,38 +2013,6 @@
 		"shouldRunBless": 1,
 		"useLibsass": 1
 		},
-	"\/assets\/precompiled\/style_content_2.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 1,
-		"decimalPrecision": 10,
-		"fileType": 4,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/precompiled\/style_content_2.scss",
-		"outputAbbreviatedPath": "\/assets\/css\/style_content_2.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 1,
-		"shouldRunBless": 1,
-		"useLibsass": 1
-		},
-	"\/assets\/precompiled\/style_content_neu.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 1,
-		"decimalPrecision": 10,
-		"fileType": 4,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/precompiled\/style_content_neu.scss",
-		"outputAbbreviatedPath": "\/assets\/css\/style_content_neu.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 1,
-		"shouldRunBless": 1,
-		"useLibsass": 1
-		},
 	"\/assets\/precompiled\/variables.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 1,
@@ -2059,24 +2034,6 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/content.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/content_2.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/content_2.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/content_neu.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/content_neu.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
