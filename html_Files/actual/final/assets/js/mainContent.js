@@ -1,7 +1,7 @@
 jQuery(document).ready(function($) {
 	//	var isLateralNavAnimating = false;
 	//open/close lateral navigation
-	$('.open-side-navi').on('click', function(event) {
+	$('.secondary-button').on('click', function(event) {
 		event.preventDefault();
 		if( $('body').hasClass('right-navi-is-open') ) {
 			$('body').removeClass('right-navi-is-open');				
@@ -20,6 +20,7 @@ jQuery(document).ready(function($) {
 			$('.nav-quote-bg').removeClass('is-visible');
 			$('.nav-bg-quote').removeClass('is-visible');
 			$('.menu-wrapper').removeClass('menu-out');
+			$('.second-menu-wrapper').removeClass('is-invisible');
 		} else{
 			$('.nav-main').addClass('is-visible');
 			$('.menu-open').addClass('is-invisible');
@@ -28,6 +29,7 @@ jQuery(document).ready(function($) {
 			$('.nav-quote-bg').addClass('is-visible');
 			$('.nav-bg-quote').addClass('is-visible');
 			$('.menu-wrapper').addClass('menu-out');
+			$('.second-menu-wrapper').addClass('is-invisible');
 			//$('.grid-content').addClass('hide-content');
 		}
 	});

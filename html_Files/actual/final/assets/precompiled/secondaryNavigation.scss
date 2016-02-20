@@ -2,6 +2,14 @@
 /*------------------------------------*\
     $second-navi
 \*------------------------------------*/
+.second-menu-wrapper {
+	position: fixed;
+	right: 26px;
+	bottom: 26px+65px+26px;	
+	width: 65px;
+	height: 65px;
+}
+
 //general
 .open-side-navi {
 	position:fixed;
@@ -38,8 +46,6 @@
     transform: translateX(100%);
     transform-origin: right;
     background-color: $second_background_color;
-    
-  
 }
 
 .navigation-scroll{
@@ -53,8 +59,24 @@
 	transition-duration:.4s;
 
 }
+.second-menu-wrapper.is-invisible{
+	display: none;
+}
 @media only screen and (min-width: 760px) {
 	.navigation-wrapper {
 		width:320px;
 	}
+}
+@media only screen and (min-width: 980px) {
+.second-menu-wrapper {
+	right: 26px;
+	top: 26px;
+	bottom: auto;
+	
+}
+.second-menu-wrapper .circle {
+	background: none;
+	box-shadow:none;
+	
+}
 }
