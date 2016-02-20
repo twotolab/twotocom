@@ -1,0 +1,60 @@
+
+/*------------------------------------*\
+    $second-navi
+\*------------------------------------*/
+//general
+.open-side-navi {
+	position:fixed;
+	top:0;
+	bottom:auto;
+	right:0;
+	left:auto;
+	font-size:12px;
+	background-color:$first_color;
+	padding:20px 13px 13px 13px;
+}
+
+.nav {
+	position: fixed;
+    z-index: 1;
+    top: 0;
+    left: auto;
+    right: 0;
+    height: 0;
+    width: 100%;
+    visibility: visible;
+}
+
+.right-navi-is-open .nav{
+	visibility:visible;
+}
+.navigation-wrapper{
+	position: absolute;
+	right: 0;
+    overflow-y: auto;
+    width:100%;
+    min-height: 100vh;
+    backface-visibility: hidden;
+    transform: translateX(100%);
+    transform-origin: right;
+    background-color: $second_background_color;
+    
+  
+}
+
+.navigation-scroll{
+	 overflow: auto;
+	 max-height: 100vh;
+	 background-color: blue;
+}
+.right-navi-is-open .navigation-wrapper{
+	transform: translateX(-0%);
+	transition-property:transform;
+	transition-duration:.4s;
+
+}
+@media only screen and (min-width: 760px) {
+	.navigation-wrapper {
+		width:320px;
+	}
+}
