@@ -29,12 +29,12 @@ mix-blend-mode: luminosity; !!
 }
 
 .first-gradient-bg {
-	background:$gradient_opposite_second_color;
+	background:none;//$first_transparent_dark_color; /* $gradient_opposite_second_color;*/
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#499bea',endColorstr='#e32020',GradientType=1);
 }
 @media only screen and (min-width: 1025px) {
 	.first-gradient-bg {
-	background:$gradient_opposite_color;
+	background:none;//$first_transparent_dark_color;/*$gradient_opposite_color;*/
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#499bea',endColorstr='#e32020',GradientType=1);
 }
 }
@@ -45,5 +45,5 @@ mix-blend-mode: luminosity; !!
 }
 
 .static-bg {
-	mix-blend-mode:multiply;
+	//mix-blend-mode:multiply;
 }

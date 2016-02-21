@@ -82,11 +82,12 @@ $third_color:white; //blue
 .testColor{
 	color: rgba(255, 255, 255, 0.2)
 }
-$first_color:rgba(241, 241, 241, 1); 
-$second_color:#333333; //red
+$first_color:#F9F7F2; //(rgba(241, 241, 241, 1); 
+$second_color:#333; //red
+
 //
 //$third_color:#50E3C2; //blue
-$third_color:red; //blue
+$third_color:#50E3C2; //blue
 
 $highlight_color:$third_color; //
 $highlight_dark_color:darken($third_color,10%); //

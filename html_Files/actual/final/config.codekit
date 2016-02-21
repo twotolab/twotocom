@@ -1751,6 +1751,61 @@
 		"shouldRunBless": 1,
 		"useLibsass": 1
 		},
+	"\/assets\/imgs\/Golf_preview.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 453508,
+		"inputAbbreviatedPath": "\/assets\/imgs\/Golf_preview.png",
+		"outputAbbreviatedPath": "\/assets\/imgs\/Golf_preview.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/imgs\/JB_hand.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 210012,
+		"inputAbbreviatedPath": "\/assets\/imgs\/JB_hand.png",
+		"outputAbbreviatedPath": "\/assets\/imgs\/JB_hand.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/imgs\/JB_preview.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 143485,
+		"inputAbbreviatedPath": "\/assets\/imgs\/JB_preview.png",
+		"outputAbbreviatedPath": "\/assets\/imgs\/JB_preview.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/imgs\/JimBlockApp_1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 360665,
+		"inputAbbreviatedPath": "\/assets\/imgs\/JimBlockApp_1.png",
+		"outputAbbreviatedPath": "\/assets\/imgs\/JimBlockApp_1.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/imgs\/preview_JB.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 189296,
+		"inputAbbreviatedPath": "\/assets\/imgs\/preview_JB.png",
+		"outputAbbreviatedPath": "\/assets\/imgs\/preview_JB.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/imgs\/test_layer.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -1780,6 +1835,17 @@
 		"initialSize": 102456,
 		"inputAbbreviatedPath": "\/assets\/imgs\/test_layer2.png",
 		"outputAbbreviatedPath": "\/assets\/imgs\/test_layer2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/imgs\/XING_preview.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 11719,
+		"inputAbbreviatedPath": "\/assets\/imgs\/XING_preview.png",
+		"outputAbbreviatedPath": "\/assets\/imgs\/XING_preview.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
