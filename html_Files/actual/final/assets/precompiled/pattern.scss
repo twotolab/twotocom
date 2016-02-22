@@ -4,10 +4,11 @@
 	height:100%;
 	width:100%;
 	max-width:$max_widthStage;
-	background-color:rgba(212,153,162,0.1);
+	background-color:rgba(212,153,162,0.05);
 	background-size:25%;
-	background-image:-webkit-linear-gradient(0,transparent 50%,rgba(255,0,171,0.1) 50%);
+	background-image:-webkit-linear-gradient(0,transparent 50%,rgba(255,0,171,0.05) 50%);
 	z-index:1000;
+	display: none;
 }
 
 .pattern-vertical {
@@ -17,8 +18,9 @@
 	width:$max_widthStage;
 	max-height:$max_widthStage;
 	max-width:$max_widthStage;
-	background-color:rgba(212,153,162,0.1);
+	background-color:rgba(212,153,162,0.05);
 	background-size:$half_height_grid;
-	background-image:-webkit-linear-gradient(90deg,transparent 1px,rgba(255,0,171,0.1) 1px);
+	background-image:-webkit-linear-gradient(90deg,transparent 1px,rgba(255,0,171,0.05) 1px);
 	z-index:2002;
+	display: none;
 }

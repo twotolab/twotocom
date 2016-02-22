@@ -89,6 +89,9 @@ body {
   background-color: #333 !important;
   color: #F9F7F2 !important; }
 
+.highlight-color {
+  background-color: #50E3C2; }
+
 .second-color a {
   color: #F9F7F2; }
 
@@ -886,7 +889,6 @@ body {
   left: 0;
   right: 0;
   text-align: center;
-  z-index: 49;
   padding: 0;
   display: -webkit-box;
   display: -webkit-flex;

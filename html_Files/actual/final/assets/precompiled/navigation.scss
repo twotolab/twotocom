@@ -14,14 +14,16 @@ header {
 .logo {
 /*Set font family style as sample*/
 	font-family:twotosymbols!important;
-	color:$first_typo_color;
 	font-size:34px;
 }
+.navigation-left .info, .logo {
+		color: $first_color; /* special case for dark start*/
+	}
 
 .icon-logo-inverted {
 /*Set font family style as sample*/
 	font-family:twotosymbols!important;
-	color:$second_typo_info_color;
+	color:$first_color;
 	font-size:34px;
 	padding-bottom:26px;
 	font-style:normal;
@@ -305,7 +307,11 @@ header {
 	}
 	}
 /* desktop Monitore */
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1024px) {
+	
+	.logo,.navigation-left .info {
+		color:$first_typo_color;	
+	}
 	.nav-quote-bg h2 {
 	font-size:170px;
 	font-size:15vw;
@@ -319,7 +325,7 @@ header {
 		right: 0;
 		left: 0;
 		bottom: auto;
-		top: 26px;
+		top: 19px;
 	}	
 }
 @media only screen and (max-height: 701px) and (min-width: 1025px) {
