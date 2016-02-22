@@ -61,11 +61,20 @@
 	transition-timing-function: cubic-bezier(.23,.52,.25,1);
 
 }
+.right-navi-is-open .second-menu-wrapper{
+	right: 26px;
+	bottom: 26px;	
+	width: 65px;
+	height: 65px;
+}
 .right-navi-is-open .secondary-button .menu-open{
 	display: none;
 }
 .right-navi-is-open .secondary-button .menu-close{
 	display: flex;
+}
+.secondary-button .menu-close{
+	display: none;
 }
 
 .second-menu-wrapper.is-invisible{
@@ -81,11 +90,6 @@
 	right: 26px;
 	top: 19px;
 	bottom: auto;
-	
-}
-.second-menu-wrapper .circle {
-	background: none;
-	box-shadow:none;
 	
 }
 }

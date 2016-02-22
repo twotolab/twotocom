@@ -18,10 +18,6 @@
 .grid-project .grid-center-elt{
 
 	z-index: 50;
-	}
-
-header {
-	z-index:99;
 }
 
 .open-side-navi{
@@ -37,4 +33,6 @@ header {
 .second-menu-wrapper{
 	z-index: 501;
 }
-
+header {
+	z-index:6000;
+}

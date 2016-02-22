@@ -15,25 +15,23 @@ jQuery(document).ready(function($) {
 		if( $('body').hasClass('right-navi-is-open') ) {
 			$( ".secondary-button" ).trigger( "click" );
 			}
-		
-		
-		if( $('.nav-main').hasClass('is-visible') ) {
+	
+		if( $('body').hasClass('nav-is-visible') ) {
+			$('body').removeClass('nav-is-visible');
 			$('.nav-main').removeClass('is-visible');
 			$('.menu-close').removeClass('is-visible');
 			$('.menu-open').removeClass('is-invisible');
 			$('.nav-quote-bg').removeClass('is-visible');
 			$('.nav-bg-quote').removeClass('is-visible');
 			$('.menu-wrapper').removeClass('menu-out');
-			$('.second-menu-wrapper').removeClass('is-invisible');
 		} else{
+			$('body').addClass('nav-is-visible');
 			$('.nav-main').addClass('is-visible');
 			$('.menu-open').addClass('is-invisible');
 			$('.menu-close').addClass('is-visible');
 			$('.nav-quote-bg').addClass('is-visible');
 			$('.nav-bg-quote').addClass('is-visible');
 			$('.menu-wrapper').addClass('menu-out');
-			$('.second-menu-wrapper').addClass('is-invisible');
-			//$('.grid-content').addClass('hide-content');
 		}
 	});
 	

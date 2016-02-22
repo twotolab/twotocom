@@ -30,6 +30,8 @@ body {
 }
 .second-background {
 	background-color:$second_background_color !important;
+}.third-background {
+	background-color:$third_background_color !important;
 }
 
 .lighter-background {
@@ -60,7 +62,6 @@ body {
 	height:65px;
 	border:1px solid $second_circle_color;
 }
-
 /*------------------*/
 
 .underlined {
@@ -78,10 +79,10 @@ body {
 	background-color: $second_typo_line_color;
 	}
 /* mobil */
-.only-mobil,.no-desktop {
+.only-mobil,.no-desktop,no-large-desktop {
 		display:flex !important;
 }
-.no-mobil,.no-mobil-and-tablet,only-mobil-and-tablet {
+.only-desktop,.only-large-desktop,.no-mobil,.no-mobil-and-tablet,only-mobil-and-tablet {
 	display:none !important;
 }
 /* tablet */
@@ -109,6 +110,16 @@ body {
 	}
 	.no-mobil-and-tablet {
 		display:flex !important;
+}
+	.only-desktop {
+				display:flex !important;
 	}
-
+}
+@media only screen and (min-width:$max_widthStage) {
+	.no-large-desktop{
+		display:none !important;
+	}
+	.only-large-desktop {
+				display:flex !important;
+	}
 }

@@ -19,12 +19,19 @@ header {
 .header-left .info, .logo {
 		color: $first_typo_color; // default
 }
+.nav-is-visible .header-left .info, .nav-is-visible .logo {
+		color: $second_typo_color; // default
+}
+.nav-is-visible .second-menu-wrapper {
+		visibility: hidden;
+}
+
 
 .icon-close-inverted {
 /*Set font family style as sample*/
 	font-family:twotosymbols!important;
 	color:$first_color;
-	font-size:20px;
+	font-size:100%;
 	padding-top:19px;
 	padding-left:1px;
 	font-style:normal;
