@@ -36,7 +36,7 @@
 .right-navi-is-open .nav{
 	visibility:visible;
 }
-.navigation-wrapper{
+.second-navigation-Wrapper{
 	position: absolute;
 	right: 0;
     overflow-y: auto;
@@ -45,32 +45,41 @@
     backface-visibility: hidden;
     transform: translateX(100%);
     transform-origin: right;
+    transition-duration:0.3s;
+    transition-timing-function: linear;
     background-color: $second_background_color;
 }
 
-.navigation-scroll{
+.second-navigation-Scroll{
 	 overflow: auto;
 	 max-height: 100vh;
-	 background-color: blue;
 }
-.right-navi-is-open .navigation-wrapper{
+.right-navi-is-open .second-navigation-Wrapper{
 	transform: translateX(-0%);
 	transition-property:transform;
-	transition-duration:.4s;
+	transition-duration:0.6s;
+	transition-timing-function: cubic-bezier(.23,.52,.25,1);
 
 }
+.right-navi-is-open .secondary-button .menu-open{
+	display: none;
+}
+.right-navi-is-open .secondary-button .menu-close{
+	display: flex;
+}
+
 .second-menu-wrapper.is-invisible{
 	display: none;
 }
 @media only screen and (min-width: 760px) {
-	.navigation-wrapper {
+	.second-navigation-Wrapper {
 		width:320px;
 	}
 }
-@media only screen and (min-width: 980px) {
+@media only screen and (min-width: 1024px) {
 .second-menu-wrapper {
 	right: 26px;
-	top: 26px;
+	top: 19px;
 	bottom: auto;
 	
 }

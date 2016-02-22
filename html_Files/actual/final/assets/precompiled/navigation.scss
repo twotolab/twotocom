@@ -16,21 +16,8 @@ header {
 	font-family:twotosymbols!important;
 	font-size:34px;
 }
-.navigation-left .info, .logo {
-		color: $first_color; /* special case for dark start*/
-	}
-
-.icon-logo-inverted {
-/*Set font family style as sample*/
-	font-family:twotosymbols!important;
-	color:$first_color;
-	font-size:34px;
-	padding-bottom:26px;
-	font-style:normal;
-/* cool effect
-    font-style: italic;
-    width: 56px;
-    */
+.header-left .info, .logo {
+		color: $first_typo_color; // default
 }
 
 .icon-close-inverted {
@@ -119,7 +106,7 @@ header {
 	flex-grow:1;
 }
 
-.nav-main .navigation-left {
+.nav-main .header-left {
 	position:fixed;
 	top:0;
 }
@@ -142,13 +129,6 @@ header {
 .nav-main li a:hover h3 {
 	background-color:$second_typo_hover_background_color;
 }
-
-.nav-close {
-	position:absolute;
-	top:0;
-	left:0;
-}
-
 .navi-selected a h3 {
 	color:$second_typo_selected_color;
 }
@@ -190,12 +170,12 @@ header {
 	padding-top:2px;
 }
 
-.navigation-container {
+.header-container {
 	position:relative;
 	height:52px;
 }
 
-.navigation-left {
+.header-left {
 /*flex:2 50%;*/
 	display:flex;
 	flex-direction:row;
@@ -205,7 +185,7 @@ header {
 	padding-bottom:13px;
 }
 
-.navigation-left .info {
+.header-left .info {
 	text-transform:uppercase;
 	padding:0;
 	padding-left:13px;
@@ -231,24 +211,10 @@ header {
 	background-color:transparent;
 }
 
-.nav-close {
-	visibility:hidden;
-}
-
-.nav-close.is-visible {
-	visibility:visible;
-}
-
-.nav-close .info {
-	color:$second_typo_info_color;
-}
-
-
 .menu-button .underlined{
 	display:inline-block;
 	width: inherit;
 }
-/*av-quote-bg*/
 .nav-quote-bg {
 	position:fixed;
 	top:0;
@@ -270,7 +236,7 @@ header {
 	box-sizing:border-box;
 	padding-top:104px;
 	padding-top:17vw;
-	color:transparentize($highlight_color,0.90);
+	color:transparentize($first_color,0.9);
 	//text-shadow:10px 10px 5px transparentize($first_color,0.95);
 	text-transform:uppercase;
 	font-style:italic;
@@ -308,10 +274,6 @@ header {
 	}
 /* desktop Monitore */
 @media only screen and (min-width: 1024px) {
-	
-	.logo,.navigation-left .info {
-		color:$first_typo_color;	
-	}
 	.nav-quote-bg h2 {
 	font-size:170px;
 	font-size:15vw;

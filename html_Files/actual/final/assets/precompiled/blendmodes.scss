@@ -1,4 +1,4 @@
-
+@media only screen and (min-width: 760px) {
 
 .grid-image img.with-blend-mode-effect {
 	//mix-blend-mode:overlay;
@@ -46,4 +46,5 @@ mix-blend-mode: luminosity; !!
 
 .static-bg {
 	//mix-blend-mode:multiply;
+}
 }

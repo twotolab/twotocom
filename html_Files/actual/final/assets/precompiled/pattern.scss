@@ -8,6 +8,7 @@
 	background-size:25%;
 	background-image:-webkit-linear-gradient(0,transparent 50%,rgba(255,0,171,0.05) 50%);
 	z-index:1000;
+	pointer-events: none;
 	display: none;
 }
 
@@ -22,5 +23,6 @@
 	background-size:$half_height_grid;
 	background-image:-webkit-linear-gradient(90deg,transparent 1px,rgba(255,0,171,0.05) 1px);
 	z-index:2002;
+	pointer-events: none;
 	display: none;
 }
