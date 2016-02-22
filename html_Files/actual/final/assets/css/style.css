@@ -1220,44 +1220,44 @@ a.hover-effect:hover .underlined::after, .hover-effect:hover .underlined::after 
     height: 260px; }
   /* line 304, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
   .grid-two-unit {
-    -webkit-box-flex: 4;
-    -webkit-flex: 4 100%;
-        -ms-flex: 4 100%;
-            flex: 4 100%;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 50%;
+        -ms-flex: 1 50%;
+            flex: 1 50%;
     height: 260px; }
-  /* line 309, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
+  /* line 315, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
   .grid-desktop-highlight .grid-two-unit, .grid-desktop-highlight .grid-headline, .grid-desktop-highlight .grid-image {
     height: 312px;
     -webkit-box-flex: 2;
     -webkit-flex: 2 50%;
         -ms-flex: 2 50%;
             flex: 2 50%; }
-  /* line 313, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
+  /* line 319, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
   .grid-desktop-highlight .grid-image img {
     width: 100%;
     height: auto; }
-  /* line 318, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
+  /* line 324, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
   .grid-desktop-highlight-content .grid-image img {
     width: 100%;
     height: 100%; }
-  /* line 323, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
+  /* line 329, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
   .grid-desktop-highlight {
     width: 100%; }
-  /* line 327, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
+  /* line 333, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
   .grid-three-unit {
     -webkit-box-flex: 3;
     -webkit-flex: 3 75%;
         -ms-flex: 3 75%;
             flex: 3 75%;
     height: 260px; }
-  /* line 332, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
+  /* line 338, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
   .grid-four-unit {
     -webkit-box-flex: 4;
     -webkit-flex: 4 100%;
         -ms-flex: 4 100%;
             flex: 4 100%;
     height: 260px; }
-  /* line 337, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
+  /* line 343, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
   .grid-highlight {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1268,19 +1268,19 @@ a.hover-effect:hover .underlined::after, .hover-effect:hover .underlined::after 
     -webkit-flex: 4 100%;
         -ms-flex: 4 100%;
             flex: 4 100%; }
-  /* line 342, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
+  /* line 348, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
   .grid-headline, .grid-image {
     -webkit-box-flex: 2;
     -webkit-flex: 2;
         -ms-flex: 2;
             flex: 2; }
-  /* line 350, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
+  /* line 356, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
   .intro-quote h1 {
     font-size: 55px;
     line-height: 59px;
     font-size: 6.8vw;
     line-height: 7.3vw; }
-  /* line 358, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
+  /* line 364, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
   .grid-desktop-highlight-content {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1295,111 +1295,111 @@ a.hover-effect:hover .underlined::after, .hover-effect:hover .underlined::after 
     -webkit-flex: 4 100%;
         -ms-flex: 4 100%;
             flex: 4 100%; }
-  /* line 363, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
+  /* line 369, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
   .grid-desktop-highlight-content .grid-image img {
     height: auto;
     width: 100%; }
-  /* line 368, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
+  /* line 374, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
   .grid-desktop-highlight-content .grid-info {
     background-color: #fcfbf9; }
-  /* line 372, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
+  /* line 378, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
   .highlight-contact {
     display: none; }
-  /* line 376, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
+  /* line 382, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
   .first-gradient-bg {
     width: 100%;
     height: 234px; }
-  /* line 381, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
+  /* line 387, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
   .second-gradient-bg {
     display: block;
     width: 50%; } }
 
 /* desktop Monitore */
 @media only screen and (min-width: 1024px) {
-  /* line 391, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
+  /* line 397, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
   .grid-content {
     position: relative;
     top: 0; }
-  /* line 395, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
+  /* line 401, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
   .grid-intro img {
     width: 620px;
     height: 624px; }
-  /* line 400, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
+  /* line 406, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
   .grid-desktop-highlight .grid-two-unit, .grid-desktop-highlight .grid-headline, .grid-desktop-highlight .grid-image {
     -webkit-box-flex: 4;
     -webkit-flex: 4 100%;
         -ms-flex: 4 100%;
             flex: 4 100%; }
-  /* line 404, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
+  /* line 410, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
   .grid-desktop-highlight-content .grid-image, .grid-desktop-highlight-content .grid-info {
     -webkit-box-flex: 4;
     -webkit-flex: 4 100%;
         -ms-flex: 4 100%;
             flex: 4 100%;
     height: 260px; }
-  /* line 410, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
+  /* line 416, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
   .grid-desktop-highlight-content .grid-one-unit {
     -webkit-box-flex: 2;
     -webkit-flex: 2 50%;
         -ms-flex: 2 50%;
             flex: 2 50%; }
-  /* line 414, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
+  /* line 420, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
   .grid-desktop-highlight .grid-image img {
     height: 100%;
     width: auto; }
-  /* line 418, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
+  /* line 424, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
   .grid-desktop-highlight-content .grid-image img {
     height: auto;
     width: 100%; }
-  /* line 422, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
+  /* line 428, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
   .grid-one-unit {
     -webkit-box-flex: 1;
     -webkit-flex: 1 25%;
         -ms-flex: 1 25%;
             flex: 1 25%; }
-  /* line 425, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
+  /* line 431, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
   .grid-headline-top, .grid-headline-bottom, .grid-info .grid-center-elt {
     padding-left: 26px;
     padding-right: 26px; }
-  /* line 430, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
+  /* line 436, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
   .grid-two-unit {
     -webkit-box-flex: 2;
     -webkit-flex: 2 50%;
         -ms-flex: 2 50%;
             flex: 2 50%; }
-  /* line 433, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
+  /* line 439, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
   .grid-intro, .grid-desktop-highlight {
     -webkit-box-flex: 2;
     -webkit-flex: 2 50%;
         -ms-flex: 2 50%;
             flex: 2 50%; }
-  /* line 436, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
+  /* line 442, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
   .grid-intro {
     width: 50%;
     height: 572px; }
-  /* line 441, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
+  /* line 447, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
   .highlight-contact {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
-  /* line 444, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
+  /* line 450, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
   .intro-quote h1 {
     font-size: 64px;
     line-height: 68px;
     font-size: 6.2vw;
     line-height: 6.8vw; }
-  /* line 450, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
+  /* line 456, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
   .first-gradient-bg {
     width: 75%;
     height: 624px; } }
 
 @media only screen and (min-width: 1240px) {
-  /* line 457, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
+  /* line 463, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
   .intro-quote h1 {
     font-size: 84px;
     line-height: 90px; }
-  /* line 462, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
+  /* line 468, /Users/patrickdecaix/00_work/00_twotocom/html_Files/actual/final/assets/precompiled/main.scss */
   .static-bg h2 {
     font-size: 260px !important; } }
 

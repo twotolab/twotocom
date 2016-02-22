@@ -302,8 +302,14 @@ a.hover-effect:hover  .underlined::after, .hover-effect:hover  .underlined::afte
 	}
 	
 	.grid-two-unit {
-		flex:4 100%;
+		flex:1 50%;
 		height:260px;
+	}
+	.move-to-pre-last{
+		//order: 1;
+	}
+	.move-to-last{
+		//order: 2;
 	}
 	
 	.grid-desktop-highlight .grid-two-unit,.grid-desktop-highlight .grid-headline,.grid-desktop-highlight .grid-image {
