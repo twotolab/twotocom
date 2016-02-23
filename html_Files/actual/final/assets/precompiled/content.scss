@@ -19,10 +19,8 @@ body {
 	overflow-x: hidden;
 }
 .header{
-	position:relative;
-	margin:0 auto;
+	position: relative;
 	display: inline-block;
-
 }
 .main-content{
 	position:relative;
@@ -32,20 +30,14 @@ body {
 	transition-property:transform;
 	transition-duration:.4s;
 	transition-timing-function:ease;
-	
-	padding: 0px 13px 13px 0;
+}
+.right-navi-is-open .main-content{
+	opacity: 0.1;
 }
 .centered-max-width{
 		margin:0 auto;
 		width: 100%;
 	max-width: $max_widthStage;
-}
-
-.right-navi-is-open .main-content{
-	transform:translateX(-25%);
-	width: 50%;
-    padding-right: 14%;
-    padding-left: 0;
 }
 .headline {
 	text-align: center;
@@ -100,7 +92,6 @@ body {
 @media only screen and (min-width: 760px) {
 		.simple-copy {
 	width: 70%;
-
 }
 	
 }
@@ -168,6 +159,7 @@ body {
 	display: none;
 }
 @media only screen and (min-width: 760px) {
+
 	.grid-space-elt{
 		display: flex;
 	}
@@ -204,12 +196,15 @@ body {
 
 .grid-space-elt{
 	background-color: aqua;
+	box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,1);
 }
 .grid-text-elt{
 	background-color: #188d8d;
+	box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,1);
 }
 .grid-pict-elt{
 	background-color: #8560d3;
+	box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,1);
 
 }
 .test{
@@ -266,10 +261,13 @@ body {
 .grid-image img {
 	width:100%;
 }
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 1024px) {
 	.headline {
 		padding-top: 26px*4;
 	}
+	.header{
+	position: fixed;
+}
 }
 
 

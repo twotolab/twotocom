@@ -36,6 +36,9 @@
 .right-navi-is-open .nav{
 	visibility:visible;
 }
+body.right-navi-is-open {
+	overflow: hidden;
+}
 .second-navigation-Wrapper{
 	position: absolute;
 	right: 0;

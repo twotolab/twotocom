@@ -1,12 +1,8 @@
-header {
-	position:absolute;
-	top:0;
-}
 /*------------------------------------*/
 /* menu Navigation */
 /*------------------------------------*/
 header {
-	position:relative;
+	position:absolute;
 	display:flex;
 	align-items:center;
 }
@@ -25,7 +21,9 @@ header {
 .nav-is-visible .second-menu-wrapper {
 		visibility: hidden;
 }
-
+body.nav-is-visible {
+	overflow: hidden;
+}
 
 .icon-close-inverted {
 /*Set font family style as sample*/
@@ -177,11 +175,6 @@ header {
 	padding-top:2px;
 }
 
-.header-container {
-	position:relative;
-	height:52px;
-}
-
 .header-left {
 /*flex:2 50%;*/
 	display:flex;
@@ -281,6 +274,12 @@ header {
 	}
 /* desktop Monitore */
 @media only screen and (min-width: 1024px) {
+	
+	.header{
+		position: fixed;
+	}
+	
+	
 	.nav-quote-bg h2 {
 	font-size:170px;
 	font-size:15vw;

@@ -7,9 +7,15 @@ body {
 	width:100%;
 	max-width:$max_widthStage;
 }
+
 .header-left .info, .logo {
 		color: $first_color; /* special case for dark start*/
 	}
+	
+.space-under-header{
+	height: 52px;
+	width: 100%;
+}
 .grid-content {
 	position:absolute;
 	top:0;
@@ -19,7 +25,6 @@ body {
 .grid-content.hide-content {
 	display:none;
 }
-
 
 .grid-center-elt .second-color-txt h4,.grid-center-elt .second-color-txt .info {
 	color:$second_typo_color;
@@ -391,7 +396,9 @@ a.hover-effect:hover .underlined::after,.hover-effect:hover .underlined::after {
 
 /* desktop Monitore */
 @media only screen and (min-width: 1024px) {
-
+	header {
+		position: fixed;
+	}
 	.logo,.header-left .info {
 		color:$first_typo_color;	
 	}
