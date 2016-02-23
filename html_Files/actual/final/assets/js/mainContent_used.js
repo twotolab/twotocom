@@ -25,7 +25,6 @@ jQuery(document).ready(function($) {
 			$('.nav-bg-quote').removeClass('is-visible');
 			$('.menu-wrapper').removeClass('menu-out');
 		} else{
-			$('body').animate({scrollTop:0}, '500');
 			$('body').addClass('nav-is-visible');
 			$('.nav-main').addClass('is-visible');
 			$('.menu-open').addClass('is-invisible');

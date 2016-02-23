@@ -35,8 +35,8 @@ body {
 	opacity: 0.1;
 }
 .centered-max-width{
-		margin:0 auto;
-		width: 100%;
+	margin:0 auto;
+	width: 100%;
 	max-width: $max_widthStage;
 }
 .headline {
@@ -46,6 +46,8 @@ body {
 	box-sizing: border-box;
 	padding-top: 26px;
 	max-width: 26px*34;
+	
+	padding-top: 52px;
 	
 }
 .introduction{
@@ -58,6 +60,7 @@ body {
 	margin:0 auto;
 	padding-top: 26px*2;
 	margin-bottom: 26px*2;
+	word-break: break-word;
 
 }
 .simple-copy,.introduction,.headline {

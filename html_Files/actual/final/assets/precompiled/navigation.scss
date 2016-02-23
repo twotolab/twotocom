@@ -1,6 +1,15 @@
 /*------------------------------------*/
 /* menu Navigation */
 /*------------------------------------*/
+body {
+	position: relative;
+	overflow:visible;
+}
+body.nav-is-visible {
+	position: fixed; //for mobile
+	overflow: hidden;
+}
+
 header {
 	position:absolute;
 	display:flex;
@@ -20,9 +29,6 @@ header {
 }
 .nav-is-visible .second-menu-wrapper {
 		visibility: hidden;
-}
-body.nav-is-visible {
-	overflow: hidden;
 }
 
 .icon-close-inverted {
@@ -271,7 +277,10 @@ body.nav-is-visible {
 	font-size:120px;
 	font-size:15vw;
 	}
-	}
+	body.nav-is-visible {
+	position: relative;
+}
+}
 /* desktop Monitore */
 @media only screen and (min-width: 1024px) {
 	
