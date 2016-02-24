@@ -60,6 +60,9 @@ body,a .text-style {
 	font-weight:300;
 	line-height:$height_grid;
 	color:$first_typo_color;
+	text-transform:none;
+	letter-spacing: 0;
+	
 }
 h1 {
 	font-family:'Majesti Banner Bold','heuristicabold',Georgia,serif;
@@ -84,6 +87,8 @@ h3 {
 	font-size:24px;
 	color:$first_typo_color;
 	line-height:29px;
+	//text-transform: uppercase;
+	font-style: italic;
 }
 
 h4 {
@@ -93,7 +98,8 @@ h4 {
 	color:$first_typo_color;
 	line-height:18px;
 	font-style:italic;
-	text-transform:uppercase;
+	//letter-spacing: 1px;
+	//text-transform:uppercase;
 }
 
 h5 {
@@ -110,16 +116,22 @@ h6 {
 	font-size:16px;
 	color:$first_typo_color;
 	line-height:14px;
+	letter-spacing: 1px;
 	text-transform:uppercase;
 }
 
 a {
 	font-family:'Fira Sans',sans-serif;
-	font-weight:500;
-	font-size:16px;
+	font-weight:300;
+	font-size:12px;
 	color:$first_typo_color;
 	line-height:26px;
+	//text-transform:uppercase;
+	//letter-spacing: 1px;
 	text-decoration:none;
+}
+a .underlined{
+	text-transform:uppercase;
 }
 
 q,blockquote {
@@ -146,8 +158,10 @@ sup {
 	font-size:12px;
 	color:$first_typo_color;
 	line-height:14px;
-	font-style:italic;
+	//letter-spacing: 1px;
+	font-style:normal;
 }
+
 .footer-txt, .footer-txt a {
 	font-size:10px;
 	text-transform: none !important;

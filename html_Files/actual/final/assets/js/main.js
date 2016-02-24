@@ -5,9 +5,10 @@ jQuery(document).ready(function($) {
 	
 	// Touch Device Detection
 	if (isTouchDevice() === true) {
-		$('body').addClass('touch');
-		//alert("hello");
+		$('html').addClass('touch');
+		//alert("hello with touch");
 	} else{
+		$('html').addClass('no-touch');
 		//alert("hello no-touch");
 	}
 	// click events
@@ -28,7 +29,6 @@ jQuery(document).ready(function($) {
 	
 		if( $('body').hasClass('nav-is-visible') ) {
 			$('body').removeClass('nav-is-visible');
-			$('.nav-main').removeClass('is-visible');
 			$('.menu-close').removeClass('is-visible');
 			$('.menu-open').removeClass('is-invisible');
 			$('.nav-quote-bg').removeClass('is-visible');
@@ -37,7 +37,7 @@ jQuery(document).ready(function($) {
 		} else{
 			$('body').animate({scrollTop:0}, '500');
 			$('body').addClass('nav-is-visible');
-			$('.nav-main').addClass('is-visible');
+			
 			$('.menu-open').addClass('is-invisible');
 			$('.menu-close').addClass('is-visible');
 			$('.nav-quote-bg').addClass('is-visible');

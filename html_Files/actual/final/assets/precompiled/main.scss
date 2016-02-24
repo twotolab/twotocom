@@ -168,9 +168,7 @@ footer sup {
 	bottom:0;
 }
 
-
-
-.intro-quote h1 {
+.intro-quote h1{
 	padding-bottom:13px;
 	font-size:29px;
 	line-height:31px;
@@ -190,6 +188,14 @@ footer sup {
 
 .info-bottom {
 	padding-top:15px;
+	font-style:italic;
+	letter-spacing: 0;
+	//text-transform: uppercase;
+}
+.grid-project .info-bottom {
+	letter-spacing: 1px;
+	font-style:normal;
+	text-transform: uppercase;
 }
 
 .grid-headline {
@@ -209,12 +215,20 @@ a.hover-effect {
 	box-sizing:border-box;
 	padding:13px 13px 0;
 }
-
+.grid-headline-top h1{
+	font-size: 24px;
+	line-height:34px;
+	padding-top:16px;
+	padding-bottom:27px;
+	text-transform: none;
+}
 .grid-headline-top h3 {
 	padding-top:16px;
 	padding-bottom:27px;
 }
-
+.grid-headline-top .info{
+	letter-spacing: 1px;
+}
 .grid-headline-bottom {
 	box-sizing:border-box;
 	padding-bottom:19px;
@@ -248,13 +262,13 @@ a.hover-effect {
 	flex-direction:row;
 }
 
-.grid-headline-bottom .underlined,.grid-center-elt .underlined,.menu-button .underlined {
+.grid-headline-bottom .underlined,.grid-center-elt .underlined {
 	display:inline-block;
 	width:inherit;
 }
 
 a.hover-effect:hover .underlined::after,.hover-effect:hover .underlined::after {
-	max-width:inherit;
+	max-width:100%;
 }
 
 .inverted-effect:hover .inverted-target-effect {

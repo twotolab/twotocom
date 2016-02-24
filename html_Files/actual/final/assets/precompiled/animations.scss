@@ -1,41 +1,38 @@
-
-	.nav-main {
-		transform:translateY(-120%);
+.nav-is-visible .nav-main{
+		transform:translateY(0);
+		transition-timing-function:cubic-bezier(.55,.54,.19,1);
+		}
+.nav-main {
+		transform:translateY(-100%);
 		//oppositeonmobiltransition-property:transform;
 		transition-duration:.6s;
 		transition-timing-function:cubic-bezier(.81,0,.5,.5);
 	}
-	
-	.nav-main.is-visible {
-		transform:translateY(0);
-		transition-timing-function:cubic-bezier(.55,.54,.19,1);
-	}
-	
-	.nav-quote-bg {
-		transform:translateY(-100%);
-		transition-property:transform;
-	}
-	
-	.nav-quote-bg.is-visible {
+.touch, .no-touch {	
+///////// with touch
+	.nav-is-visible .nav-quote-bg{
 		transform:translateX(0);
 		transition-duration:1.2s;
 		transition-timing-function:cubic-bezier(0,.55,.49,.99);
 	}
 	
+	.header-left .info,.logo {
+		transition-delay:.6s;
+	}	
 	.nav-is-visible .header-left .info,.nav-is-visible .logo {
 		color:$second_typo_color;
+		transition-delay:0s;
 		//defaulttransition:all .5s ease;
-		transition-delay:.6s;
 	}
 	
 	.nav-is-visible .second-menu-wrapper {
 		opacity:0;
-		transition:all .5s ease;
 	}
 	
 	.second-menu-wrapper {
 		opacity:1;
-		transition:all .5s ease;
+		transition:all .3s ease;
+		transition-delay:.6s;
 	}
 	
 	.right-navi-is-open .main-content {
@@ -47,8 +44,13 @@
 		opacity:1;
 		transition:all .5s ease;
 	}
-	
-.no-touch {	 // mobile touch detection via javascript
+
+}
+
+.no-touch {	 
+
+	// mobile touch detection via javascript
+		
 	@media only screen and (min-width: 760px) {
 		
 		.underlined:after {
@@ -155,12 +157,6 @@
 			transform:scaleX(1);
 			transition:transform .4s;
 			transition-timing-function:ease-in-out;
-		}
-	}
-	
-	@media only screen and (min-width: 1025px) {
-		.nav-main {
-			transform:translateY(100%);
 		}
 	}
 }

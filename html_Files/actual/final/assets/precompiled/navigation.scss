@@ -172,13 +172,13 @@ header {
 	display:none;
 }
 
-.menu-close.is-visible {
+.nav-is-visible .menu-close{
 	display:flex;
 }
 
-.menu-open.is-invisible {
-	display:none;
-}
+.nav-is-visible .menu-open{
+	display: none;
+	}
 
 .menu-open a {
 	align-self:center;
@@ -202,8 +202,9 @@ header {
 .header-left .info {
 	text-transform:uppercase;
 	padding:0;
-	padding-left:13px;
+	padding-left:8px;
 	padding-top:6px;
+	letter-spacing: 1px;
 }
 
 .navigation-elts {
@@ -264,7 +265,7 @@ header {
 	visibility:hidden;
 }
 
-.nav-quote-bg.is-visible {
+.nav-is-visible .nav-quote-bg {
 	visibility:visible;
 }
 
