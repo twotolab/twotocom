@@ -1,6 +1,16 @@
+function isTouchDevice() {
+    return true === ("ontouchstart" in window || window.DocumentTouch && document instanceof DocumentTouch);
+}
 jQuery(document).ready(function($) {
-	//	var isLateralNavAnimating = false;
-	//open/close lateral navigation
+	
+	// Touch Device Detection
+	if (isTouchDevice() === true) {
+		$('body').addClass('touch');
+		//alert("hello");
+	} else{
+		//alert("hello no-touch");
+	}
+	// click events
 	$('.secondary-button').on('click', function(event) {
 		event.preventDefault();
 		if( $('body').hasClass('right-navi-is-open') ) {

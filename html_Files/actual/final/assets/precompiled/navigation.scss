@@ -2,12 +2,13 @@
 /* menu Navigation */
 /*------------------------------------*/
 body {
-	position: relative;
+	position:relative;
 	overflow:visible;
 }
+
 body.nav-is-visible {
-	position: fixed; //for mobile
-	overflow: hidden;
+	position:fixed;
+	//formobileoverflow:hidden;
 }
 
 header {
@@ -21,14 +22,17 @@ header {
 	font-family:twotosymbols!important;
 	font-size:34px;
 }
-.header-left .info, .logo {
-		color: $first_typo_color; // default
+
+.header-left .info,.logo {
+	color:$first_typo_color;
 }
-.nav-is-visible .header-left .info, .nav-is-visible .logo {
-		color: $second_typo_color; // default
+
+.nav-is-visible .header-left .info,.nav-is-visible .logo {
+	color:$second_typo_color;
 }
+
 .nav-is-visible .second-menu-wrapper {
-		visibility: hidden;
+	visibility:hidden;
 }
 
 .icon-close-inverted {
@@ -45,13 +49,15 @@ header {
     width: 56px;
     */
 }
+
 .menu-wrapper {
-	position: fixed;
-	right: 26px;
-	bottom: 26px;	
-	width: 65px;
-	height: 65px;
+	position:fixed;
+	right:26px;
+	bottom:26px;
+	width:65px;
+	height:65px;
 }
+
 
 .nav-main {
 /* by default it's hidden - on top of the viewport */
@@ -61,13 +67,14 @@ header {
 	height:100%;
 	width:100%;
 	backface-visibility:hidden;
-	background:transparentize($second_color, 0.02);
+	background:transparentize($second_color,0.02);
 	overflow:auto;
 	text-align:center;
 /* this fixes the buggy scrolling on webkit browsers - mobile devices only - when overflow property is applied */
+	overflow-y:scroll;
+/* has to be scroll, not auto */
 	-webkit-overflow-scrolling:touch;
 }
-
 .nav span {
 	background-color:transparent;
 	font-size:12px;
@@ -140,6 +147,7 @@ header {
 .nav-main li a:hover h3 {
 	background-color:$second_typo_hover_background_color;
 }
+
 .navi-selected a h3 {
 	color:$second_typo_selected_color;
 }
@@ -217,21 +225,23 @@ header {
 	background-color:transparent;
 }
 
-.menu-button .underlined{
+.menu-button .underlined {
 	display:inline-block;
-	width: inherit;
+	width:inherit;
 }
+
 .nav-quote-bg {
 	position:fixed;
 	top:0;
 	left:0;
 	right:0;
-	width:0%;
-	height:0%;
+	width:0;
+	height:0;
 	line-height:20vw;
 	text-align:center;
-	background: none;
+	background:none;
 }
+
 .nav-quote-bg h2 {
 	font-family:'heuristicabold',Georgia,serif;
 	font-family:'Fira Sans',sans-serif;
@@ -256,10 +266,7 @@ header {
 
 .nav-quote-bg.is-visible {
 	visibility:visible;
-
 }
-
-
 
 /*effects - without animations*/
 /*------------------------------------*/
@@ -271,40 +278,48 @@ header {
 	left:0;
 	background-color:$highlight_color;
 }
+
 /* Tabletts */
 @media only screen and (min-width: 760px) {
 	.nav-quote-bg h2 {
-	font-size:120px;
-	font-size:15vw;
+		font-size:120px;
+		font-size:15vw;
+	}
+	
+}
+/* mobil and Tablets only*/ 
+@media only screen and (min-width: 1025px) {
+
+}
+
+/* desktop Monitore */
+@media only screen and (min-width: 1025px) {
+	.header {
+		position:fixed;
 	}
 	body.nav-is-visible {
-	position: relative;
-}
-}
-/* desktop Monitore */
-@media only screen and (min-width: 1024px) {
-	
-	.header{
-		position: fixed;
+		position:relative;
 	}
-	
 	
 	.nav-quote-bg h2 {
-	font-size:170px;
-	font-size:15vw;
+		font-size:170px;
+		font-size:15vw;
 		padding-top:13vw;
 	}
+	
 	.nav-intro {
 		visibility:hidden;
 	}
+	
 	.menu-wrapper {
-		margin: auto;
-		right: 0;
-		left: 0;
-		bottom: auto;
-		top: 19px;
-	}	
+		margin:auto;
+		right:0;
+		left:0;
+		bottom:auto;
+		top:19px;
+	}
 }
+
 @media only screen and (max-height: 701px) and (min-width: 1025px) {
 	.menu-out {
 		left:auto;
@@ -317,7 +332,7 @@ header {
 		visibility:visible;
 	}
 }
-@media only screen and (min-width: $max_widthStage) {
-	
 
+@media only screen and (min-width: max_widthStage) {
+	
 }

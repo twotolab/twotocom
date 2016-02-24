@@ -77,14 +77,14 @@ body {
 	height: 260px;
 	background-color: green;
 }
-.half-left-width-wrapper{
+.half-left-width-wrapper,.half-right-width-wrapper{
 
 	position:relative;
 	width: 100%;
 	height: 460px;
 	background-color: yellow;
 }
-.half-left-width-text{
+.half-left-width-text,.half-right-width-text{
 
 	position:relative;
 	width: 50%;
@@ -92,6 +92,14 @@ body {
 	background-color: blue;
 	
 }
+.half-right-width-text{
+	position: absolute;
+	right: 0;
+	left: auto;
+	background-color: red;
+	
+}
+
 @media only screen and (min-width: 760px) {
 		.simple-copy {
 	width: 70%;
@@ -106,9 +114,20 @@ body {
 }
 
 @media only screen and (min-width: 760px) {
+	.half-right-width-text{
+
+	position:absolute;
+	right: -70%;
+	width: 70%;
+	}
+	.half-right-width-wrapper{
+	right:0;
+	width: 50%;
+}
 	.half-left-width-text{
 
 	position:absolute;
+	right: auto;
 	left: -70%;
 	width: 70%;
 	}
@@ -122,12 +141,22 @@ body {
 
 	left: -50%;
 	width: 50%;
+	}	
+	.half-right-width-text{
+
+	right: -50%;
+	width: 50%;
 	}
 }
 @media only screen and (min-width: 1240px) {
 	.half-left-width-text{
 
 	left: -310px;
+	width: 310px;
+	}
+	.half-right-width-text{
+
+	right: -310px;
 	width: 310px;
 	}
 }
@@ -138,8 +167,8 @@ body {
 	margin-right: auto;
 	width: 100%;
 	
-	height: 260px;
-	background-color: yellow;	
+	//height: 260px;
+	//background-color: yellow;	
 	
 	display: flex;
 	display: row;
@@ -151,7 +180,7 @@ body {
 	
 }
 .grid-four-wrapper .grid-one-unit,.grid-four-wrapper .grid-two-unit,grid-four-wrapper .grid-space-elt{
-	height: inherit;
+	height: 260px;
 	display: inline-block;
 	flex-grow: 1;
 }
@@ -178,6 +207,15 @@ body {
 	.grid-four-wrapper .grid-one-with-space-unit{
 		flex: 1 50%;
 	}
+	.grid-four-wrapper .grid-two-unit.grid-pict-elt{
+	width: 70%;
+	}
+	.grid-four-wrapper .grid-one-unit.grid-pict-elt{
+	width: 35%;
+	}
+	.grid-four-wrapper .grid-one-with-space-unit.grid-pict-elt{
+	width: 50%;
+	}
 }	
 @media only screen and (min-width: 1024px) {
 	.grid-space-elt{
@@ -195,6 +233,15 @@ body {
 	.grid-four-wrapper .grid-one-with-space-unit{
 		flex: 1 50%;
 	}
+	.grid-four-wrapper .grid-one-unit.grid-pict-elt{
+	width: 25%;
+	}
+	.grid-four-wrapper .grid-two-unit.grid-pict-elt{
+	width: 50%;
+	}
+	.grid-four-wrapper .grid-one-with-space-unit.grid-pict-elt{
+	width: 50%;
+	}
 }	
 
 .grid-space-elt{
@@ -202,21 +249,73 @@ body {
 	box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,1);
 }
 .grid-text-elt{
-	background-color: #188d8d;
+	background-color: #8c1818;
 	box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,1);
 }
 .grid-pict-elt{
-	background-color: #8560d3;
+	background-color: #50f150;
+	position: relative;
+/*	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	width: 260px;
+	height:260px;
+	*/
+	width: 100%; // default full width mobil
+	height: 260px;
 	box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,1);
+	
+	
+}
+.centered-image {
+	position: relative;
+    display: flex;
+    justify-content: center;
+    /* align horizontal */
+    align-items: center;
+    /* align vertical */
+    //width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: black;
 
 }
-.test{
-	width: 2000px;
-	height: 500px;
-	background-color: gray;
+.left-image {
+	// for mobil default
+	top: 0;
+	position: absolute;
+	//
+    display: flex;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+
+}
+.right-image {
+	// for mobil default
+	top: 0;
+	position: absolute;
+	//
+	right: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    width: auto;
+    overflow: hidden;
+
+}
+.right-image img{
+	}
+
+.grid-pict-elt img{
+	position: relative;
+	 //z-index: 6000;
 }
 //specific elts
-
+/*
 .grid-elt {
 	position:relative;
 	display:flex;
@@ -264,6 +363,7 @@ body {
 .grid-image img {
 	width:100%;
 }
+*/
 @media only screen and (min-width: 1024px) {
 	.headline {
 		padding-top: 26px*4;

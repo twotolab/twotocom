@@ -1757,20 +1757,20 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 210012,
+		"initialSize": 289198,
 		"inputAbbreviatedPath": "\/assets\/imgs\/JB_hand.png",
 		"outputAbbreviatedPath": "\/assets\/imgs\/JB_hand.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/imgs\/JB_preview.png": {
-		"fileType": 32768,
+	"\/assets\/imgs\/JB_preview.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 143485,
-		"inputAbbreviatedPath": "\/assets\/imgs\/JB_preview.png",
-		"outputAbbreviatedPath": "\/assets\/imgs\/JB_preview.png",
+		"initialSize": 90984,
+		"inputAbbreviatedPath": "\/assets\/imgs\/JB_preview.jpg",
+		"outputAbbreviatedPath": "\/assets\/imgs\/JB_preview.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -2058,7 +2058,7 @@
 		},
 	"\/assets\/precompiled\/style.scss": {
 		"createSourceMap": 0,
-		"debugStyle": 1,
+		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 0,
