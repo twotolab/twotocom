@@ -193,7 +193,6 @@ footer sup {
 	//text-transform: uppercase;
 }
 .grid-project .info-bottom {
-	letter-spacing: 1px;
 	font-style:normal;
 	text-transform: uppercase;
 }
@@ -225,9 +224,6 @@ a.hover-effect {
 .grid-headline-top h3 {
 	padding-top:16px;
 	padding-bottom:27px;
-}
-.grid-headline-top .info{
-	letter-spacing: 1px;
 }
 .grid-headline-bottom {
 	box-sizing:border-box;
@@ -265,10 +261,6 @@ a.hover-effect {
 .grid-headline-bottom .underlined,.grid-center-elt .underlined {
 	display:inline-block;
 	width:inherit;
-}
-
-a.hover-effect:hover .underlined::after,.hover-effect:hover .underlined::after {
-	max-width:100%;
 }
 
 .inverted-effect:hover .inverted-target-effect {

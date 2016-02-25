@@ -1,12 +1,11 @@
 /*-----------------*/
 /* index*/
 /*-----------------*/
-
-.nav-hover-bg-effect {
-	z-index:-1;
-}
 .static-bg {
 	z-index:0;
+}
+.nav {
+	z-index:1;
 }
 
 .light-shadow {

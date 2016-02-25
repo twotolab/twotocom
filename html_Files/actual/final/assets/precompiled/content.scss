@@ -52,7 +52,7 @@ body {
 	
 }
 .headline .info {
-	margin-bottom: 26px;
+	margin-top: 26px;
 }
 .introduction{
 	text-align: center;
@@ -66,6 +66,9 @@ body {
 	margin-bottom: 26px*2;
 	word-break: break-word;
 
+}
+.simple-copy .bold {
+	margin-bottom: 13px;
 }
 .underlined-big {
 	width: 100%;
@@ -82,118 +85,69 @@ body {
 .simple-copy h3{
 	margin-bottom: 26px;
 	}
-.simple-copy,.introduction,.headline {
+.simple-copy,.introduction,.headline,.grid-text-elt,.half-left-width-text,.half-right-width-text {
+
 	padding-left: 13px;
 	padding-right: 13px;
+	box-sizing:border-box;
 }
+.grid-text-elt,.half-left-width-text,.half-right-width-text {
 
+	padding-top:13px;
+}
 // Grid text + Image combinations
 .full-Width-wrapper{
 
 	position:relative;
 	margin:0 auto;
 	width: 100%;
-	height: 260px;
-	background-color: green;
+	height: 260px; // deafault
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
 }
+.full-Width-wrapper img{
+	height: inherit;
+	align-self: center;
+	}
 .half-left-width-wrapper,.half-right-width-wrapper{
 
 	position:relative;
 	width: 100%;
 	height: 460px;
-	background-color: yellow;
 }
 .half-left-width-text,.half-right-width-text{
 
 	position:relative;
-	width: 50%;
+	width: 100%;
 	height: 260px;
-	background-color: blue;
 	
+	padding-bottom: 26px;
+	
+}
+.extra-top-padding{
+	padding-top: 13px;
 }
 .half-right-width-text{
 	position: absolute;
 	right: 0;
 	left: auto;
-	background-color: red;
 	
 }
 
-@media only screen and (min-width: 760px) {
-		.simple-copy {
-	width: 70%;
-}
-	
-}
-@media only screen and (min-width: 1024px) {
-	.simple-copy {
-	width: 50%;
-
-}
-}
-
-@media only screen and (min-width: 760px) {
-	.half-right-width-text{
-
-	position:absolute;
-	right: -70%;
-	width: 70%;
-	}
-	.half-right-width-wrapper{
-	right:0;
-	width: 50%;
-}
-	.half-left-width-text{
-
-	position:absolute;
-	right: auto;
-	left: -70%;
-	width: 70%;
-	}
-	.half-left-width-wrapper{
-	left:50%;
-	width: 50%;
-}
-}
-@media only screen and (min-width: 1024px) {
-	.half-left-width-text{
-
-	left: -50%;
-	width: 50%;
-	}	
-	.half-right-width-text{
-
-	right: -50%;
-	width: 50%;
-	}
-}
-@media only screen and (min-width: 1240px) {
-	.half-left-width-text{
-
-	left: -310px;
-	width: 310px;
-	}
-	.half-right-width-text{
-
-	right: -310px;
-	width: 310px;
-	}
-}
-
-
+//////////////////////
 .grid-four-wrapper{
 	margin-left: auto;
 	margin-right: auto;
 	width: 100%;
-	
-	//height: 260px;
-	//background-color: yellow;	
 	
 	display: flex;
 	display: row;
 	justify-content: flex-start;
 	flex-wrap: wrap;
 	
+	overflow: hidden;
+	align-items: flex-start;
 	// 25 / 25 / 25 /25 diplay desktop
 	// 15 / 35 / 35 /15 diplay tablet
 	
@@ -265,30 +219,13 @@ body {
 }	
 
 .grid-space-elt{
-	background-color: aqua;
-	box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,1);
-}
-.grid-text-elt{
-	padding-top:26px;
-	padding-bottom: 26px;
-	background-color: #8c1818;
-	box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,1);
+	// should be empty
 }
 .grid-pict-elt{
-	background-color: #50f150;
 	position: relative;
-/*	
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	overflow: hidden;
-	width: 260px;
-	height:260px;
-	*/
+
 	width: 100%; // default full width mobil
 	height: 260px;
-	box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,1);
-	
 	
 }
 .centered-image {
@@ -300,7 +237,7 @@ body {
     /* align vertical */
     //width: 100%;
     width: auto;
-    height: 260px;
+    height: inherit;
     overflow: hidden;
 
 }
@@ -333,21 +270,116 @@ body {
     overflow: hidden;
 
 }
-.right-image img{
-	}
 
 .grid-pict-elt img{
 	position: relative;
-	 //z-index: 6000;
+}
+.grid-text-elt{
+	//padding-top:26px;
+	padding-bottom: 26px;
+	padding-right: 26px;
+	height: auto !important;
+}
+@media only screen and (min-width: 760px) {
+	
+	.right-image,.left-image{
+	 align-items: flex-start;
+	}
+	.half-right-width-text{
+
+		position:absolute;
+		right: -70%;
+		width: 70%;
+	}
+	.half-right-width-wrapper{
+		right:0;
+		width: 50%;
+}
+	.half-left-width-text{
+
+		position:absolute;
+		right: auto;
+		left: -70%;
+		width: 70%;
+	}
+	.half-left-width-wrapper{
+	left:50%;
+	width: 50%;
+}
+
+	.half-left-width-text{
+	padding-right: 26px;
+	padding-left: 0;
+	}
+	///////
+
+	.simple-copy {
+	width: 70%;
+}
+	.simple-copy,.introduction,.headline,.grid-text-elt {
+
+	padding-left: 0;
+	padding-right: 0;
+}
+	.grid-text-elt.rightElt,.half-right-width-text{
+	padding-left: 13px;
+}
+	.grid-text-elt.rightElt,.half-right-width-text{
+	padding-left: 26px;
+	}
+	.grid-text-elt,.half-left-width-text,.half-right-width-text {
+
+	padding-top:0;
+	}
+	.extra-top-padding{
+	padding-top: 26px;
+}
 }
 
 @media only screen and (min-width: 1024px) {
-	.headline {
+	.simple-copy {
+	width: 50%;
+
+}
+}
+
+@media only screen and (min-width: 1024px) {
+		.grid-text-elt,.half-left-width-text,.half-right-width-text {
+
+	padding-top:0;
+}
+	.extra-top-padding{
+	padding-top: 26px;
+}
+	.half-left-width-text{
+
+	left: -50%;
+	width: 50%;
+	}	
+	.half-right-width-text{
+
+	right: -50%;
+	width: 50%;
+	}
+		.headline {
 		padding-top: 26px*4;
 	}
 	.header{
 	position: fixed;
 }
+
+}
+@media only screen and (min-width: 1240px) {
+	.half-left-width-text{
+
+	left: -310px;
+	width: 310px;
+	}
+	.half-right-width-text{
+
+	right: -310px;
+	width: 310px;
+	}
 }
 
 

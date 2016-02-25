@@ -83,7 +83,7 @@ header {
 .nav-main {
 	display:flex;
 	flex-direction:column;
-	justify-content:flex-end;
+	justify-content:center;
 }
 
 .nav-main li {
@@ -204,7 +204,6 @@ header {
 	padding:0;
 	padding-left:8px;
 	padding-top:6px;
-	letter-spacing: 1px;
 }
 
 .navigation-elts {
@@ -277,7 +276,13 @@ header {
 	position:absolute;
 	top:0;
 	left:0;
-	background-color:$highlight_color;
+	background-color:$highlight_transparent_color;
+}
+a.hover-effect .underlined::after,.hover-effect .underlined::after {
+	max-width:100%;
+}
+a.hover-effect:hover .underlined::after,.hover-effect:hover .underlined::after {
+	max-width:100%;
 }
 
 /* Tabletts */
@@ -319,6 +324,10 @@ header {
 		bottom:auto;
 		top:19px;
 	}
+	.nav-main {
+		//justify-content:center;
+}
+
 }
 
 @media only screen and (max-height: 701px) and (min-width: 1025px) {
