@@ -157,7 +157,7 @@ footer sup {
 	flex-direction:row;
 	justify-content:center;
 	align-items: center;
-	background-color:$gradient_first_color;
+	//background-color:$gradient_first_color;
 	display:inline-block;
 
 }
@@ -189,7 +189,7 @@ footer sup {
 .info-bottom {
 	padding-top:15px;
 	font-style:italic;
-	letter-spacing: 0;
+	letter-spacing: 1px;
 	//text-transform: uppercase;
 }
 .grid-project .info-bottom {

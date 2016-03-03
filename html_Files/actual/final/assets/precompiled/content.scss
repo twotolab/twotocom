@@ -96,20 +96,39 @@ body {
 	padding-top:13px;
 }
 // Grid text + Image combinations
+
 .full-Width-wrapper{
 
 	position:relative;
-	margin:0 auto;
-	width: 100%;
-	height: 260px; // deafault
+	//margin:0 auto;
+	margin:0;
+	padding:0;
+	
+	height: 260px; // default
+	width: auto;
 	overflow: hidden;
+	
 	display: flex;
 	justify-content: center;
+	align-items: flex-start;
 }
-.full-Width-wrapper img{
+.full-width-image{
+	position: relative;
+	width: 0;
 	height: inherit;
-	align-self: center;
-	}
+    background-color: black;
+}
+.full-width-image img {
+	position: absolute;
+	transform: 	translate(-50%,0);
+	height: inherit;
+}
+
+/////////////////
+/////////////////
+/////////////////
+/////////////////
+
 .half-left-width-wrapper,.half-right-width-wrapper{
 
 	position:relative;
@@ -121,7 +140,6 @@ body {
 	position:relative;
 	width: 100%;
 	height: 260px;
-	
 	padding-bottom: 26px;
 	
 }
@@ -281,7 +299,7 @@ body {
 	height: auto !important;
 }
 @media only screen and (min-width: 760px) {
-	
+
 	.right-image,.left-image{
 	 align-items: flex-start;
 	}

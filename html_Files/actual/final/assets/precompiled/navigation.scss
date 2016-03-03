@@ -279,7 +279,7 @@ header {
 	background-color:$highlight_transparent_color;
 }
 a.hover-effect .underlined::after,.hover-effect .underlined::after {
-	max-width:100%;
+	max-width:0;
 }
 a.hover-effect:hover .underlined::after,.hover-effect:hover .underlined::after {
 	max-width:100%;

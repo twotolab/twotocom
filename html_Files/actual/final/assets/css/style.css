@@ -38,10 +38,16 @@ body {
 .second-background {
   background-color: #333 !important; }
 
+.transparent-second-background {
+  background-color: rgba(26, 26, 26, 0.7) !important; }
+
 .third-background {
   background-color: #50E3C2 !important; }
 
 .lighter-background {
+  background-color: #fcfbf9; }
+
+.test-background {
   background-color: #fcfbf9; }
 
 /*-------------------*/
@@ -53,6 +59,9 @@ body {
 .light-shadow {
   box-shadow: 0px 1px 10px 0 rgba(0, 0, 0, 0.1); }
 
+.heavy-shadow {
+  box-shadow: 0px 1px 60px rgba(0, 0, 0, 0.1); }
+
 .circle, .dark-circle {
   border-radius: 50%;
   width: 65px;
@@ -63,6 +72,11 @@ body {
   width: 65px;
   height: 65px;
   box-shadow: inset 0 0 1px rgba(249, 247, 242, 0.7); }
+
+.transparent-dark-circle {
+  border-radius: 50%;
+  width: 65px;
+  height: 65px; }
 
 /*--------images----------*/
 .with-large-image, .with-medium-image {
@@ -658,7 +672,7 @@ header {
   background-color: rgba(80, 227, 194, 0.5); }
 
 a.hover-effect .underlined::after, .hover-effect .underlined::after {
-  max-width: 100%; }
+  max-width: 0; }
 
 a.hover-effect:hover .underlined::after, .hover-effect:hover .underlined::after {
   max-width: 100%; }
@@ -879,7 +893,6 @@ footer sup {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: rgba(80, 227, 194, 0.6);
   display: inline-block; }
 
 .grid-intro img {
@@ -906,7 +919,7 @@ footer sup {
 .info-bottom {
   padding-top: 15px;
   font-style: italic;
-  letter-spacing: 0; }
+  letter-spacing: 1px; }
 
 .grid-project .info-bottom {
   font-style: normal;
