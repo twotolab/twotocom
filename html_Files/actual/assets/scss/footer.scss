@@ -1,0 +1,33 @@
+.footer {
+	position:relative;
+	width:inherit;
+	padding:$grid_halfHeight_unit;
+	box-sizing:border-box;
+	display:flex;
+}
+
+.footer-left,.footer-middle {
+	display:flex;
+	align-items:center;
+	flex: 1;	
+}
+.footer-middle {
+	display: flex;
+	justify-content: space-between;
+	}
+/* default - mobile */
+.footer-middle,.footer-right {
+	display:none;
+}
+
+/* tablet */
+@media only screen and (min-width: $media_tablet_width) {
+	
+}
+
+/* desktop Monitore */
+@media only screen and (min-width: $media_desktop_width) {
+	.footer-middle,.footer-right {
+		display:flex;
+	}
+}

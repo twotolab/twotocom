@@ -1,0 +1,36 @@
+.header {
+	position:relative;
+	width:inherit;
+	padding:$grid_halfHeight_unit;
+	box-sizing:border-box;
+	display:flex;
+}
+
+.header-left,.header-middle {
+	display:flex;
+	align-items:center;
+	flex: 1;	
+}
+.header-middle {
+	display: flex;
+	justify-content: space-between;
+	}
+.header-left .header-info {
+	padding-left:$grid_halfHeight_unit;
+}
+/* default - mobile */
+.header-middle,.header-right {
+	display:none;
+}
+
+/* tablet */
+@media only screen and (min-width: $media_tablet_width) {
+	
+}
+
+/* desktop Monitore */
+@media only screen and (min-width: $media_desktop_width) {
+	.header-middle,.header-right {
+		display:flex;
+	}
+}

@@ -1,0 +1,33 @@
+/*------------------------------------*\
+    $Sizes
+\*------------------------------------*/
+
+$grid_height_unit:26px;
+$grid_halfHeight_unit:$grid_height_unit/2;
+
+/* mobil */
+//default_width!!!!!!!
+/* tablets */
+$media_tablet_width: 768px;
+/* desktop Monitore */
+$media_desktop_width: 1024px;
+/* large desktop Monitore */
+$media_large_desktop_width: 1240px;
+/* HD desktop Monitore */
+$media_HD_desktop_width: 1440px;
+
+
+/*------------------------------------*\
+    $colors
+\*------------------------------------*/
+// definition
+$first_color:#F9F7F2; 
+$second_color:#333;
+$third_color:#50E3C2;
+// global use
+// bg
+$first_background_color:$first_color;
+$second_background_color:$second_color;
+// typo
+$first_typo_color: $second_color;
+$second_typo_color: $first_color;

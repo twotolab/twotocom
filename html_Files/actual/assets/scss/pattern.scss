@@ -1,0 +1,27 @@
+.pattern-horizontal {
+	position:fixed;
+	height:100%;
+	width:100%;
+	max-width:$media_large_desktop_width;
+	background-color:rgba(212,153,162,0.05);
+	background-size:25%;
+	background-image:-webkit-linear-gradient(0,transparent 50%,rgba(255,0,171,0.05) 50%);
+	z-index:1000;
+	pointer-events: none;
+	display: none;
+}
+
+.pattern-vertical {
+	position:absolute;
+	top:0;
+	height:$media_large_desktop_width;
+	width:$media_large_desktop_width;
+	max-height:$media_large_desktop_width;
+	max-width:$media_large_desktop_width;
+	background-color:rgba(212,153,162,0.05);
+	background-size:$grid_halfHeight_unit;
+	background-image:-webkit-linear-gradient(90deg,transparent 1px,rgba(255,0,171,0.05) 1px);
+	z-index:2002;
+	pointer-events: none;
+	display: none;
+}
