@@ -88,6 +88,21 @@ body {
   .with-medium-image {
     height: 520px !important; } }
 
+/*--------Grid-sizes----------*/
+.one-unit-height, two-unit-height {
+  height: 130px !important; }
+
+.one-desktop-highlight-unit-height {
+  height: 260px !important; }
+
+@media only screen and (min-width: 760px) {
+  .two-unit-height {
+    height: 260px !important; } }
+
+@media only screen and (min-width: 1025px) {
+  .one-desktop-highlight-unit-height {
+    height: 650px !important; } }
+
 /*------------------*/
 .underlined::after {
   content: '';
@@ -97,6 +112,26 @@ body {
   width: 100%;
   margin: 0;
   background-color: #333; }
+
+.big-underlined::after {
+  content: '';
+  display: block;
+  height: 8px;
+  max-width: 52px;
+  width: 100%;
+  margin-top: 13px;
+  background-color: #333; }
+
+.grid-headline .big-underlined {
+  line-height: 34px;
+  margin-top: 26px;
+  font-family: 'Fira Sans';
+  font-weight: 900;
+  font-style: italic;
+  margin-bottom: 26px;
+  font-style: normal;
+  letter-spacing: 0px;
+  text-transform: uppercase !important; }
 
 .underlined {
   width: 100%; }
@@ -1102,7 +1137,7 @@ a.hover-effect {
             flex: 1 50%;
     height: 260px; }
   .grid-desktop-highlight .grid-two-unit, .grid-desktop-highlight .grid-headline, .grid-desktop-highlight .grid-image, .grid-desktop-highlight .centered-image {
-    height: 312px;
+    height: 260px;
     -webkit-box-flex: 2;
     -webkit-flex: 2 50%;
         -ms-flex: 2 50%;
@@ -1188,11 +1223,16 @@ a.hover-effect {
   .grid-content {
     position: relative;
     top: 0; }
-  .grid-desktop-highlight .grid-two-unit, .grid-desktop-highlight .grid-headline, .grid-desktop-highlight .grid-image, .grid-desktop-highlight .centered-image {
+  .grid-desktop-highlight .grid-image, .grid-desktop-highlight .centered-image {
     -webkit-box-flex: 1;
     -webkit-flex: 1 100%;
         -ms-flex: 1 100%;
             flex: 1 100%; }
+  .grid-desktop-highlight .grid-one-unit, .grid-desktop-highlight .grid-two-unit, .grid-desktop-highlight .grid-headline {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 50%;
+        -ms-flex: 1 50%;
+            flex: 1 50%; }
   .grid-desktop-highlight-content .grid-image, .grid-desktop-highlight-content .centered-image, .grid-desktop-highlight-content .grid-info {
     -webkit-box-flex: 4;
     -webkit-flex: 4 100%;
@@ -1224,10 +1264,10 @@ a.hover-effect {
         -ms-flex: 2 50%;
             flex: 2 50%; }
   .grid-intro, .grid-desktop-highlight {
-    -webkit-box-flex: 2;
-    -webkit-flex: 2 50%;
-        -ms-flex: 2 50%;
-            flex: 2 50%; }
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 50%;
+        -ms-flex: 1 50%;
+            flex: 1 50%; }
   .grid-intro {
     height: 572px; }
   .highlight-contact {

@@ -340,7 +340,7 @@ a.hover-effect {
 	}
 	
 	.grid-desktop-highlight .grid-two-unit,.grid-desktop-highlight .grid-headline,.grid-desktop-highlight .grid-image,.grid-desktop-highlight .centered-image {
-		height:312px;
+		height:260px;
 		flex:2 50%;
 	}
 	
@@ -428,8 +428,12 @@ a.hover-effect {
 		top:0;
 	}
 
-	.grid-desktop-highlight .grid-two-unit,.grid-desktop-highlight .grid-headline,.grid-desktop-highlight .grid-image,.grid-desktop-highlight .centered-image {
+	.grid-desktop-highlight .grid-image,.grid-desktop-highlight .centered-image {
 		flex:1 100%;
+	}
+	
+	.grid-desktop-highlight .grid-one-unit,.grid-desktop-highlight .grid-two-unit,.grid-desktop-highlight .grid-headline {
+		flex:1 50%;
 	}
 	.grid-desktop-highlight-content .grid-image,.grid-desktop-highlight-content .centered-image,.grid-desktop-highlight-content .grid-info {
 		flex:4 100%;
@@ -464,7 +468,7 @@ a.hover-effect {
 	}
 	
 	.grid-intro,.grid-desktop-highlight {
-		flex:2 50%;
+		flex:1 50%;
 	}
 	.grid-intro {
 		height: 572px
