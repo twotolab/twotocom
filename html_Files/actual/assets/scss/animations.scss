@@ -1,0 +1,26 @@
+@media only screen and (min-width: $media_tablet_width) {
+		
+	.underlined:after,.big-underlined:after {
+		
+		transition:width .5s;
+		transform:scaleX(0);
+		transform-origin:left;
+		transition:transform .4s;
+	}
+	.big-underlined:after {
+		
+		min-width: $grid_height_unit*4;
+		transform:scaleX(0.5);
+	}
+
+	
+	.menu-button .underlined:after ,.menu-button .big-underlined:after{
+		transform-origin:center;
+		transform:scaleX(0);
+	}
+	
+	a.hover-effect:hover .underlined::after,.hover-effect:hover .big-underlined::after {
+		transform:scaleX(1);
+		transition:transform .4s;
+	}
+}

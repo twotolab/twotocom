@@ -6,20 +6,25 @@
 	display:flex;
 }
 
-.footer-left,.footer-middle {
+.footer-left,.footer-right {
 	display:flex;
 	align-items:center;
-	flex: 1;	
 }
-.footer-middle {
+.footer-right {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-end;
 	}
 /* default - mobile */
-.footer-middle,.footer-right {
+.footer-right-left {
 	display:none;
+	width: 100%;
 }
-
+.footer sup {
+	line-height:0;
+	position:relative;
+	vertical-align:baseline;
+	top:2px;
+}
 /* tablet */
 @media only screen and (min-width: $media_tablet_width) {
 	
@@ -27,7 +32,16 @@
 
 /* desktop Monitore */
 @media only screen and (min-width: $media_desktop_width) {
-	.footer-middle,.footer-right {
-		display:flex;
+
+	.footer-left,.footer-right {
+		flex: 1;
+	}
+	.footer-right {
+	display: flex;
+	justify-content: space-between;
+	}
+	.footer-right-left,.footer-right-right {
+		display:block;
+		width: inherit;
 	}
 }

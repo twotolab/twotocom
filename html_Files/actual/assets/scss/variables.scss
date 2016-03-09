@@ -1,20 +1,24 @@
 /*------------------------------------*\
     $Sizes
 \*------------------------------------*/
-
+// basics
 $grid_height_unit:26px;
 $grid_halfHeight_unit:$grid_height_unit/2;
 
+$grid_total_maxheight:650px;
+/*------------------------------------*\
+    $breakpoints
+\*------------------------------------*/
 /* mobil */
 //default_width!!!!!!!
 /* tablets */
 $media_tablet_width: 768px;
 /* desktop Monitore */
-$media_desktop_width: 1024px;
+$media_desktop_width: 1025px;
 /* large desktop Monitore */
 $media_large_desktop_width: 1240px;
 /* HD desktop Monitore */
-$media_HD_desktop_width: 1440px;
+$media_HD_desktop_width: 1441px;
 
 
 /*------------------------------------*\
@@ -28,6 +32,8 @@ $third_color:#50E3C2;
 // bg
 $first_background_color:$first_color;
 $second_background_color:$second_color;
+//
+$first_lighter_background_color:lighten($first_color, 2%);
 // typo
 $first_typo_color: $second_color;
 $second_typo_color: $first_color;

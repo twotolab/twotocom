@@ -65,6 +65,28 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/assets\/imgs\/JB_hand.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 299436,
+		"inputAbbreviatedPath": "\/assets\/imgs\/JB_hand.png",
+		"outputAbbreviatedPath": "\/assets\/imgs\/JB_hand.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/imgs\/JB_hand_new.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 212929,
+		"inputAbbreviatedPath": "\/assets\/imgs\/JB_hand_new.png",
+		"outputAbbreviatedPath": "\/assets\/imgs\/JB_hand_new.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/scss\/animations.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
