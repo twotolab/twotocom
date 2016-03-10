@@ -27,11 +27,22 @@ body {
 	margin-top: 13px;
 	background-color: $first_typo_color;
 }
+.thumb-.big-underlined::after {
+	content:'';
+	display:block;
+	height:3px;
+	width: 0;
+	margin-top: 6px;
+	background-color: $second_typo_color;
+}
 .underlined, .big-underlined {
 	width: 100%;
 }
+.thumb-.big-underlined {
+	width: 50%;
+}
 .no-touch{
-a.hover-effect:hover .underlined::after,a.hover-effect:hover .big-underlined::after{
+a.thumb-hover-effect:hover .underlined::after,a.thumb-hover-effect:hover .big-underlined::after{
 	width: 100%;
 }
 }

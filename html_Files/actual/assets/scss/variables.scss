@@ -37,3 +37,6 @@ $first_lighter_background_color:lighten($first_color, 2%);
 // typo
 $first_typo_color: $second_color;
 $second_typo_color: $first_color;
+
+$highlight_transparent_color:transparentize($third_color,0.5);
+$highlight_dark_color:darken($third_color,10%);
