@@ -7,7 +7,9 @@ body {
 .lighter-background {
 	background-color:$first_lighter_background_color;
 }
-
+.inverted- {
+	background-color:$second_background_color;
+}
 /*------------------*/
 
 .underlined::after {
@@ -17,6 +19,9 @@ body {
 	margin:0;
 	width: 0;
 	background-color: $first_typo_color;
+}
+.inverted- .underlined::after {
+	background-color: $second_typo_color;
 }
 	
 .big-underlined::after {
@@ -38,8 +43,13 @@ body {
 .underlined, .big-underlined {
 	width: 100%;
 }
+.underlined,.big-underlined  {
+	display:inline-block;
+	width:inherit;
+
+}
 .thumb-.big-underlined {
-	width: 50%;
+	width: 100%;
 }
 .no-touch{
 a.thumb-hover-effect:hover .underlined::after,a.thumb-hover-effect:hover .big-underlined::after{

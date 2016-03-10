@@ -11,6 +11,8 @@ jQuery(document).ready(function($) {
 		$('html').addClass('no-touch');
 		//alert("hello no-touch");
 	}
+	// adaptive images
+	 $(".breakpoint img").breakpoint();
 	// click events
 	$('.secondary-button').on('click', function(event) {
 		event.preventDefault();

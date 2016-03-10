@@ -119,6 +119,11 @@ sup {
 	line-height:0;
 	color:$second_typo_color;
 }
+.inverted- {
+	p,h1,h2,h3,h4,h5,h6,a,q,blockquote{
+	color:$second_typo_color;
+	}
+}
 /*------------secondary Texts------------------*/
 .info {
 	font-family:'Fira Sans',sans-serif;
@@ -129,6 +134,9 @@ sup {
 	letter-spacing: 1px;
 	font-style:normal;
 }
+ p.bold{
+	 font-weight: 400;
+	 }
 // internal specifics
 
 // font-icons

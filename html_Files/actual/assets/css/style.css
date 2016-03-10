@@ -21,6 +21,9 @@ body {
 .lighter-background {
   background-color: #fcfbf9; }
 
+.inverted- {
+  background-color: #333; }
+
 /*------------------*/
 .underlined::after {
   content: '';
@@ -29,6 +32,9 @@ body {
   margin: 0;
   width: 0;
   background-color: #333; }
+
+.inverted- .underlined::after {
+  background-color: #F9F7F2; }
 
 .big-underlined::after {
   content: '';
@@ -49,8 +55,12 @@ body {
 .underlined, .big-underlined {
   width: 100%; }
 
+.underlined, .big-underlined {
+  display: inline-block;
+  width: inherit; }
+
 .thumb-.big-underlined {
-  width: 50%; }
+  width: 100%; }
 
 .no-touch a.thumb-hover-effect:hover .underlined::after, .no-touch a.thumb-hover-effect:hover .big-underlined::after {
   width: 100%; }
@@ -246,6 +256,9 @@ sup {
   line-height: 0;
   color: #F9F7F2; }
 
+.inverted- p, .inverted- h1, .inverted- h2, .inverted- h3, .inverted- h4, .inverted- h5, .inverted- h6, .inverted- a, .inverted- q, .inverted- blockquote {
+  color: #F9F7F2; }
+
 /*------------secondary Texts------------------*/
 .info {
   font-family: 'Fira Sans',sans-serif;
@@ -255,6 +268,9 @@ sup {
   line-height: 14px;
   letter-spacing: 1px;
   font-style: normal; }
+
+p.bold {
+  font-weight: 400; }
 
 .icons-font {
   font-family: twotosymbols !important;
@@ -443,14 +459,16 @@ body {
           flex-direction: row; }
 
 .vertical-centered-content {
+  /*
   min-width: 100%;
   min-height: 100%;
+  
   height: 100%;
-  max-width: 1240px !important;
+  
+  max-width: $media_large_desktop_width !important;
   margin: 0  auto;
-  -webkit-align-self: flex-start;
-      -ms-flex-item-align: start;
-          align-self: flex-start; }
+  align-self: flex-start;
+  */ }
 
 .grid-highlight-left {
   position: relative; }
@@ -496,20 +514,13 @@ body {
       -ms-flex: 1;
           flex: 1; }
 
-.grid-description-bottom .underlined, .thumb-center-elt .underlined {
-  display: inline-block;
-  width: inherit; }
-
 /* tablet */
 @media only screen and (min-width: 768px) {
   .grid-highlight-left img {
     padding-bottom: 156px;
     height: 100%;
     width: auto;
-    right: -52px; }
-
-  .grid-description, .highlight-desktop-image-txt {
-    padding: 26px; } }
+    right: -52px; } }
 @media only screen and (min-width: 1025px) {
   .vertical-centered-content {
     margin-top: 52px; }
@@ -518,7 +529,10 @@ body {
     right: 0;
     height: inherit;
     width: auto;
-    padding-bottom: 78px; } }
+    padding-bottom: 78px; }
+
+  .grid-description, .highlight-desktop-image-txt, .thumb-center-elt {
+    padding: 26px; } }
 /*------------------------------------*/
 /* Grid Layout */
 /*------------------------------------*/
@@ -554,25 +568,6 @@ body {
       -ms-flex-direction: column;
           flex-direction: column; }
 
-.grid-highlight-right {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch; }
-
 .grid-elt-wrapper, .grid-elt {
   box-sizing: border-box; }
 
@@ -589,26 +584,17 @@ body {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
 
-.grid-one-height, .grid-two-height, .grid-three-height, .grid-four-height {
-  min-height: 130px; }
+.grid-half-height {
+  height: 130px; }
+
+.grid-one-height {
+  height: 260px; }
 
 .grid-one-width, .grid-two-width, .grid-three-width, .grid-four-width {
   -webkit-box-flex: 1;
   -webkit-flex: 1 100%;
       -ms-flex: 1 100%;
           flex: 1 100%; }
-
-.grid-highlight-right-top {
-  height: 260px; }
-
-.grid-highlight-right-bottom {
-  height: 390px; }
-
-.grid-highlight-smaller {
-  height: 130px; }
-
-.grid-highlight-larger {
-  height: 260px; }
 
 /* tablet */
 @media only screen and (min-width: 768px) {
@@ -621,7 +607,13 @@ body {
   .grid-elt-wrapper {
     -webkit-flex-wrap: nowrap;
         -ms-flex-wrap: nowrap;
-            flex-wrap: nowrap; } }
+            flex-wrap: nowrap; }
+
+  .grid-half-height {
+    height: 104px; }
+
+  .grid-one-height {
+    height: 208px; } }
 @media only screen and (min-width: 1025px) {
   .grid-one-width {
     -webkit-box-flex: 1;
@@ -645,7 +637,13 @@ body {
     -webkit-box-flex: 1;
     -webkit-flex: 1 100%;
         -ms-flex: 1 100%;
-            flex: 1 100%; } }
+            flex: 1 100%; }
+
+  .grid-half-height {
+    height: 130px; }
+
+  .grid-one-height {
+    height: 260px; } }
 .thumb-image-Text {
   overflow: hidden; }
 
@@ -687,13 +685,16 @@ body {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 26px; }
+  padding: 13px; }
 
 .thumb-center-elt .second-color-txt h3, .thumb-center-elt .second-color-txt .info {
   color: #F9F7F2; }
 
 .thumb-center-elt .first-color-txt h3, .thumb-center-elt .first-color-txt .info {
   color: #333; }
+
+a .thumb-image-Text {
+  position: relative; }
 
 .thumb-image-Text {
   position: relative;
@@ -748,15 +749,15 @@ body {
     transition: transform .4s;
     transition: transform .4s, -webkit-transform .4s; }
   .no-touch .thumb-hover-preview-effect:hover .thumb-center-elt.with-image {
-    box-shadow: inset 0 0 0 140px rgba(80, 227, 194, 0.5);
+    box-shadow: inset 0 0 0 140px rgba(255, 254, 0, 0.5);
     -webkit-transition: box-shadow .4s;
     transition: box-shadow .4s; }
   .no-touch .thumb-hover-preview-effect .thumb-center-elt.with-image {
-    box-shadow: inset 0 0 0 0 #24dcb3;
+    box-shadow: inset 0 0 0 0 #cccb00;
     -webkit-transition: box-shadow .4s;
     transition: box-shadow .4s; }
   .no-touch .thumb-hover-preview-effect:hover .thumb-center-elt {
-    box-shadow: inset 0 0 0 150px #24dcb3;
+    box-shadow: inset 0 0 0 150px #cccb00;
     -webkit-transition: box-shadow .4s;
     transition: box-shadow .4s; }
   .no-touch .thumb-hover-preview-effect:hover .first-color-txt h3, .no-touch .thumb-hover-preview-effect:hover .first-color-txt p {
