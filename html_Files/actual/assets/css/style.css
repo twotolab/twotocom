@@ -13,6 +13,7 @@
 /*------------------------------------*\
     $colors
 \*------------------------------------*/
+/**/
 /*color*/
 /*------------------------------------*/
 body {
@@ -1162,15 +1163,12 @@ a .thumb-image-Text {
   width: 100%;
   height: auto; }
 
-.thumb-center-elt p {
-  padding-bottom: 7px; }
-
-.thumb-center-elt h3 {
-  padding-bottom: 7px; }
+.thumb-center-elt {
+  padding-bottom: 13px; }
 
 @media only screen and (min-width: 1025px) {
   .thumb-center-elt {
-    padding: 26px; } }
+    padding-left: 26px; } }
 .nav-is-visible .nav-main {
   -webkit-transform: translateY(0);
           transform: translateY(0);
@@ -1337,3 +1335,31 @@ a .thumb-image-Text {
   .no-touch .nav-elt h3 {
     -webkit-transition: color 0.5s ease;
     transition: color 0.5s ease; } }
+
+/*
+	/* Keyword values 
+mix-blend-mode: normal;
+mix-blend-mode: multiply; !!
+mix-blend-mode: screen;
+mix-blend-mode: overlay; !!
+mix-blend-mode: darken;
+mix-blend-mode: lighten;
+mix-blend-mode: color-dodge;
+mix-blend-mode: color-burn;
+mix-blend-mode: hard-light;
+mix-blend-mode: soft-light; !!
+mix-blend-mode: difference;
+mix-blend-mode: exclusion;
+mix-blend-mode: hue;
+mix-blend-mode: saturation;
+mix-blend-mode: color;
+mix-blend-mode: luminosity; !!
+
+*/
+.no-touch .thumb-hover-effect:hover .big-underlined::after {
+  background-color: black !important;
+  color: black !important; }
+.no-touch .thumb-hover-effect:hover .second-color-txt h3 {
+  color: black !important; }
+.no-touch .thumb-hover-effect:hover .second-color-txt {
+  mix-blend-mode: overlay; }

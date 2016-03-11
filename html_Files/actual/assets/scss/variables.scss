@@ -33,6 +33,9 @@ $third_color:#FFFE00;//#50E3C2;
 $highlight_color: $third_color;
 // shadow
 $shadow_color:rgba(0,0,0,0.10);
+
+/**/
+$blend-mode-color: transparentize($first_color, 0.5);
 // global use
 // bg
 $first_background_color:$first_color;

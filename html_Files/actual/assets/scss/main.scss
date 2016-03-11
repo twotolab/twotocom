@@ -257,15 +257,12 @@ a .thumb-image-Text{
 	width:100%;
 	height: auto;
 }
-.thumb-center-elt p{
-	padding-bottom: 7px;
-}
-.thumb-center-elt h3{
-	padding-bottom: 7px;
+.thumb-center-elt{
+	padding-bottom: $grid_halfHeight_unit;
 }
 // ////////////////////////
 @media only screen and (min-width: $media_desktop_width) {
 	.thumb-center-elt{
-		padding: $grid_height_unit;
+		padding-left: $grid_height_unit;
 	}
 }
