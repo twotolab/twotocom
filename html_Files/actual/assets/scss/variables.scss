@@ -30,6 +30,8 @@ $first_color:#F9F7F2;
 $second_color:#333;
 $third_color:#FFFE00;//#50E3C2;
 
+$second_darker_color: darken($second_color, 10%);
+
 $highlight_color: $third_color;
 // shadow
 $shadow_color:rgba(0,0,0,0.10);
@@ -41,6 +43,7 @@ $blend-mode-color: transparentize($first_color, 0.5);
 $first_background_color:$first_color;
 $second_background_color:$second_color;
 $third_background_color:$third_color;
+
 //
 $first_lighter_background_color:lighten($first_color, 2%);
 // typo

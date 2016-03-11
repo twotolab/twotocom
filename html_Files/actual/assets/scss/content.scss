@@ -2,8 +2,12 @@
 @import 'general';
 @import 'fonts';
 @import 'pattern';
+@import 'header';
+@import 'footer';
+@import 'thumbs';
 @import 'navigation';
 @import 'secondaryNavigation';
+
 
 
 /*------------------------------------*\
@@ -413,4 +417,3 @@ body {
 \*------------------------------------*/
 
 @import 'animations';
-@import 'blendmodes';
