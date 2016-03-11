@@ -6,6 +6,7 @@ $grid_height_unit:26px;
 $grid_halfHeight_unit:$grid_height_unit/2;
 
 $grid_total_maxheight:650px;
+
 /*------------------------------------*\
     $breakpoints
 \*------------------------------------*/
@@ -28,10 +29,15 @@ $media_HD_desktop_width: 1441px;
 $first_color:#F9F7F2; 
 $second_color:#333;
 $third_color:#FFFE00;//#50E3C2;
+
+$highlight_color: $third_color;
+// shadow
+$shadow_color:rgba(0,0,0,0.10);
 // global use
 // bg
 $first_background_color:$first_color;
 $second_background_color:$second_color;
+$third_background_color:$third_color;
 //
 $first_lighter_background_color:lighten($first_color, 2%);
 // typo
@@ -39,4 +45,15 @@ $first_typo_color: $second_color;
 $second_typo_color: $first_color;
 
 $highlight_transparent_color:transparentize($third_color,0.5);
+$first_transparent_dark_color: transparentize($first_color, 0.2);
 $highlight_dark_color:darken($third_color,10%);
+
+$second_lightHeavy_color: lighten($second_color, 30%);
+$first_transparent_light_color: transparentize($first_color, 0.3);
+
+$second_typo_info_color: $second_lightHeavy_color;
+$second_typo_hover_color: $first_transparent_light_color;
+$second_typo_hover_background_color: $first_transparent_dark_color;
+$second_typo_selected_color: $second_lightHeavy_color;
+
+$first_shadow_color : $shadow_color;

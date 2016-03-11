@@ -1,0 +1,343 @@
+/*------------------------------------*/
+/* menu Navigation */
+/*------------------------------------*/
+body {
+	position:relative;
+	overflow:visible;
+}
+
+body.nav-is-visible {
+	position:fixed;
+	//formobileoverflow:hidden;
+}
+
+header {
+	position:absolute;
+	display:flex;
+	align-items:center;
+}
+
+.logo {
+/*Set font family style as sample*/
+	font-family:twotosymbols!important;
+	font-size:34px;
+}
+
+.header-left .info,.logo {
+	color:$first_typo_color;
+}
+
+.nav-is-visible .header-left .info,.nav-is-visible .logo {
+	color:$second_typo_color;
+}
+
+.nav-is-visible .second-menu-wrapper {
+	visibility:hidden;
+}
+
+.icon-close-inverted {
+/*Set font family style as sample*/
+	font-family:twotosymbols!important;
+	color:$first_color;
+	font-size:100%;
+	padding-top:19px;
+	padding-left:1px;
+	font-style:normal;
+	text-align:center;
+/* cool effect
+    font-style: italic;
+    width: 56px;
+    */
+}
+
+.menu-wrapper {
+	position:fixed;
+	right:26px;
+	bottom:26px;
+	width:65px;
+	height:65px;
+}
+
+
+.nav-main {
+/* by default it's hidden - on top of the viewport */
+	position:fixed;
+	left:0;
+	bottom:0;
+	height:100%;
+	width:100%;
+	backface-visibility:hidden;
+	background:transparentize($second_background_color,0.02);
+	overflow:auto;
+	text-align:center;
+/* this fixes the buggy scrolling on webkit browsers - mobile devices only - when overflow property is applied */
+	overflow-y:scroll;
+/* has to be scroll, not auto */
+	-webkit-overflow-scrolling:touch;
+}
+.nav span {
+	background-color:transparent;
+	font-size:12px;
+}
+
+.nav-main {
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+}
+
+.nav-main li {
+	display:flex;
+	flex-direction:column;
+	flex-grow:1;
+}
+
+.nav-main li.nav-placeholder {
+	height:56px;
+}
+
+.nav-main li.info {
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+}
+
+.nav-main li.info p {
+	color:$second_typo_info_color;
+	display:flex;
+	flex-direction:column;
+	align-self:center;
+}
+
+.nav-main li a {
+	display:flex;
+	justify-content:center;
+	flex-direction:column;
+	position:relative;
+	flex-grow:1;
+}
+
+.nav-elt {
+	display:flex;
+	justify-content:center;
+	flex-direction:column;
+	flex-grow:1;
+}
+
+.nav-main .header-left {
+	position:fixed;
+	top:0;
+}
+
+.nav-main li,.nav-main li h3 {
+	color:$second_typo_color;
+	font-style:italic;
+}
+
+.nav-main li a h3 {
+	text-transform:uppercase;
+}
+
+.nav-main li a h3 {
+	padding-top:13px;
+	padding-bottom:13px;
+	position:relative;
+}
+
+.nav-main li a:hover h3 {
+	background-color:$second_typo_hover_background_color;
+}
+
+.navi-selected a h3 {
+	color:$second_typo_selected_color;
+}
+
+.navi-selected a:hover h3 {
+	background-color:$second_background_color!important;
+}
+
+.menu-open,.menu-close {
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	cursor:pointer;
+}
+
+.menu-center {
+	align-self:center;
+	cursor:pointer;
+}
+
+.menu-close {
+	display:none;
+}
+
+.nav-is-visible .menu-close{
+	display:flex;
+}
+
+.nav-is-visible .menu-open{
+	display: none;
+	}
+
+.menu-open a {
+	align-self:center;
+}
+
+.menu-open h6 {
+	color:$first_typo_color;
+	padding-top:2px;
+}
+/*
+.header-left {
+	display:flex;
+	flex-direction:row;
+	box-sizing:border-box;
+	padding-left:13px;
+	padding-top:13px;
+	padding-bottom:13px;
+}
+
+.header-left .info {
+	text-transform:uppercase;
+	padding:0;
+	padding-left:8px;
+	padding-top:6px;
+}
+*/
+.navigation-elts {
+	display:flex;
+	flex:1 25%;
+	height:inherit;
+}
+
+.navigation-elts .nav-placeholder {
+	flex:2 50%;
+	height:inherit;
+}
+
+.navigation-right {
+	display:none;
+}
+
+.nav-main li a:hover h3 {
+	background-color:transparent;
+}
+/*
+.menu-button .underlined {
+	display:inline-block;
+	width:inherit;
+}
+*/
+.nav-quote-bg {
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	width:0;
+	height:0;
+	line-height:20vw;
+	text-align:center;
+	background:none;
+}
+
+.nav-quote-bg h2 {
+	font-family:'heuristicabold',Georgia,serif;
+	font-family:'Fira Sans',sans-serif;
+	font-weight:800;
+	font-size:70px;
+	font-size:15vw;
+	margin:0;
+	box-sizing:border-box;
+	padding-top:104px;
+	padding-top:17vw;
+	color:transparentize($first_color,0.9);
+	//text-shadow:10px 10px 5px transparentize($first_color,0.95);
+	text-transform:uppercase;
+	font-style:italic;
+}
+
+.nav-quote-bg {
+	width:100%;
+	height:100%;
+	visibility:hidden;
+}
+
+.nav-is-visible .nav-quote-bg {
+	visibility:visible;
+}
+
+/*effects - without animations*/
+/*------------------------------------*/
+.nav-hover-bg-effect {
+	width:0;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	background-color:transparentize($highlight_color,0.3);
+}
+a.hover-effect .underlined::after,.hover-effect .underlined::after {
+	width:100%;
+}
+a.hover-effect:hover .underlined::after,.hover-effect:hover .underlined::after {
+	max-width:100%;
+}
+
+/* Tabletts */
+@media only screen and (min-width: 760px) {
+	.nav-quote-bg h2 {
+		font-size:120px;
+		font-size:15vw;
+	}
+	
+}
+/* mobil and Tablets only*/ 
+@media only screen and (min-width: $media_desktop_width) {
+
+}
+
+/* desktop Monitore */
+@media only screen and (min-width: $media_desktop_width) {
+	.header {
+		position:fixed;
+	}
+	body.nav-is-visible {
+		position:relative;
+	}
+	
+	.nav-quote-bg h2 {
+		font-size:170px;
+		font-size:15vw;
+		padding-top:13vw;
+	}
+	
+	.nav-intro {
+		visibility:hidden;
+	}
+	
+	.menu-wrapper {
+		margin:auto;
+		right:0;
+		left:0;
+		bottom:auto;
+		top:19px+$grid_height_unit*2;
+	}
+	.nav-main {
+		//justify-content:center;
+}
+
+}
+
+@media only screen and (max-height: 701px) and (min-width: $media_desktop_width) {
+	.menu-out {
+		left:auto;
+		top:auto;
+		right:26px;
+		bottom:26px;
+	}
+	
+	.nav-intro {
+		visibility:visible;
+	}
+}

@@ -13,6 +13,7 @@ jQuery(document).ready(function($) {
 	}
 	// adaptive images
 	 $(".breakpoint img").breakpoint();
+	
 	// click events
 	$('.secondary-button').on('click', function(event) {
 		event.preventDefault();

@@ -32,7 +32,9 @@
 
 /* desktop Monitore */
 @media only screen and (min-width: $media_desktop_width) {
-
+	.footer{
+		padding:$grid_height_unit;
+	}
 	.footer-left,.footer-right {
 		flex: 1;
 	}

@@ -1,3 +1,53 @@
+.nav-is-visible .nav-main{
+		transform:translateY(0);
+		transition-timing-function:cubic-bezier(.55,.54,.19,1);
+		}
+.nav-main {
+		transform:translateY(-100%);
+		//oppositeonmobiltransition-property:transform;
+		transition-duration:.6s;
+		transition-timing-function:cubic-bezier(.81,0,.5,.5);
+	}
+.touch, .no-touch {	
+///////// with touch
+	.nav-is-visible .nav-quote-bg{
+		transform:translateX(0);
+		transition-duration:1.2s;
+		transition-timing-function:cubic-bezier(0,.55,.49,.99);
+	}
+	
+	.header-left .info,.logo {
+		transition-delay:.6s;
+	}	
+	.nav-is-visible .header-left .info,.nav-is-visible .logo {
+		color:$second_typo_color;
+		transition-delay:0s;
+		//defaulttransition:all .5s ease;
+	}
+	
+	.nav-is-visible .second-menu-wrapper {
+		opacity:0;
+	}
+	
+	.second-menu-wrapper {
+		opacity:1;
+		transition:all .3s ease;
+		transition-delay:.6s;
+	}
+	
+	.right-navi-is-open .main-content {
+		opacity:.1;
+		transition:all .5s ease;
+	}
+	
+	.Site-content {
+		opacity:1;
+		transition:all .5s ease;
+	}
+
+}
+
+
 .no-touch {	 
 
 	// mobile touch detection via javascript
@@ -73,6 +123,42 @@
 		.thumb-hover-preview-effect:hover .first-color-txt,.thumb-hover-preview-effect:hover .second-color-txt {
 			transform:scale(1.1);
 			transition:transform .8s;
+		}
+		//////////////
+				
+		.hover-zoomUp-effect .target-effect {
+			transform:scale(1);
+			transition:transform .2s;
+		}
+		
+		.hover-zoomUp-effect:hover .target-effect {
+			transform:scale(1.2);
+			transition:transform .2s;
+		}
+		//////////////
+		a.hover-effect:hover .underlined::after,.hover-effect:hover .underlined::after {
+			transform:scaleX(1);
+			transition:transform .4s;
+		}
+		//////////////
+		.nav-hover-bg-effect {
+			width:100%;
+			transform:scaleX(0);
+			transition:transform .4s;
+			transition-timing-function:ease-in-out;
+		}
+		
+		.nav-elt:hover .nav-hover-bg-effect {
+			transform:scaleX(1);
+			transition:transform .4s;
+			transition-timing-function:ease-in-out;
+		}
+		.nav-elt:hover  h3{
+			transition: color 0.5s ease;
+			color: $first_typo_color;
+		}
+		.nav-elt  h3{
+			transition: color 0.5s ease;
 		}
 	}
 }

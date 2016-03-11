@@ -1,7 +1,7 @@
 .header {
 	position:relative;
 	width:inherit;
-	padding:$grid_halfHeight_unit;
+
 	box-sizing:border-box;
 	display:flex;
 }
@@ -20,12 +20,15 @@
 }
 /* default - mobile */
 .header-middle,.header-right {
-	display:none;
+	padding-left:$grid_halfHeight_unit;
+	
 }
-
+.header{
+	padding:$grid_halfHeight_unit;;
+}
 /* tablet */
 @media only screen and (min-width: $media_tablet_width) {
-	
+
 }
 
 /* desktop Monitore */
@@ -33,4 +36,7 @@
 	.header-middle,.header-right {
 		display:flex;
 	}
+	.header{
+	padding:$grid_height_unit;
+}
 }
