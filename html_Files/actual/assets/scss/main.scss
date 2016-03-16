@@ -8,7 +8,7 @@ body {
 	position:relative;
 	margin:0 auto;
 	width:100%;
-	//height: 100vh;
+	height: 100%;
 	
 }
 .header, .footer{
@@ -22,9 +22,9 @@ body {
 .Site-content {	
   flex: 1 0 auto; 
   width: 100%;
+  //height:100%;
   margin: 0;
   padding: 0;
-  padding-top: $grid_height_unit*2;
   
   display: flex;
   flex-direction: row;
@@ -32,25 +32,30 @@ body {
 }
 .vertical-centered-content{
 	margin: 0;
+	//height: 100%;
 }
 
 .grid-highlight-left{
 	position: relative;
-}
-.grid-highlight-left img{
-		position: absolute;
-		//display: inline-block;
-		bottom: 0;
-	}
-	
-.grid-highlight-left img{
+	//overflow: hidden;
+	height: $grid_height_unit*20 !important;
+	width: 100%;
 
-		bottom: 0;
-		top:auto;
-		right: 0;
-		padding-bottom: $grid_height_unit*4;
-		height:inherit;
-		width: auto;
+}
+.grid-highlight-left a{
+	height: 100%;
+	
+}
+
+.grid-highlight-left img {
+    position: absolute;
+	bottom: auto;
+	right: 0;
+	top: -$grid_height_unit*2;
+    z-index: -1;
+    width:$media_tablet_width/2.5;
+    height: auto;
+    margin-bottom: $grid_height_unit*2;
 }
 .grid-description a{
 	flex: 1;
@@ -74,28 +79,38 @@ body {
 	box-sizing:border-box;
 	padding-left:$grid_halfHeight_unit;
 	padding-right:$grid_halfHeight_unit;
-	padding-top: $grid_height_unit+2px;
+	padding-top: $grid_height_unit + 2px;
 	padding-bottom: $grid_height_unit - 8px;
 }
 .highlight-desktop-image-txt p{
 	padding-top: 0;
 }
 .grid-description-top {
+	height: 100%;
 	flex: 1;
 
 }
 
 .highlight-desktop-image-txt .info{
-	margin-bottom: 7px;
+	margin-bottom: 8px;
 }
 
 /* tablet */
 @media only screen and (min-width: $media_tablet_width) {
+
+	.grid-highlight-left{
+		height: $grid_height_unit*20 !important;
+	}
+	.Site-content {	
+		padding-top: $grid_height_unit*2;
+  	}
 	.grid-highlight-left img{
-		padding-bottom: $grid_height_unit*6;
-		height:100%;
-		width: auto;
-		right: -$grid_height_unit*2;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		top: auto;
+		width:auto;
+		height: auto;
 	}
 	.vertical-centered-content{
 		margin: 0  auto;
@@ -106,22 +121,31 @@ body {
 }
 // ////////////////////////
 @media only screen and (min-width: $media_desktop_width) {
+	.grid-highlight-left h2{
+		height: 100%;
+		font-size: 48px;
+		line-height: 52px;
+		
+	}
 	.vertical-centered-content{
 	//align-self: center;
 	margin-top: 52px;
 	}
+	.grid-highlight-left{
+		height: $grid_height_unit*25 !important;
+	}
 	.grid-highlight-left img{
+		position: absolute;
+		bottom: 0;
 		right: 0;
-		height: inherit;
-		width: auto;
-		padding-bottom: $grid_height_unit*3;
+		top: auto;
 	}
 	.grid-description,.highlight-desktop-image-txt {
 		padding-left:$grid_height_unit;
 		padding-right:$grid_height_unit;
 	}
 	.highlight-desktop-image-txt {
-		padding-top: $grid_height_unit*2 +2px;
+		padding-top: $grid_height_unit*3+6px;
 	}
 
 	.grid-description{
@@ -140,14 +164,16 @@ body {
 	
 	width: 100%;
 	height: 100%;
+	//min-height:  $grid_height_unit*22;
+	//min-height: 650px;
 	
 	//flex-direction: row;
 	align-items:stretch;
-	min-height: 650px;
 	max-width: $media_HD_desktop_width !important;
 	margin: 0  auto;
 }
 .grid-elt {
+	//height: 100%;
 	position: relative;
 	display:flex;
 	flex-direction:column;
@@ -177,6 +203,9 @@ body {
 /* tablet */
 @media only screen and (min-width: $media_tablet_width) {
 
+	.grid-content {
+		height: 650px;
+	}
 	.grid-two-width{
 		flex:1 50%;
 	}

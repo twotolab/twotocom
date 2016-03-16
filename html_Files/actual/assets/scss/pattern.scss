@@ -38,6 +38,13 @@
 .pattern svg{
 	pointer-events: none;
 }
-.pattern,.pattern-horizontal,.pattern-vertical,.pattern svg {
+.pattern-horizontal,.pattern-vertical {
+		display: none;
+}
+.pattern svg {
+	
+		z-index: 10000;
+}
+.pattern{
 		display: none;
 }

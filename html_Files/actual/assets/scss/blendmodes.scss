@@ -29,4 +29,8 @@ mix-blend-mode: luminosity; !!
 	.thumb-hover-effect:hover  .second-color-txt{
 			mix-blend-mode: overlay;
 	}
+	.thumb-hover-preview-effect:hover .thumb-center-elt.with-image {
+			box-shadow:inset 0 0 0 200px $highlight_transparent_color;
+			//mix-blend-mode:screen;
+		}
 }
