@@ -4,6 +4,7 @@
 	height: inherit;
 	width:100%;
 	margin: 0 auto;
+	z-index:5200;
 }
 .pattern-horizontal {
 	position:relative;
@@ -33,9 +34,10 @@
 	z-index:-2002;
 	pointer-events: none;
 }
-.pattern,.pattern-horizontal,.pattern-vertical  {
+
+.pattern svg{
+	pointer-events: none;
+}
+.pattern,.pattern-horizontal,.pattern-vertical,.pattern svg {
 		display: none;
-	}
-	.pattern{
-		display: block;
-	}
+}

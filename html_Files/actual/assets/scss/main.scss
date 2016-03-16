@@ -62,22 +62,27 @@ body {
 	box-sizing:border-box;
 	padding-left:$grid_halfHeight_unit;
 	padding-right:$grid_halfHeight_unit;
-	padding-top: $grid_height_unit - 6px;
-	padding-bottom: $grid_height_unit - 8px;
+	padding-top: 3px;
+	padding-bottom: $grid_height_unit - 9px;
+
 }
+.grid-description-top p{
+	margin-bottom: $grid_halfHeight_unit;
+}
+
 .highlight-desktop-image-txt{
 	box-sizing:border-box;
 	padding-left:$grid_halfHeight_unit;
 	padding-right:$grid_halfHeight_unit;
-	padding-top: $grid_height_unit;
+	padding-top: $grid_height_unit+2px;
 	padding-bottom: $grid_height_unit - 8px;
+}
+.highlight-desktop-image-txt p{
+	padding-top: 0;
 }
 .grid-description-top {
 	flex: 1;
 
-}
-.grid-description-bottom {
-//	background-color: yellow;
 }
 
 .highlight-desktop-image-txt .info{
@@ -95,6 +100,9 @@ body {
 	.vertical-centered-content{
 		margin: 0  auto;
 	}
+	.grid-description{
+		padding-top: $grid_height_unit - 4px;
+	}
 }
 // ////////////////////////
 @media only screen and (min-width: $media_desktop_width) {
@@ -111,7 +119,13 @@ body {
 	.grid-description,.highlight-desktop-image-txt {
 		padding-left:$grid_height_unit;
 		padding-right:$grid_height_unit;
-		padding-top: $grid_height_unit*2 - 6px;
+	}
+	.highlight-desktop-image-txt {
+		padding-top: $grid_height_unit*2 +2px;
+	}
+
+	.grid-description{
+		padding-top: $grid_height_unit+ $grid_halfHeight_unit+ 8px;
 	}
 }
 

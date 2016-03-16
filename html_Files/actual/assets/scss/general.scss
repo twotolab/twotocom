@@ -33,7 +33,7 @@ body {
 	display:block;
 	height:8px;
 	width: $grid_height_unit;
-	margin-top: $grid_halfHeight_unit - 1px;
+	margin-top: $grid_halfHeight_unit - 2px;
 	background-color: $first_typo_color;
 }
 .thumb-.big-underlined::after {

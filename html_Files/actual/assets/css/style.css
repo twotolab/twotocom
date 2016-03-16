@@ -45,7 +45,7 @@ body {
   display: block;
   height: 8px;
   width: 26px;
-  margin-top: 12px;
+  margin-top: 11px;
   background-color: #333; }
 
 .thumb-.big-underlined::after {
@@ -155,7 +155,8 @@ body {
   overflow: hidden;
   height: inherit;
   width: 100%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  z-index: 5200; }
 
 .pattern-horizontal {
   position: relative;
@@ -181,11 +182,11 @@ body {
   z-index: -2002;
   pointer-events: none; }
 
-.pattern, .pattern-horizontal, .pattern-vertical {
-  display: none; }
+.pattern svg {
+  pointer-events: none; }
 
-.pattern {
-  display: block; }
+.pattern, .pattern-horizontal, .pattern-vertical, .pattern svg {
+  display: none; }
 
 @font-face {
   font-family: 'heuristicabold';
@@ -541,7 +542,10 @@ a .thumb-image-Text {
   height: auto; }
 
 .thumb-center-elt {
-  padding-bottom: 13px; }
+  padding-bottom: 23px; }
+
+.thumb-center-elt .second-color-txt, .thumb-center-elt .first-color-txt {
+  padding-bottom: 8px; }
 
 @media only screen and (min-width: 1025px) {
   .thumb-center-elt {
@@ -1007,15 +1011,21 @@ body {
   box-sizing: border-box;
   padding-left: 13px;
   padding-right: 13px;
-  padding-top: 20px;
-  padding-bottom: 18px; }
+  padding-top: 3px;
+  padding-bottom: 17px; }
+
+.grid-description-top p {
+  margin-bottom: 13px; }
 
 .highlight-desktop-image-txt {
   box-sizing: border-box;
   padding-left: 13px;
   padding-right: 13px;
-  padding-top: 26px;
+  padding-top: 28px;
   padding-bottom: 18px; }
+
+.highlight-desktop-image-txt p {
+  padding-top: 0; }
 
 .grid-description-top {
   -webkit-box-flex: 1;
@@ -1035,7 +1045,10 @@ body {
     right: -52px; }
 
   .vertical-centered-content {
-    margin: 0  auto; } }
+    margin: 0  auto; }
+
+  .grid-description {
+    padding-top: 22px; } }
 @media only screen and (min-width: 1025px) {
   .vertical-centered-content {
     margin-top: 52px; }
@@ -1048,8 +1061,13 @@ body {
 
   .grid-description, .highlight-desktop-image-txt {
     padding-left: 26px;
-    padding-right: 26px;
-    padding-top: 46px; } }
+    padding-right: 26px; }
+
+  .highlight-desktop-image-txt {
+    padding-top: 54px; }
+
+  .grid-description {
+    padding-top: 47px; } }
 /*------------------------------------*/
 /* Grid Layout */
 /*------------------------------------*/

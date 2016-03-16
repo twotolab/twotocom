@@ -39,13 +39,17 @@ a .thumb-image-Text{
 	justify-content:center;
 	align-items:center;
 	background-color:$first_color;
+
 }
 .thumb-image-Text img {
 	width:100%;
 	height: auto;
 }
 .thumb-center-elt{
-	padding-bottom: $grid_halfHeight_unit;
+	padding-bottom: $grid_halfHeight_unit + 10px;
+}
+.thumb-center-elt .second-color-txt, .thumb-center-elt .first-color-txt{
+	padding-bottom:8px;
 }
 // ////////////////////////
 @media only screen and (min-width: $media_desktop_width) {
