@@ -10,11 +10,12 @@ body.nav-is-visible {
 	position:fixed;
 	//formobileoverflow:hidden;
 }
-
 header {
+	/*
 	position:absolute;
 	display:flex;
 	align-items:center;
+	*/
 }
 
 .logo {
@@ -44,10 +45,6 @@ header {
 	padding-left:1px;
 	font-style:normal;
 	text-align:center;
-/* cool effect
-    font-style: italic;
-    width: 56px;
-    */
 }
 
 .menu-wrapper {
@@ -57,8 +54,6 @@ header {
 	width:65px;
 	height:65px;
 }
-
-
 .nav-main {
 /* by default it's hidden - on top of the viewport */
 	position:fixed;

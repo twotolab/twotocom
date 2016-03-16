@@ -184,6 +184,9 @@ body {
 .pattern, .pattern-horizontal, .pattern-vertical {
   display: none; }
 
+.pattern {
+  display: block; }
+
 @font-face {
   font-family: 'heuristicabold';
   font-style: normal;
@@ -554,15 +557,11 @@ body.nav-is-visible {
   position: fixed; }
 
 header {
-  position: absolute;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  /*
+  position:absolute;
+  display:flex;
+  align-items:center;
+  */ }
 
 .logo {
   /*Set font family style as sample*/
@@ -586,11 +585,7 @@ header {
   padding-top: 19px;
   padding-left: 1px;
   font-style: normal;
-  text-align: center;
-  /* cool effect
-      font-style: italic;
-      width: 56px;
-      */ }
+  text-align: center; }
 
 .menu-wrapper {
   position: fixed;
@@ -1172,6 +1167,20 @@ body {
 
   .grid-one-height {
     height: 312px; } }
+.scrollStartAnimation {
+  -webkit-transform: translateX(200%);
+          transform: translateX(200%);
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease; }
+
+onScrollAnimation {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s; }
+
 .nav-is-visible .nav-main {
   -webkit-transform: translateY(0);
           transform: translateY(0);

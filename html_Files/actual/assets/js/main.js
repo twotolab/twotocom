@@ -1,8 +1,19 @@
 function isTouchDevice() {
     return true === ("ontouchstart" in window || window.DocumentTouch && document instanceof DocumentTouch);
 }
+
+
 jQuery(document).ready(function($) {
 	
+	$( window ).scroll(function() {
+		    	$('.onScrollAnimation').hide();
+    			clearTimeout( $.data( this, "scrollCheck" ) );
+    			$.data( this, "scrollCheck", setTimeout(function() {
+	    			//$('.onScrollAnimation').clearQueue();
+    				$('.onScrollAnimation').stop(true, true).delay(1000).fadeIn(300);
+    			}, 250) );
+
+    		});
 	// Touch Device Detection
 	if (isTouchDevice() === true) {
 		$('html').addClass('touch');

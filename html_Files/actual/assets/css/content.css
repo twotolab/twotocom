@@ -327,6 +327,9 @@ p.bold {
 .pattern, .pattern-horizontal, .pattern-vertical {
   display: none; }
 
+.pattern {
+  display: block; }
+
 .header {
   position: relative;
   width: inherit;
@@ -460,9 +463,11 @@ body.nav-is-visible {
   position: fixed; }
 
 header {
-  position: absolute;
-  display: flex;
-  align-items: center; }
+  /*
+  position:absolute;
+  display:flex;
+  align-items:center;
+  */ }
 
 .logo {
   /*Set font family style as sample*/
@@ -486,11 +491,7 @@ header {
   padding-top: 19px;
   padding-left: 1px;
   font-style: normal;
-  text-align: center;
-  /* cool effect
-      font-style: italic;
-      width: 56px;
-      */ }
+  text-align: center; }
 
 .menu-wrapper {
   position: fixed;
@@ -1155,6 +1156,15 @@ body {
 /*------------------------------------*\
     $END
 \*------------------------------------*/
+.scrollStartAnimation {
+  transform: translateX(200%);
+  transition: all .3s ease; }
+
+onScrollAnimation {
+  transform: translateX(0);
+  transition: all 1s ease;
+  transition-delay: 1s; }
+
 .nav-is-visible .nav-main {
   transform: translateY(0);
   transition-timing-function: cubic-bezier(0.55, 0.54, 0.19, 1); }
