@@ -1167,20 +1167,6 @@ body {
 
   .grid-one-height {
     height: 312px; } }
-.scrollStartAnimation {
-  -webkit-transform: translateX(200%);
-          transform: translateX(200%);
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease; }
-
-onScrollAnimation {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-  -webkit-transition-delay: 1s;
-          transition-delay: 1s; }
-
 .nav-is-visible .nav-main {
   -webkit-transform: translateY(0);
           transform: translateY(0);

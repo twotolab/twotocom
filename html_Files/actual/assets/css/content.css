@@ -1156,15 +1156,6 @@ body {
 /*------------------------------------*\
     $END
 \*------------------------------------*/
-.scrollStartAnimation {
-  transform: translateX(200%);
-  transition: all .3s ease; }
-
-onScrollAnimation {
-  transform: translateX(0);
-  transition: all 1s ease;
-  transition-delay: 1s; }
-
 .nav-is-visible .nav-main {
   transform: translateY(0);
   transition-timing-function: cubic-bezier(0.55, 0.54, 0.19, 1); }
