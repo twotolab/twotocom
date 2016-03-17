@@ -1086,7 +1086,7 @@ body {
 /* tablet */
 @media only screen and (min-width: 768px) {
   .grid-highlight-left {
-    height: 520px !important; }
+    height: 416px !important; }
 
   .Site-content {
     padding-top: 52px; }
@@ -1114,7 +1114,7 @@ body {
     margin-top: 52px; }
 
   .grid-highlight-left {
-    height: 650px !important; }
+    height: 520px !important; }
 
   .grid-highlight-left img {
     position: absolute;
@@ -1131,6 +1131,9 @@ body {
 
   .grid-description {
     padding-top: 47px; } }
+@media only screen and (min-width: 1441px) {
+  .grid-highlight-left {
+    height: 624px !important; } }
 /*------------------------------------*/
 /* Grid Layout */
 /*------------------------------------*/

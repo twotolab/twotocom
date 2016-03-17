@@ -99,7 +99,7 @@ body {
 @media only screen and (min-width: $media_tablet_width) {
 
 	.grid-highlight-left{
-		height: $grid_height_unit*20 !important;
+		height: $grid_height_unit*16 !important;
 	}
 	.Site-content {	
 		padding-top: $grid_height_unit*2;
@@ -128,17 +128,17 @@ body {
 		
 	}
 	.vertical-centered-content{
-	//align-self: center;
-	margin-top: 52px;
+		margin-top: 52px;
 	}
 	.grid-highlight-left{
-		height: $grid_height_unit*25 !important;
+		height: $grid_height_unit*20 !important;
 	}
 	.grid-highlight-left img{
 		position: absolute;
 		bottom: 0;
 		right: 0;
 		top: auto;
+
 	}
 	.grid-description,.highlight-desktop-image-txt {
 		padding-left:$grid_height_unit;
@@ -150,6 +150,11 @@ body {
 
 	.grid-description{
 		padding-top: $grid_height_unit+ $grid_halfHeight_unit+ 8px;
+	}
+}
+@media only screen and (min-width: $media_HD_desktop_width) {
+	.grid-highlight-left{
+		height: $grid_height_unit*24 !important;
 	}
 }
 
@@ -214,8 +219,8 @@ body {
 		flex-wrap:nowrap;
 	}
 	.grid-half-height{
-	height: $grid_height_unit*4;
-}
+		height: $grid_height_unit*4;
+	}
 	.grid-one-height{
 		height: $grid_height_unit*8;
 	}

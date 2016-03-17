@@ -118,6 +118,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/imgs\/JB_hand_small.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 61293,
+		"inputAbbreviatedPath": "\/assets\/imgs\/JB_hand_small.png",
+		"outputAbbreviatedPath": "\/assets\/imgs\/JB_hand_small.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/js\/breakpoint.js": {
 		"fileType": 64,
 		"ignore": 0,
