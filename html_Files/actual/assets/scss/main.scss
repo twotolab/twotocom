@@ -244,7 +244,9 @@ body {
 
 }
 @media only screen and (min-width: $media_HD_desktop_width) {
-
+	.vertical-centered-content{
+		margin-top: $grid_height_unit*8;
+	}
 	.grid-half-height{
 		height: $grid_height_unit*6;
 	}

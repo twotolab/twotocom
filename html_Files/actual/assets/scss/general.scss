@@ -130,7 +130,7 @@ a.thumb-hover-effect:hover .underlined::after,a.thumb-hover-effect:hover .big-un
 /*display handlers*/
 /*------------------------------------*/
 /* mobil */
-.only-mobil,.no-desktop,no-large-desktop {
+.only-mobil,.no-desktop,no-large-desktop,.no-tablet  {
 		display:flex !important;
 }
 .only-desktop,.only-large-desktop,.no-mobil,.no-mobil-and-tablet,only-mobil-and-tablet {
@@ -138,26 +138,24 @@ a.thumb-hover-effect:hover .underlined::after,a.thumb-hover-effect:hover .big-un
 }
 /* tablet */
 @media only screen and (min-width:$media_tablet_width) {
-	.no-mobil {
-		display:flex !important;
-	}
-	.only-mobil {
+	.only-mobil,.no-tablet{
 		display:none !important;
 	}
-	.only-mobil-and-tablet {
+	.no-mobil,.only-mobil-and-tablet {
 		display:flex !important;
 	}
+
 }
 /* desktop Monitore */
 @media only screen and (min-width: $media_desktop_width) {
-	.only-mobil-and-tablet,.no-desktop  {
+	.only-mobil-and-tablet,.no-desktop {
 		display:none !important;
 	}
 	.no-mobil-and-tablet {
 		display:flex !important;
 }
 	.only-desktop {
-				display:flex !important;
+		display:flex !important;
 	}
 }
 @media only screen and (min-width:$media_large_desktop_width) {

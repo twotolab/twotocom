@@ -117,7 +117,7 @@ body {
 /*display handlers*/
 /*------------------------------------*/
 /* mobil */
-.only-mobil, .no-desktop, no-large-desktop {
+.only-mobil, .no-desktop, no-large-desktop, .no-tablet {
   display: flex !important; }
 
 .only-desktop, .only-large-desktop, .no-mobil, .no-mobil-and-tablet, only-mobil-and-tablet {
@@ -125,13 +125,10 @@ body {
 
 /* tablet */
 @media only screen and (min-width: 768px) {
-  .no-mobil {
-    display: flex !important; }
-
-  .only-mobil {
+  .only-mobil, .no-tablet {
     display: none !important; }
 
-  .only-mobil-and-tablet {
+  .no-mobil, .only-mobil-and-tablet {
     display: flex !important; } }
 /* desktop Monitore */
 @media only screen and (min-width: 1025px) {
