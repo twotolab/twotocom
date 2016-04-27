@@ -70,7 +70,16 @@
 			min-width: $grid_height_unit*2;
 			transform:scaleX(0.5);
 		}
-	
+		.menu-button:hover .menuBgEffect .menuBgText p{
+			visibility: visible;
+			opacity: 1;
+			transition:opacity .4s ease-out, transform 0.6s;
+			transform:translateY(0);
+			}
+		.menu-button:hover .menuBgEffect .menuBgText {
+			transition:transform 0.3s;
+			transform:translate(-50%,0%);
+		}
 		
 		.menu-button .underlined:after ,.menu-button .big-underlined:after{
 			transform-origin:center;

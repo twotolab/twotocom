@@ -176,6 +176,8 @@ body {
 	align-items:stretch;
 	max-width: $media_HD_desktop_width !important;
 	margin: 0  auto;
+	
+	background-color: fuchsia;
 }
 .grid-elt {
 	//height: 100%;
@@ -207,10 +209,11 @@ body {
 
 /* tablet */
 @media only screen and (min-width: $media_tablet_width) {
-
+/*
 	.grid-content {
 		height: 650px;
 	}
+	*/
 	.grid-two-width{
 		flex:1 50%;
 	}

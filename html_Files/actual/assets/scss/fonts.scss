@@ -66,12 +66,12 @@ h2 {
 }
 
 h3 {
-	font-family:'Merriweather',Georgia,serif;//font-family:'Fira Sans',sans-serif;
-	font-weight:900;//font-weight:800;
+	font-family:'Fira Sans',sans-serif;
+	font-weight:400;
 	font-size:24px;
 	color:$first_typo_color;
 	line-height:26px;
-	font-style: italic;
+	font-style: normal;
 }
 
 h4 {
@@ -86,7 +86,7 @@ h4 {
 
 h5 {
 	font-family:'Fira Sans',sans-serif;
-	font-weight:400;
+	font-weight:300;
 	font-size:24px;
 	color:$first_typo_color;
 	line-height:34px;

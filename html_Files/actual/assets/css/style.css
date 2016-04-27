@@ -291,11 +291,11 @@ h2 {
 
 h3 {
   font-family: 'Fira Sans',sans-serif;
-  font-weight: 800;
+  font-weight: 400;
   font-size: 24px;
   color: #333;
   line-height: 26px;
-  font-style: italic; }
+  font-style: normal; }
 
 h4 {
   font-family: 'Fira Sans',sans-serif;
@@ -308,7 +308,7 @@ h4 {
 
 h5 {
   font-family: 'Fira Sans',sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 24px;
   color: #333;
   line-height: 34px; }
@@ -791,6 +791,7 @@ header {
   background-color: #333 !important; }
 
 .menu-open, .menu-close {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -804,13 +805,36 @@ header {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  cursor: pointer; }
+  cursor: pointer;
+  background-color: fuchsia; }
 
 .menu-center {
+  position: relative;
   -webkit-align-self: center;
       -ms-flex-item-align: center;
           align-self: center;
   cursor: pointer; }
+
+.menuBgEffect {
+  z-index: -1;
+  position: absolute;
+  left: 50%; }
+  .menuBgEffect .menuBgText {
+    position: absolute;
+    box-sizing: content-box;
+    overflow: hidden;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+    .menuBgEffect .menuBgText p {
+      font-family: 'Fira Sans',sans-serif;
+      font-weight: 800;
+      font-size: 90px;
+      line-height: 65px;
+      color: rgba(128, 128, 128, 0.1);
+      text-transform: uppercase;
+      -webkit-transform: translateY(100%);
+              transform: translateY(100%);
+      opacity: 0; }
 
 .menu-close {
   display: none; }
@@ -892,7 +916,6 @@ header {
   background: none; }
 
 .nav-quote-bg h2 {
-  font-family: 'heuristicabold',Georgia,serif;
   font-family: 'Fira Sans',sans-serif;
   font-weight: 800;
   font-size: 70px;
@@ -1155,7 +1178,8 @@ body {
       -ms-flex-align: stretch;
           align-items: stretch;
   max-width: 1441px !important;
-  margin: 0  auto; }
+  margin: 0  auto;
+  background-color: fuchsia; }
 
 .grid-elt {
   position: relative;
@@ -1199,9 +1223,11 @@ body {
 
 /* tablet */
 @media only screen and (min-width: 768px) {
-  .grid-content {
-    height: 650px; }
-
+  /*
+  	.grid-content {
+  		height: 650px;
+  	}
+  	*/
   .grid-two-width {
     -webkit-box-flex: 1;
     -webkit-flex: 1 50%;
@@ -1322,6 +1348,22 @@ body {
     min-width: 52px;
     -webkit-transform: scaleX(0.5);
             transform: scaleX(0.5); }
+  .no-touch .menu-button:hover .menuBgEffect .menuBgText p {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: opacity .4s ease-out, -webkit-transform 0.6s;
+    transition: opacity .4s ease-out, -webkit-transform 0.6s;
+    transition: opacity .4s ease-out, transform 0.6s;
+    transition: opacity .4s ease-out, transform 0.6s, -webkit-transform 0.6s;
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  .no-touch .menu-button:hover .menuBgEffect .menuBgText {
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
+    -webkit-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%); }
   .no-touch .menu-button .underlined:after, .no-touch .menu-button .big-underlined:after {
     -webkit-transform-origin: center;
             transform-origin: center;

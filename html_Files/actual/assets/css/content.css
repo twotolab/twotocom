@@ -206,11 +206,11 @@ h2 {
 
 h3 {
   font-family: 'Fira Sans',sans-serif;
-  font-weight: 800;
+  font-weight: 400;
   font-size: 24px;
   color: #333;
   line-height: 26px;
-  font-style: italic; }
+  font-style: normal; }
 
 h4 {
   font-family: 'Fira Sans',sans-serif;
@@ -223,7 +223,7 @@ h4 {
 
 h5 {
   font-family: 'Fira Sans',sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 24px;
   color: #333;
   line-height: 34px; }
@@ -608,14 +608,36 @@ header {
   background-color: #333 !important; }
 
 .menu-open, .menu-close {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  cursor: pointer; }
+  cursor: pointer;
+  background-color: fuchsia; }
 
 .menu-center {
+  position: relative;
   align-self: center;
   cursor: pointer; }
+
+.menuBgEffect {
+  z-index: -1;
+  position: absolute;
+  left: 50%; }
+  .menuBgEffect .menuBgText {
+    position: absolute;
+    box-sizing: content-box;
+    overflow: hidden;
+    transform: translate(-50%, -50%); }
+    .menuBgEffect .menuBgText p {
+      font-family: 'Fira Sans',sans-serif;
+      font-weight: 800;
+      font-size: 90px;
+      line-height: 65px;
+      color: rgba(128, 128, 128, 0.1);
+      text-transform: uppercase;
+      transform: translateY(100%);
+      opacity: 0; }
 
 .menu-close {
   display: none; }
@@ -683,7 +705,6 @@ header {
   background: none; }
 
 .nav-quote-bg h2 {
-  font-family: 'heuristicabold',Georgia,serif;
   font-family: 'Fira Sans',sans-serif;
   font-weight: 800;
   font-size: 70px;
@@ -1224,6 +1245,14 @@ body {
   .no-touch .thumb-.big-underlined:after {
     min-width: 52px;
     transform: scaleX(0.5); }
+  .no-touch .menu-button:hover .menuBgEffect .menuBgText p {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .4s ease-out, transform 0.6s;
+    transform: translateY(0); }
+  .no-touch .menu-button:hover .menuBgEffect .menuBgText {
+    transition: transform 0.3s;
+    transform: translate(-50%, 0%); }
   .no-touch .menu-button .underlined:after, .no-touch .menu-button .big-underlined:after {
     transform-origin: center;
     transform: scaleX(0); }
