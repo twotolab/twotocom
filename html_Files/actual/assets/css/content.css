@@ -607,6 +607,9 @@ header {
 .navi-selected a:hover h3 {
   background-color: #333 !important; }
 
+.menu-wrapper {
+  z-index: 10; }
+
 .menu-open, .menu-close {
   position: relative;
   display: flex;
@@ -621,21 +624,28 @@ header {
   cursor: pointer; }
 
 .menuBgEffect {
-  z-index: -1;
+  z-index: -99;
   position: absolute;
   left: 50%; }
   .menuBgEffect .menuBgText {
     position: absolute;
     box-sizing: content-box;
-    overflow: hidden;
-    transform: translate(-50%, -50%); }
+    overflow: hidden; }
     .menuBgEffect .menuBgText p {
       font-family: 'Fira Sans',sans-serif;
       font-weight: 800;
       font-size: 90px;
       line-height: 65px;
       color: rgba(128, 128, 128, 0.1);
-      text-transform: uppercase;
+      text-transform: uppercase; }
+  .menuBgEffect .topEffect {
+    transform: translate(-50%, 50%); }
+    .menuBgEffect .topEffect p {
+      transform: translateY(-100%);
+      opacity: 0; }
+  .menuBgEffect .bottomEffect {
+    transform: translate(-50%, -50%); }
+    .menuBgEffect .bottomEffect p {
       transform: translateY(100%);
       opacity: 0; }
 
@@ -888,7 +898,12 @@ body {
 
 .header {
   position: relative;
-  display: inline-block; }
+  display: inline-block;
+  /*
+  background-color: $first_color;
+  height: $grid_height_unit*4;
+  opacity: 0.95;
+  */ }
 
 .main-content {
   position: relative;
@@ -898,7 +913,8 @@ body {
   transition-property: transform;
   transition-duration: .4s;
   transition-timing-function: ease;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: -100; }
 
 .right-navi-is-open .main-content {
   opacity: 0.1; }
@@ -1245,14 +1261,14 @@ body {
   .no-touch .thumb-.big-underlined:after {
     min-width: 52px;
     transform: scaleX(0.5); }
-  .no-touch .menu-button:hover .menuBgEffect .menuBgText p {
+  .no-touch .menu-button:hover .menuBgEffect p {
     visibility: visible;
     opacity: 1;
     transition: opacity .4s ease-out, transform 0.6s;
     transform: translateY(0); }
-  .no-touch .menu-button:hover .menuBgEffect .menuBgText {
+  .no-touch .menu-button:hover .menuBgEffect .topEffect, .no-touch .menu-button:hover .menuBgEffect .bottomEffect {
     transition: transform 0.3s;
-    transform: translate(-50%, 0%); }
+    transform: translate(-50%, 0); }
   .no-touch .menu-button .underlined:after, .no-touch .menu-button .big-underlined:after {
     transform-origin: center;
     transform: scaleX(0); }
