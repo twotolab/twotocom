@@ -364,7 +364,8 @@ p.bold {
   flex: 1; }
 
 .header-middle {
-  display: flex;
+  display: none;
+  /* none Visible mobil*/
   justify-content: space-between; }
 
 .header-left .header-info {

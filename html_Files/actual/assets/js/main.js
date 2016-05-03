@@ -59,5 +59,16 @@ jQuery(document).ready(function($) {
 			$('.menu-wrapper').addClass('menu-out');
 		}
 	});
-	
+	/* test over effect
+	$('.menu-button').on('mouseenter mouseleave', function(event) {
+		
+		event.preventDefault();
+		if( $('.main-content').hasClass('content-transparent') ) {
+			$('.main-content').removeClass('content-transparent');
+		}
+		else{
+			$('.main-content').addClass('content-transparent');
+		}
+	});
+	*/
 });

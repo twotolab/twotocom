@@ -150,6 +150,9 @@ header {
 .navi-selected a:hover h3 {
 	background-color:$second_background_color!important;
 }
+.menu-wrapper{
+		z-index: 10;
+}
 
 .menu-open,.menu-close {
 	position: relative;
@@ -167,35 +170,46 @@ header {
 	align-self:center;
 	cursor:pointer;
 	//box-sizing: content-box;
+	
 }
 
 .menuBgEffect{
-	z-index: -1;
+	z-index: -99;
 	position: absolute;
+	
 	left:50%;
 	.menuBgText {
-	
 		position: absolute;	
 		box-sizing: content-box;
 		overflow: hidden;
-		transform:translate(-50%,-50%);
-	
 		p{
 			font-family:'Fira Sans',sans-serif;
 			font-weight:800;
 			font-size:90px;
 			line-height: 65px;
-			//font-size:15vw;
 		
 			color:transparentize($second_lightHeavy_color,0.9);
 			text-transform:uppercase;
+		}
+	}
+	.topEffect {
+		transform:translate(-50%,50%);
 		
+		p{			
+			transform:translateY(-100%);
+			opacity: 0;
+			
+		}
+	}
+	.bottomEffect {
+		transform:translate(-50%,-50%);
+		
+		p{			
 			transform:translateY(100%);
 			opacity: 0;
 		}
 	}
 }
-
 .menu-close {
 	display:none;
 }
@@ -257,6 +271,7 @@ header {
 	width:inherit;
 }
 */
+	
 .nav-quote-bg {
 	position:fixed;
 	top:0;
