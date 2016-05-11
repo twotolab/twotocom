@@ -4,6 +4,7 @@
 // basics
 $grid_height_unit:26px;
 $grid_halfHeight_unit:$grid_height_unit/2;
+$grid_heighthalfHeight_unit:$grid_height_unit+$grid_halfHeight_unit;
 
 $grid_total_maxheight:650px;
 

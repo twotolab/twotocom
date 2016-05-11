@@ -49,7 +49,7 @@ body {
 .underlined::after {
   content: '';
   display: block;
-  height: 1px;
+  height: 2px;
   margin: 0;
   width: 0;
   background-color: #333; }
@@ -202,7 +202,7 @@ h2 {
   font-weight: 900;
   font-size: 36px;
   color: #333;
-  line-height: 38px; }
+  line-height: 39px; }
 
 h3 {
   font-family: 'Fira Sans',sans-serif;
@@ -213,20 +213,18 @@ h3 {
   font-style: normal; }
 
 h4 {
-  font-family: 'Fira Sans',sans-serif;
-  font-weight: 800;
-  font-size: 16px;
+  font-family: 'Merriweather',Georgia,serif;
+  font-weight: 700;
+  font-size: 24px;
   color: #333;
-  line-height: 18px;
-  font-style: italic;
-  text-transform: uppercase; }
+  line-height: 26px; }
 
 h5 {
   font-family: 'Fira Sans',sans-serif;
   font-weight: 300;
   font-size: 24px;
   color: #333;
-  line-height: 34px; }
+  line-height: 39px; }
 
 h6 {
   font-family: 'Bebas Neue Bold',sans-serif;
@@ -245,10 +243,12 @@ a {
   line-height: 26px;
   text-decoration: none; }
 
-a .underlined {
-  text-transform: uppercase;
-  letter-spacing: 1px; }
-
+/*
+a .underlined{
+	text-transform:uppercase;
+	letter-spacing: 1px;
+}
+*/
 q, blockquote {
   font-family: 'Fira Sans',sans-serif;
   font-weight: 600;
@@ -286,12 +286,13 @@ p.bold {
   font-size: 34px;
   color: #333; }
 
-.header p, .footer p, .footer a {
+.header p, .footer p, .footer a, .nav-hightlight p, .Site-highlight-wrapper a {
   letter-spacing: 1px;
   font-style: normal;
   text-transform: uppercase;
-  font-size: 9px;
-  line-height: 11px; }
+  font-size: 10px;
+  line-height: 12px;
+  font-weight: 400; }
 
 .footer sup {
   color: #333; }
@@ -304,10 +305,14 @@ p.bold {
   line-height: 38px; }
 
 /* desktop Monitore */
-@media only screen and (min-width: 1441px) {
-  .header p, .footer p, .footer a {
-    font-size: 12px;
-    line-height: 14px; } }
+/*
+@media only screen and (min-width: $media_HD_desktop_width) {
+	.header p,.footer p,.footer a{
+		font-size:12px;
+		line-height:14px;   
+	}
+}
+*/
 .pattern {
   position: absolute;
   overflow: hidden;
@@ -356,7 +361,8 @@ p.bold {
   position: relative;
   width: inherit;
   box-sizing: border-box;
-  display: flex; }
+  display: flex;
+  z-index: 3000; }
 
 .header-left, .header-middle {
   display: flex;
@@ -387,11 +393,17 @@ p.bold {
   .header {
     padding: 26px; } }
 .footer {
-  position: relative;
+  position: absolute;
   width: inherit;
   padding: 13px;
   box-sizing: border-box;
-  display: flex; }
+  display: flex;
+  bottom: 0;
+  top: auto;
+  z-index: 4000; }
+
+.footer.-content {
+  position: relative; }
 
 .footer-left, .footer-right {
   display: flex;
@@ -410,7 +422,7 @@ p.bold {
   line-height: 0;
   position: relative;
   vertical-align: baseline;
-  top: 2px; }
+  top: 7px; }
 
 /* tablet */
 /* desktop Monitore */
@@ -587,37 +599,32 @@ header {
   position: fixed;
   top: 0; }
 
-.nav-main li, .nav-main li h3 {
-  color: #F9F7F2;
-  font-style: italic; }
+.nav-main li, .nav-main li h4 {
+  color: #F9F7F2; }
 
-.nav-main li a h3 {
+.nav-main li a h4 {
   text-transform: uppercase; }
 
-.nav-main li a h3 {
+.nav-main li a h4 {
   padding-top: 13px;
   padding-bottom: 13px;
   position: relative; }
 
-.nav-main li a:hover h3 {
-  background-color: rgba(249, 247, 242, 0.8); }
-
-.navi-selected a h3 {
+.navi-selected a h4 {
   color: gray; }
 
-.navi-selected a:hover h3 {
+.navi-selected a:hover h4 {
   background-color: #333 !important; }
 
 .menu-wrapper {
-  z-index: 10; }
+  z-index: 50000; }
 
 .menu-open, .menu-close {
   position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  cursor: pointer;
-  background-color: fuchsia; }
+  cursor: pointer; }
 
 .menu-center {
   position: relative;
@@ -625,7 +632,7 @@ header {
   cursor: pointer; }
 
 .menuBgEffect {
-  z-index: -99;
+  z-index: 10;
   position: absolute;
   left: 50%; }
   .menuBgEffect .menuBgText {
@@ -725,8 +732,7 @@ header {
   padding-top: 104px;
   padding-top: 17vw;
   color: rgba(249, 247, 242, 0.1);
-  text-transform: uppercase;
-  font-style: italic; }
+  text-transform: uppercase; }
 
 .nav-quote-bg {
   width: 100%;

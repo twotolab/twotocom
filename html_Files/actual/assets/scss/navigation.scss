@@ -124,34 +124,33 @@ header {
 	top:0;
 }
 
-.nav-main li,.nav-main li h3 {
+.nav-main li,.nav-main li h4 {
 	color:$second_typo_color;
-	font-style:italic;
 }
 
-.nav-main li a h3 {
+.nav-main li a h4 {
 	text-transform:uppercase;
 }
 
-.nav-main li a h3 {
+.nav-main li a h4 {
 	padding-top:13px;
 	padding-bottom:13px;
 	position:relative;
 }
 
-.nav-main li a:hover h3 {
-	background-color:$second_typo_hover_background_color;
+.nav-main li a:hover h4 {
+	//unused
 }
 
-.navi-selected a h3 {
+.navi-selected a h4 {
 	color:$second_typo_selected_color;
 }
 
-.navi-selected a:hover h3 {
+.navi-selected a:hover h4 {
 	background-color:$second_background_color!important;
 }
 .menu-wrapper{
-		z-index: 10;
+		z-index: 50000;
 }
 
 .menu-open,.menu-close {
@@ -160,9 +159,6 @@ header {
 	flex-direction:row;
 	justify-content:center;
 	cursor:pointer;
-	
-	background-color: fuchsia;
-	
 }
 
 .menu-center {
@@ -174,10 +170,10 @@ header {
 }
 
 .menuBgEffect{
-	z-index: -99;
+	z-index: 10;
 	position: absolute;
-	
 	left:50%;
+	
 	.menuBgText {
 		position: absolute;	
 		box-sizing: content-box;
@@ -296,7 +292,6 @@ header {
 	color:transparentize($first_color,0.9);
 	//text-shadow:10px 10px 5px transparentize($first_color,0.95);
 	text-transform:uppercase;
-	font-style:italic;
 }
 
 .nav-quote-bg {

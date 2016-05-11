@@ -62,7 +62,7 @@ h2 {
 	font-weight:900;//font-weight:800;
 	font-size:36px;
 	color:$first_typo_color;
-	line-height:38px;
+	line-height:$grid_heighthalfHeight_unit;
 }
 
 h3 {
@@ -70,18 +70,16 @@ h3 {
 	font-weight:400;
 	font-size:24px;
 	color:$first_typo_color;
-	line-height:26px;
+	line-height:$grid_height_unit;
 	font-style: normal;
 }
 
 h4 {
-	font-family:'Fira Sans',sans-serif;
-	font-weight:800;
-	font-size:16px;
+	font-family:'Merriweather',Georgia,serif;//'Fira Sans',sans-serif;
+	font-weight:700;
+	font-size:24px;
 	color:$first_typo_color;
-	line-height:18px;
-	font-style:italic;
-	text-transform:uppercase;
+	line-height:$grid_height_unit;
 }
 
 h5 {
@@ -89,7 +87,7 @@ h5 {
 	font-weight:300;
 	font-size:24px;
 	color:$first_typo_color;
-	line-height:34px;
+	line-height:$grid_height_unit*1.5;
 }
 
 h6 {
@@ -110,11 +108,12 @@ a {
 	line-height:26px;
 	text-decoration:none;
 }
+/*
 a .underlined{
 	text-transform:uppercase;
 	letter-spacing: 1px;
 }
-
+*/
 q,blockquote {
 	font-family:'Fira Sans',sans-serif;
 	font-weight:600;
@@ -159,12 +158,13 @@ sup {
     color: $first_typo_color;
 }
 //
-.header p,.footer p,.footer a{
+.header p,.footer p,.footer a,.nav-hightlight p,.Site-highlight-wrapper a{
 	letter-spacing: 1px;
     font-style: normal;
     text-transform: uppercase;
-    font-size:9px;
-	line-height:11px;
+    font-size:10px;
+	line-height:12px;
+	font-weight: 400;
 }
 .footer sup{
 	color: $first_typo_color;
@@ -179,9 +179,11 @@ sup {
 
 
 /* desktop Monitore */
+/*
 @media only screen and (min-width: $media_HD_desktop_width) {
 	.header p,.footer p,.footer a{
 		font-size:12px;
 		line-height:14px;   
 	}
 }
+*/

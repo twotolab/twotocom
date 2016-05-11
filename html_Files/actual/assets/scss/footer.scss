@@ -1,9 +1,16 @@
+
 .footer {
-	position:relative;
+	position:absolute;
 	width:inherit;
 	padding:$grid_halfHeight_unit;
 	box-sizing:border-box;
 	display:flex;
+	bottom: 0;
+	top:auto;
+	z-index: 4000;
+}
+.footer.-content {
+	position:relative;
 }
 
 .footer-left,.footer-right {
@@ -23,12 +30,12 @@
 	line-height:0;
 	position:relative;
 	vertical-align:baseline;
-	top:2px;
+	top:7px;
 }
+
 /* tablet */
 @media only screen and (min-width: $media_tablet_width) {
-	
-}
+	}
 
 /* desktop Monitore */
 @media only screen and (min-width: $media_desktop_width) {

@@ -45,7 +45,7 @@ body {
 .underlined::after {
 	content:'';
 	display:block;
-	height:1px;
+	height:2px;
 	margin:0;
 	width: 0;
 	background-color: $first_typo_color;
