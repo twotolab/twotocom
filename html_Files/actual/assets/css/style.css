@@ -1081,14 +1081,19 @@ body {
 
 .Site-highlight-left {
   height: 100%;
-  width: 50%; }
+  width: 50%;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center; }
 
 .Site-highlight-left img {
   position: absolute;
-  bottom: auto;
   left: 208px;
   right: auto;
-  height: 90%; }
+  height: 90%;
+  width: auto;
+  bottom: auto;
+  top: auto; }
 
 .Site-highlight-right {
   height: 100px;
@@ -1268,11 +1273,20 @@ body {
 
 /* tablet */
 @media only screen and (min-width: 768px) {
+  .Site-highlight-left {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+
   .Site-highlight-left img {
     left: auto;
     right: -416px;
+    height: 100%;
     width: auto;
-    height: auto; }
+    bottom: 26px;
+    top: auto; }
 
   .nav-hightlight-info {
     margin-left: 39px; }

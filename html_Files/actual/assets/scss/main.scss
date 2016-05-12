@@ -54,14 +54,19 @@ body {
 .Site-highlight-left{
 	height: 100%;
 	width: 50%;
+	align-self: center;
 	
 }
 .Site-highlight-left img {
+    
     position: absolute;
-	bottom: auto;
 	left: $grid_height_unit*8;
 	right: auto;
 	height: 90%;
+	width: auto;
+	bottom: auto;
+	top: auto;
+	
 }
 .Site-highlight-right{
 	height: 100px;
@@ -224,12 +229,17 @@ body {
 
 /* tablet */
 @media only screen and (min-width: $media_tablet_width) {
-	
+	.Site-highlight-left{
+		flex-direction: column;
+	}
 	.Site-highlight-left img {
 		left:auto;
 		right: -$grid_height_unit*16;
-		width: auto;
-		height: auto;
+		//
+		height: 100%;
+		width:auto;
+		bottom: $grid_height_unit;
+		top: auto;
 	}
 	.nav-hightlight-info{
 		margin-left: $grid_height_unit*1.5;
