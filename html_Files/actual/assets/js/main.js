@@ -100,7 +100,7 @@ jQuery(document).ready(function($) {
 	/* ------------- update Bg hightlight ------------------*/
 	/*------------------------------------------------------*/
 	var _arr = [ "one", "two", "three"];
-	var _countLengthInSeconds = 2;
+	var _countLengthInSeconds = 10;
 	var _defaultWidthbg;
 	var _defaultheightbg;
 	
