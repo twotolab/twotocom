@@ -90,7 +90,7 @@ a.thumb-hover-effect:hover .underlined::after,a.thumb-hover-effect:hover .big-un
 /////// backgrounds
 
 .first-background {
-	background-color:$first_background_color !important;
+	background-color:$first_background_color;
 }
 .second-background {
 	background-color:$second_background_color !important;
@@ -101,6 +101,17 @@ a.thumb-hover-effect:hover .underlined::after,a.thumb-hover-effect:hover .big-un
 .transparent-second-background {
 	background-color:transparentize($second_darker_color,0.3) !important;
 }
+
+.one_highlight_color-background {
+	background-color:$first_highlight_color !important;
+}
+.two_highlight_color-background {
+	background-color:$second_highlight_color !important;
+}
+.three_highlight_color-background {
+	background-color:$third_highlight_color !important;
+}
+
 
 
 ///////

@@ -92,7 +92,7 @@ body {
   width: 100%; }
 
 .first-background {
-  background-color: #F9F7F2 !important; }
+  background-color: #F9F7F2; }
 
 .second-background {
   background-color: #333 !important; }
@@ -102,6 +102,15 @@ body {
 
 .transparent-second-background {
   background-color: rgba(26, 26, 26, 0.7) !important; }
+
+.one_highlight_color-background {
+  background-color: #F4DDDC !important; }
+
+.two_highlight_color-background {
+  background-color: #A4ECD9 !important; }
+
+.three_highlight_color-background {
+  background-color: #F9CEB0 !important; }
 
 .circle, .dark-circle {
   border-radius: 50%;
@@ -606,6 +615,9 @@ header {
 
 .nav-main li, .nav-main li h4 {
   color: #F9F7F2; }
+
+.nav-main li, .nav-main li h4:hover {
+  color: #333; }
 
 .nav-main li a h4 {
   text-transform: uppercase; }

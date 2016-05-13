@@ -50,7 +50,8 @@ jQuery(document).ready(function($) {
 			$('.nav-quote-bg').removeClass('is-visible');
 			$('.nav-bg-quote').removeClass('is-visible');
 			$('.menu-wrapper').removeClass('menu-out');
-			$('.nav-hightlight').removeClass('is-invisible');
+			//$('.nav-hightlight').removeClass('is-invisible');
+			$('.nav-hightlight').delay(1000).show(0);
 		} else{
 			$('body').animate({scrollTop:0}, '500');
 			$('body').addClass('nav-is-visible');
@@ -60,95 +61,28 @@ jQuery(document).ready(function($) {
 			$('.nav-quote-bg').addClass('is-visible');
 			$('.nav-bg-quote').addClass('is-visible');
 			$('.menu-wrapper').addClass('menu-out');
-			$('.nav-hightlight').addClass('is-invisible');
-		}
-	});
-	$('.nav-hightlight-element.nav-one').on('mouseenter mouseleave', function(event) {
-		event.preventDefault();
-		if( $('.Site-highlight-one').hasClass('loading') ) {
-			$('.Site-highlight-one').removeClass('loading');
-			$('.Site-highlight-one .Site-highlight-left img').hide().stop(true, true).delay(900).fadeIn(600);
-			$('.Site-highlight-one .Site-highlight-right .headline p').stop(true, true).css({marginLeft:"-10px",opacity:"0"}).delay(1200).animate({marginLeft: "0px",opacity:"1"},"300");
-			$('.Site-highlight-one .Site-highlight-right .headline h1').stop(true, true).css({marginLeft:"-10px",opacity:"0"}).delay(1400).animate({marginLeft: "0px",opacity:"1"},"300");
-			$('.Site-highlight-one .Site-highlight-right .headline a').stop(true, true).css({marginLeft:"-10px",opacity:"0"}).delay(1600).animate({marginLeft: "0px",opacity:"1"},"300");
-			//
-			$('.Site-highlight-two').addClass('loading');
-			$('.Site-highlight-three').addClass('loading');
-		}
-	});
-	$('.nav-hightlight-element.nav-two').on('mouseenter mouseleave', function(event) {
-		event.preventDefault();
-		if( $('.Site-highlight-two').hasClass('loading') ) {
-			$('.Site-highlight-two').removeClass('loading');
-			$('.Site-highlight-two .Site-highlight-left img').hide().stop(true, true).delay(900).fadeIn(600);
-			$('.Site-highlight-two .Site-highlight-right .headline p').stop(true, true).css({marginLeft:"-10px",opacity:"0"}).delay(1200).animate({marginLeft: "0px",opacity:"1"},"300");
-			$('.Site-highlight-two .Site-highlight-right .headline h1').stop(true, true).css({marginLeft:"-10px",opacity:"0"}).delay(1400).animate({marginLeft: "0px",opacity:"1"},"300");
-			$('.Site-highlight-two .Site-highlight-right .headline a').stop(true, true).css({marginLeft:"-10px",opacity:"0"}).delay(1600).animate({marginLeft: "0px",opacity:"1"},"300");
-			//
-			$('.Site-highlight-one').addClass('loading');
-			$('.Site-highlight-three').addClass('loading');
-		}
-	});
-	$('.nav-hightlight-element.nav-three').on('mouseenter mouseleave', function(event) {
-		event.preventDefault();
-		if( $('.Site-highlight-three').hasClass('loading') ) {
-			$('.Site-highlight-three').removeClass('loading');
-			$('.Site-highlight-three .Site-highlight-left img').hide().stop(true, true).delay(900).fadeIn(600);
-			$('.Site-highlight-three .Site-highlight-right .headline p').stop(true, true).css({marginLeft:"-10px",opacity:"0"}).delay(1200).animate({marginLeft: "0px",opacity:"1"},"300");
-			$('.Site-highlight-three .Site-highlight-right .headline h1').stop(true, true).css({marginLeft:"-10px",opacity:"0"}).delay(1400).animate({marginLeft: "0px",opacity:"1"},"300");
-			$('.Site-highlight-three .Site-highlight-right .headline a').stop(true, true).css({marginLeft:"-10px",opacity:"0"}).delay(1600).animate({marginLeft: "0px",opacity:"1"},"300");
-			$('.Site-highlight-one').addClass('loading');
-			$('.Site-highlight-two').addClass('loading');
-		}
-	});
-	$('.nav-hightlight-element.nav-one').on('click', function(event) {
-		event.preventDefault();
-		if( $('.Site-highlight-one').hasClass('loading') ) {
-			$('.Site-highlight-one').removeClass('loading');
-			//
-			$('.Site-highlight-two').addClass('loading');
-			$('.Site-highlight-three').addClass('loading');
-		}
-	});
-	$('.nav-hightlight-element.nav-two').on('click', function(event) {
-		event.preventDefault();
-		if( $('.Site-highlight-two').hasClass('loading') ) {
-			$('.Site-highlight-two').removeClass('loading');
-			//
-			$('.Site-highlight-one').addClass('loading');
-			$('.Site-highlight-three').addClass('loading');
-		}
-	});
-	$('.nav-hightlight-element.nav-three').on('click', function(event) {
-		event.preventDefault();
-		if( $('.Site-highlight-three').hasClass('loading') ) {
-			$('.Site-highlight-three').removeClass('loading');
-			//
-			$('.Site-highlight-one').addClass('loading');
-			$('.Site-highlight-two').addClass('loading');
+			//$('.nav-hightlight').addClass('is-invisible');
+			$('.nav-hightlight').hide(0);
+			
 		}
 	});
 
 	/*
-		var arr = [ "one", "two", "three", "four", "five" ];
-var obj = { one: 1, two: 2, three: 3, four: 4, five: 5 };
- 
-jQuery.each( arr, function( i, val ) {
-  $( "#" + val ).text( "Mine is " + val + "." );
- 
-  // Will stop running after "three"
-  return ( val !== "three" );
-});
- 
-jQuery.each( obj, function( i, val ) {
-  $( "#" + i ).append( document.createTextNode( " - " + val ) );
-});
+	var arr = [ "one", "two", "three", "four", "five" ];
+	var obj = { one: 1, two: 2, three: 3, four: 4, five: 5 };
+	 
+	jQuery.each( arr, function( i, val ) {
+	  $( "#" + val ).text( "Mine is " + val + "." );
+	 
+	  // Will stop running after "three"
+	  return ( val !== "three" );
+	});
+	 
+	jQuery.each( obj, function( i, val ) {
+	  $( "#" + i ).append( document.createTextNode( " - " + val ) );
+	});
 
-
-
-
-
-		*/
+	*/
 	/* test over effect
 	$('.menu-button').on('mouseenter mouseleave', function(event) {
 		
@@ -160,17 +94,56 @@ jQuery.each( obj, function( i, val ) {
 			$('.main-content').addClass('content-transparent');
 		}
 	});
+	
 	*/
 	/*------------------------------------------------------*/
 	/* ------------- update Bg hightlight ------------------*/
 	/*------------------------------------------------------*/
 	var _arr = [ "one", "two", "three"];
-	var _countLength = 3;
+	var _countLengthInSeconds = 2;
 	var _defaultWidthbg;
 	var _defaultheightbg;
 	
-	//$('.nav-hightlight-element .activ h4').css({width:"10%"});
-	function animateBgHightlight(){
+	function updateHighlightSiteBg(){
+		
+		var eltArray= [];
+		eltArray  =_arr.slice(0);
+		var actualSelection =eltArray[_actualHighlight];
+		eltArray.splice(_actualHighlight, 1);
+		var target ='.Site-highlight-'+actualSelection;
+		//document.getElementById('header-info').innerHTML ="actualSelection: "+actualSelection+ "// restArray: "+eltArray+"// third: "+eltArray[1];
+		if( $(target).hasClass('loading') ) {
+			$(target).removeClass('loading');
+			$(target+' .Site-highlight-left img').hide().stop(true, true).delay(900).fadeIn(600);
+			$(target+'  .Site-highlight-right .headline p').stop(true, true).css({marginLeft:"-10px",opacity:"0"}).delay(1200).animate({marginLeft: "0px",opacity:"1"},"300");
+			$(target+'  .Site-highlight-right .headline h1').stop(true, true).css({marginLeft:"-10px",opacity:"0"}).delay(1400).animate({marginLeft: "0px",opacity:"1"},"300");
+			$(target+' .Site-highlight-right .headline a').stop(true, true).css({marginLeft:"-10px",opacity:"0"}).delay(1600).animate({marginLeft: "0px",opacity:"1"},"300");
+			//
+			$('.Site-highlight-'+eltArray[0]).addClass('loading');
+			$('.Site-highlight-'+eltArray[1]).addClass('loading');
+		}
+	}
+	function updateHightlightcolors(){
+
+		var colorSelect = _arr[_actualHighlight];
+		var lastcolorSelect = _arr[_lastHighlight];
+		//
+		$('.menu-button .first-background').removeClass(lastcolorSelect+'_highlight_color-background');
+		$('.nav-hover-bg-effect').removeClass(lastcolorSelect+'_highlight_color-background');
+		$('.menu-button .first-background').addClass(colorSelect+'_highlight_color-background');
+		$('.nav-hover-bg-effect').addClass(colorSelect+'_highlight_color-background');
+	}
+	
+	/*
+	function restBgHightlight(){
+
+		$('.nav-hightlight-element .activ .animatedBG').stop(true, true);
+		$('.nav-hightlight-element .activ .animatedBG').width("0px");
+	
+	}
+	*/
+	function updateHightlightTxtBg(){
+
 		_defaultWidthbg = $('.nav-hightlight-element .activ h4').width()+20;
 		_defaultheightbg = $('.nav-hightlight-element .activ h4').height();
 	
@@ -179,23 +152,24 @@ jQuery.each( obj, function( i, val ) {
 			$('.nav-hightlight-element .activ .animatedBG').height(_defaultheightbg+"px");
 		}
 		//$('.nav-hightlight-element .activ h4').width(scale + 'px');
-		$('.nav-hightlight-element .activ .animatedBG').stop(true, true).animate({width:"0px"},_countLength*1000);
+		$('.nav-hightlight-element .activ .animatedBG').stop(true, true).animate({width:"0px"},_countLengthInSeconds*1000);
+		
 	}
-	
 	/*------------------------------------------------------*/
 	/* ------------- counter hightlight ------------------*/
 	/*------------------------------------------------------*/
-
 	
 	var _actualHighlight= 0;
 	var _lastHighlight=0;
 	var _myCounter;
+	var _introCounter;
 	
 	function updateSelectionHighlight(){
 		var lastHighlightTarget = ".nav-"+_arr[_lastHighlight]+" a";
 		var actualHighlightTarget = '.nav-'+_arr[_actualHighlight]+' a';
 		$(lastHighlightTarget).removeClass('activ');
 		$(actualHighlightTarget).addClass('activ');
+		//document.getElementById('header-info').innerHTML +="lastHighlightTarget: "+actualHighlightTarget;
 	}
 	
 	function updateHighlight(){
@@ -206,7 +180,7 @@ jQuery.each( obj, function( i, val ) {
 			_actualHighlight +=1;
 		}
 		updateSelectionHighlight();
-		restartCounter(_myCounter,_countLength);
+		restartCounter(_myCounter,_countLengthInSeconds);
 	}
 	
 	function Countdown(options) {
@@ -215,12 +189,13 @@ jQuery.each( obj, function( i, val ) {
 	  seconds = options.seconds || 10,
 	  updateStatus = options.onUpdateStatus || function () {},
 	  counterEnd = options.onCounterEnd || function () {};
+	  this.name ="_counterName"+_actualHighlight;
 	
 	  function decrementCounter() {
 	    updateStatus(seconds);
 	    if (seconds === 0) {
 	      counterEnd();
-	      instance.stop();
+	      instance.stopCountdown();
 	    }
 	    seconds--;
 	  }
@@ -233,24 +208,41 @@ jQuery.each( obj, function( i, val ) {
 	    timer = setInterval(decrementCounter, 1000);
 	  };
 	
-	  this.stop = function () {
+	  this.stopCountdown = function () {
 	    clearInterval(timer);
 	  };
 	}
 
-	
 	function restartCounter(myCounter,countLength){
-		myCounter = new Countdown({  
+		_myCounter = new Countdown({  
 		    seconds:countLength,  // number of seconds to count down
-		    onUpdateStatus: function(sec){},// document.getElementById('timerTest').innerHTML ="actualHighlight: "+_actualHighlight+" :"+ sec+" second(s)";}, // callback for each second
+		    //onUpdateStatus: function(sec){},// callback for each second
 		    onCounterEnd: function(){updateHighlight();}// final action
 		});
-		animateBgHightlight();
+		updateHightlightTxtBg();
+		updateHighlightSiteBg();
+		updateHightlightcolors();
+		_myCounter.start();
+	}
+	function resetAndStartCounter(){
+		$('.header').hide();
+		$('.footer').hide();
+		$('.nav-hightlight').hide();
+		$('.menu-wrapper').hide();
+		$('.nav-hightlight').stop(true, true).delay(1400).fadeIn(600);
+		$('.header').stop(true, true).delay(1000).fadeIn(1200);
+		$('.footer').stop(true, true).delay(1000).fadeIn(1200);
+		$('.menu-wrapper').stop(true, true).delay(4000).fadeIn(600);
+		introCounter(_introCounter,_countLengthInSeconds);
+	}
+	function introCounter(myCounter,countLength){
+		myCounter = new Countdown({  
+		    seconds:1,  // number of seconds to count down
+		    //onUpdateStatus: function(sec){},// callback for each second
+		    onCounterEnd: function(){restartCounter(_myCounter,countLength);}// final action
+		});
 		myCounter.start();
 	}
-	function stopCounter(myCounter){
-		myCounter.stop();
-	}
-	restartCounter(_myCounter,_countLength);
+	resetAndStartCounter();
 	
 });

@@ -118,7 +118,7 @@ body {
   width: 100%; }
 
 .first-background {
-  background-color: #F9F7F2 !important; }
+  background-color: #F9F7F2; }
 
 .second-background {
   background-color: #333 !important; }
@@ -128,6 +128,15 @@ body {
 
 .transparent-second-background {
   background-color: rgba(26, 26, 26, 0.7) !important; }
+
+.one_highlight_color-background {
+  background-color: #F4DDDC !important; }
+
+.two_highlight_color-background {
+  background-color: #A4ECD9 !important; }
+
+.three_highlight_color-background {
+  background-color: #F9CEB0 !important; }
 
 .circle, .dark-circle {
   border-radius: 50%;
@@ -787,6 +796,9 @@ header {
 .nav-main li, .nav-main li h4 {
   color: #F9F7F2; }
 
+.nav-main li, .nav-main li h4:hover {
+  color: #333; }
+
 .nav-main li a h4 {
   text-transform: uppercase; }
 
@@ -1173,7 +1185,7 @@ body {
   top: 0;
   left: 0; }
 
-.second-menu-wrapper.is-invisible {
+.second-menu-wrapper.is-invisible, .nav-hightlight.is-invisible {
   display: none; }
 
 .nav-hightlight-main {
@@ -1204,6 +1216,36 @@ body {
   top: -8px;
   left: -10px;
   z-index: 100; }
+
+.round {
+  position: relative;
+  display: inline-block;
+  vertical-align: bottom;
+  width: 15px;
+  height: 15px;
+  background: #333;
+  margin: 0 0 4px 0;
+  border-radius: 50%; }
+
+.round svg {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  margin: 4px; }
+
+.round svg path {
+  stroke: #F9F7F2;
+  fill: none;
+  stroke-width: 8; }
+
+.Site-highlight-one .round svg path {
+  stroke: #F4DDDC; }
+
+.Site-highlight-two .round svg path {
+  stroke: #A4ECD9; }
+
+.Site-highlight-three .round svg path {
+  stroke: #F9CEB0; }
 
 .nav-hightlight-element h5 {
   font-weight: 200;

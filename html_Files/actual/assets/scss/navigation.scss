@@ -127,6 +127,9 @@ header {
 .nav-main li,.nav-main li h4 {
 	color:$second_typo_color;
 }
+.nav-main li,.nav-main li h4:hover {
+	color:$first_typo_color;
+}
 
 .nav-main li a h4 {
 	text-transform:uppercase;
