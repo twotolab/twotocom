@@ -1,4 +1,5 @@
 function isTouchDevice() {
+	var DocumentTouch;
     return true === ("ontouchstart" in window || window.DocumentTouch && document instanceof DocumentTouch);
 }
 
@@ -62,7 +63,7 @@ jQuery(document).ready(function($) {
 			$('.nav-hightlight').addClass('is-invisible');
 		}
 	});
-	$('.nav-hightlight-element.-one').on('mouseenter mouseleave', function(event) {
+	$('.nav-hightlight-element.nav-one').on('mouseenter mouseleave', function(event) {
 		event.preventDefault();
 		if( $('.Site-highlight-one').hasClass('loading') ) {
 			$('.Site-highlight-one').removeClass('loading');
@@ -75,7 +76,7 @@ jQuery(document).ready(function($) {
 			$('.Site-highlight-three').addClass('loading');
 		}
 	});
-	$('.nav-hightlight-element.-two').on('mouseenter mouseleave', function(event) {
+	$('.nav-hightlight-element.nav-two').on('mouseenter mouseleave', function(event) {
 		event.preventDefault();
 		if( $('.Site-highlight-two').hasClass('loading') ) {
 			$('.Site-highlight-two').removeClass('loading');
@@ -88,7 +89,7 @@ jQuery(document).ready(function($) {
 			$('.Site-highlight-three').addClass('loading');
 		}
 	});
-	$('.nav-hightlight-element.-three').on('mouseenter mouseleave', function(event) {
+	$('.nav-hightlight-element.nav-three').on('mouseenter mouseleave', function(event) {
 		event.preventDefault();
 		if( $('.Site-highlight-three').hasClass('loading') ) {
 			$('.Site-highlight-three').removeClass('loading');
@@ -100,7 +101,7 @@ jQuery(document).ready(function($) {
 			$('.Site-highlight-two').addClass('loading');
 		}
 	});
-	$('.nav-hightlight-element.-one').on('click', function(event) {
+	$('.nav-hightlight-element.nav-one').on('click', function(event) {
 		event.preventDefault();
 		if( $('.Site-highlight-one').hasClass('loading') ) {
 			$('.Site-highlight-one').removeClass('loading');
@@ -109,7 +110,7 @@ jQuery(document).ready(function($) {
 			$('.Site-highlight-three').addClass('loading');
 		}
 	});
-	$('.nav-hightlight-element.-two').on('click', function(event) {
+	$('.nav-hightlight-element.nav-two').on('click', function(event) {
 		event.preventDefault();
 		if( $('.Site-highlight-two').hasClass('loading') ) {
 			$('.Site-highlight-two').removeClass('loading');
@@ -118,7 +119,7 @@ jQuery(document).ready(function($) {
 			$('.Site-highlight-three').addClass('loading');
 		}
 	});
-	$('.nav-hightlight-element.-three').on('click', function(event) {
+	$('.nav-hightlight-element.nav-three').on('click', function(event) {
 		event.preventDefault();
 		if( $('.Site-highlight-three').hasClass('loading') ) {
 			$('.Site-highlight-three').removeClass('loading');
@@ -160,4 +161,96 @@ jQuery.each( obj, function( i, val ) {
 		}
 	});
 	*/
+	/*------------------------------------------------------*/
+	/* ------------- update Bg hightlight ------------------*/
+	/*------------------------------------------------------*/
+	var _arr = [ "one", "two", "three"];
+	var _countLength = 3;
+	var _defaultWidthbg;
+	var _defaultheightbg;
+	
+	//$('.nav-hightlight-element .activ h4').css({width:"10%"});
+	function animateBgHightlight(){
+		_defaultWidthbg = $('.nav-hightlight-element .activ h4').width()+20;
+		_defaultheightbg = $('.nav-hightlight-element .activ h4').height();
+	
+		if ($('.nav-hightlight-element .activ .animatedBG').width()===0){
+			$('.nav-hightlight-element .activ .animatedBG').width(_defaultWidthbg+"px");
+			$('.nav-hightlight-element .activ .animatedBG').height(_defaultheightbg+"px");
+		}
+		//$('.nav-hightlight-element .activ h4').width(scale + 'px');
+		$('.nav-hightlight-element .activ .animatedBG').stop(true, true).animate({width:"0px"},_countLength*1000);
+	}
+	
+	/*------------------------------------------------------*/
+	/* ------------- counter hightlight ------------------*/
+	/*------------------------------------------------------*/
+
+	
+	var _actualHighlight= 0;
+	var _lastHighlight=0;
+	var _myCounter;
+	
+	function updateSelectionHighlight(){
+		var lastHighlightTarget = ".nav-"+_arr[_lastHighlight]+" a";
+		var actualHighlightTarget = '.nav-'+_arr[_actualHighlight]+' a';
+		$(lastHighlightTarget).removeClass('activ');
+		$(actualHighlightTarget).addClass('activ');
+	}
+	
+	function updateHighlight(){
+		_lastHighlight = _actualHighlight;
+		if(_actualHighlight === _arr.length-1){
+			_actualHighlight =0;
+		} else{
+			_actualHighlight +=1;
+		}
+		updateSelectionHighlight();
+		restartCounter(_myCounter,_countLength);
+	}
+	
+	function Countdown(options) {
+	  var timer,
+	  instance = this,
+	  seconds = options.seconds || 10,
+	  updateStatus = options.onUpdateStatus || function () {},
+	  counterEnd = options.onCounterEnd || function () {};
+	
+	  function decrementCounter() {
+	    updateStatus(seconds);
+	    if (seconds === 0) {
+	      counterEnd();
+	      instance.stop();
+	    }
+	    seconds--;
+	  }
+	
+	  this.start = function () {
+	    clearInterval(timer);
+	    //document.getElementById('timerTest').innerHTML = "restart";
+	    timer = 0;
+	    seconds = options.seconds;
+	    timer = setInterval(decrementCounter, 1000);
+	  };
+	
+	  this.stop = function () {
+	    clearInterval(timer);
+	  };
+	}
+
+	
+	function restartCounter(myCounter,countLength){
+		myCounter = new Countdown({  
+		    seconds:countLength,  // number of seconds to count down
+		    onUpdateStatus: function(sec){},// document.getElementById('timerTest').innerHTML ="actualHighlight: "+_actualHighlight+" :"+ sec+" second(s)";}, // callback for each second
+		    onCounterEnd: function(){updateHighlight();}// final action
+		});
+		animateBgHightlight();
+		myCounter.start();
+	}
+	function stopCounter(myCounter){
+		myCounter.stop();
+	}
+	restartCounter(_myCounter,_countLength);
+	
 });

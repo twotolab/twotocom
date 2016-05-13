@@ -7,7 +7,7 @@
 	display:flex;
 	bottom: 0;
 	top:auto;
-	z-index: 4000;
+	z-index: $zIndex--footer;
 }
 .footer.-content {
 	position:relative;

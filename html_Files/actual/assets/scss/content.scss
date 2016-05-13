@@ -40,7 +40,7 @@ body {
 	transition-duration:.4s;
 	transition-timing-function:ease;
 	overflow: hidden;
-	z-index: -100;
+	z-index: $zIndex--main-content;
 }
 .right-navi-is-open .main-content{
 	opacity: 0.1;

@@ -4,7 +4,7 @@
 
 	box-sizing:border-box;
 	display:flex;
-	z-index: 3000;
+	z-index: $zIndex--header;
 }
 
 .header-left,.header-middle {

@@ -95,37 +95,37 @@ body {
     transition-timing-function:cubic-bezier(0,.55,.49,.99);
 }
 .Site-highlight-one{
-	background-color: #F4DDDC;
+	background-color: $first_highlight_color;
 	
-	z-index: -100;
+	z-index: $zIndex--Site-highlight-one;
 	
 	transform-origin: left;
     transform: translate(0%,0%) rotate(0deg) ;  
 }
 .Site-highlight-two{
-	background-color: #A4ECD9;
-	z-index: -101;
+	background-color: $second_highlight_color;
+	z-index: $zIndex--Site-highlight-two;
 }
 .Site-highlight-three{
-	background-color: #F9CEB0;
-	z-index: -102;
+	background-color: $third_highlight_color;
+	z-index: $zIndex--Site-highlight-three;
 }
 .Site-highlight-one.loading {
     transform-origin: left;
     transition-duration: 5000ms;
     transform: translate(-150%,-250%) rotate(45deg) ;  
-    z-index: -10001; 
+    z-index: $zIndex--Site-highlight-one-loading; 
 }
 .Site-highlight-two.loading {
     transform-origin: left;
     transition-duration: 5000ms;
     transform: translate(150%, -250%) rotate(-45deg) ;  
-    z-index: -10002; 
+    z-index: $zIndex--Site-highlight-two-loading; 
 }.Site-highlight-three.loading {
     transform-origin: left;
     transition-duration: 5000ms;
     transform: translate(-150%, 250%) rotate(45deg) ;  
-    z-index: -10003; 
+    z-index: $zIndex--Site-highlight-three-loading; 
 }
 .nav-hightlight{
 	position: absolute;
@@ -140,34 +140,35 @@ body {
 	position: relative;
 	align-self: center;
 	padding-left:  $grid_halfHeight_unit;
-	z-index: 2000;
+	z-index: $zIndex--nav-hightlight-main;
 }
 .nav-hightlight-element h4,.nav-hightlight-element h5,.nav-hightlight-element .content{
 	   float: left;
 	   line-height: $grid_height_unit;
 	   
 }	
-.nav-hightlight-element  h4{
+.nav-hightlight-element .animatedBG{
+		position: absolute;
+		padding: 8px 0px 4px 0px;
+		top: 0;
+		left: 0;
+		width: 0;
+		height: 0;
+		z-index:$zIndex--animatedBG;
+		background-color:$first_color;
+}
+.nav-hightlight-element h4{
 		position: relative;
 		padding: 8px 10px 4px 10px;
 		top: -8px;
 		left: -10px;
-		z-index: -200001;
-		//z-index: -201;
+		z-index: $zIndex--nav-hightlight-element--h4;
+		
 }
+
 .nav-hightlight-element .activ h4{
-		background-color: #F4DDDC;
-}
-.timerBg{
-	background-color: darken(#F4DDDC, 10%);
-	width: 10%;
-	height: 100%;
-	position: absolute;
-	z-index: -202;
-	padding: 8px 10px 4px 10px;
-	top: 0;
-	left: 0;
-	
+		//background-color: $first_color;
+		//background-color: blue;
 }
 .nav-hightlight-element h5{
 	font-weight: 200;
@@ -270,6 +271,9 @@ body {
 // ////////////////////////
 @media only screen and (min-width: $media_desktop_width) {
 		
+	.nav-hightlight-main{
+		padding-left:  $grid_height_unit;
+	}
 	.Site-highlight-left img {
 		left:auto;
 		right: -$grid_height_unit*8;

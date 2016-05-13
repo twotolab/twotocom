@@ -150,7 +150,7 @@ header {
 	background-color:$second_background_color!important;
 }
 .menu-wrapper{
-		z-index: 50000;
+		z-index: $zIndex--menu-wrapper;
 }
 
 .menu-open,.menu-close {
@@ -170,7 +170,7 @@ header {
 }
 
 .menuBgEffect{
-	z-index: 10;
+	z-index: $zIndex--menuBgEffect;
 	position: absolute;
 	left:50%;
 	
@@ -184,7 +184,7 @@ header {
 			font-size:90px;
 			line-height: 65px;
 		
-			color:transparentize($second_lightHeavy_color,0.9);
+			color:transparentize($second_color,0.95);
 			text-transform:uppercase;
 		}
 	}
@@ -289,7 +289,7 @@ header {
 	box-sizing:border-box;
 	padding-top:104px;
 	padding-top:17vw;
-	color:transparentize($first_color,0.9);
+	color:transparentize($first_color,0.98);
 	//text-shadow:10px 10px 5px transparentize($first_color,0.95);
 	text-transform:uppercase;
 }

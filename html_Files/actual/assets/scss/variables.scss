@@ -22,7 +22,6 @@ $media_large_desktop_width: 1241px;
 /* HD desktop Monitore */
 $media_HD_desktop_width: 1441px;
 
-
 /*------------------------------------*\
     $colors
 \*------------------------------------*/
@@ -30,6 +29,10 @@ $media_HD_desktop_width: 1441px;
 $first_color:#F9F7F2; 
 $second_color:#333;
 $third_color:#FFFE00;//#50E3C2;
+
+$first_highlight_color:#F4DDDC;
+$second_highlight_color:#A4ECD9;
+$third_highlight_color:#F9CEB0;
 
 $second_darker_color: darken($second_color, 10%);
 
@@ -64,3 +67,38 @@ $second_typo_hover_background_color: $first_transparent_dark_color;
 $second_typo_selected_color: $second_lightHeavy_color;
 
 $first_shadow_color : $shadow_color;
+/*------------------------------------*\
+    z-index : from lowest to highest
+\*------------------------------------*/
+
+
+$zIndex--Site-highlight-one-loading:auto;//-10001;
+$zIndex--Site-highlight-two-loading:auto;//-10002;
+$zIndex--Site-highlight-three-loading:auto;//-10003;
+
+$zIndex--main-content:-100; /*only on Content.html level*/
+
+$zIndex--Site-highlight-one:auto;
+$zIndex--Site-highlight-two:auto;
+$zIndex--Site-highlight-three:auto;
+
+$zIndex--menuBgEffect:-10;
+
+$zIndex--animatedBG:-11;
+$zIndex--nav-hightlight-main:auto;
+
+$zIndex--nav-hightlight-element--h4:100;//-200001;
+
+
+$zIndex--header:3000;
+$zIndex--footer:4000;
+
+$zIndex--menu-wrapper:50000;
+
+
+/// Pattern
+
+$zIndex--pattern:auto;//5200;
+$zIndex--pattern-horizontal:auto;//-1000;
+$zIndex--pattern-vertical:auto;//-2002;
+$zIndex--pattern-svg:auto;//10000;

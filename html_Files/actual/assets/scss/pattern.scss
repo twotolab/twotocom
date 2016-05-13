@@ -4,7 +4,7 @@
 	height: inherit;
 	width:100%;
 	margin: 0 auto;
-	z-index:5200;
+	z-index:$zIndex--pattern;
 }
 .pattern-horizontal {
 	position:relative;
@@ -14,7 +14,7 @@
 	background-color:rgba(212,153,162,0.05);
 	background-size:25%;
 	background-image:-webkit-linear-gradient(0,transparent 50%,rgba(255,0,171,0.05) 50%);
-	z-index:-1000;
+	z-index:$zIndex--pattern-horizontal;
 	pointer-events: none;
 	max-width:$media_HD_desktop_width;
 	margin: 0 auto;
@@ -31,7 +31,7 @@
 	background-color:rgba(212,153,162,0.05);
 	background-size:$grid_halfHeight_unit;
 	background-image:-webkit-linear-gradient(90deg,transparent 1px,rgba(255,0,171,0.05) 1px);
-	z-index:-2002;
+	z-index:$zIndex--pattern-vertical;
 	pointer-events: none;
 }
 
@@ -43,7 +43,7 @@
 }
 .pattern svg {
 	
-		z-index: 10000;
+		z-index: $zIndex--pattern-svg;
 }
 .pattern{
 		display: none;
