@@ -133,6 +133,9 @@ body {
 	left: 0;
 	
 }
+.nav-hightlight.grid-content{
+	width: auto;
+}
 .second-menu-wrapper.is-invisible, .nav-hightlight.is-invisible {
 	display:none;
 }
@@ -141,6 +144,7 @@ body {
 	position: relative;
 	align-self: center;
 	padding-left:  $grid_halfHeight_unit;
+	pointer-events: none;
 	z-index: $zIndex--nav-hightlight-main;
 }
 .nav-hightlight-element h4,.nav-hightlight-element h5,.nav-hightlight-element .content{
@@ -212,6 +216,7 @@ body {
 }
 .nav-hightlight a,.nav-hightlight p{
 	float: left;
+	pointer-events:auto;
 	padding-bottom: $grid_height_unit;
 }
 .Site-highlight-wrapper p{

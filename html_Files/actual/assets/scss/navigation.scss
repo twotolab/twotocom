@@ -128,7 +128,7 @@ header {
 	color:$second_typo_color;
 }
 .nav-main li,.nav-main li h4:hover {
-	color:$first_typo_color;
+	//color:$first_typo_color;
 }
 
 .nav-main li a h4 {
@@ -141,8 +141,9 @@ header {
 	position:relative;
 }
 
-.nav-main li a:hover h4 {
+.nav-main li a:hover h4,.nav-main li a:active h4{
 	//unused
+	color:$first_typo_color;
 }
 
 .navi-selected a h4 {
@@ -259,17 +260,12 @@ header {
 
 .navigation-right {
 	display:none;
+	z-index: $zIndex--Site-highlight-right;
 }
 
 .nav-main li a:hover h3 {
 	background-color:transparent;
 }
-/*
-.menu-button .underlined {
-	display:inline-block;
-	width:inherit;
-}
-*/
 	
 .nav-quote-bg {
 	position:fixed;
@@ -317,10 +313,10 @@ header {
 	left:0;
 	background-color:transparentize($highlight_color,0.3);
 }
-a.hover-effect .underlined::after,.hover-effect .underlined::after {
+a.hover-effect .underlined::after,.hover-effect .underlined::after,a.hover-effect .small-underlined::after,.hover-effect .small-underlined::after  {
 	width:100%;
 }
-a.hover-effect:hover .underlined::after,.hover-effect:hover .underlined::after {
+a.hover-effect:hover .underlined::after,.hover-effect:hover .underlined::after,a.hover-effect:hover .small-underlined::after,.hover-effect:hover .small-underlined::after {
 	max-width:100%;
 }
 
