@@ -55,6 +55,7 @@ h1 {
 	font-weight:700;
 	color:$first_typo_color;
 	line-height:58px;
+	letter-spacing: 0px;
 }
 
 h2 {
@@ -153,7 +154,7 @@ sup {
     color: $first_typo_color;
 }
 //
-.header p,.footer p,.footer a,.nav-hightlight p,.Site-highlight-wrapper a{
+.header p,.footer p,.footer a,.nav-hightlight p,.Site-highlight-wrapper a,.about-content a{
 	letter-spacing: 1px;
     font-style: normal;
     text-transform: uppercase;

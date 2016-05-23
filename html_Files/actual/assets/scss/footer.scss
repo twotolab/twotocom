@@ -39,9 +39,7 @@
 
 /* desktop Monitore */
 @media only screen and (min-width: $media_desktop_width) {
-	.footer{
-		padding:$grid_height_unit;
-	}
+
 	.footer-left,.footer-right {
 		flex: 1;
 	}
@@ -52,5 +50,12 @@
 	.footer-right-left,.footer-right-right {
 		display:block;
 		width: inherit;
+	}
+}
+/* HD desktop Monitore */
+@media only screen and (min-width: $media_HD_desktop_width) {
+
+	.footer{
+		padding:$grid_height_unit;
 	}
 }

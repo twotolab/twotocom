@@ -35,7 +35,7 @@
 		transition-delay:.6s;
 	}
 
-	.right-navi-is-open .main-content {
+	.right-navi-is-open .content-main, .right-navi-is-open .project-main {
 		opacity:.1;
 		transition:all .5s ease;
 	}
@@ -69,16 +69,6 @@
 			
 			min-width: $grid_height_unit*2;
 			transform:scaleX(0.5);
-		}
-		.menu-button:hover .menuBgEffect p{
-			visibility: visible;
-			opacity: 1;
-			transition:opacity .4s ease-out, transform 0.6s;
-			transform:translateY(0);
-			}
-		.menu-button:hover .menuBgEffect .topEffect,.menu-button:hover .menuBgEffect .bottomEffect {
-			transition:transform 0.3s;
-			transform:translate(-50%,0);
 		}
 
 		
@@ -168,6 +158,19 @@
 		}
 		.nav-elt  h3{
 			transition: color 0.5s ease;
+		}
+	}
+	@media only screen and (min-width: $media_desktop_width) {
+		
+		.menu-button:hover .menuBgEffect p{
+			visibility: visible;
+			opacity: 1;
+			transition:opacity .4s ease-out, transform 0.6s;
+			transform:translateY(0);
+		}
+		.menu-button:hover .menuBgEffect .topEffect,.menu-button:hover .menuBgEffect .bottomEffect {
+			transition:transform 0.3s;
+			transform:translate(-50%,0);
 		}
 	}
 }

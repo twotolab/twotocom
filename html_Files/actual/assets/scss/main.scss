@@ -175,27 +175,6 @@ body {
 		//background-color: $first_color;
 		//background-color: blue;
 }
-.round {
-    position: relative;
-    display: inline-block;
-    vertical-align: bottom;
-    width: 15px;
-    height: 15px;
-    background: $second_color;
-    margin: 0 0 4px 0;
-    border-radius: 50%;
-}
-.round svg {
-    position: absolute;
-    width: 7px;
-    height: 7px;
-    margin: 4px;
-}
-.round svg path{
-	stroke: $second_typo_color;
-	fill: none;
-    stroke-width: 8;
-}
 .Site-highlight-one .round svg path{
 	stroke: $first_highlight_color;
 }

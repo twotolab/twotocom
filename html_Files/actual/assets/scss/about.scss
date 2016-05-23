@@ -44,9 +44,31 @@ body {
 	height: 100%;
 	overflow: hidden;
 }
-.right-navi-is-open .main-content{
+.right-navi-is-open .content-main,.right-navi-is-open .project-main{
 	opacity: 0.1;
 }
+.round {
+  position: relative;
+  display: inline-block;
+  vertical-align: bottom;
+  width: 15px;
+  height: 15px;
+  background: #333;
+  margin: 0 0 4px 0;
+  border-radius: 50%; }
+
+.round svg {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  margin: 4px;
+  }
+.round svg path {
+  stroke: #F9F7F2;
+  fill: none;
+  stroke-width: 8;
+  }
+
 .centered-max-width{
 	margin:0 auto;
 	width: 100%;
@@ -68,6 +90,7 @@ body {
 	padding-right: $grid_heighthalfHeight_unit;
 	text-align: left;
 }
+
 h1 {
 	font-size: 8vw;
 	line-height: 11vw;

@@ -230,23 +230,7 @@ header {
 	color:$first_typo_color;
 	padding-top:2px;
 }
-/*
-.header-left {
-	display:flex;
-	flex-direction:row;
-	box-sizing:border-box;
-	padding-left:13px;
-	padding-top:13px;
-	padding-bottom:13px;
-}
 
-.header-left .info {
-	text-transform:uppercase;
-	padding:0;
-	padding-left:8px;
-	padding-top:6px;
-}
-*/
 .navigation-elts {
 	display:flex;
 	flex:1 25%;
@@ -288,7 +272,7 @@ header {
 	box-sizing:border-box;
 	padding-top:104px;
 	padding-top:17vw;
-	color:transparentize($first_color,0.98);
+	color:transparentize($first_color,0.8);
 	//text-shadow:10px 10px 5px transparentize($first_color,0.95);
 	text-transform:uppercase;
 }
@@ -311,7 +295,10 @@ header {
 	position:absolute;
 	top:0;
 	left:0;
-	background-color:transparentize($highlight_color,0.3);
+	background-color:$first_color; // transparentize($first_color,0.3);
+}
+.nav-elt:hover .nav-hover-bg-effect {
+	width: 100%;
 }
 a.hover-effect .underlined::after,.hover-effect .underlined::after,a.hover-effect .small-underlined::after,.hover-effect .small-underlined::after  {
 	width:100%;
@@ -330,7 +317,9 @@ a.hover-effect:hover .underlined::after,.hover-effect:hover .underlined::after,a
 }
 /* mobil and Tablets only*/ 
 @media only screen and (min-width: $media_desktop_width) {
-
+	.nav-quote-bg h2 {
+		color:transparentize($first_color,0.98);
+	}
 }
 
 /* desktop Monitore */

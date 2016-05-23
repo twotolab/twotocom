@@ -5,6 +5,8 @@
 	box-sizing:border-box;
 	display:flex;
 	z-index: $zIndex--header;
+	
+	padding:$grid_halfHeight_unit;
 }
 
 .header-left,.header-middle {
@@ -24,9 +26,6 @@
 	padding-left:$grid_halfHeight_unit;
 	
 }
-.header{
-	padding:$grid_halfHeight_unit;;
-}
 /* tablet */
 @media only screen and (min-width: $media_tablet_width) {
 
@@ -37,6 +36,15 @@
 	.header-middle,.header-right {
 		display:flex;
 	}
+	/*
+	.header{
+	padding:$grid_height_unit;
+}
+*/
+}
+/* HD desktop Monitore */
+@media only screen and (min-width: $media_HD_desktop_width) {
+
 	.header{
 	padding:$grid_height_unit;
 }

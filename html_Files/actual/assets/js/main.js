@@ -5,16 +5,9 @@ function isTouchDevice() {
 
 
 jQuery(document).ready(function($) {
-	
-	$( window ).scroll(function() {
-		    	$('.onScrollAnimation').hide();
-    			clearTimeout( $.data( this, "scrollCheck" ) );
-    			$.data( this, "scrollCheck", setTimeout(function() {
-	    			//$('.onScrollAnimation').clearQueue();
-    				$('.onScrollAnimation').stop(true, true).delay(1000).fadeIn(300);
-    			}, 250) );
-
-    		});
+	/*------------------------------------------------------*/
+	/* ------------- Touch Device Detection------------------*/
+	/*------------------------------------------------------*/
 	// Touch Device Detection
 	if (isTouchDevice() === true) {
 		$('html').addClass('touch');
@@ -23,10 +16,16 @@ jQuery(document).ready(function($) {
 		$('html').addClass('no-touch');
 		//alert("hello no-touch");
 	}
+	/*------------------------------------------------------*/
+	/* ------------- breakpoint------------------*/
+	/*------------------------------------------------------*/
 	// adaptive images
 	 $(".breakpoint img").breakpoint();
 	
-	// click events
+	// 
+	/*------------------------------------------------------*/
+	/* ------------- click events------------------*/
+	/*------------------------------------------------------*/
 	$('.secondary-button').on('click', function(event) {
 		event.preventDefault();
 		if( $('body').hasClass('right-navi-is-open') ) {
@@ -42,7 +41,7 @@ jQuery(document).ready(function($) {
 			$( ".secondary-button" ).trigger( "click" );
 			}
 	
-		if( $('body').hasClass('nav-is-visible') ) {
+		if( $('body').hasClass('nav-is-visible')) {
 			$('body').removeClass('nav-is-visible');
 			//
 			$('.menu-close').removeClass('is-visible');
@@ -51,7 +50,7 @@ jQuery(document).ready(function($) {
 			$('.nav-bg-quote').removeClass('is-visible');
 			$('.menu-wrapper').removeClass('menu-out');
 			//$('.nav-hightlight').removeClass('is-invisible');
-			$('.nav-hightlight').delay(1000).show(0);
+			$('.nav-hightlight').delay(1000).fadeIn(1000);
 		} else{
 			$('body').animate({scrollTop:0}, '500');
 			$('body').addClass('nav-is-visible');
@@ -66,36 +65,6 @@ jQuery(document).ready(function($) {
 			
 		}
 	});
-
-	/*
-	var arr = [ "one", "two", "three", "four", "five" ];
-	var obj = { one: 1, two: 2, three: 3, four: 4, five: 5 };
-	 
-	jQuery.each( arr, function( i, val ) {
-	  $( "#" + val ).text( "Mine is " + val + "." );
-	 
-	  // Will stop running after "three"
-	  return ( val !== "three" );
-	});
-	 
-	jQuery.each( obj, function( i, val ) {
-	  $( "#" + i ).append( document.createTextNode( " - " + val ) );
-	});
-
-	*/
-	/* test over effect
-	$('.menu-button').on('mouseenter mouseleave', function(event) {
-		
-		event.preventDefault();
-		if( $('.main-content').hasClass('content-transparent') ) {
-			$('.main-content').removeClass('content-transparent');
-		}
-		else{
-			$('.main-content').addClass('content-transparent');
-		}
-	});
-	
-	*/
 	/*------------------------------------------------------*/
 	/* ------------- update Bg hightlight ------------------*/
 	/*------------------------------------------------------*/
@@ -133,15 +102,6 @@ jQuery(document).ready(function($) {
 		$('.menu-button .first-background').addClass(colorSelect+'_highlight_color-background');
 		$('.nav-hover-bg-effect').addClass(colorSelect+'_highlight_color-background');
 	}
-	
-	/*
-	function restBgHightlight(){
-
-		$('.nav-hightlight-element .activ .animatedBG').stop(true, true);
-		$('.nav-hightlight-element .activ .animatedBG').width("0px");
-	
-	}
-	*/
 	function updateHightlightTxtBg(){
 
 		_defaultWidthbg = $('.nav-hightlight-element .activ h4').width()+20;
@@ -224,25 +184,31 @@ jQuery(document).ready(function($) {
 		updateHightlightcolors();
 		_myCounter.start();
 	}
-	function resetAndStartCounter(){
-		$('.header').hide();
-		$('.footer').hide();
-		$('.nav-hightlight').hide();
-		$('.menu-wrapper').hide();
-		$('.nav-hightlight').stop(true, true).delay(1400).fadeIn(600);
-		$('.header').stop(true, true).delay(1000).fadeIn(1200);
-		$('.footer').stop(true, true).delay(1000).fadeIn(1200);
-		$('.menu-wrapper').stop(true, true).delay(4000).fadeIn(600);
-		introCounter(_introCounter,_countLengthInSeconds);
-	}
 	function introCounter(myCounter,countLength){
 		myCounter = new Countdown({  
-		    seconds:1,  // number of seconds to count down
+		    seconds:0,  // number of seconds to count down
 		    //onUpdateStatus: function(sec){},// callback for each second
 		    onCounterEnd: function(){restartCounter(_myCounter,countLength);}// final action
 		});
 		myCounter.start();
 	}
-	resetAndStartCounter();
+	introCounter(_introCounter,_countLengthInSeconds);
+	/*------------------------------------------------------*/
+	/* ------------- intro Animations ------------------*/
+	/*------------------------------------------------------*/
+		function introDefaultAnimation(){
+		$('.header').hide();
+		$('.footer').hide();
+		$('.menu-wrapper').hide();
+		$('.header').stop(true, true).fadeIn(1200);
+		$('.footer').stop(true, true).fadeIn(1200);
+		$('.menu-wrapper').stop(true, true).delay(1000).fadeIn(600);
+	}
+	introDefaultAnimation();
 	
+	function introMainAnimation(){
+		$('.nav-hightlight').hide();
+		$('.nav-hightlight').stop(true, true).delay(1000).fadeIn(600);
+	}
+	introMainAnimation();
 });
