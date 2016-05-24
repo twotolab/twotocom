@@ -98,7 +98,7 @@ jQuery(document).ready(function($) {
 	}
 	introDefaultAnimation();
 	function introContentnAnimation(){
-		$('.content-main').stop(true, true).css({top:"10px",opacity:"0"}).delay(1200).animate({top: "0px",opacity:"1"},"1200");
+		//$('.content-main').stop(true, true).css({top:"10px",opacity:"0"}).delay(1200).animate({top: "0px",opacity:"1"},"1200");
 		$('.project-main').stop(true, true).css({top:"10px",opacity:"0"}).delay(1200).animate({top: "0px",opacity:"1"},"1200");
 		
 		$('.about-content').stop(true, true).css({top:"10px",opacity:"0"}).delay(1200).animate({top: "0px",opacity:"1"},"1200");
