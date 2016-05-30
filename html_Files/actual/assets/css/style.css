@@ -1183,7 +1183,7 @@ body {
           transition-timing-function: cubic-bezier(0, 0.55, 0.49, 0.99); }
 
 .Site-highlight-one {
-  background-color: #F4DDDC;
+  background-color: #F9F7F2;
   z-index: auto;
   -webkit-transform-origin: left;
           transform-origin: left;
@@ -1191,11 +1191,11 @@ body {
           transform: translate(0%, 0%) rotate(0deg); }
 
 .Site-highlight-two {
-  background-color: #A4ECD9;
+  background-color: #F9F7F2;
   z-index: auto; }
 
 .Site-highlight-three {
-  background-color: #F9CEB0;
+  background-color: #F9F7F2;
   z-index: auto; }
 
 .Site-highlight-one.loading {
