@@ -1146,16 +1146,23 @@ body {
   width: 50%;
   -webkit-align-self: center;
       -ms-flex-item-align: center;
-          align-self: center; }
+          align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  Justify-content: center; }
 
 .Site-highlight-left img {
-  position: absolute;
-  left: 208px;
+  left: 50%;
   right: auto;
-  height: 90%;
-  width: auto;
   bottom: auto;
-  top: auto; }
+  top: auto;
+  position: relative; }
 
 .Site-highlight-right {
   height: 100px;
@@ -1163,7 +1170,7 @@ body {
   -webkit-align-self: center;
       -ms-flex-item-align: center;
           align-self: center;
-  padding-left: 104px;
+  padding-left: 260px;
   top: -56px; }
 
 .Site-highlight-one, .Site-highlight-two, .Site-highlight-three {
@@ -1354,11 +1361,7 @@ body {
             flex-direction: column; }
 
   .Site-highlight-left img {
-    left: auto;
-    right: -416px;
-    height: 100%;
-    width: auto;
-    bottom: 26px;
+    bottom: auto;
     top: auto; }
 
   .nav-hightlight-info {
@@ -1384,10 +1387,6 @@ body {
 @media only screen and (min-width: 1025px) {
   .nav-hightlight-main {
     padding-left: 26px; }
-
-  .Site-highlight-left img {
-    left: auto;
-    right: -208px; }
 
   .grid-highlight-left h2 {
     height: 100%;
