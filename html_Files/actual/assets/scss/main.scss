@@ -95,7 +95,7 @@ body {
     transition-timing-function:cubic-bezier(0,.55,.49,.99);
 }
 .Site-highlight-one{
-	background-color: $first_highlight_color;
+	background-color: $first_color;//$first_highlight_color;
 	
 	z-index: $zIndex--Site-highlight-one;
 	
@@ -103,11 +103,11 @@ body {
     transform: translate(0%,0%) rotate(0deg) ;  
 }
 .Site-highlight-two{
-	background-color: $second_highlight_color;
+	background-color: $first_color;//$second_highlight_color;
 	z-index: $zIndex--Site-highlight-two;
 }
 .Site-highlight-three{
-	background-color: $third_highlight_color;
+	background-color: $first_color;//$third_highlight_color;
 	z-index: $zIndex--Site-highlight-three;
 }
 .Site-highlight-one.loading {
