@@ -55,24 +55,33 @@ body {
 	height: 100%;
 	width: 50%;
 	align-self: center;
+	display: flex;
+	align-items: center;
+	Justify-content: center;
 	
 }
 .Site-highlight-left img {
     
-    position: absolute;
-	left: $grid_height_unit*8;
+   // position: absolute;
+	//left: $grid_height_unit*8;
+	//right: auto;
+	//height: 90%;
+	//width: auto;
+	left:50%;
 	right: auto;
-	height: 90%;
-	width: auto;
 	bottom: auto;
 	top: auto;
+	position: relative;
+	width:  auto ;
+	height: 100% ;
+	
 	
 }
 .Site-highlight-right{
 	height: 100px;
 	width: 50%;
 	align-self: center;
-	padding-left: $grid_height_unit*4;
+	padding-left: $grid_height_unit*10;
 	top: -$grid_height_unit*2-4px;
 }
 
@@ -249,13 +258,13 @@ body {
 		flex-direction: column;
 	}
 	.Site-highlight-left img {
-		left:auto;
-		right: -$grid_height_unit*16;
+		//left:auto;
+		//right: -$grid_height_unit*16;
 		//
-		height: 100%;
-		width:auto;
-		bottom: $grid_height_unit;
+		bottom: auto;
 		top: auto;
+		width: 900px;
+		height: 680px;
 	}
 	.nav-hightlight-info{
 		margin-left: $grid_height_unit*1.5;
@@ -289,9 +298,14 @@ body {
 	.nav-hightlight-main{
 		padding-left:  $grid_height_unit;
 	}
+	.Site-highlight-left {
+		//left:auto;
+		//right: -$grid_height_unit*8;
+		//top: 50%;
+	}
 	.Site-highlight-left img {
-		left:auto;
-		right: -$grid_height_unit*8;
+		//left:auto;
+		//right: -$grid_height_unit*8;
 	}
 	.grid-highlight-left h2{
 		height: 100%;

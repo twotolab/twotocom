@@ -83,7 +83,7 @@ jQuery(document).ready(function($) {
 		//document.getElementById('header-info').innerHTML ="actualSelection: "+actualSelection+ "// restArray: "+eltArray+"// third: "+eltArray[1];
 		if( $(target).hasClass('loading') ) {
 			$(target).removeClass('loading');
-			$(target+' .Site-highlight-left img').hide().stop(true, true).delay(900).fadeIn(600);
+			//$(target+' .Site-highlight-left img').hide().stop(true, true).delay(100).fadeIn(600);
 			$(target+'  .Site-highlight-right .headline p').stop(true, true).css({marginLeft:"-10px",opacity:"0"}).delay(1200).animate({marginLeft: "0px",opacity:"1"},"300");
 			$(target+'  .Site-highlight-right .headline h1').stop(true, true).css({marginLeft:"-10px",opacity:"0"}).delay(1400).animate({marginLeft: "0px",opacity:"1"},"300");
 			$(target+' .Site-highlight-right .headline a').stop(true, true).css({marginLeft:"-10px",opacity:"0"}).delay(1600).animate({marginLeft: "0px",opacity:"1"},"300");
@@ -99,7 +99,7 @@ jQuery(document).ready(function($) {
 		//
 		$('.menu-button .first-background').removeClass(lastcolorSelect+'_highlight_color-background');
 		$('.nav-hover-bg-effect').removeClass(lastcolorSelect+'_highlight_color-background');
-		$('.menu-button .first-background').addClass(colorSelect+'_highlight_color-background');
+		//$('.menu-button .first-background').addClass(colorSelect+'_highlight_color-background');
 		$('.nav-hover-bg-effect').addClass(colorSelect+'_highlight_color-background');
 	}
 	function updateHightlightTxtBg(){

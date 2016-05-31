@@ -1162,7 +1162,9 @@ body {
   right: auto;
   bottom: auto;
   top: auto;
-  position: relative; }
+  position: relative;
+  width: auto;
+  height: 100%; }
 
 .Site-highlight-right {
   height: 100px;
@@ -1362,7 +1364,9 @@ body {
 
   .Site-highlight-left img {
     bottom: auto;
-    top: auto; }
+    top: auto;
+    width: 900px;
+    height: 680px; }
 
   .nav-hightlight-info {
     margin-left: 39px; }

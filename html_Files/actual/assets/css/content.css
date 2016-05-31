@@ -1285,8 +1285,6 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 100%;
-  width: auto;
   overflow: hidden; }
 
 .grid-pict-elt img {
