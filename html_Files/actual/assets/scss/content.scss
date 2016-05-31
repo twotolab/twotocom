@@ -62,6 +62,15 @@ body {
 	
 	padding-top: $grid_height_unit*2;
 }
+.next-project{
+	margin-bottom: $grid_height_unit*6;
+}
+.next-project .info{
+	margin-bottom: $grid_halfHeight_unit;	
+}
+.next-project h2{
+	margin-bottom: $grid_halfHeight_unit;	
+}
 .project-main h1 {
 	font-size: 8vw;
 	line-height: 11vw;
@@ -230,6 +239,14 @@ body {
 	display: flex;//inline-block; !!!! Check !!!!!!!
 	flex-grow: 1;
 }
+.grid-four-wrapper.-mobile-reverse {
+	flex-wrap: wrap-reverse;
+}
+.grid-four-wrapper.-mobile-reverse .grid-text-elt{
+	
+	//height: auto;
+	height: 100% !important;
+	}
 .grid-four-wrapper .grid-one-unit,.grid-four-wrapper .grid-two-unit,.grid-four-wrapper .grid-three-unit{
 	flex: 1 100%;
 	width: 100%;
@@ -292,6 +309,9 @@ body {
 	.grid-thumb-elt,.grid-thumb-txt {
 		flex: 1 35%;
 	}
+	.grid-four-wrapper.-mobile-reverse {
+	flex-flow: row;
+}
 }	
 @media only screen and (min-width: $media_desktop_width) {
 	.grid-space-elt{
@@ -332,8 +352,8 @@ body {
 .grid-pict-elt{
 	position: relative;
 
-	width: 100%; // default full width mobil
-	height: 260px;
+	//width: 100%; // default full width mobil
+	//height: 260px;
 	
 }
 .grid-pict-elt.-thumb img{
@@ -362,8 +382,8 @@ body {
     align-items: center;
     /* align vertical */
     //width: 100%;
-    width: auto;
-    height: inherit;
+    //width: auto;
+    //height: inherit;
     overflow: hidden;
 
 }
@@ -394,20 +414,20 @@ body {
     //height: 100%;
     //width: auto;
     overflow: hidden;
-
 }
-
 .grid-pict-elt img{
 	position: relative;
 }
 .grid-text-elt{
 	//padding-top:$grid_height_unit;
 	padding-bottom: $grid_height_unit;
+	padding-top: $grid_halfHeight_unit;
 	padding-right: $grid_height_unit;
 	height: auto !important;
 	display: flex !important;
 	flex-direction: column;
 }
+
 .grid-text-elt p.info,.grid-thumb-txt p.info{
 	font-size: 10px;
 	font-weight: 200;
@@ -420,13 +440,11 @@ body {
 	}
 	.project-main h1 {
 		font-size: 48px;
-		line-height: 58px;
-			
+		line-height: 58px;		
 	}
 	.project-main h5 {
 		font-size:24px;
-		line-height:$grid_height_unit*1.5;
-			
+		line-height:$grid_height_unit*1.5;		
 	}
 	.project-main .introduction {
 		text-align: center;
@@ -437,7 +455,6 @@ body {
 	 align-items: flex-start;
 	}
 	.half-right-width-text{
-
 		position:absolute;
 		right: -70%;
 		width: 70%;
@@ -445,55 +462,47 @@ body {
 	.half-right-width-wrapper{
 		right:0;
 		width: 50%;
-}
+	}
 	.half-left-width-text{
-
 		position:absolute;
 		right: auto;
 		left: -70%;
 		width: 70%;
 	}
 	.half-left-width-wrapper{
-	left:50%;
-	width: 50%;
-}
-
+		left:50%;
+		width: 50%;
+	}
 	.half-left-width-text{
-	padding-right: $grid_height_unit;
-	padding-left: 0;
+		padding-right: $grid_height_unit;
+		padding-left: 0;
 	}
 	///////
 	.simple-copy,.info-elt {
-	width: 70%;
-}
-	.simple-copy,.introduction,.headline,.next-project,.grid-text-elt,.info-elt {
-
-	padding-left: 0;
-	padding-right: 0;
-}
-	.grid-text-elt.rightElt,.half-right-width-text{
-	padding-left: $grid_halfHeight_unit;
-}
-	.grid-text-elt.rightElt,.half-right-width-text{
-	padding-left: $grid_height_unit;
+		width: 70%;
 	}
-	.grid-text-elt,.half-left-width-text,.half-right-width-text {
-
-	padding-top:0;
+	.simple-copy,.introduction,.headline,.next-project,.grid-text-elt,.info-elt {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.grid-text-elt.rightElt,.half-right-width-text{
+		padding-left: $grid_height_unit;
+	}
+	.grid-text-elt.leftElt{
+		padding-right: $grid_height_unit;
 	}
 	.extra-top-padding{
-	padding-top: $grid_height_unit;
+		padding-top: $grid_height_unit;
 	}
 	.with-large-image {
-    height: $grid_height_unit*30 !important;
+    	height: $grid_height_unit*30 !important;
 	}
 }
 
 
 @media only screen and (min-width: $media_desktop_width - 1px) {
 	.simple-copy,.info-elt {
-	width: 50%;
-
+		width: 50%;
 	}
 	.project-main .headline {
 		text-align: center;
@@ -501,29 +510,23 @@ body {
 	}
 }
 @media only screen and (min-width: $media_desktop_width) {
-		.grid-text-elt,.half-left-width-text,.half-right-width-text {
 
-	padding-top:0;
-}
 	.extra-top-padding{
-	padding-top: $grid_height_unit;
-}
+		padding-top: $grid_height_unit;
+	}
 	.half-left-width-text{
-
-	left: -50%;
-	width: 50%;
+		left: -50%;
+		width: 50%;
 	}	
 	.half-right-width-text{
-
-	right: -50%;
-	width: 50%;
+		right: -50%;
+		width: 50%;
 	}
 	.headline {
 		padding-top: $grid_height_unit*8;
 	}
 	.header{
-	position: fixed;
-	
+		position: fixed;
 	}	
 	.menu-wrapper {
 		top:19px;
@@ -532,14 +535,12 @@ body {
 
 @media only screen and (min-width: $media_large_desktop_width) {
 	.half-left-width-text{
-
-	left: -310px;
-	width: 310px;
+		left: -310px;
+		width: 310px;
 	}
 	.half-right-width-text{
-
-	right: -310px;
-	width: 310px;
+		right: -310px;
+		width: 310px;
 	}
 }
 

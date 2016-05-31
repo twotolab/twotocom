@@ -44,6 +44,9 @@ body {
 	height: 100%;
 	overflow: hidden;
 }
+.about-content .headline h1{
+	margin-bottom: $grid_height_unit;
+}
 .right-navi-is-open .content-main,.right-navi-is-open .project-main{
 	opacity: 0.1;
 }
