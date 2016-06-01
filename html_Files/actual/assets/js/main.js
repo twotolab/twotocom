@@ -200,8 +200,8 @@ jQuery(document).ready(function($) {
 		$('.header').hide();
 		$('.footer').hide();
 		$('.menu-wrapper').hide();
-		$('.header').stop(true, true).fadeIn(1200);
-		$('.footer').stop(true, true).fadeIn(1200);
+		$('.header').stop(true, true).delay(500).fadeIn(1200);
+		$('.footer').stop(true, true).delay(500).fadeIn(1200);
 		$('.menu-wrapper').stop(true, true).delay(1000).fadeIn(600);
 	}
 	introDefaultAnimation();
@@ -211,4 +211,9 @@ jQuery(document).ready(function($) {
 		$('.nav-hightlight').stop(true, true).delay(1000).fadeIn(600);
 	}
 	introMainAnimation();
+});
+define(['pace'], function(pace){
+  pace.start({
+    document: false
+  });
 });

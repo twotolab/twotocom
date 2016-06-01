@@ -5,6 +5,14 @@ function isTouchDevice() {
 
 
 jQuery(document).ready(function($) {
+	
+	$('.lazy').Lazy({
+        enableThrottle: true,
+        throttle: 200,
+        effect: 'fadeIn',
+        effectTime:500
+
+    });
 	/*------------------------------------------------------*/
 	/* ------------- onScrollAnimation------------------*/
 	/*------------------------------------------------------*/
@@ -13,7 +21,7 @@ jQuery(document).ready(function($) {
     			clearTimeout( $.data( this, "scrollCheck" ) );
     			$.data( this, "scrollCheck", setTimeout(function() {
 	    			//$('.onScrollAnimation').clearQueue();
-    				$('.onScrollAnimation').stop(true, true).delay(1000).fadeIn(300);
+    				$('.onScrollAnimation').stop(true, true).delay(500).fadeIn(300);
     			}, 250) );
 
     		});
@@ -98,7 +106,7 @@ jQuery(document).ready(function($) {
 	}
 	introDefaultAnimation();
 	function introContentnAnimation(){
-		//$('.content-main').stop(true, true).css({top:"10px",opacity:"0"}).delay(1200).animate({top: "0px",opacity:"1"},"1200");
+		$('.content-main').stop(true, true).css({top:"10px",opacity:"0"}).delay(1200).animate({top: "0px",opacity:"1"},"1200");
 		$('.project-main').stop(true, true).css({top:"10px",opacity:"0"}).delay(1200).animate({top: "0px",opacity:"1"},"1200");
 		
 		$('.about-content').stop(true, true).css({top:"10px",opacity:"0"}).delay(1200).animate({top: "0px",opacity:"1"},"1200");
@@ -106,4 +114,6 @@ jQuery(document).ready(function($) {
 		
 	}
 	introContentnAnimation();
+	
+
 });

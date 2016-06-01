@@ -61,13 +61,7 @@ body {
 	
 }
 .Site-highlight-left img {
-    
-   // position: absolute;
-	//left: $grid_height_unit*8;
-	//right: auto;
-	//height: 90%;
-	//width: auto;
-	left:50%;
+	left:100%;
 	right: auto;
 	bottom: auto;
 	top: auto;
@@ -306,6 +300,7 @@ body {
 	.Site-highlight-left img {
 		//left:auto;
 		//right: -$grid_height_unit*8;
+		left:50%;
 	}
 	.grid-highlight-left h2{
 		height: 100%;
