@@ -7,6 +7,8 @@ function isTouchDevice() {
 jQuery(document).ready(function($) {
 	
 	$('.lazy').Lazy({
+		scrollDirection: 'vertical',
+		visibleOnly: true,
         enableThrottle: true,
         throttle: 200,
         effect: 'fadeIn',
@@ -100,16 +102,16 @@ jQuery(document).ready(function($) {
 		$('.header').hide();
 		$('.footer').hide();
 		$('.menu-wrapper').hide();
-		$('.header').stop(true, true).fadeIn(1200);
-		$('.footer').stop(true, true).fadeIn(1200);
+		$('.header').stop(true, true).delay(1000).fadeIn(1200);
+		$('.footer').stop(true, true).delay(1000).fadeIn(1200);
 		$('.menu-wrapper').stop(true, true).delay(1000).fadeIn(600);
 	}
 	introDefaultAnimation();
 	function introContentnAnimation(){
-		$('.content-main').stop(true, true).css({top:"10px",opacity:"0"}).delay(1200).animate({top: "0px",opacity:"1"},"1200");
-		$('.project-main').stop(true, true).css({top:"10px",opacity:"0"}).delay(1200).animate({top: "0px",opacity:"1"},"1200");
+		$('.content-main').stop(true, true).css({top:"26px",opacity:"0"}).delay(1600).animate({top: "0px",opacity:"1"},"1200");
+		$('.project-main').stop(true, true).css({top:"26px",opacity:"0"}).delay(1600).animate({top: "0px",opacity:"1"},"1200");
 		
-		$('.about-content').stop(true, true).css({top:"10px",opacity:"0"}).delay(1200).animate({top: "0px",opacity:"1"},"1200");
+		$('.about-content').stop(true, true).css({top:"26px",opacity:"0"}).delay(1600).animate({top: "0px",opacity:"1"},"1200");
 		
 		
 	}

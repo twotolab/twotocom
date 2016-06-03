@@ -127,10 +127,6 @@ header {
 .nav-main li,.nav-main li h4 {
 	color:$second_typo_color;
 }
-.nav-main li,.nav-main li h4:hover {
-	//color:$first_typo_color;
-}
-
 .nav-main li a h4 {
 	text-transform:uppercase;
 }
@@ -142,8 +138,7 @@ header {
 }
 
 .nav-main li a:hover h4,.nav-main li a:active h4{
-	//unused
-	color:$first_typo_color;
+	color:$third_color;
 }
 
 .navi-selected a h4 {
@@ -295,7 +290,7 @@ header {
 	position:absolute;
 	top:0;
 	left:0;
-	background-color:$first_color; // transparentize($first_color,0.3);
+	background-color:transparentize($first_color,0.98);
 }
 .nav-elt:hover .nav-hover-bg-effect {
 	width: 100%;

@@ -142,7 +142,7 @@ sup {
 	letter-spacing: 1px;
 	font-style:normal;
 }
- p.bold{
+ p.bold,strong, b{
 	 font-weight: 400;
 	 }
 // internal specifics
@@ -166,7 +166,7 @@ sup {
 	color: $first_typo_color;
 }
 .big-underlined{
-	text-transform: uppercase;
+	//text-transform: uppercase;
 }
 .highlight-desktop-image-txt h2{
 	font-style: italic;

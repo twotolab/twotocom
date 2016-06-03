@@ -110,6 +110,72 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/assets\/imgs\/architecture.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 86203,
+		"inputAbbreviatedPath": "\/assets\/imgs\/architecture.jpg",
+		"outputAbbreviatedPath": "\/assets\/imgs\/architecture.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/imgs\/architecture_1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 539179,
+		"inputAbbreviatedPath": "\/assets\/imgs\/architecture_1.png",
+		"outputAbbreviatedPath": "\/assets\/imgs\/architecture_1.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/imgs\/architecture_2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 108798,
+		"inputAbbreviatedPath": "\/assets\/imgs\/architecture_2.png",
+		"outputAbbreviatedPath": "\/assets\/imgs\/architecture_2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/imgs\/architecture_3.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 534799,
+		"inputAbbreviatedPath": "\/assets\/imgs\/architecture_3.png",
+		"outputAbbreviatedPath": "\/assets\/imgs\/architecture_3.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/imgs\/axe1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 263353,
+		"inputAbbreviatedPath": "\/assets\/imgs\/axe1.png",
+		"outputAbbreviatedPath": "\/assets\/imgs\/axe1.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/imgs\/axe2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 247154,
+		"inputAbbreviatedPath": "\/assets\/imgs\/axe2.png",
+		"outputAbbreviatedPath": "\/assets\/imgs\/axe2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/imgs\/highlight_pict.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -172,6 +238,17 @@
 		"initialSize": 470219,
 		"inputAbbreviatedPath": "\/assets\/imgs\/highlight_pict_3@2x.png",
 		"outputAbbreviatedPath": "\/assets\/imgs\/highlight_pict_3@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/imgs\/interview.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 108012,
+		"inputAbbreviatedPath": "\/assets\/imgs\/interview.png",
+		"outputAbbreviatedPath": "\/assets\/imgs\/interview.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -242,6 +319,50 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/imgs\/miniCabrio1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 232339,
+		"inputAbbreviatedPath": "\/assets\/imgs\/miniCabrio1.png",
+		"outputAbbreviatedPath": "\/assets\/imgs\/miniCabrio1.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/imgs\/miniCabrio2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 173806,
+		"inputAbbreviatedPath": "\/assets\/imgs\/miniCabrio2.png",
+		"outputAbbreviatedPath": "\/assets\/imgs\/miniCabrio2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/imgs\/miniClubman1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 197615,
+		"inputAbbreviatedPath": "\/assets\/imgs\/miniClubman1.png",
+		"outputAbbreviatedPath": "\/assets\/imgs\/miniClubman1.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/imgs\/miniClubman2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 178699,
+		"inputAbbreviatedPath": "\/assets\/imgs\/miniClubman2.png",
+		"outputAbbreviatedPath": "\/assets\/imgs\/miniClubman2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/imgs\/projects\/05_VWMoonwalkApp.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -293,6 +414,94 @@
 		"initialSize": 144001,
 		"inputAbbreviatedPath": "\/assets\/imgs\/projects\/1_VWMoonwalkApp.png",
 		"outputAbbreviatedPath": "\/assets\/imgs\/projects\/1_VWMoonwalkApp.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/imgs\/schweppes.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 162958,
+		"inputAbbreviatedPath": "\/assets\/imgs\/schweppes.png",
+		"outputAbbreviatedPath": "\/assets\/imgs\/schweppes.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/imgs\/stillwerk1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 104338,
+		"inputAbbreviatedPath": "\/assets\/imgs\/stillwerk1.png",
+		"outputAbbreviatedPath": "\/assets\/imgs\/stillwerk1.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/imgs\/stillwerk2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 151074,
+		"inputAbbreviatedPath": "\/assets\/imgs\/stillwerk2.png",
+		"outputAbbreviatedPath": "\/assets\/imgs\/stillwerk2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/imgs\/test.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 107106,
+		"inputAbbreviatedPath": "\/assets\/imgs\/test.png",
+		"outputAbbreviatedPath": "\/assets\/imgs\/test.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/imgs\/test2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 108242,
+		"inputAbbreviatedPath": "\/assets\/imgs\/test2.png",
+		"outputAbbreviatedPath": "\/assets\/imgs\/test2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/imgs\/test_highlight.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 105849,
+		"inputAbbreviatedPath": "\/assets\/imgs\/test_highlight.png",
+		"outputAbbreviatedPath": "\/assets\/imgs\/test_highlight.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/imgs\/twotoLab1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 156790,
+		"inputAbbreviatedPath": "\/assets\/imgs\/twotoLab1.png",
+		"outputAbbreviatedPath": "\/assets\/imgs\/twotoLab1.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/imgs\/twotoLab2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 136593,
+		"inputAbbreviatedPath": "\/assets\/imgs\/twotoLab2.png",
+		"outputAbbreviatedPath": "\/assets\/imgs\/twotoLab2.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -684,6 +893,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/interview.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/interview.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/liveDieRepeat.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -698,6 +916,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/projects.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/XINGwindows10.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/XINGwindows10.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0

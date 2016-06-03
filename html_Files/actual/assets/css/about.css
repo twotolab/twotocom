@@ -13,6 +13,9 @@
 /*------------------------------------*\
     $colors
 \*------------------------------------*/
+.nhkjh {
+  background-color: #ffb9b6; }
+
 /**/
 /*------------------------------------*\
     z-index : from lowest to highest
@@ -155,7 +158,7 @@ body {
   background-color: #333 !important; }
 
 .third-background {
-  background-color: #FFFE00 !important; }
+  background-color: #ffb9b6 !important; }
 
 .transparent-second-background {
   background-color: rgba(26, 26, 26, 0.7) !important; }
@@ -353,7 +356,7 @@ sup {
   letter-spacing: 1px;
   font-style: normal; }
 
-p.bold {
+p.bold, strong, b {
   font-weight: 400; }
 
 .icons-font {
@@ -371,9 +374,6 @@ p.bold {
 
 .footer sup {
   color: #333; }
-
-.big-underlined {
-  text-transform: uppercase; }
 
 .highlight-desktop-image-txt h2 {
   font-style: italic;
@@ -542,11 +542,14 @@ p.bold {
   align-items: center;
   padding: 13px; }
 
-.thumb-center-elt .second-color-txt h3, .thumb-center-elt .second-color-txt .info {
-  color: #F9F7F2; }
+.second-color-txt h4 {
+  line-height: 26px; }
 
-.thumb-center-elt .first-color-txt h3, .thumb-center-elt .first-color-txt .info {
-  color: #333; }
+.thumb-center-elt .second-color-txt h3, .thumb-center-elt .second-color-txt .info, .second-color-txt h4 {
+  color: #F9F7F2 !important; }
+
+.thumb-center-elt .first-color-txt h3, .thumb-center-elt .first-color-txt .info, .first-color-txt h4 {
+  color: #333 !important; }
 
 a .thumb-image-Text {
   position: relative; }
@@ -692,7 +695,7 @@ header {
   position: relative; }
 
 .nav-main li a:hover h4, .nav-main li a:active h4 {
-  color: #333; }
+  color: #ffb9b6; }
 
 .navi-selected a h4 {
   color: gray; }
@@ -812,7 +815,7 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #F9F7F2; }
+  background-color: rgba(249, 247, 242, 0.02); }
 
 .nav-elt:hover .nav-hover-bg-effect {
   width: 100%; }
@@ -1128,13 +1131,13 @@ h1 {
     transform: scaleX(1);
     transition: transform .4s; }
   .no-touch .thumb-hover-preview-effect:hover .thumb-center-elt.with-image {
-    box-shadow: inset 0 0 0 200px rgba(255, 254, 0, 0.5);
+    box-shadow: inset 0 0 0 200px rgba(255, 185, 182, 0.5);
     transition: box-shadow .4s; }
   .no-touch .thumb-hover-preview-effect .thumb-center-elt.with-image {
-    box-shadow: inset 0 0 0 0 #cccb00;
+    box-shadow: inset 0 0 0 0 #ff8883;
     transition: box-shadow .4s; }
   .no-touch .thumb-hover-preview-effect:hover .thumb-center-elt {
-    box-shadow: inset 0 0 0 200px #cccb00;
+    box-shadow: inset 0 0 0 200px #ff8883;
     transition: box-shadow .4s; }
   .no-touch .thumb-hover-preview-effect:hover .first-color-txt h3, .no-touch .thumb-hover-preview-effect:hover .first-color-txt p {
     color: #F9F7F2; }

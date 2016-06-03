@@ -28,7 +28,11 @@ $media_HD_desktop_width: 1441px;
 // definition
 $first_color:#F9F7F2; 
 $second_color:#333;
-$third_color:#FFFE00;//#50E3C2;
+$third_color:rgba(255, 185, 182, 1);//#FFFE00;//#50E3C2;
+
+.nhkjh{
+background-color: rgba(255, 185, 182, 1);
+}
 
 $first_highlight_color:#F4DDDC;
 $second_highlight_color:#A4ECD9;

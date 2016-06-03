@@ -24,11 +24,14 @@
 	align-items: center;
 	padding: $grid_halfHeight_unit;
 }
-.thumb-center-elt .second-color-txt h3,.thumb-center-elt .second-color-txt .info {
-	color:$second_typo_color;
+.second-color-txt h4 {
+	line-height: $grid_height_unit;
+	}
+.thumb-center-elt .second-color-txt h3,.thumb-center-elt .second-color-txt .info,.second-color-txt h4 {
+	color:$second_typo_color !important;
 }
-.thumb-center-elt .first-color-txt h3,.thumb-center-elt .first-color-txt .info {
-	color:$first_typo_color;
+.thumb-center-elt .first-color-txt h3,.thumb-center-elt .first-color-txt .info,.first-color-txt h4{
+	color:$first_typo_color !important;
 }
 a .thumb-image-Text{
 	position: relative;
