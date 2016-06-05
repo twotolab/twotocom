@@ -14,7 +14,7 @@
     $colors
 \*------------------------------------*/
 .nhkjh {
-  background-color: #ffb9b6; }
+  background-color: #181818; }
 
 /**/
 /*------------------------------------*\
@@ -205,7 +205,7 @@ body {
   background-color: #333 !important; }
 
 .third-background {
-  background-color: #ffb9b6 !important; }
+  background-color: #181818 !important; }
 
 .transparent-second-background {
   background-color: rgba(26, 26, 26, 0.7) !important; }
@@ -885,7 +885,7 @@ header {
   top: 0; }
 
 .nav-main li, .nav-main li h4 {
-  color: #F9F7F2; }
+  color: rgba(249, 247, 242, 0.4); }
 
 .nav-main li a h4 {
   text-transform: uppercase; }
@@ -896,7 +896,7 @@ header {
   position: relative; }
 
 .nav-main li a:hover h4, .nav-main li a:active h4 {
-  color: #ffb9b6; }
+  color: #F9F7F2; }
 
 .navi-selected a h4 {
   color: gray; }
@@ -1040,17 +1040,19 @@ header {
 
 /*effects - without animations*/
 /*------------------------------------*/
+/*
 .nav-hover-bg-effect {
-  width: 0;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: rgba(249, 247, 242, 0.02); }
+	width:0;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	background-color:transparentize($first_color,0.98);
+}
 
 .nav-elt:hover .nav-hover-bg-effect {
-  width: 100%; }
-
+	width: 100%;
+}*/
 a.hover-effect .underlined::after, .hover-effect .underlined::after, a.hover-effect .small-underlined::after, .hover-effect .small-underlined::after {
   width: 100%; }
 
@@ -1620,126 +1622,123 @@ body {
   transition: all .5s ease; }
 
 @media only screen and (min-width: 768px) {
-  .no-touch .underlined:after, .no-touch .big-underlined:after, .no-touch .small-underlined:after {
-    -webkit-transition: width .5s;
-    transition: width .5s;
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-    -webkit-transform-origin: left;
-            transform-origin: left;
-    -webkit-transition: -webkit-transform .4s;
-    transition: -webkit-transform .4s;
-    transition: transform .4s;
-    transition: transform .4s, -webkit-transform .4s; }
-  .no-touch .big-underlined:after {
-    min-width: 104px;
-    -webkit-transform: scaleX(0.5);
-            transform: scaleX(0.5); }
-  .no-touch .thumb-.big-underlined:after {
-    min-width: 52px;
-    -webkit-transform: scaleX(0.5);
-            transform: scaleX(0.5); }
-  .no-touch .menu-button .underlined:after, .no-touch .menu-button .big-underlined:after, .no-touch .menu-button .small-underlined:after {
-    -webkit-transform-origin: center;
-            transform-origin: center;
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0); }
-  .no-touch a.thumb-hover-effect:hover .underlined::after, .no-touch .thumb-hover-effect:hover .big-underlined::after, .no-touch .thumb-hover-effect:hover .small-underlined:after {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-    -webkit-transition: -webkit-transform .4s;
-    transition: -webkit-transform .4s;
-    transition: transform .4s;
-    transition: transform .4s, -webkit-transform .4s; }
-  .no-touch .thumb-hover-preview-effect:hover .thumb-center-elt.with-image {
-    box-shadow: inset 0 0 0 200px rgba(255, 185, 182, 0.5);
-    -webkit-transition: box-shadow .4s;
-    transition: box-shadow .4s; }
-  .no-touch .thumb-hover-preview-effect .thumb-center-elt.with-image {
-    box-shadow: inset 0 0 0 0 #ff8883;
-    -webkit-transition: box-shadow .4s;
-    transition: box-shadow .4s; }
-  .no-touch .thumb-hover-preview-effect:hover .thumb-center-elt {
-    box-shadow: inset 0 0 0 200px #ff8883;
-    -webkit-transition: box-shadow .4s;
-    transition: box-shadow .4s; }
-  .no-touch .thumb-hover-preview-effect:hover .first-color-txt h3, .no-touch .thumb-hover-preview-effect:hover .first-color-txt p {
-    color: #F9F7F2; }
-  .no-touch .thumb-hover-preview-effect .thumb-image-Text {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-transition: -webkit-transform .4s;
-    transition: -webkit-transform .4s;
-    transition: transform .4s;
-    transition: transform .4s, -webkit-transform .4s; }
-  .no-touch .thumb-hover-preview-effect:hover .thumb-image-Text {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-    -webkit-transition: -webkit-transform .4s;
-    transition: -webkit-transform .4s;
-    transition: transform .4s;
-    transition: transform .4s, -webkit-transform .4s; }
-  .no-touch .thumb-hover-preview-effect .first-color-txt, .no-touch .thumb-hover-preview-effect .second-color-txt {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-transition: -webkit-transform .2s;
-    transition: -webkit-transform .2s;
-    transition: transform .2s;
-    transition: transform .2s, -webkit-transform .2s; }
-  .no-touch .thumb-hover-preview-effect:hover .first-color-txt, .no-touch .thumb-hover-preview-effect:hover .second-color-txt {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-    -webkit-transition: -webkit-transform .8s;
-    transition: -webkit-transform .8s;
-    transition: transform .8s;
-    transition: transform .8s, -webkit-transform .8s; }
-  .no-touch .hover-zoomUp-effect .target-effect {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-transition: -webkit-transform .2s;
-    transition: -webkit-transform .2s;
-    transition: transform .2s;
-    transition: transform .2s, -webkit-transform .2s; }
-  .no-touch .hover-zoomUp-effect:hover .target-effect {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-    -webkit-transition: -webkit-transform .2s;
-    transition: -webkit-transform .2s;
-    transition: transform .2s;
-    transition: transform .2s, -webkit-transform .2s; }
-  .no-touch a.hover-effect:hover .underlined::after, .no-touch .hover-effect:hover .underlined::after, .no-touch a.hover-effect:hover .small-underlined::after, .no-touch .hover-effect:hover .small-underlined::after {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-    -webkit-transition: -webkit-transform .4s;
-    transition: -webkit-transform .4s;
-    transition: transform .4s;
-    transition: transform .4s, -webkit-transform .4s; }
-  .no-touch .nav-hover-bg-effect {
-    width: 100%;
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-    -webkit-transition: -webkit-transform .1s;
-    transition: -webkit-transform .1s;
-    transition: transform .1s;
-    transition: transform .1s, -webkit-transform .1s;
-    -webkit-transition-timing-function: ease-in-out;
-            transition-timing-function: ease-in-out; }
-  .no-touch .nav-elt:hover .nav-hover-bg-effect {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-    -webkit-transition: -webkit-transform .3s;
-    transition: -webkit-transform .3s;
-    transition: transform .3s;
-    transition: transform .3s, -webkit-transform .3s;
-    -webkit-transition-timing-function: ease-in-out;
-            transition-timing-function: ease-in-out; }
-  .no-touch .nav-elt:hover h3 {
-    -webkit-transition: color 0.5s ease;
-    transition: color 0.5s ease;
-    color: #333; }
-  .no-touch .nav-elt h3 {
-    -webkit-transition: color 0.5s ease;
-    transition: color 0.5s ease; } }
+  .no-touch {
+    /*
+    a.hover-effect:hover .underlined::after,.hover-effect:hover .underlined::after,a.hover-effect:hover .small-underlined::after,.hover-effect:hover .small-underlined::after {
+    	transform:scaleX(1);
+    	transition:transform .4s;
+    }
+    //////////////
+    .nav-hover-bg-effect {
+    	width:100%;
+    	transform:scaleX(0);
+    	transition:transform .2s;
+    	transition-timing-function:ease-in;
+    }
+    */ }
+    .no-touch .underlined:after, .no-touch .big-underlined:after, .no-touch .small-underlined:after {
+      -webkit-transition: width .5s;
+      transition: width .5s;
+      -webkit-transform: scaleX(0);
+              transform: scaleX(0);
+      -webkit-transform-origin: left;
+              transform-origin: left;
+      -webkit-transition: -webkit-transform .4s;
+      transition: -webkit-transform .4s;
+      transition: transform .4s;
+      transition: transform .4s, -webkit-transform .4s; }
+    .no-touch .big-underlined:after {
+      min-width: 104px;
+      -webkit-transform: scaleX(0.5);
+              transform: scaleX(0.5); }
+    .no-touch .thumb-.big-underlined:after {
+      min-width: 52px;
+      -webkit-transform: scaleX(0.5);
+              transform: scaleX(0.5); }
+    .no-touch .menu-button .underlined:after, .no-touch .menu-button .big-underlined:after, .no-touch .menu-button .small-underlined:after {
+      -webkit-transform-origin: center;
+              transform-origin: center;
+      -webkit-transform: scaleX(0);
+              transform: scaleX(0); }
+    .no-touch a.thumb-hover-effect:hover .underlined::after, .no-touch .thumb-hover-effect:hover .big-underlined::after, .no-touch .thumb-hover-effect:hover .small-underlined:after {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
+      -webkit-transition: -webkit-transform .4s;
+      transition: -webkit-transform .4s;
+      transition: transform .4s;
+      transition: transform .4s, -webkit-transform .4s; }
+    .no-touch .thumb-hover-preview-effect:hover .thumb-center-elt.with-image {
+      box-shadow: inset 0 0 0 200px rgba(24, 24, 24, 0.5);
+      -webkit-transition: box-shadow .4s;
+      transition: box-shadow .4s; }
+    .no-touch .thumb-hover-preview-effect .thumb-center-elt.with-image {
+      box-shadow: inset 0 0 0 0 black;
+      -webkit-transition: box-shadow .4s;
+      transition: box-shadow .4s; }
+    .no-touch .thumb-hover-preview-effect:hover .thumb-center-elt {
+      box-shadow: inset 0 0 0 200px black;
+      -webkit-transition: box-shadow .4s;
+      transition: box-shadow .4s; }
+    .no-touch .thumb-hover-preview-effect:hover .first-color-txt h3, .no-touch .thumb-hover-preview-effect:hover .first-color-txt p {
+      color: #F9F7F2; }
+    .no-touch .thumb-hover-preview-effect .thumb-image-Text {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transition: -webkit-transform .4s;
+      transition: -webkit-transform .4s;
+      transition: transform .4s;
+      transition: transform .4s, -webkit-transform .4s; }
+    .no-touch .thumb-hover-preview-effect:hover .thumb-image-Text {
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2);
+      -webkit-transition: -webkit-transform .4s;
+      transition: -webkit-transform .4s;
+      transition: transform .4s;
+      transition: transform .4s, -webkit-transform .4s; }
+    .no-touch .thumb-hover-preview-effect .first-color-txt, .no-touch .thumb-hover-preview-effect .second-color-txt {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transition: -webkit-transform .2s;
+      transition: -webkit-transform .2s;
+      transition: transform .2s;
+      transition: transform .2s, -webkit-transform .2s; }
+    .no-touch .thumb-hover-preview-effect:hover .first-color-txt, .no-touch .thumb-hover-preview-effect:hover .second-color-txt {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+      -webkit-transition: -webkit-transform .8s;
+      transition: -webkit-transform .8s;
+      transition: transform .8s;
+      transition: transform .8s, -webkit-transform .8s; }
+    .no-touch .hover-zoomUp-effect .target-effect {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transition: -webkit-transform .2s;
+      transition: -webkit-transform .2s;
+      transition: transform .2s;
+      transition: transform .2s, -webkit-transform .2s; }
+    .no-touch .hover-zoomUp-effect:hover .target-effect {
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2);
+      -webkit-transition: -webkit-transform .2s;
+      transition: -webkit-transform .2s;
+      transition: transform .2s;
+      transition: transform .2s, -webkit-transform .2s; }
+    .no-touch .nav-elt:hover .nav-hover-bg-effect {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
+      -webkit-transition: -webkit-transform 0.7s;
+      transition: -webkit-transform 0.7s;
+      transition: transform 0.7s;
+      transition: transform 0.7s, -webkit-transform 0.7s;
+      -webkit-transition-timing-function: ease-out;
+              transition-timing-function: ease-out; }
+    .no-touch .nav-elt:hover h3 {
+      -webkit-transition: color 0.5s ease;
+      transition: color 0.5s ease;
+      color: #333; }
+    .no-touch .nav-elt h3 {
+      -webkit-transition: color 0.5s ease;
+      transition: color 0.5s ease; } }
 @media only screen and (min-width: 1025px) {
   .no-touch .menu-button:hover .menuBgEffect p {
     visibility: visible;
@@ -1786,4 +1785,4 @@ mix-blend-mode: luminosity; !!
 .no-touch .thumb-hover-effect:hover .second-color-txt {
   mix-blend-mode: overlay; }
 .no-touch .thumb-hover-preview-effect:hover .thumb-center-elt.with-image {
-  box-shadow: inset 0 0 0 200px rgba(255, 185, 182, 0.5); }
+  box-shadow: inset 0 0 0 200px rgba(24, 24, 24, 0.5); }

@@ -28,10 +28,10 @@ $media_HD_desktop_width: 1441px;
 // definition
 $first_color:#F9F7F2; 
 $second_color:#333;
-$third_color:rgba(255, 185, 182, 1);//#FFFE00;//#50E3C2;
+$third_color:#181818;//#50E3C2;
 
 .nhkjh{
-background-color: rgba(255, 185, 182, 1);
+background-color: #181818;
 }
 
 $first_highlight_color:#F4DDDC;
@@ -64,7 +64,7 @@ $first_transparent_dark_color: transparentize($first_color, 0.2);
 $highlight_dark_color:darken($third_color,10%);
 
 $second_lightHeavy_color: lighten($second_color, 30%);
-$first_transparent_light_color: transparentize($first_color, 0.3);
+$first_transparent_light_color: transparentize($first_color, 0.6);
 
 $second_typo_info_color: $second_lightHeavy_color;
 $second_typo_hover_color: $first_transparent_light_color;

@@ -125,7 +125,7 @@ header {
 }
 
 .nav-main li,.nav-main li h4 {
-	color:$second_typo_color;
+	color:$second_typo_hover_color;//$second_typo_color;
 }
 .nav-main li a h4 {
 	text-transform:uppercase;
@@ -138,7 +138,7 @@ header {
 }
 
 .nav-main li a:hover h4,.nav-main li a:active h4{
-	color:$third_color;
+	color:$second_typo_color;//$third_color;
 }
 
 .navi-selected a h4 {
@@ -284,6 +284,7 @@ header {
 
 /*effects - without animations*/
 /*------------------------------------*/
+/*
 .nav-hover-bg-effect {
 	width:0;
 	height:100%;
@@ -292,9 +293,10 @@ header {
 	left:0;
 	background-color:transparentize($first_color,0.98);
 }
+
 .nav-elt:hover .nav-hover-bg-effect {
 	width: 100%;
-}
+}*/
 a.hover-effect .underlined::after,.hover-effect .underlined::after,a.hover-effect .small-underlined::after,.hover-effect .small-underlined::after  {
 	width:100%;
 }
