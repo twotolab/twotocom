@@ -26,13 +26,43 @@
 	padding-left:$grid_halfHeight_unit;
 	
 }
+
+.header-bg{
+	position:fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: rgba(205, 193, 168, 0.2);
+	z-index: $zIndex--header-bg;
+	height: $grid_height_unit*22;
+	overflow: hidden;
+	//transition: height 1s;
+	transition: all 0.5s ease-out;
+	
+	
+	background-image:    url(../imgs/interview_bg.jpeg);
+    background-size:     cover;                      
+    background-repeat:   no-repeat;
+    background-position: center center;  
+    //*/
+}
+.header-shrink {
+	//height: 0;
+	 transform: translate3d(0,-$grid_height_unit*22,0);
+}
+
 /* tablet */
 @media only screen and (min-width: $media_tablet_width) {
-
+	.header-bg{
+		height: $grid_height_unit*18;
+	}
 }
 
 /* desktop Monitore */
 @media only screen and (min-width: $media_desktop_width) {
+	.header-bg{
+		height: $grid_height_unit*22;
+	}
 	.header-middle,.header-right {
 		display:flex;
 	}

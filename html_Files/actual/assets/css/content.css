@@ -21,6 +21,7 @@
     z-index : from lowest to highest
 \*------------------------------------*/
 /*only on Content.html level*/
+/*only on Content.html level*/
 .pace {
   -webkit-pointer-events: none;
   pointer-events: none;
@@ -477,9 +478,33 @@ p.bold, strong, b {
 .header-middle, .header-right {
   padding-left: 13px; }
 
+.header-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(205, 193, 168, 0.2);
+  z-index: -1000;
+  height: 572px;
+  overflow: hidden;
+  transition: all 0.5s ease-out;
+  background-image: url(../imgs/interview_bg.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.header-shrink {
+  transform: translate3d(0, -572px, 0); }
+
 /* tablet */
+@media only screen and (min-width: 768px) {
+  .header-bg {
+    height: 468px; } }
 /* desktop Monitore */
 @media only screen and (min-width: 1025px) {
+  .header-bg {
+    height: 572px; }
+
   .header-middle, .header-right {
     display: flex; }
 
@@ -1071,8 +1096,11 @@ body {
   margin: 0 auto;
   padding-top: 52px;
   max-width: 624px;
-  margin-bottom: 52px; }
+  margin-bottom: 104px; }
 
+@media only screen and (min-width: 1025px) {
+  .introduction {
+    margin-bottom: 156px; } }
 .project-main .introduction {
   text-align: left;
   margin: 0;

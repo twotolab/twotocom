@@ -21,6 +21,7 @@
     z-index : from lowest to highest
 \*------------------------------------*/
 /*only on Content.html level*/
+/*only on Content.html level*/
 .pace {
   -webkit-pointer-events: none;
   pointer-events: none;
@@ -534,9 +535,35 @@ p.bold, strong, b {
 .header-middle, .header-right {
   padding-left: 13px; }
 
+.header-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(205, 193, 168, 0.2);
+  z-index: -1000;
+  height: 572px;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  background-image: url(../imgs/interview_bg.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.header-shrink {
+  -webkit-transform: translate3d(0, -572px, 0);
+          transform: translate3d(0, -572px, 0); }
+
 /* tablet */
+@media only screen and (min-width: 768px) {
+  .header-bg {
+    height: 468px; } }
 /* desktop Monitore */
 @media only screen and (min-width: 1025px) {
+  .header-bg {
+    height: 572px; }
+
   .header-middle, .header-right {
     display: -webkit-box;
     display: -webkit-flex;

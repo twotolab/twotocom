@@ -253,6 +253,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/imgs\/interview_bg.jpeg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4.38961e+06,
+		"inputAbbreviatedPath": "\/assets\/imgs\/interview_bg.jpeg",
+		"outputAbbreviatedPath": "\/assets\/imgs\/interview_bg.jpeg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/imgs\/JB_hand.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -1164,7 +1175,7 @@
 			"flagValue": -1
 			},
 		"debug": {
-			"active": 0,
+			"active": 1,
 			"flagValue": -1
 			},
 		"devel": {

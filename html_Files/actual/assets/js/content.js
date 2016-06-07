@@ -18,6 +18,7 @@ jQuery(document).ready(function($) {
 	/*------------------------------------------------------*/
 	/* ------------- onScrollAnimation------------------*/
 	/*------------------------------------------------------*/
+	
 	$( window ).scroll(function() {
 		    	$('.onScrollAnimation').hide();
     			clearTimeout( $.data( this, "scrollCheck" ) );
@@ -27,6 +28,70 @@ jQuery(document).ready(function($) {
     			}, 250) );
 
     		});
+    
+    /*------------------------------------------------------*/
+	/* ------------- onScroll-actions------------------*/
+	/*------------------------------------------------------*/
+   var changeHeaderOn = 50;
+   var currentPoxY;
+   
+   $(window).scroll(function() {
+	   currentPoxY =$(this).scrollTop();
+	   if (currentPoxY > 0) {
+	   	 checkHeaderPos();
+    	}
+    	console.log('scroll'+currentPoxY);
+	});
+	function checkHeaderPos(){
+		if(currentPoxY > changeHeaderOn){
+			$('.header-bg').addClass('header-shrink');	
+			var ajshgd=$('header-bg');
+			console.log('--------'+ajshgd);
+		}
+		if(currentPoxY <= 100){
+			$('.header-bg').removeClass('header-shrink');	
+		}
+	}
+	/*
+    var docElem = document.documentElement,
+    	header = document.querySelector( '.header-bg' ),
+		didScroll = false,
+		changeHeaderOn = 300;
+		
+	function init() {
+		scrollPage();
+		window.addEventListener( 'scroll', function(  ) {
+			if( !didScroll ) {
+				didScroll = true;
+				setTimeout( scrollPage, 250 );
+			}
+		}, false );
+	}
+	var perc,rounded;
+	var $body = $(document.body);
+		
+    function scrollPage() {
+	    var scrolled_val = $body.scrollTop();
+	    perc = scrolled_val / $body.height() * 100;
+        rounded = Math.round(perc / 10) * 10;
+        console.log("% value is " + rounded);
+        
+		var sy = scrollY();
+		if ( sy >= changeHeaderOn ) {
+			this.add( header, 'header-shrink' );
+			didScroll = false;
+		}
+		else {
+			this.remove( header, 'header-shrink' );
+		}
+		
+	}
+
+	function scrollY() {
+		return window.pageYOffset || docElem.scrollTop;
+	}
+	init();
+	*/
 	/*------------------------------------------------------*/
 	/* ------------- Touch Device Detection------------------*/
 	/*------------------------------------------------------*/

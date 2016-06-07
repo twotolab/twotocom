@@ -104,8 +104,15 @@ body {
 	margin:0 auto;
 	padding-top: $grid_height_unit*2;
 	max-width: $grid_height_unit*24;
-	margin-bottom: $grid_height_unit*2;
+	margin-bottom: $grid_height_unit*4;
 }
+@media only screen and (min-width: $media_desktop_width) {
+	.introduction{
+		margin-bottom: $grid_height_unit*6;
+}
+}
+
+
 .project-main .introduction{
 
 	text-align: left;
