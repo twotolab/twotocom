@@ -34,19 +34,23 @@ jQuery(document).ready(function($) {
 	/*------------------------------------------------------*/
    var changeHeaderOn = 50;
    var currentPoxY;
+   var firstVisit = true;
    
    $(window).scroll(function() {
 	   currentPoxY =$(this).scrollTop();
 	   if (currentPoxY > 0) {
 	   	 checkHeaderPos();
+	   	 if(firstVisit){
+	    	$('body, html').scrollTop(0);
+	    	firstVisit=false;
+	    	console.log('scroll'+currentPoxY);
+    		}
     	}
-    	console.log('scroll'+currentPoxY);
 	});
 	function checkHeaderPos(){
 		if(currentPoxY > changeHeaderOn){
 			$('.header-bg').addClass('header-shrink');	
-			var ajshgd=$('header-bg');
-			console.log('--------'+ajshgd);
+			//console.log('--------'+ajshgd);
 		}
 		if(currentPoxY <= 100){
 			$('.header-bg').removeClass('header-shrink');	
