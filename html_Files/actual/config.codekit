@@ -264,6 +264,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
+	"\/assets\/imgs\/interview_bg.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.62811e+06,
+		"inputAbbreviatedPath": "\/assets\/imgs\/interview_bg.png",
+		"outputAbbreviatedPath": "\/assets\/imgs\/interview_bg.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/imgs\/JB_hand.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -726,22 +737,6 @@
 		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/assets\/scss\/header.scss",
 		"outputAbbreviatedPath": "\/assets\/css\/header.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"useLibsass": 0
-		},
-	"\/assets\/scss\/indexing.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 10,
-		"fileType": 4,
-		"ignore": 1,
-		"ignoreWasSetByUser": 1,
-		"inputAbbreviatedPath": "\/assets\/scss\/indexing.scss",
-		"outputAbbreviatedPath": "\/assets\/css\/indexing.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,

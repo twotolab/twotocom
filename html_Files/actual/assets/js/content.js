@@ -35,6 +35,8 @@ jQuery(document).ready(function($) {
    var changeHeaderOn = 50;
    var currentPoxY;
    var firstVisit = true;
+   var headerContainerHeight;
+   var posYHeader;
    
    $(window).scroll(function() {
 	   currentPoxY =$(this).scrollTop();
@@ -43,59 +45,39 @@ jQuery(document).ready(function($) {
 	   	 if(firstVisit){
 	    	$('body, html').scrollTop(0);
 	    	firstVisit=false;
-	    	console.log('scroll'+currentPoxY);
+	    	//console.log('scroll'+currentPoxY);
+	    	
     		}
     	}
 	});
+	
 	function checkHeaderPos(){
+		posYHeader=  parseInt($('.header-bg').css('top'),10) || 0 ;
 		if(currentPoxY > changeHeaderOn){
-			$('.header-bg').addClass('header-shrink');	
-			//console.log('--------'+ajshgd);
+			$('.header-bg').css({"transform": "translate3d( 0px, " + -headerContainerHeight + "px, 0px)"});	
+			console.log('IN--------'+posYHeader);
 		}
-		if(currentPoxY <= 100){
-			$('.header-bg').removeClass('header-shrink');	
-		}
-	}
-	/*
-    var docElem = document.documentElement,
-    	header = document.querySelector( '.header-bg' ),
-		didScroll = false,
-		changeHeaderOn = 300;
-		
-	function init() {
-		scrollPage();
-		window.addEventListener( 'scroll', function(  ) {
-			if( !didScroll ) {
-				didScroll = true;
-				setTimeout( scrollPage, 250 );
-			}
-		}, false );
-	}
-	var perc,rounded;
-	var $body = $(document.body);
-		
-    function scrollPage() {
-	    var scrolled_val = $body.scrollTop();
-	    perc = scrolled_val / $body.height() * 100;
-        rounded = Math.round(perc / 10) * 10;
-        console.log("% value is " + rounded);
-        
-		var sy = scrollY();
-		if ( sy >= changeHeaderOn ) {
-			this.add( header, 'header-shrink' );
-			didScroll = false;
-		}
-		else {
-			this.remove( header, 'header-shrink' );
-		}
-		
-	}
+		if(currentPoxY <= changeHeaderOn){
+			//$('.header-bg').removeClass('header-shrink');
 
-	function scrollY() {
-		return window.pageYOffset || docElem.scrollTop;
+				$('.header-bg').css({"transform": "translate3d(0px,0px, 0px)"});
+				
+			console.log('IN--------'+currentPoxY);	
+		}
+		//console.log('scroll'+currentPoxY);
+		console.log('posYHeader--------:'+posYHeader);
 	}
-	init();
-	*/
+	
+	
+	var added = 104;
+	function updateHeaderHeight(){
+		headerContainerHeight = $('.header-inside').height()+ added;
+		$('.header-bg').css({height:headerContainerHeight});
+	}
+	updateHeaderHeight();
+	$(window).resize(function() {
+		updateHeaderHeight();
+	});
 	/*------------------------------------------------------*/
 	/* ------------- Touch Device Detection------------------*/
 	/*------------------------------------------------------*/
@@ -171,9 +153,11 @@ jQuery(document).ready(function($) {
 		$('.header').hide();
 		$('.footer').hide();
 		$('.menu-wrapper').hide();
+		$('.second-menu-wrapper').hide();
 		$('.header').stop(true, true).delay(1000).fadeIn(1200);
 		$('.footer').stop(true, true).delay(1000).fadeIn(1200);
-		$('.menu-wrapper').stop(true, true).delay(1000).fadeIn(600);
+		$('.menu-wrapper').stop(true, true).delay(1200).fadeIn(600);
+		$('.second-menu-wrapper').stop(true, true).delay(1200).fadeIn(600);
 	}
 	introDefaultAnimation();
 	function introContentnAnimation(){

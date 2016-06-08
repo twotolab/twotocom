@@ -13,6 +13,8 @@ $grid_total_maxheight:650px;
 \*------------------------------------*/
 /* mobil */
 //default_width!!!!!!!
+/* mobil-small */
+$media_mobilS_width: 320px;
 /* tablets */
 $media_tablet_width: 768px;
 /* desktop Monitore */
@@ -33,6 +35,9 @@ $third_color:#181818;//#50E3C2;
 .nhkjh{
 background-color: #181818;
 }
+
+$darker_first_color:rgba(205, 193, 168, 0.2);
+
 
 $first_highlight_color:#F4DDDC;
 $second_highlight_color:#A4ECD9;
