@@ -196,19 +196,25 @@ jQuery(document).ready(function($) {
 	/*------------------------------------------------------*/
 	/* ------------- intro Animations ------------------*/
 	/*------------------------------------------------------*/
-		function introDefaultAnimation(){
-		$('.header').hide();
-		$('.footer').hide();
-		$('.menu-wrapper').hide();
+	$('.header').hide();
+	$('.footer').hide();
+	$('.menu-wrapper').hide();
+	$('.nav-hightlight').hide();
+
+	
+	function introDefaultAnimation(){
 		$('.header').stop(true, true).delay(1000).fadeIn(1200);
 		$('.footer').stop(true, true).delay(1000).fadeIn(1200);
 		$('.menu-wrapper').stop(true, true).delay(1000).fadeIn(600);
 	}
-	introDefaultAnimation();
-	
 	function introMainAnimation(){
-		$('.nav-hightlight').hide();
+		
 		$('.nav-hightlight').stop(true, true).delay(1000).fadeIn(600);
 	}
-	introMainAnimation();
+	
+	Pace.on('hide', function(){
+      console.log('done');
+      introDefaultAnimation();
+      introMainAnimation();
+    });
 });

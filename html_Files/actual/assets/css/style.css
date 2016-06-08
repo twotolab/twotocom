@@ -567,20 +567,24 @@ p.bold, strong, b {
   z-index: -1000;
   height: 676px;
   overflow: hidden;
+  opacity: 0;
   -webkit-transition: all 0.6s ease-out;
-  transition: all 0.6s ease-out;
-  	/*
-  	background-image:    url(../imgs/interview_bg.png);
-      background-size:     cover;                      
-      background-repeat:   no-repeat;
-      background-position: center center;  
-      //*/ }
+  transition: all 0.6s ease-out; }
+
+.image-bg {
+  background-image: url(../imgs/interview_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
 
 .header-shrink {
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
   -webkit-transform: translate3d(0, -676px, 0);
           transform: translate3d(0, -676px, 0); }
+
+.-zoomup {
+  opacity: 1; }
 
 .footer {
   position: absolute;

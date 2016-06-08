@@ -436,10 +436,10 @@ body {
 	.lab-bg{
 		background-color: $second_color;//$second_darker_color;	
 	}
-	.darker-bg{
-		background-color: rgba(205, 193, 168, 0.2);
-	}
 
+	.darker-bg{
+		background-color: $darker_first_color !important;
+	}
 .grid-text-elt{
 	//padding-top:$grid_height_unit;
 	padding-bottom: $grid_height_unit;
