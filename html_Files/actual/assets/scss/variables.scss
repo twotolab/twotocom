@@ -47,7 +47,7 @@ $second_darker_color: darken($second_color, 10%);
 
 $highlight_color: $third_color;
 // shadow
-$shadow_color:rgba(0,0,0,0.10);
+$shadow_color:rgba(0,0,0,0.05);
 
 /**/
 $blend-mode-color: transparentize($first_color, 0.5);

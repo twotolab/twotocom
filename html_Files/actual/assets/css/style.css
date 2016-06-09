@@ -71,14 +71,8 @@
 body {
   background-color: #F9F7F2; }
 
-.lighter-background {
-  background-color: #fcfbf9; }
-
 .inverted- {
   background-color: #333; }
-
-.light-shadow {
-  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.1); }
 
 .noOpacity {
   opacity: 0; }
@@ -243,22 +237,38 @@ body {
 .three_highlight_color-background {
   background-color: #F9CEB0 !important; }
 
+.lab-bg {
+  background-color: #F9CEB0 !important; }
+
+.darker-bg {
+  background-color: rgba(205, 193, 168, 0.2) !important; }
+
 .circle, .dark-circle {
   border-radius: 50%;
   width: 65px;
-  height: 65px; }
+  height: 65px;
+  border: 1px solid rgba(205, 193, 168, 0.2);
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.05); }
 
 .dark-circle-with-border {
   border-radius: 50%;
   width: 65px;
   height: 65px;
-  box-shadow: inset 0 0 1px #F9F7F2; }
+  border: 1px solid rgba(205, 193, 168, 0.2); }
 
 .transparent-dark-circle {
   border-radius: 50%;
   width: 65px;
   height: 65px; }
 
+/* desktop Monitore */
+@media only screen and (min-width: 1025px) {
+  .circle, .dark-circle {
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    border: none;
+    box-shadow: none; } }
 /*display handlers*/
 /*------------------------------------*/
 /* mobil */
@@ -1093,6 +1103,9 @@ a.hover-effect .underlined::after, .hover-effect .underlined::after, a.hover-eff
 a.hover-effect:hover .underlined::after, .hover-effect:hover .underlined::after, a.hover-effect:hover .small-underlined::after, .hover-effect:hover .small-underlined::after {
   max-width: 100%; }
 
+a.hover-effect:hover .small-underlined::after {
+  background-color: fuchsia; }
+
 /* Tabletts */
 @media only screen and (min-width: 760px) {
   .nav-quote-bg h2 {
@@ -1332,7 +1345,7 @@ body {
   width: 0;
   height: 0;
   z-index: -11;
-  background-color: #F9F7F2; }
+  background-color: rgba(205, 193, 168, 0.2); }
 
 .nav-hightlight-element h4 {
   position: relative;
@@ -1439,9 +1452,6 @@ body {
 
   .nav-hightlight-element a {
     padding-bottom: 26px; }
-
-  .nav-hightlight-element {
-    background-color: blue; }
 
   .grid-highlight-left {
     height: 416px !important; }

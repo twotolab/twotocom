@@ -148,7 +148,7 @@ jQuery(document).ready(function($) {
 	$('.second-menu-wrapper').hide();
 	
 	function introDefaultAnimation(){
-		$('.header').stop(true, true).delay(1200).fadeIn(600);
+		$('.header').stop(true, true).delay(600).fadeIn(600);
 		$('.footer').stop(true, true).delay(1200).fadeIn(600);
 		$('.menu-wrapper').stop(true, true).delay(1200).fadeIn(600);
 		$('.second-menu-wrapper').stop(true, true).delay(1200).fadeIn(600);

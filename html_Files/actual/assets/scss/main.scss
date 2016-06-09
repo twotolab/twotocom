@@ -163,7 +163,7 @@ body {
 		width: 0;
 		height: 0;
 		z-index:$zIndex--animatedBG;
-		background-color:$first_color;
+		background-color:$darker_first_color;
 }
 .nav-hightlight-element h4{
 		position: relative;
@@ -252,9 +252,7 @@ body {
 		flex-direction: column;
 	}
 	.Site-highlight-left img {
-		//left:auto;
-		//right: -$grid_height_unit*16;
-		//
+
 		bottom: auto;
 		top: auto;
 		width: 900px;
@@ -266,10 +264,6 @@ body {
 	
 	.nav-hightlight-element a{
 	  padding-bottom: $grid_height_unit;
-
-	}
-	.nav-hightlight-element {
-	  background-color: blue;
 
 	}
 	.grid-highlight-left{

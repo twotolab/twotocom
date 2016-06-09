@@ -34,7 +34,7 @@
 	top:0;
 	left: 0;
 	width: 100%;
-	background: rgba(205, 193, 168, 0.2);
+	background: $darker_first_color;
 	z-index: $zIndex--header-bg;
 	height:$grid_height_unit*26;
 	overflow: hidden;
