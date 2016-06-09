@@ -303,10 +303,6 @@ a.hover-effect .underlined::after,.hover-effect .underlined::after,a.hover-effec
 a.hover-effect:hover .underlined::after,.hover-effect:hover .underlined::after,a.hover-effect:hover .small-underlined::after,.hover-effect:hover .small-underlined::after {
 	max-width:100%;
 }
-a.hover-effect:hover .small-underlined::after {
-
-	background-color: fuchsia;
-}
 
 /* Tabletts */
 @media only screen and (min-width: 760px) {

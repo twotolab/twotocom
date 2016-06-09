@@ -172,7 +172,7 @@ body {
   width: 15px;
   height: 15px;
   background: #333;
-  margin: 0 0 6px 0;
+  margin: 0 0 4px 0;
   border-radius: 50%; }
 
 .round svg {
@@ -419,7 +419,7 @@ p.bold, strong, b {
   font-size: 34px;
   color: #333; }
 
-.header p, .footer p, .footer a, .nav-hightlight p, .Site-highlight-wrapper a, .about-content a {
+.header p, .footer p, .footer a, .nav-hightlight p, .Site-highlight-wrapper a, .about-content a, .content-main a {
   letter-spacing: 1px;
   font-style: normal;
   text-transform: uppercase;
@@ -893,9 +893,6 @@ a.hover-effect .underlined::after, .hover-effect .underlined::after, a.hover-eff
 a.hover-effect:hover .underlined::after, .hover-effect:hover .underlined::after, a.hover-effect:hover .small-underlined::after, .hover-effect:hover .small-underlined::after {
   max-width: 100%; }
 
-a.hover-effect:hover .small-underlined::after {
-  background-color: fuchsia; }
-
 /* Tabletts */
 @media only screen and (min-width: 760px) {
   .nav-quote-bg h2 {
@@ -1069,27 +1066,6 @@ body {
 
 .right-navi-is-open .content-main, .right-navi-is-open .project-main {
   opacity: 0.1; }
-
-.round {
-  position: relative;
-  display: inline-block;
-  vertical-align: bottom;
-  width: 15px;
-  height: 15px;
-  background: #333;
-  margin: 0 0 4px 0;
-  border-radius: 50%; }
-
-.round svg {
-  position: absolute;
-  width: 7px;
-  height: 7px;
-  margin: 4px; }
-
-.round svg path {
-  stroke: #F9F7F2;
-  fill: none;
-  stroke-width: 8; }
 
 .centered-max-width {
   margin: 0 auto;

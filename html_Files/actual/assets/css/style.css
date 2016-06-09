@@ -198,7 +198,7 @@ body {
   width: 15px;
   height: 15px;
   background: #333;
-  margin: 0 0 6px 0;
+  margin: 0 0 4px 0;
   border-radius: 50%; }
 
 .round svg {
@@ -504,7 +504,7 @@ p.bold, strong, b {
   font-size: 34px;
   color: #333; }
 
-.header p, .footer p, .footer a, .nav-hightlight p, .Site-highlight-wrapper a, .about-content a {
+.header p, .footer p, .footer a, .nav-hightlight p, .Site-highlight-wrapper a, .about-content a, .content-main a {
   letter-spacing: 1px;
   font-style: normal;
   text-transform: uppercase;
@@ -1102,9 +1102,6 @@ a.hover-effect .underlined::after, .hover-effect .underlined::after, a.hover-eff
 
 a.hover-effect:hover .underlined::after, .hover-effect:hover .underlined::after, a.hover-effect:hover .small-underlined::after, .hover-effect:hover .small-underlined::after {
   max-width: 100%; }
-
-a.hover-effect:hover .small-underlined::after {
-  background-color: fuchsia; }
 
 /* Tabletts */
 @media only screen and (min-width: 760px) {
