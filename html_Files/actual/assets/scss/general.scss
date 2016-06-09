@@ -3,7 +3,10 @@
 body {
 	background-color:$first_background_color;
 }
-
+.hideDuringLoading{
+	visibility: hidden;
+	opacity: 0;
+}
 .inverted- {
 	background-color:$second_background_color;
 }
@@ -147,8 +150,14 @@ body {
 .no-touch{
 a.thumb-hover-effect:hover .underlined::after,a.thumb-hover-effect:hover .big-underlined::after,a.thumb-hover-effect:hover .small-underlined::after{
 	width: 100%;
+	}
+	a .small-underlined::after{
+	visibility: visible;
+	}
 }
-}
+a .small-underlined::after{
+	visibility: hidden;
+	}
 
 /////// backgrounds
 

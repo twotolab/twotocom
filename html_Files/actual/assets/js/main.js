@@ -200,7 +200,6 @@ jQuery(document).ready(function($) {
 	$('.footer').hide();
 	$('.menu-wrapper').hide();
 	$('.nav-hightlight').hide();
-
 	
 	function introDefaultAnimation(){
 		$('.header').stop(true, true).delay(1000).fadeIn(1200);
@@ -214,6 +213,7 @@ jQuery(document).ready(function($) {
 	
 	Pace.on('hide', function(){
       console.log('done');
+      $('.hideDuringLoading').css({visibility:"visible",opacity:"1"});
       introDefaultAnimation();
       introMainAnimation();
     });

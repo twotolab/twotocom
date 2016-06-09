@@ -71,6 +71,10 @@
 body {
   background-color: #F9F7F2; }
 
+.hideDuringLoading {
+  visibility: hidden;
+  opacity: 0; }
+
 .inverted- {
   background-color: #333; }
 
@@ -197,6 +201,11 @@ body {
 
 .no-touch a.thumb-hover-effect:hover .underlined::after, .no-touch a.thumb-hover-effect:hover .big-underlined::after, .no-touch a.thumb-hover-effect:hover .small-underlined::after {
   width: 100%; }
+.no-touch a .small-underlined::after {
+  visibility: visible; }
+
+a .small-underlined::after {
+  visibility: hidden; }
 
 .first-background {
   background-color: #F9F7F2; }
@@ -427,7 +436,7 @@ p.bold, strong, b {
   font-size: 34px;
   color: #333; }
 
-.header p, .footer p, .footer a, .nav-hightlight p, .Site-highlight-wrapper a, .about-content a, .content-main a {
+.header p, .footer p, .footer a, .nav-hightlight p, .Site-highlight-wrapper a, .about-content a, .content-main a, .project-main a {
   letter-spacing: 1px;
   font-style: normal;
   text-transform: uppercase;
@@ -558,7 +567,7 @@ p.bold, strong, b {
 .footer.-content {
   position: relative; }
 
-.footer-left, .footer-right {
+.footer-left, .footer-right, .footer-middle {
   display: flex;
   align-items: center; }
 
@@ -577,15 +586,22 @@ p.bold, strong, b {
   vertical-align: baseline;
   top: 7px; }
 
+.footer-left, .footer-middle {
+  display: none; }
+
 /* tablet */
 /* desktop Monitore */
 @media only screen and (min-width: 1025px) {
-  .footer-left, .footer-right {
+  .footer-left, .footer-right, .footer-middle {
+    display: flex;
     flex: 1; }
 
+  .footer-middle {
+    align-items: center;
+    flex-direction: column; }
+
   .footer-right {
-    display: flex;
-    justify-content: space-between; }
+    display: flex; }
 
   .footer-right-left, .footer-right-right {
     display: block;
@@ -1103,8 +1119,10 @@ body {
 .next-project .info {
   margin-bottom: 13px; }
 
-.next-project h2 {
-  margin-bottom: 13px; }
+.next-project h4 {
+  margin-bottom: 13px;
+  text-transform: none;
+  letter-spacing: normal; }
 
 .project-main h1 {
   font-size: 8vw;
@@ -1113,10 +1131,6 @@ body {
 .project-main h5 {
   font-size: 15px;
   line-height: 26px; }
-
-.project-main .headline, .project-main .next-project {
-  text-align: left;
-  padding-top: 26px; }
 
 .headline .info, .next-project .info {
   margin-top: 26px; }

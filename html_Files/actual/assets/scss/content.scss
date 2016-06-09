@@ -79,8 +79,10 @@ body {
 .next-project .info{
 	margin-bottom: $grid_halfHeight_unit;	
 }
-.next-project h2{
+.next-project h4{
 	margin-bottom: $grid_halfHeight_unit;	
+	text-transform: none;
+	letter-spacing: normal;
 }
 .project-main h1 {
 	font-size: 8vw;
@@ -92,8 +94,9 @@ body {
 	line-height: $grid_height_unit;
 }
 .project-main .headline,.project-main .next-project {
-	text-align: left;
-	padding-top: $grid_height_unit;
+	
+	//text-align: left;
+	//padding-top: $grid_height_unit;
 	
 }
 .headline .info,.next-project .info {

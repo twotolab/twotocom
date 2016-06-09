@@ -13,7 +13,7 @@
 	position:relative;
 }
 
-.footer-left,.footer-right {
+.footer-left,.footer-right,.footer-middle {
 	display:flex;
 	align-items:center;
 }
@@ -32,7 +32,9 @@
 	vertical-align:baseline;
 	top:7px;
 }
-
+.footer-left,.footer-middle{
+	display: none;
+}
 /* tablet */
 @media only screen and (min-width: $media_tablet_width) {
 	}
@@ -40,12 +42,20 @@
 /* desktop Monitore */
 @media only screen and (min-width: $media_desktop_width) {
 
-	.footer-left,.footer-right {
+	.footer-left,.footer-right,.footer-middle  {
+		display: flex;
 		flex: 1;
 	}
+	.footer-middle {
+		
+		align-items: center;
+		flex-direction: column;
+		}
 	.footer-right {
 	display: flex;
-	justify-content: space-between;
+	
+	
+	//justify-content: space-between;
 	}
 	.footer-right-left,.footer-right-right {
 		display:block;

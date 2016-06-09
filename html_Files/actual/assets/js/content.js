@@ -169,6 +169,7 @@ jQuery(document).ready(function($) {
 	
 	Pace.on('hide', function(){
       //console.log('done');
+      $('.hideDuringLoading').css({visibility:"visible",opacity:"1"});
       introDefaultAnimation();
       introContentnAnimation();
     });
