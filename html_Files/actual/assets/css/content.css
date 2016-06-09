@@ -1547,75 +1547,69 @@ body {
   transition: all .5s ease; }
 
 @media only screen and (min-width: 768px) {
-  .no-touch {
-    /*
-    a.hover-effect:hover .underlined::after,.hover-effect:hover .underlined::after,a.hover-effect:hover .small-underlined::after,.hover-effect:hover .small-underlined::after {
-    	transform:scaleX(1);
-    	transition:transform .4s;
-    }
-    //////////////
-    .nav-hover-bg-effect {
-    	width:100%;
-    	transform:scaleX(0);
-    	transition:transform .2s;
-    	transition-timing-function:ease-in;
-    }
-    */ }
-    .no-touch .underlined:after, .no-touch .big-underlined:after, .no-touch .small-underlined:after {
-      transition: width .5s;
-      transform: scaleX(0);
-      transform-origin: left;
-      transition: transform .4s; }
-    .no-touch .big-underlined:after {
-      min-width: 104px;
-      transform: scaleX(0.5); }
-    .no-touch .thumb-.big-underlined:after {
-      min-width: 52px;
-      transform: scaleX(0.5); }
-    .no-touch .menu-button .underlined:after, .no-touch .menu-button .big-underlined:after, .no-touch .menu-button .small-underlined:after {
-      transform-origin: center;
-      transform: scaleX(0); }
-    .no-touch a.thumb-hover-effect:hover .underlined::after, .no-touch .thumb-hover-effect:hover .big-underlined::after, .no-touch .thumb-hover-effect:hover .small-underlined:after {
-      transform: scaleX(1);
-      transition: transform .4s; }
-    .no-touch .thumb-hover-preview-effect:hover .thumb-center-elt.with-image {
-      box-shadow: inset 0 0 0 200px rgba(24, 24, 24, 0.5);
-      transition: box-shadow .4s; }
-    .no-touch .thumb-hover-preview-effect .thumb-center-elt.with-image {
-      box-shadow: inset 0 0 0 0 black;
-      transition: box-shadow .4s; }
-    .no-touch .thumb-hover-preview-effect:hover .thumb-center-elt {
-      box-shadow: inset 0 0 0 200px black;
-      transition: box-shadow .4s; }
-    .no-touch .thumb-hover-preview-effect:hover .first-color-txt h3, .no-touch .thumb-hover-preview-effect:hover .first-color-txt p {
-      color: #F9F7F2; }
-    .no-touch .thumb-hover-preview-effect .thumb-image-Text {
-      transform: scale(1);
-      transition: transform .4s; }
-    .no-touch .thumb-hover-preview-effect:hover .thumb-image-Text {
-      transform: scale(1.2);
-      transition: transform .4s; }
-    .no-touch .thumb-hover-preview-effect .first-color-txt, .no-touch .thumb-hover-preview-effect .second-color-txt {
-      transform: scale(1);
-      transition: transform .2s; }
-    .no-touch .thumb-hover-preview-effect:hover .first-color-txt, .no-touch .thumb-hover-preview-effect:hover .second-color-txt {
-      transform: scale(1.1);
-      transition: transform .8s; }
-    .no-touch .hover-zoomUp-effect .target-effect {
-      transform: scale(1);
-      transition: transform .2s; }
-    .no-touch .hover-zoomUp-effect:hover .target-effect {
-      transform: scale(1.2);
-      transition: transform .2s; }
-    .no-touch .nav-elt:hover .nav-hover-bg-effect {
-      transform: scaleX(1);
-      transition: transform 0.7s;
-      transition-timing-function: ease-out; }
-    .no-touch .nav-elt:hover h3 {
-      transition: color 0.5s ease;
-      color: #333; }
-    .no-touch .nav-elt h3 {
-      transition: color 0.5s ease; } }
+  .no-touch .underlined:after, .no-touch .big-underlined:after, .no-touch .small-underlined:after {
+    transition: width .5s;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .4s; }
+  .no-touch .big-underlined:after {
+    min-width: 104px;
+    transform: scaleX(0.5); }
+  .no-touch .thumb-.big-underlined:after {
+    min-width: 52px;
+    transform: scaleX(0.5); }
+  .no-touch .menu-button .underlined:after, .no-touch .menu-button .big-underlined:after, .no-touch .menu-button .small-underlined:after {
+    transform-origin: center;
+    transform: scaleX(0); }
+  .no-touch a.thumb-hover-effect:hover .underlined::after, .no-touch .thumb-hover-effect:hover .big-underlined::after, .no-touch .thumb-hover-effect:hover .small-underlined:after {
+    transform: scaleX(1);
+    transition: transform .4s; }
+  .no-touch .thumb-hover-preview-effect:hover .thumb-center-elt.with-image {
+    box-shadow: inset 0 0 0 200px rgba(24, 24, 24, 0.5);
+    transition: box-shadow .4s; }
+  .no-touch .thumb-hover-preview-effect .thumb-center-elt.with-image {
+    box-shadow: inset 0 0 0 0 black;
+    transition: box-shadow .4s; }
+  .no-touch .thumb-hover-preview-effect:hover .thumb-center-elt {
+    box-shadow: inset 0 0 0 200px black;
+    transition: box-shadow .4s; }
+  .no-touch .thumb-hover-preview-effect:hover .first-color-txt h3, .no-touch .thumb-hover-preview-effect:hover .first-color-txt p {
+    color: #F9F7F2; }
+  .no-touch .thumb-hover-preview-effect .thumb-image-Text {
+    transform: scale(1);
+    transition: transform .4s; }
+  .no-touch .thumb-hover-preview-effect:hover .thumb-image-Text {
+    transform: scale(1.2);
+    transition: transform .4s; }
+  .no-touch .thumb-hover-preview-effect .first-color-txt, .no-touch .thumb-hover-preview-effect .second-color-txt {
+    transform: scale(1);
+    transition: transform .2s; }
+  .no-touch .thumb-hover-preview-effect:hover .first-color-txt, .no-touch .thumb-hover-preview-effect:hover .second-color-txt {
+    transform: scale(1.1);
+    transition: transform .8s; }
+  .no-touch .hover-zoomUp-effect .target-effect {
+    transform: scale(1);
+    transition: transform .2s; }
+  .no-touch .hover-zoomUp-effect:hover .target-effect {
+    transform: scale(1.2);
+    transition: transform .2s; }
+  .no-touch a.hover-effect:hover .underlined::after, .no-touch .hover-effect:hover .underlined::after, .no-touch a.hover-effect:hover .small-underlined::after, .no-touch .hover-effect:hover .small-underlined::after {
+    transform: scaleX(1);
+    transition: transform .4s; }
+  .no-touch .nav-hover-bg-effect {
+    width: 100%;
+    transform: scaleX(0);
+    transition: transform .1s;
+    transition-timing-function: ease-in-out; }
+  .no-touch .nav-elt:hover .nav-hover-bg-effect {
+    transform: scaleX(1);
+    transition: transform .3s;
+    transition-timing-function: ease-in-out; }
+  .no-touch .nav-elt:hover h3 {
+    transition: color 0.5s ease;
+    color: #333; }
+  .no-touch .nav-elt h3 {
+    transition: color 0.5s ease; } }
 @media only screen and (min-width: 1025px) {
   .no-touch .menu-button:hover .menuBgEffect p {
     visibility: visible;
