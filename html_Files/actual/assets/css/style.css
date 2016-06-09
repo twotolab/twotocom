@@ -1089,7 +1089,7 @@ header {
 .nav-is-visible .nav-quote-bg {
   visibility: visible; }
 
-.nav-main .underlined::after {
+.nav-main .underlined::after, .menu-wrapper .small-underlined::after {
   visibility: hidden; }
 
 /*effects - without animations*/
@@ -1127,7 +1127,7 @@ a.hover-effect:hover .underlined::after, .hover-effect:hover .underlined::after,
   .header {
     position: fixed; }
 
-  .nav-main .underlined::after {
+  .nav-main .underlined::after, .menu-wrapper .small-underlined::after {
     visibility: visible; }
 
   body.nav-is-visible {
