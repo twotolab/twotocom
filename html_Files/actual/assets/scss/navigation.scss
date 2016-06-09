@@ -6,10 +6,18 @@ body {
 	overflow:visible;
 }
 
-body.nav-is-visible {
+body.nav-is-visible{
 	position:fixed;
-	//formobileoverflow:hidden;
 }
+@media only screen and (min-width: $media_desktop_width) {
+
+	html.nav-is-visible {
+		overflow-x: hidden; 
+	    overflow-y: hidden;
+	}
+}
+
+
 header {
 	/*
 	position:absolute;
@@ -62,14 +70,16 @@ header {
 	height:100%;
 	width:100%;
 	backface-visibility:hidden;
-	background:transparentize($second_background_color,0.02);
+	background: #F0EDE4;//transparentize($second_background_color,0.02);
 	overflow:auto;
 	text-align:center;
 /* this fixes the buggy scrolling on webkit browsers - mobile devices only - when overflow property is applied */
 	overflow-y:scroll;
 /* has to be scroll, not auto */
 	-webkit-overflow-scrolling:touch;
+	
 }
+
 .nav span {
 	background-color:transparent;
 	font-size:12px;
@@ -102,6 +112,7 @@ header {
 	display:flex;
 	flex-direction:column;
 	align-self:center;
+	text-transform:uppercase;
 }
 
 .nav-main li a {
@@ -125,20 +136,20 @@ header {
 }
 
 .nav-main li,.nav-main li h4 {
-	color:$second_typo_hover_color;//$second_typo_color;
+	color:$first_typo_color;//$second_typo_color;
 }
 .nav-main li a h4 {
-	text-transform:uppercase;
+	//text-transform:uppercase;
 }
 
 .nav-main li a h4 {
 	padding-top:13px;
-	padding-bottom:13px;
+	padding-bottom:4px;
 	position:relative;
 }
 
 .nav-main li a:hover h4,.nav-main li a:active h4{
-	color:$second_typo_color;//$third_color;
+	//color:lighten($first_typo_color, 80%);
 }
 
 .navi-selected a h4 {
@@ -267,7 +278,7 @@ header {
 	box-sizing:border-box;
 	padding-top:104px;
 	padding-top:17vw;
-	color:transparentize($first_color,0.8);
+	color:transparentize($second_color,0.8);
 	//text-shadow:10px 10px 5px transparentize($first_color,0.95);
 	text-transform:uppercase;
 }
@@ -282,6 +293,9 @@ header {
 	visibility:visible;
 }
 
+.nav-main .underlined::after{
+	visibility: hidden;
+}
 /*effects - without animations*/
 /*------------------------------------*/
 /*
@@ -315,7 +329,7 @@ a.hover-effect:hover .underlined::after,.hover-effect:hover .underlined::after,a
 /* mobil and Tablets only*/ 
 @media only screen and (min-width: $media_desktop_width) {
 	.nav-quote-bg h2 {
-		color:transparentize($first_color,0.98);
+		color:transparentize($second_color,0.98);
 	}
 }
 
@@ -324,6 +338,9 @@ a.hover-effect:hover .underlined::after,.hover-effect:hover .underlined::after,a
 	.header {
 		position:fixed;
 	}
+	.nav-main .underlined::after{
+	visibility:visible;
+}
 	body.nav-is-visible {
 		position:relative;
 	}

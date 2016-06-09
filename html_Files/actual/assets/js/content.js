@@ -20,13 +20,14 @@ jQuery(document).ready(function($) {
 	/*------------------------------------------------------*/
 	
 	$( window ).scroll(function() {
-		    	$('.onScrollAnimation').hide();
-    			clearTimeout( $.data( this, "scrollCheck" ) );
-    			$.data( this, "scrollCheck", setTimeout(function() {
-	    			//$('.onScrollAnimation').clearQueue();
-    				$('.onScrollAnimation').stop(true, true).delay(500).fadeIn(300);
-    			}, 250) );
-
+				if(!$('body').hasClass('nav-is-visible') ) {
+					$('.onScrollAnimation').hide();
+	    			clearTimeout( $.data( this, "scrollCheck" ) );
+	    			$.data( this, "scrollCheck", setTimeout(function() {
+		    			//$('.onScrollAnimation').clearQueue();
+	    				$('.onScrollAnimation').stop(true, true).delay(500).fadeIn(300);
+	    			}, 250) );
+				}
     		});
     
     /*------------------------------------------------------*/
@@ -117,6 +118,7 @@ jQuery(document).ready(function($) {
 	
 		if( $('body').hasClass('nav-is-visible') ) {
 			$('body').removeClass('nav-is-visible');
+			$('html').removeClass('nav-is-visible');
 			//
 			$('.menu-close').removeClass('is-visible');
 			$('.menu-open').removeClass('is-invisible');
@@ -128,6 +130,7 @@ jQuery(document).ready(function($) {
 		} else{
 			$('body').animate({scrollTop:0}, '500');
 			$('body').addClass('nav-is-visible');
+			$('html').addClass('nav-is-visible');
 			//
 			$('.menu-open').addClass('is-invisible');
 			$('.menu-close').addClass('is-visible');

@@ -72,12 +72,12 @@
 		}
 
 		
-		.menu-button .underlined:after ,.menu-button .big-underlined:after,.menu-button .small-underlined:after{
+		.menu-button .underlined:after ,.menu-button .big-underlined:after,.menu-button .small-underlined:after,a.nav-link .underlined::after{
 			transform-origin:center;
 			transform:scaleX(0);
 		}
 		
-		a.thumb-hover-effect:hover .underlined::after,.thumb-hover-effect:hover .big-underlined::after,.thumb-hover-effect:hover .small-underlined:after {
+		a.thumb-hover-effect:hover .underlined::after,.thumb-hover-effect:hover .big-underlined::after,.thumb-hover-effect:hover .small-underlined:after,a.nav-link:hover .underlined::after {
 			transform:scaleX(1);
 			transition:transform .4s;
 		}

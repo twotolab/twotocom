@@ -114,6 +114,14 @@ body {
   background-color: rgba(51, 51, 51, 0.1);
   margin-bottom: 26px; }
 
+.naviline::before {
+  content: '';
+  display: block;
+  height: 1px;
+  margin: 0;
+  width: 100%;
+  background-color: rgba(51, 51, 51, 0.1); }
+
 .underlined::after {
   content: '';
   display: block;
@@ -649,6 +657,10 @@ body {
 body.nav-is-visible {
   position: fixed; }
 
+@media only screen and (min-width: 1025px) {
+  html.nav-is-visible {
+    overflow-x: hidden;
+    overflow-y: hidden; } }
 header {
   /*
   position:absolute;
@@ -695,7 +707,7 @@ header {
   height: 100%;
   width: 100%;
   backface-visibility: hidden;
-  background: rgba(51, 51, 51, 0.98);
+  background: #F0EDE4;
   overflow: auto;
   text-align: center;
   /* this fixes the buggy scrolling on webkit browsers - mobile devices only - when overflow property is applied */
@@ -729,7 +741,8 @@ header {
   color: gray;
   display: flex;
   flex-direction: column;
-  align-self: center; }
+  align-self: center;
+  text-transform: uppercase; }
 
 .nav-main li a {
   display: flex;
@@ -749,18 +762,12 @@ header {
   top: 0; }
 
 .nav-main li, .nav-main li h4 {
-  color: rgba(249, 247, 242, 0.4); }
-
-.nav-main li a h4 {
-  text-transform: uppercase; }
+  color: #333; }
 
 .nav-main li a h4 {
   padding-top: 13px;
-  padding-bottom: 13px;
+  padding-bottom: 4px;
   position: relative; }
-
-.nav-main li a:hover h4, .nav-main li a:active h4 {
-  color: #F9F7F2; }
 
 .navi-selected a h4 {
   color: gray; }
@@ -861,7 +868,7 @@ header {
   box-sizing: border-box;
   padding-top: 104px;
   padding-top: 17vw;
-  color: rgba(249, 247, 242, 0.2);
+  color: rgba(51, 51, 51, 0.2);
   text-transform: uppercase; }
 
 .nav-quote-bg {
@@ -871,6 +878,9 @@ header {
 
 .nav-is-visible .nav-quote-bg {
   visibility: visible; }
+
+.nav-main .underlined::after {
+  visibility: hidden; }
 
 /*effects - without animations*/
 /*------------------------------------*/
@@ -901,11 +911,14 @@ a.hover-effect:hover .underlined::after, .hover-effect:hover .underlined::after,
 /* mobil and Tablets only*/
 @media only screen and (min-width: 1025px) {
   .nav-quote-bg h2 {
-    color: rgba(249, 247, 242, 0.02); } }
+    color: rgba(51, 51, 51, 0.02); } }
 /* desktop Monitore */
 @media only screen and (min-width: 1025px) {
   .header {
     position: fixed; }
+
+  .nav-main .underlined::after {
+    visibility: visible; }
 
   body.nav-is-visible {
     position: relative; }
@@ -1167,10 +1180,10 @@ h1 {
   .no-touch .thumb-.big-underlined:after {
     min-width: 52px;
     transform: scaleX(0.5); }
-  .no-touch .menu-button .underlined:after, .no-touch .menu-button .big-underlined:after, .no-touch .menu-button .small-underlined:after {
+  .no-touch .menu-button .underlined:after, .no-touch .menu-button .big-underlined:after, .no-touch .menu-button .small-underlined:after, .no-touch a.nav-link .underlined::after {
     transform-origin: center;
     transform: scaleX(0); }
-  .no-touch a.thumb-hover-effect:hover .underlined::after, .no-touch .thumb-hover-effect:hover .big-underlined::after, .no-touch .thumb-hover-effect:hover .small-underlined:after {
+  .no-touch a.thumb-hover-effect:hover .underlined::after, .no-touch .thumb-hover-effect:hover .big-underlined::after, .no-touch .thumb-hover-effect:hover .small-underlined:after, .no-touch a.nav-link:hover .underlined::after {
     transform: scaleX(1);
     transition: transform .4s; }
   .no-touch .thumb-hover-preview-effect:hover .thumb-center-elt.with-image {
