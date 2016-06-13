@@ -37,6 +37,7 @@ background-color: #181818;
 }
 
 $darker_first_color:rgba(205, 193, 168, 0.2);
+$Lighter_darker_first_color:lighten($darker_first_color,15%);
 
 
 $first_highlight_color:#F4DDDC;

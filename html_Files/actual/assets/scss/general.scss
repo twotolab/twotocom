@@ -50,7 +50,6 @@ body {
 	margin:0;
 	width: 100%;
 	background-color: $line-color;
-	margin-bottom: $grid_height_unit;
 }
 .bottom-line::after {
 	content:'';
@@ -59,7 +58,6 @@ body {
 	margin:0;
 	width: 100%;
 	background-color: $line-color;
-	margin-bottom: $grid_height_unit;
 }
 .naviline::before{
 	content:'';
