@@ -81,7 +81,7 @@ $first_shadow_color : $shadow_color;
 /*------------------------------------*\
     z-index : from lowest to highest
 \*------------------------------------*/
-
+$zIndex--footer-low:-102;
 
 $zIndex--Site-highlight-one-loading:auto;//-10001;
 $zIndex--Site-highlight-two-loading:auto;//-10002;
@@ -107,6 +107,7 @@ $zIndex--nav-hightlight-element--h4:100;//-200001;
 $zIndex--header:3000;
 $zIndex--second-menu-wrapper:3500;
 $zIndex--footer:4000;
+
 
 $zIndex--menu-wrapper:50000;
 

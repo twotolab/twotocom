@@ -12,6 +12,10 @@
 .footer.-content {
 	position:relative;
 }
+.footer.-fixed {
+    position: fixed;
+    z-index: $zIndex--footer-low;
+}
 
 .footer-left,.footer-right,.footer-middle {
 	display:flex;

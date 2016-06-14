@@ -23,6 +23,12 @@ body {
 	width:100%;
 	overflow-x: hidden;
 }
+.site {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	flex: 1;
+}
 .header{
 	position: relative;
 	display: inline-block;

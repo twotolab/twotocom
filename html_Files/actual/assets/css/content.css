@@ -217,7 +217,8 @@ a .socialIcons {
 .socialconsWrapper {
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  margin-bottom: 52px; }
 
 .no-touch a.thumb-hover-effect:hover .underlined::after, .no-touch a.thumb-hover-effect:hover .big-underlined::after, .no-touch a.thumb-hover-effect:hover .small-underlined::after {
   width: 100%; }
@@ -603,6 +604,10 @@ p.bold, strong, b {
 
 .footer.-content {
   position: relative; }
+
+.footer.-fixed {
+  position: fixed;
+  z-index: -102; }
 
 .footer-left, .footer-right, .footer-middle {
   display: flex;
@@ -1104,6 +1109,12 @@ body {
   margin: 0 auto;
   width: 100%;
   overflow-x: hidden; }
+
+.site {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex: 1; }
 
 .header {
   position: relative;
