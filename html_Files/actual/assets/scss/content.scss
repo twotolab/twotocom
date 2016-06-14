@@ -457,7 +457,7 @@ body {
 		text-align: right;
 	}
 
-.grid-text-elt p.info,.grid-thumb-txt p.info{
+.grid-text-elt p.info,.grid-thumb-txt p.info ,.contact-content p.info.-header{
 	font-size: 10px;
 	font-weight: 200;
 	text-transform: uppercase;
@@ -535,7 +535,7 @@ body {
 	.simple-copy,.info-elt {
 		width: 50%;
 	}
-	.project-main .headline {
+	.project-main .headline, .contact-content .headline {
 		text-align: center;
 		padding-top: $grid_height_unit*6;
 	}

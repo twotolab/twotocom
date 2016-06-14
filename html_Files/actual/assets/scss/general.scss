@@ -145,6 +145,31 @@ body {
 	fill: none;
     stroke-width: 8;
 }
+a .socialIcons{
+	padding: 4px;
+	}
+.socialIcons svg{
+	padding: 2px;
+	border-radius: 100%;
+	width: $grid_height_unit - 2px;
+	height: $grid_height_unit - 2px;
+	fill: $second_typo_color;
+	color: $first_typo_color; // IE8
+	background-color: $first_typo_color;
+}
+
+.socialIcons.xing svg {
+	width: $grid_height_unit - 10px;
+	height: $grid_height_unit - 10px;
+	padding: 6px;
+
+}
+.socialconsWrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
 .no-touch{
 a.thumb-hover-effect:hover .underlined::after,a.thumb-hover-effect:hover .big-underlined::after,a.thumb-hover-effect:hover .small-underlined::after{
 	width: 100%;
