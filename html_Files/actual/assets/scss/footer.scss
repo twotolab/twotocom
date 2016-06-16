@@ -14,9 +14,9 @@
 }
 .footer.-fixed {
     position: fixed;
-    z-index: $zIndex--footer-low;
+    z-index: $zIndex--footer;
 }
-
+////
 .footer-left,.footer-right,.footer-middle {
 	display:flex;
 	align-items:center;

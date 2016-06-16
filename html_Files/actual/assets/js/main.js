@@ -34,7 +34,13 @@ jQuery(document).ready(function($) {
 			$('body').addClass('right-navi-is-open');	
 		}
 	});
-	
+	/*
+	$('.menu-button').hover(function() {
+	 $('body').addClass('nav-small-is-visible');
+	 }, function() {
+	    //$('body').removeClass('nav-small-is-visible');
+	  });
+	  */
 	$('.menu-button').on('click', function(event) {
 		event.preventDefault();
 		if( $('body').hasClass('right-navi-is-open') ) {
