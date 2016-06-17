@@ -1194,7 +1194,8 @@ body {
   position: relative;
   box-sizing: border-box;
   max-width: 884px;
-  padding-top: 52px; }
+  padding-top: 26px;
+  padding-bottom: 26px; }
 
 .next-project {
   margin-bottom: 156px; }
