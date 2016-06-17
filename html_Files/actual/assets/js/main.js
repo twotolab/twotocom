@@ -72,6 +72,10 @@ jQuery(document).ready(function($) {
 	var _defaultWidthbg;
 	var _defaultheightbg;
 	
+	var colorSelect =_arr[0];
+	var lastcolorSelect=_arr[0];
+
+	
 	function updateHighlightSiteBg(){
 		
 		var eltArray= [];
@@ -89,17 +93,21 @@ jQuery(document).ready(function($) {
 			//
 			$('.Site-highlight-'+eltArray[0]).addClass('loading');
 			$('.Site-highlight-'+eltArray[1]).addClass('loading');
+			
 		}
 	}
 	function updateHightlightcolors(){
 
-		var colorSelect = _arr[_actualHighlight];
-		var lastcolorSelect = _arr[_lastHighlight];
+		colorSelect = _arr[_actualHighlight];
+		lastcolorSelect = _arr[_lastHighlight];
 		//
 		$('.menu-button .first-background').removeClass(lastcolorSelect+'_highlight_color-background');
 		$('.nav-hover-bg-effect').removeClass(lastcolorSelect+'_highlight_color-background');
 		//$('.menu-button .first-background').addClass(colorSelect+'_highlight_color-background');
 		$('.nav-hover-bg-effect').addClass(colorSelect+'_highlight_color-background');
+		
+		$('body').addClass(colorSelect+'_highlight_color-background');
+		$('body').removeClass(lastcolorSelect+'_highlight_color-background');
 	}
 	function updateHightlightTxtBg(){
 
@@ -184,12 +192,14 @@ jQuery(document).ready(function($) {
 		_myCounter.start();
 	}
 	function introCounter(myCounter,countLength){
+		
 		myCounter = new Countdown({  
 		    seconds:0,  // number of seconds to count down
 		    //onUpdateStatus: function(sec){},// callback for each second
 		    onCounterEnd: function(){restartCounter(_myCounter,countLength);}// final action
 		});
 		myCounter.start();
+
 	}
 	introCounter(_introCounter,_countLengthInSeconds);
 	/*------------------------------------------------------*/
@@ -204,14 +214,17 @@ jQuery(document).ready(function($) {
 		$('.header').stop(true, true).delay(1000).fadeIn(1200);
 		$('.footer').stop(true, true).delay(1000).fadeIn(1200);
 		$('.menu-wrapper').stop(true, true).delay(1000).fadeIn(600);
+		console.log("colorSelect: "+colorSelect);
+		
 	}
 	function introMainAnimation(){
 		
 		$('.nav-hightlight').stop(true, true).delay(1000).fadeIn(600);
+		$('body').addClass(colorSelect+'_highlight_color-background');
 	}
 	
 	Pace.on('hide', function(){
-      console.log('done');
+      //console.log('done');
       $('.hideDuringLoading').css({visibility:"visible",opacity:"1"});
       introDefaultAnimation();
       introMainAnimation();

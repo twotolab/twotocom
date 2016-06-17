@@ -66,6 +66,9 @@
   background: #333;
   pointer-events: none; }
 
+body, .header, .footer {
+  max-width: 2440px !important; }
+
 /*color*/
 /*------------------------------------*/
 body {
@@ -1638,6 +1641,9 @@ body {
 .touch .main-content, .no-touch .main-content {
   opacity: 1;
   transition: all .5s ease; }
+
+body.one_highlight_color-background, body.two_highlight_color-background, body.three_highlight_color-background {
+  transition: background-color 600ms linear 1000ms; }
 
 @media only screen and (min-width: 768px) {
   .no-touch .underlined:after, .no-touch .big-underlined:after, .no-touch .small-underlined:after {

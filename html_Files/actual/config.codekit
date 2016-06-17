@@ -110,6 +110,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/assets\/imgs\/2 Bild.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3243,
+		"inputAbbreviatedPath": "\/assets\/imgs\/2 Bild.png",
+		"outputAbbreviatedPath": "\/assets\/imgs\/2 Bild.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/imgs\/architecture.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -176,6 +187,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
+	"\/assets\/imgs\/Desktop HD.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 327735,
+		"inputAbbreviatedPath": "\/assets\/imgs\/Desktop HD.png",
+		"outputAbbreviatedPath": "\/assets\/imgs\/Desktop HD.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/imgs\/highlight_pict.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -197,6 +219,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 1
+		},
+	"\/assets\/imgs\/highlight_pict_1_biiggg.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2697,
+		"inputAbbreviatedPath": "\/assets\/imgs\/highlight_pict_1_biiggg.png",
+		"outputAbbreviatedPath": "\/assets\/imgs\/highlight_pict_1_biiggg.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/assets\/imgs\/highlight_pict_2.png": {
 		"fileType": 32768,
@@ -220,6 +253,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
+	"\/assets\/imgs\/highlight_pict_2_biiggg.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 301962,
+		"inputAbbreviatedPath": "\/assets\/imgs\/highlight_pict_2_biiggg.png",
+		"outputAbbreviatedPath": "\/assets\/imgs\/highlight_pict_2_biiggg.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/imgs\/highlight_pict_3.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -241,6 +285,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 1
+		},
+	"\/assets\/imgs\/highlight_pict_3_biiggg.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6981,
+		"inputAbbreviatedPath": "\/assets\/imgs\/highlight_pict_3_biiggg.png",
+		"outputAbbreviatedPath": "\/assets\/imgs\/highlight_pict_3_biiggg.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/assets\/imgs\/interview.png": {
 		"fileType": 32768,

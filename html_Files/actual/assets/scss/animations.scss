@@ -46,8 +46,14 @@
 	}
 
 }
-
+	
+	body.one_highlight_color-background,body.two_highlight_color-background,body.three_highlight_color-background {
+		//background-color: black !important;
+		
+		transition: background-color 600ms linear 1000ms;
+	}
 .no-touch {	 
+	
 
 	// mobile touch detection via javascript
 	@media only screen and (min-width: $media_tablet_width) {
