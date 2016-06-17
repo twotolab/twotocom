@@ -84,6 +84,15 @@ body {
 .noOpacity {
   opacity: 0; }
 
+.one_highlight_color-background {
+  background-color: #F4DDDC !important; }
+
+.two_highlight_color-background {
+  background-color: #A4ECD9 !important; }
+
+.three_highlight_color-background {
+  background-color: #F9CEB0 !important; }
+
 /*---------------------*/
 .vertical-center-headline {
   height: 100%;
@@ -243,15 +252,6 @@ a .small-underlined::after {
 .transparent-second-background {
   background-color: rgba(26, 26, 26, 0.7) !important; }
 
-.one_highlight_color-background {
-  background-color: #F4DDDC !important; }
-
-.two_highlight_color-background {
-  background-color: #A4ECD9 !important; }
-
-.three_highlight_color-background {
-  background-color: #F9CEB0 !important; }
-
 .lab-bg {
   background-color: #F9CEB0 !important; }
 
@@ -262,14 +262,12 @@ a .small-underlined::after {
   border-radius: 50%;
   width: 65px;
   height: 65px;
-  border: 1px solid #F0EDE4;
   box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.05); }
 
-.dark-circle-with-border {
+.dark-circle {
   border-radius: 50%;
   width: 65px;
-  height: 65px;
-  border: 1px solid #F0EDE4; }
+  height: 65px; }
 
 .transparent-dark-circle {
   border-radius: 50%;
@@ -1642,8 +1640,8 @@ body {
   opacity: 1;
   transition: all .5s ease; }
 
-body.one_highlight_color-background, body.two_highlight_color-background, body.three_highlight_color-background {
-  transition: background-color 600ms linear 1000ms; }
+.one_highlight_color-background, .two_highlight_color-background, .three_highlight_color-background {
+  transition: background-color 1000ms linear; }
 
 @media only screen and (min-width: 768px) {
   .no-touch .underlined:after, .no-touch .big-underlined:after, .no-touch .small-underlined:after {

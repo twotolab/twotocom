@@ -103,11 +103,13 @@ jQuery(document).ready(function($) {
 		//
 		$('.menu-button .first-background').removeClass(lastcolorSelect+'_highlight_color-background');
 		$('.nav-hover-bg-effect').removeClass(lastcolorSelect+'_highlight_color-background');
-		//$('.menu-button .first-background').addClass(colorSelect+'_highlight_color-background');
+		$('.menu-button .first-background').addClass(colorSelect+'_highlight_color-background');
 		$('.nav-hover-bg-effect').addClass(colorSelect+'_highlight_color-background');
-		
-		$('body').addClass(colorSelect+'_highlight_color-background');
-		$('body').removeClass(lastcolorSelect+'_highlight_color-background');
+	
+		if(colorSelect != lastcolorSelect){
+			$('body').addClass(colorSelect+'_highlight_color-background');
+			$('body').removeClass(lastcolorSelect+'_highlight_color-background');
+		}
 	}
 	function updateHightlightTxtBg(){
 
@@ -194,14 +196,14 @@ jQuery(document).ready(function($) {
 	function introCounter(myCounter,countLength){
 		
 		myCounter = new Countdown({  
-		    seconds:0,  // number of seconds to count down
+		    seconds:1,  // number of seconds to count down
 		    //onUpdateStatus: function(sec){},// callback for each second
 		    onCounterEnd: function(){restartCounter(_myCounter,countLength);}// final action
 		});
 		myCounter.start();
 
 	}
-	introCounter(_introCounter,_countLengthInSeconds);
+	//introCounter(_introCounter,_countLengthInSeconds);
 	/*------------------------------------------------------*/
 	/* ------------- intro Animations ------------------*/
 	/*------------------------------------------------------*/
@@ -214,19 +216,20 @@ jQuery(document).ready(function($) {
 		$('.header').stop(true, true).delay(1000).fadeIn(1200);
 		$('.footer').stop(true, true).delay(1000).fadeIn(1200);
 		$('.menu-wrapper').stop(true, true).delay(1000).fadeIn(600);
-		console.log("colorSelect: "+colorSelect);
+		//console.log("colorSelect: "+colorSelect);
 		
 	}
 	function introMainAnimation(){
-		
 		$('.nav-hightlight').stop(true, true).delay(1000).fadeIn(600);
-		$('body').addClass(colorSelect+'_highlight_color-background');
 	}
-	
 	Pace.on('hide', function(){
-      //console.log('done');
+      console.log('done'+colorSelect);
+      
       $('.hideDuringLoading').css({visibility:"visible",opacity:"1"});
       introDefaultAnimation();
       introMainAnimation();
+      $('body').delay(500).addClass('one_highlight_color-background');
+	  introCounter(_introCounter,_countLengthInSeconds);
+      
     });
 });
