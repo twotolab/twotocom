@@ -42,7 +42,7 @@ body.right-navi-is-open {
 }
 
 .right-navi-is-open .menu-wrapper {
-	visibility:hidden;
+	visibility:hidden !important;
 }
 
 .second-navigation-Wrapper {
@@ -110,8 +110,9 @@ body.right-navi-is-open {
 	}
 	.second-menu-wrapper {
 		right:$grid_height_unit;
-		top:18px;
-		bottom:auto;
+		//top:18px+$grid_height_unit+65px;
+		top:auto;
+		bottom:$grid_height_unit;
 	}
 	
 	.right-navi-is-open .menu-wrapper {

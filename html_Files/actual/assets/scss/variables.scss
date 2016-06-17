@@ -36,7 +36,7 @@ $third_color:#181818;//#50E3C2;
 background-color: #181818;
 }
 
-$darker_first_color:rgba(205, 193, 168, 0.2);
+$darker_first_color:#F0EDE4;//rgba(205, 193, 168, 0.2);
 $Lighter_darker_first_color:lighten($darker_first_color,15%);
 
 
@@ -105,11 +105,12 @@ $zIndex--nav-hightlight-element--h4:100;//-200001;
 
 
 $zIndex--header:3000;
-$zIndex--second-menu-wrapper:3500;
+
 $zIndex--footer:4000;
 
 
 $zIndex--menu-wrapper:50000;
+$zIndex--second-menu-wrapper:50001;
 $zIndex--nav-small-wrapper:40000;
 
 

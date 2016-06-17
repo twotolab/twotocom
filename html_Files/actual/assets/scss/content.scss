@@ -566,7 +566,8 @@ body {
 		position: fixed;
 	}	
 	.menu-wrapper {
-		top:19px;
+		//top:19px;
+		//top:$grid_height_unit*2;
 	}
 	.full-width-container .centered-image {
 	    min-height:50vh;	

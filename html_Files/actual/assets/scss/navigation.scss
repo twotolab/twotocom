@@ -397,15 +397,15 @@ a.hover-effect:hover .underlined::after,.hover-effect:hover .underlined::after,a
 		right:0;
 		left:0;
 		bottom:auto;
-		top:19px+$grid_height_unit*2;
+		top:$grid_halfHeight_unit;
 		
+	}
+	.menu-main-wrapper{
+		top:19px+$grid_height_unit*2 !important;
 	}
 	.nav-small {
 		top: 0;//$grid_halfHeight_unit;
 	}
-	.nav-main {
-		//justify-content:center;
-}
 
 }
 
