@@ -132,6 +132,16 @@ sup {
 	color:$second_typo_color;
 	}
 }
+.responsive-span{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+}
+.responsive-span span{
+	line-height: $grid_halfHeight_unit;
+
+}
 /*------------secondary Texts------------------*/
 .info {
 	font-family:'Fira Sans',sans-serif;

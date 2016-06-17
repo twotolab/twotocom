@@ -225,10 +225,13 @@ body {
 	//padding-bottom: $grid_height_unit;
 	//background-color: aqua;
 }
-.projects-wrapper:nth-child(odd){
+.bg-alternate:nth-child(odd){
 	background-color: $Lighter_darker_first_color;
+	//background-color: red;
+	
+	
 }
-.projects-wrapper:nth-child(even){
+.bg-alternate:nth-child(even){
 	//background-color: $Lighter_darker_first_color;
 }
 .projects-wrapper.top-line:before{

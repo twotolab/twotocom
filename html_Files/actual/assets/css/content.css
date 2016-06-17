@@ -198,10 +198,10 @@ body {
   stroke-width: 8; }
 
 a .socialIcons {
-  padding: 4px; }
+  padding: 13px; }
 
 .socialIcons svg {
-  padding: 2px;
+  padding: 12px;
   border-radius: 100%;
   width: 24px;
   height: 24px;
@@ -210,15 +210,15 @@ a .socialIcons {
   background-color: #333; }
 
 .socialIcons.xing svg {
-  width: 16px;
-  height: 16px;
-  padding: 6px; }
+  width: 19px;
+  height: 19px;
+  padding: 14px; }
 
 .socialconsWrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 52px; }
+  padding-bottom: 104px; }
 
 .no-touch a.thumb-hover-effect:hover .underlined::after, .no-touch a.thumb-hover-effect:hover .big-underlined::after, .no-touch a.thumb-hover-effect:hover .small-underlined::after {
   width: 100%; }
@@ -438,6 +438,14 @@ sup {
 
 .inverted- p, .inverted- h1, .inverted- h2, .inverted- h3, .inverted- h4, .inverted- h5, .inverted- h6, .inverted- a, .inverted- q, .inverted- blockquote {
   color: #F9F7F2; }
+
+.responsive-span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.responsive-span span {
+  line-height: 13px; }
 
 /*------------secondary Texts------------------*/
 .info {
@@ -981,7 +989,7 @@ header {
   box-sizing: border-box;
   padding-top: 104px;
   padding-top: 17vw;
-  color: rgba(51, 51, 51, 0.2);
+  color: rgba(51, 51, 51, 0.05);
   text-transform: uppercase; }
 
 .nav-quote-bg {
@@ -1337,8 +1345,8 @@ body {
 .projects-wrapper {
   padding-top: 26px; }
 
-.projects-wrapper:nth-child(odd) {
-  background-color: white; }
+.bg-alternate:nth-child(odd) {
+  background-color: rgba(240, 237, 228, 0.3); }
 
 .grid-four-wrapper {
   margin-left: auto;

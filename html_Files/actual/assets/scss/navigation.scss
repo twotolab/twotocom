@@ -106,7 +106,7 @@ header {
 	height:100%;
 	width:100%;
 	backface-visibility:hidden;
-	background: #F0EDE4;//transparentize($second_background_color,0.02);
+	background:$darker_first_color;//transparentize($second_background_color,0.02);
 	overflow:auto;
 	text-align:center;
 /* this fixes the buggy scrolling on webkit browsers - mobile devices only - when overflow property is applied */
@@ -315,7 +315,7 @@ header {
 	box-sizing:border-box;
 	padding-top:104px;
 	padding-top:17vw;
-	color:transparentize($second_color,0.8);
+	color:transparentize($second_color,0.95);
 	//text-shadow:10px 10px 5px transparentize($first_color,0.95);
 	text-transform:uppercase;
 }

@@ -146,10 +146,10 @@ body {
     stroke-width: 8;
 }
 a .socialIcons{
-	padding: 4px;
+	padding: 13px;
 	}
 .socialIcons svg{
-	padding: 2px;
+	padding: 12px;
 	border-radius: 100%;
 	width: $grid_height_unit - 2px;
 	height: $grid_height_unit - 2px;
@@ -159,16 +159,16 @@ a .socialIcons{
 }
 
 .socialIcons.xing svg {
-	width: $grid_height_unit - 10px;
-	height: $grid_height_unit - 10px;
-	padding: 6px;
+	width: $grid_height_unit - 7px;
+	height: $grid_height_unit - 7px;
+	padding: 14px;
 
 }
 .socialconsWrapper {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-bottom: $grid_height_unit*2;
+	padding-bottom: $grid_height_unit*4;
 	
 }
 .no-touch{
