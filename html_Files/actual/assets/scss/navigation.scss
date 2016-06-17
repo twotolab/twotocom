@@ -63,41 +63,6 @@ header {
 	height:65px;
 }
 	
-.nav-small .menuBgEffect{
-	position: absolute;
-	//top: -20px;
-	height: 100%;
-	width: 100%;
-}
-.nav-small{
-	position: relative ;
-	justify-content:center;
-	text-transform:uppercase;
-	
-	display: flex;
-	align-items: center;
-	height: 65px;
-	width: 100%;
-	z-index: $zIndex--nav-small-wrapper;
-	
-}
-.nav-small-is-visible .nav-small{
-	visibility: visible;
-}
-.nav-small ul{ 
-	list-style: none;
-	text-align: center;
-	padding: 0;
-	margin: 0;
-	display: flex;
-	flex-direction: row;
-}
-.nav-small li{ 
-	display: inline;
-	list-style-type: none;
-	width: 100%;
-	margin: 0 $grid_height_unit 0  $grid_height_unit;
-}
 .nav-main {
 /* by default it's hidden - on top of the viewport */
 	position:fixed;
@@ -402,9 +367,6 @@ a.hover-effect:hover .underlined::after,.hover-effect:hover .underlined::after,a
 	}
 	.menu-main-wrapper{
 		top:19px+$grid_height_unit*2 !important;
-	}
-	.nav-small {
-		top: 0;//$grid_halfHeight_unit;
 	}
 
 }

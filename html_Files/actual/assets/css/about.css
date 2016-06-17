@@ -788,38 +788,6 @@ header {
   width: 65px;
   height: 65px; }
 
-.nav-small .menuBgEffect {
-  position: absolute;
-  height: 100%;
-  width: 100%; }
-
-.nav-small {
-  position: relative;
-  justify-content: center;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  height: 65px;
-  width: 100%;
-  z-index: 40000; }
-
-.nav-small-is-visible .nav-small {
-  visibility: visible; }
-
-.nav-small ul {
-  list-style: none;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: row; }
-
-.nav-small li {
-  display: inline;
-  list-style-type: none;
-  width: 100%;
-  margin: 0 26px 0 26px; }
-
 .nav-main {
   /* by default it's hidden - on top of the viewport */
   position: fixed;
@@ -1060,10 +1028,7 @@ a.hover-effect:hover .underlined::after, .hover-effect:hover .underlined::after,
     top: 13px; }
 
   .menu-main-wrapper {
-    top: 71px !important; }
-
-  .nav-small {
-    top: 0; } }
+    top: 71px !important; } }
 @media only screen and (max-height: 701px) and (min-width: 1025px) {
   .menu-out {
     left: auto;
@@ -1302,7 +1267,7 @@ h1 {
   .no-touch .thumb-.big-underlined:after {
     min-width: 52px;
     transform: scaleX(0.5); }
-  .no-touch .menu-button .underlined:after, .no-touch .menu-button .big-underlined:after, .no-touch .menu-button .small-underlined:after, .no-touch .nav-small .small-underlined:after, .no-touch a.nav-link .underlined::after {
+  .no-touch .menu-button .underlined:after, .no-touch .menu-button .big-underlined:after, .no-touch .menu-button .small-underlined:after, .no-touch a.nav-link .underlined::after {
     transform-origin: center;
     transform: scaleX(0); }
   .no-touch a.thumb-hover-effect:hover .underlined::after, .no-touch .thumb-hover-effect:hover .big-underlined::after, .no-touch .thumb-hover-effect:hover .small-underlined:after, .no-touch a.nav-link:hover .underlined::after {
@@ -1360,14 +1325,6 @@ h1 {
     opacity: 1;
     transition: opacity .4s ease-out, transform 0.6s;
     transform: translateY(0); }
-  .no-touch .nav-small:hover .menuBgEffect p {
-    visibility: visible;
-    opacity: 1;
-    transition: opacity .4s ease-out, transform 0.6s;
-    transform: translateY(0); }
   .no-touch .menu-button:hover .menuBgEffect .topEffect, .no-touch .menu-button:hover .menuBgEffect .bottomEffect {
-    transition: transform 0.3s;
-    transform: translate(-50%, 0); }
-  .no-touch .nav-small:hover .menuBgEffect .topEffect, .no-touch .nav-small:hover .menuBgEffect .bottomEffect {
     transition: transform 0.3s;
     transform: translate(-50%, 0); } }
