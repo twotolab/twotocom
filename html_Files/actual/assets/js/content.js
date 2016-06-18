@@ -33,34 +33,45 @@ jQuery(document).ready(function($) {
     /*------------------------------------------------------*/
 	/* ------------- onScroll-actions------------------*/
 	/*------------------------------------------------------*/
-   var changeHeaderOn = 50;
+   var changeHeader = 50;
    var currentPoxY;
    var firstVisit = true;
    var headerContainerHeight;
    var posYHeader;
+   var headerStatusOpen=true;
    
    $(window).scroll(function() {
 	   currentPoxY =$(this).scrollTop();
-	   if (currentPoxY > 0) {
-	   	 checkHeaderPos();
+	   //if (currentPoxY > 0) {
+	   	 
 	   	 if(firstVisit){
 	    	$('body, html').scrollTop(0);
 	    	firstVisit=false;
-	    	//console.log('scroll'+currentPoxY);
-	    	
+	    	//console.log('scroll'+currentPoxY);	
     		}
-    	}
+    	//}
+    	checkHeaderPos();
 	});
 	
 	function checkHeaderPos(){
 		posYHeader=  parseInt($('.header-bg').css('top'),10) || 0 ;
-		if(currentPoxY > changeHeaderOn){
-			$('.header-bg').css({"transform": "translate3d( 0px, " + -headerContainerHeight + "px, 0px)"});	
-			//console.log('IN--------'+posYHeader);
+		if(currentPoxY > changeHeader){
+			if(headerStatusOpen){
+				$('.header-bg').css({"transition": "all 0.3s ease-out"});	
+				$('.header-bg').css({"transform": "translate3d( 0px, " + -headerContainerHeight + "px, 0px)"});	
+				//console.log('close it--------'+currentPoxY);
+			}
+			headerStatusOpen = false;
+			
 		}
-		if(currentPoxY <= changeHeaderOn){
-			$('.header-bg').css({"transform": "translate3d(0px,0px, 0px)"});	
-			//console.log('IN--------'+currentPoxY);	
+		if(currentPoxY <= changeHeader){
+			if(!headerStatusOpen){
+				$('.header-bg').css({"transition": "all 0.6s ease-out"});
+				$('.header-bg').css({"transform": "translate3d(0px,0px, 0px)"});	
+				console.log('open it--------'+currentPoxY);	
+			}
+			headerStatusOpen = true;
+			
 		}
 	}
 	var added = 104;

@@ -214,3 +214,30 @@ sup {
 	}
 }
 */
+/* dynamic headline*/
+h1.-dynamic {
+	font-size: 8vw;
+	line-height: 11vw;
+	
+}
+/* mobil and Tablets only*/ 
+@media only screen and (min-width: $media_tablet_width) {
+		h1.-dynamic  {
+			font-size: 48px;
+			line-height: 58px;
+			
+		}
+}
+//@media only screen and (min-width: 735px) and (min-height: 413px) {
+@media only screen and (min-width: 375px) and (max-height: 375px) {
+		h1.-dynamic {
+		font-size:	5vw;
+		line-height: 6vw;
+		}
+}	
+@media only screen and (min-width: 600px) and (max-height: 414px) {
+		h1.-dynamic {
+		font-size:	5vw;
+		line-height: 6vw;
+		}
+}
