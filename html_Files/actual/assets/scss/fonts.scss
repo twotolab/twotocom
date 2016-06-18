@@ -214,11 +214,13 @@ sup {
 	}
 }
 */
+/******************************************/
 /* dynamic headline*/
+/******************************************/
+
 h1.-dynamic {
 	font-size: 8vw;
 	line-height: 11vw;
-	
 }
 /* mobil and Tablets only*/ 
 @media only screen and (min-width: $media_tablet_width) {
