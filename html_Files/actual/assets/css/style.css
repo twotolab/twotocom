@@ -710,6 +710,13 @@ h1.-dynamic {
   background-repeat: no-repeat;
   background-position: center center; }
 
+.image-test-bg {
+  background-image: url(https://source.unsplash.com/featured/?sky);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  mix-blend-mode: screen; }
+
 .header-shrink {
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;

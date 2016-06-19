@@ -38,6 +38,19 @@ body {
 	opacity: 0.95;
 	*/
 }
+.content-bg{
+	background-color: $first_color;
+	//margin-top: 300px;
+	//min-height: 100%;
+	//width: 100%;
+	//top: 100px;
+	bottom: auto;
+	z-index: -700000;
+	padding-top: $grid_height_unit*2;
+}
+.cheader-bg{
+	z-index: -700001;
+}
 .content-main, .project-main{
 	position:relative;
 	margin:0 auto;
@@ -112,11 +125,11 @@ body {
 	margin:0 auto;
 	padding-top: $grid_height_unit*2;
 	max-width: $grid_height_unit*24;
-	margin-bottom: $grid_height_unit*4;
+	margin-bottom: $grid_height_unit*2;
 }
 @media only screen and (min-width: $media_desktop_width) {
 	.introduction{
-		margin-bottom: $grid_height_unit*6;
+		margin-bottom: $grid_height_unit*4;
 }
 }
 
@@ -224,6 +237,7 @@ body {
 	//padding-bottom: $grid_height_unit;
 	//background-color: aqua;
 }
+
 .bg-alternate:nth-child(odd){
 	background-color: $Lighter_darker_first_color;
 	//background-color: red;

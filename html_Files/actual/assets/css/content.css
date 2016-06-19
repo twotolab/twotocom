@@ -620,6 +620,13 @@ h1.-dynamic {
   background-repeat: no-repeat;
   background-position: center center; }
 
+.image-test-bg {
+  background-image: url(https://source.unsplash.com/featured/?sky);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  mix-blend-mode: screen; }
+
 .header-shrink {
   transition: all 0.3s ease-out;
   transform: translate3d(0, -676px, 0); }
@@ -1180,6 +1187,15 @@ body {
   opacity: 0.95;
   */ }
 
+.content-bg {
+  background-color: #F9F7F2;
+  bottom: auto;
+  z-index: -700000;
+  padding-top: 52px; }
+
+.cheader-bg {
+  z-index: -700001; }
+
 .content-main, .project-main {
   position: relative;
   margin: 0 auto;
@@ -1243,11 +1259,11 @@ body {
   margin: 0 auto;
   padding-top: 52px;
   max-width: 624px;
-  margin-bottom: 104px; }
+  margin-bottom: 52px; }
 
 @media only screen and (min-width: 1025px) {
   .introduction {
-    margin-bottom: 156px; } }
+    margin-bottom: 104px; } }
 .project-main .introduction {
   margin: 0;
   padding-top: 13px;
