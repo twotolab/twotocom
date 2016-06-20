@@ -74,6 +74,15 @@ jQuery(document).ready(function($) {
 			headerStatusOpen = true;
 			
 		}
+		if(currentPoxY > headerContainerHeight){
+			if(!headerStatusOpen){
+				$('.header-bg').css({"opacity": "0"});
+				}
+		} else{
+			if(!headerStatusOpen){
+				$('.header-bg').css({"opacity": "1"});
+				}
+		}
 	}
 	var added = 105;//104;
 	function updateHeaderHeight(){

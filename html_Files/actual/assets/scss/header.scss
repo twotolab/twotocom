@@ -39,30 +39,25 @@
 .header-bg{
 	position:fixed;
 	top:0;
-	left: 0;
 	width: 100%;
-	background: $darker_first_color;
+	background: $darker_first_color; 
 	z-index: $zIndex--header-bg;
 	height:$grid_height_unit*26;
 	overflow: hidden;
 	opacity:0;
-	transition: all 0.6s ease-out;
-	///*
-	    //*/
+	max-width: $media_Max_width;
+
 }
-.image-bg{
-	background-image:    url(../imgs/interview_bg.png);
+.image-bg,.image-test-bg{
+
     background-size:     cover;                      
     background-repeat:   no-repeat;
     background-position: center center;  
+    background-image:    url(../imgs/interview_bg.png);
 
 }
 .image-test-bg{
 	background-image:    url(https://source.unsplash.com/featured/?sky);
-    background-size:     cover;                      
-    background-repeat:   no-repeat;
-    background-position: center center;  
-    mix-blend-mode: screen;
 
 }
 .header-shrink {
