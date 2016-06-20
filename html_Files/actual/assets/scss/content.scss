@@ -48,6 +48,9 @@ body {
 	z-index: -700000;
 	padding-top: $grid_height_unit*2;
 }
+.project-main .content-bg{
+	padding-top: 0;
+}
 .cheader-bg{
 	z-index: -700001;
 }
@@ -91,10 +94,10 @@ body {
 	max-width: $grid_height_unit*34;
 	
 	padding-top: $grid_height_unit*1;
-	padding-bottom: $grid_height_unit*1;
+	//padding-bottom: $grid_height_unit*1;
 }
 .next-project{
-	margin-bottom: $grid_height_unit*6;
+	padding-bottom: $grid_height_unit*6;
 }
 .next-project .info{
 	margin-bottom: $grid_halfHeight_unit;	
@@ -233,7 +236,7 @@ body {
 	
 }
 .projects-wrapper{
-	padding-top: $grid_height_unit;
+	//padding-top: $grid_height_unit*2;
 	//padding-bottom: $grid_height_unit;
 	//background-color: aqua;
 }
@@ -414,7 +417,8 @@ body {
 }
 .grid-thumb-txt{
 	height:auto !important;
-	padding-bottom: $grid_height_unit;
+	padding-bottom: $grid_height_unit*2;
+	padding-top: $grid_height_unit*1;
 	display: flex;
 	flex-direction: column;
 }

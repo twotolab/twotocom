@@ -1193,6 +1193,9 @@ body {
   z-index: -700000;
   padding-top: 52px; }
 
+.project-main .content-bg {
+  padding-top: 0; }
+
 .cheader-bg {
   z-index: -700001; }
 
@@ -1230,11 +1233,10 @@ body {
   position: relative;
   box-sizing: border-box;
   max-width: 884px;
-  padding-top: 26px;
-  padding-bottom: 26px; }
+  padding-top: 26px; }
 
 .next-project {
-  margin-bottom: 156px; }
+  padding-bottom: 156px; }
 
 .next-project .info {
   margin-bottom: 13px; }
@@ -1342,9 +1344,6 @@ body {
   position: absolute;
   right: 0;
   left: auto; }
-
-.projects-wrapper {
-  padding-top: 26px; }
 
 .bg-alternate:nth-child(odd) {
   background-color: rgba(240, 237, 228, 0.3); }
@@ -1480,7 +1479,8 @@ body {
 
 .grid-thumb-txt {
   height: auto !important;
-  padding-bottom: 26px;
+  padding-bottom: 52px;
+  padding-top: 26px;
   display: flex;
   flex-direction: column; }
 
