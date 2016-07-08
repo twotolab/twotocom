@@ -9,6 +9,7 @@
 /* mobil-small */
 /* tablets */
 /* desktop Monitore */
+/* desktop Monitore */
 /* large desktop Monitore */
 /* HD desktop Monitore */
 /* HD desktop Monitore max */
@@ -105,7 +106,7 @@ body {
 
 /* tablet */
 /* desktop */
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1024px) {
   .vertical-center-headline {
     height: 100%;
     display: flex;
@@ -276,7 +277,7 @@ a .small-underlined::after {
   height: 65px; }
 
 /* desktop Monitore */
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1024px) {
   .circle, .dark-circle {
     border-radius: 50%;
     width: 65px;
@@ -304,7 +305,7 @@ a .small-underlined::after {
     display: flex !important;
     visibility: visible; } }
 /* desktop Monitore */
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1024px) {
   .only-mobil-and-tablet, .no-desktop {
     display: none !important;
     visibility: hidden; }
@@ -316,7 +317,7 @@ a .small-underlined::after {
   .only-desktop {
     display: flex !important;
     visibility: visible; } }
-@media only screen and (min-width: 1241px) {
+@media only screen and (min-width: 1248px) {
   .no-large-desktop {
     display: none !important;
     visibility: hidden; }
@@ -544,16 +545,16 @@ h1.-dynamic {
   background-image: -webkit-linear-gradient(0, transparent 50%, rgba(255, 0, 171, 0.05) 50%);
   z-index: auto;
   pointer-events: none;
-  max-width: 1441px;
+  max-width: 1440px;
   margin: 0 auto; }
 
 .pattern-vertical {
   position: fixed;
   top: 0;
-  height: 2882px;
-  width: 2882px;
-  max-height: 2882px;
-  max-width: 2882px;
+  height: 2880px;
+  width: 2880px;
+  max-height: 2880px;
+  max-width: 2880px;
   background-color: rgba(212, 153, 162, 0.05);
   background-size: 13px;
   background-image: -webkit-linear-gradient(90deg, transparent 1px, rgba(255, 0, 171, 0.05) 1px);
@@ -581,6 +582,9 @@ h1.-dynamic {
   z-index: 3000;
   padding: 13px;
   box-sizing: border-box; }
+
+.header-with-bg .header {
+  background-color: rgba(249, 247, 242, 0.8); }
 
 .header {
   display: flex !important;
@@ -636,7 +640,7 @@ h1.-dynamic {
     display: flex !important;
     flex-direction: row; } }
 /* desktop Monitore */
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1024px) {
   .header {
     flex: 1; }
 
@@ -688,7 +692,7 @@ h1.-dynamic {
 
 /* tablet */
 /* desktop Monitore */
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1024px) {
   .footer-left, .footer-right, .footer-middle {
     display: flex;
     flex: 1; }
@@ -704,7 +708,7 @@ h1.-dynamic {
     display: block;
     width: inherit; } }
 /* HD desktop Monitore */
-@media only screen and (min-width: 1441px) {
+@media only screen and (min-width: 1440px) {
   .footer {
     padding: 26px; } }
 .thumb-image-Text {
@@ -757,7 +761,7 @@ a .thumb-image-Text {
 .thumb-center-elt .second-color-txt, .thumb-center-elt .first-color-txt {
   padding-bottom: 8px; }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1024px) {
   .thumb-center-elt {
     padding-left: 26px; } }
 /*------------------------------------*/
@@ -770,7 +774,7 @@ body {
 body.nav-is-visible {
   position: fixed; }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1024px) {
   html.nav-is-visible {
     overflow-x: hidden;
     overflow-y: hidden; } }
@@ -1022,7 +1026,7 @@ a.hover-effect:hover .underlined::after, .hover-effect:hover .underlined::after,
     font-size: 120px;
     font-size: 15vw; } }
 /* mobil and Tablets only*/
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1024px) {
   .nav-quote-bg h2 {
     color: rgba(51, 51, 51, 0.02); } }
 /* desktop Monitore */
@@ -1053,7 +1057,7 @@ a.hover-effect:hover .underlined::after, .hover-effect:hover .underlined::after,
 
   .menu-main-wrapper {
     top: 71px !important; } }
-@media only screen and (max-height: 701px) and (min-width: 1025px) {
+@media only screen and (max-height: 701px) and (min-width: 1024px) {
   .menu-out {
     left: auto;
     top: auto;
@@ -1145,7 +1149,7 @@ body.right-navi-is-open {
 @media only screen and (min-width: 760px) {
   .second-navigation-Wrapper {
     width: 320px; } }
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1024px) {
   .secondary-button .menu-open {
     box-shadow: none; }
 
@@ -1195,7 +1199,7 @@ body {
   margin: 0 auto;
   width: 100%;
   height: 100%;
-  max-width: 1241px;
+  max-width: 1248px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -1346,7 +1350,7 @@ h1 {
     color: #333; }
   .no-touch .nav-elt h3 {
     transition: color 0.5s ease; } }
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1024px) {
   .no-touch .menu-button:hover .menuBgEffect p {
     visibility: visible;
     opacity: 1;
