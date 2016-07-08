@@ -19,10 +19,8 @@ jQuery(document).ready(function($) {
 	/*------------------------------------------------------*/
 	/* ------------- breakpoint------------------*/
 	/*------------------------------------------------------*/
-	// adaptive images
-	 $(".breakpoint img").breakpoint();
-	
 	// 
+
 	/*------------------------------------------------------*/
 	/* ------------- click events------------------*/
 	/*------------------------------------------------------*/
@@ -106,7 +104,7 @@ jQuery(document).ready(function($) {
 		$('.menu-button .first-background').addClass(colorSelect+'_highlight_color-background');
 		$('.nav-hover-bg-effect').addClass(colorSelect+'_highlight_color-background');
 	
-		if(colorSelect != lastcolorSelect){
+		if(colorSelect !== lastcolorSelect){
 			$('body').addClass(colorSelect+'_highlight_color-background');
 			$('body').removeClass(lastcolorSelect+'_highlight_color-background');
 		}
@@ -230,6 +228,6 @@ jQuery(document).ready(function($) {
       introMainAnimation();
       $('body').delay(500).addClass('one_highlight_color-background');
 	  introCounter(_introCounter,_countLengthInSeconds);
-      
+  
     });
 });

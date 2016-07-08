@@ -76,20 +76,32 @@ body {
 	height: 100px;
 	width: 50%;
 	align-self: center;
-	padding-left: $grid_height_unit*10;
+	//padding-left: $grid_height_unit*10;
 	top: -$grid_height_unit*2-4px;
+	
+	height: auto;
+	padding-left: $grid_height_unit*10;
+	
+	
+}
+.Site-highlight-right .headline{
+	padding: 13px;
+	box-sizing: border-box;
+	background: $first_highlight_color;
+	backdrop-filter: blur(10px);
+	//mix-blend-mode:multiply;
 }
 
 .Site-highlight-one,.Site-highlight-two,.Site-highlight-three{
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
+	width: 70%;
 	height: 100%;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	//mix-blend-mode:multiply;
+	
 	
 }
 .Site-highlight-one,.Site-highlight-two,.Site-highlight-three {

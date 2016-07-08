@@ -10,6 +10,10 @@
 	
 	padding:$grid_halfHeight_unit;
 	box-sizing:border-box;
+	
+}
+.header-with-bg .header{
+		background-color: $transparent_first_color;
 }
 .header{
 	display:flex !important;

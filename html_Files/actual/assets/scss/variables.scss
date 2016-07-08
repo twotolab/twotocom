@@ -18,11 +18,13 @@ $media_mobilS_width: 320px;
 /* tablets */
 $media_tablet_width: 768px;
 /* desktop Monitore */
-$media_desktop_width: 1025px;
+$media_desktop_width: 1024px;
+/* desktop Monitore */
+$media_mini_desktop_width: $media_desktop_width + 1;
 /* large desktop Monitore */
-$media_large_desktop_width: 1241px;
+$media_large_desktop_width: 1248px;
 /* HD desktop Monitore */
-$media_HD_desktop_width: 1441px;
+$media_HD_desktop_width: 1440px;
 /* HD desktop Monitore max */
 $media_Max_width: 1920px !important;
 
@@ -40,6 +42,7 @@ background-color: #181818;
 
 $darker_first_color:#F0EDE4;//rgba(205, 193, 168, 0.2);
 $Lighter_darker_first_color:rgba(240, 237, 228, 0.3);
+$transparent_first_color:transparentize($first_color, 0.2);
 
 
 $first_highlight_color:#F4DDDC;
@@ -72,11 +75,8 @@ $first_transparent_dark_color: transparentize($first_color, 0.2);
 $highlight_dark_color:darken($third_color,10%);
 
 $second_lightHeavy_color: lighten($second_color, 30%);
-$first_transparent_light_color: transparentize($first_color, 0.6);
 
 $second_typo_info_color: $second_lightHeavy_color;
-$second_typo_hover_color: $first_transparent_light_color;
-$second_typo_hover_background_color: $first_transparent_dark_color;
 $second_typo_selected_color: $second_lightHeavy_color;
 
 $first_shadow_color : $shadow_color;

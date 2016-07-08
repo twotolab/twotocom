@@ -336,7 +336,7 @@ a.hover-effect:hover .underlined::after,.hover-effect:hover .underlined::after,a
 }
 
 /* desktop Monitore */
-@media only screen and (min-width: $media_desktop_width) {
+@media only screen and (min-width: $media_mini_desktop_width) {
 	.header {
 		position:fixed;
 	}

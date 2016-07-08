@@ -209,9 +209,6 @@ a .small-underlined::after{
 .transparent-second-background {
 	background-color:transparentize($second_darker_color,0.3) !important;
 }
-
-
-
 .lab-bg{
 		background-color: $third_highlight_color !important;
 }

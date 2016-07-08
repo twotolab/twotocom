@@ -9,6 +9,7 @@
 /* mobil-small */
 /* tablets */
 /* desktop Monitore */
+/* desktop Monitore */
 /* large desktop Monitore */
 /* HD desktop Monitore */
 /* HD desktop Monitore max */
@@ -118,7 +119,7 @@ body {
 
 /* tablet */
 /* desktop */
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1024px) {
   .vertical-center-headline {
     height: 100%;
     display: -webkit-box;
@@ -311,7 +312,7 @@ a .small-underlined::after {
   height: 65px; }
 
 /* desktop Monitore */
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1024px) {
   .circle, .dark-circle {
     border-radius: 50%;
     width: 65px;
@@ -345,7 +346,7 @@ a .small-underlined::after {
     display: flex !important;
     visibility: visible; } }
 /* desktop Monitore */
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1024px) {
   .only-mobil-and-tablet, .no-desktop {
     display: none !important;
     visibility: hidden; }
@@ -363,7 +364,7 @@ a .small-underlined::after {
     display: -ms-flexbox !important;
     display: flex !important;
     visibility: visible; } }
-@media only screen and (min-width: 1241px) {
+@media only screen and (min-width: 1248px) {
   .no-large-desktop {
     display: none !important;
     visibility: hidden; }
@@ -390,16 +391,16 @@ a .small-underlined::after {
   background-image: -webkit-linear-gradient(0, transparent 50%, rgba(255, 0, 171, 0.05) 50%);
   z-index: auto;
   pointer-events: none;
-  max-width: 1441px;
+  max-width: 1440px;
   margin: 0 auto; }
 
 .pattern-vertical {
   position: fixed;
   top: 0;
-  height: 2882px;
-  width: 2882px;
-  max-height: 2882px;
-  max-width: 2882px;
+  height: 2880px;
+  width: 2880px;
+  max-height: 2880px;
+  max-width: 2880px;
   background-color: rgba(212, 153, 162, 0.05);
   background-size: 13px;
   background-image: -webkit-linear-gradient(90deg, transparent 1px, rgba(255, 0, 171, 0.05) 1px);
@@ -649,6 +650,9 @@ h1.-dynamic {
   padding: 13px;
   box-sizing: border-box; }
 
+.header-with-bg .header {
+  background-color: rgba(249, 247, 242, 0.8); }
+
 .header {
   display: -webkit-box !important;
   display: -webkit-flex !important;
@@ -734,7 +738,7 @@ h1.-dynamic {
         -ms-flex-direction: row;
             flex-direction: row; } }
 /* desktop Monitore */
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1024px) {
   .header {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
@@ -810,7 +814,7 @@ h1.-dynamic {
 
 /* tablet */
 /* desktop Monitore */
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1024px) {
   .footer-left, .footer-right, .footer-middle {
     display: -webkit-box;
     display: -webkit-flex;
@@ -843,7 +847,7 @@ h1.-dynamic {
     display: block;
     width: inherit; } }
 /* HD desktop Monitore */
-@media only screen and (min-width: 1441px) {
+@media only screen and (min-width: 1440px) {
   .footer {
     padding: 26px; } }
 .thumb-image-Text {
@@ -927,7 +931,7 @@ a .thumb-image-Text {
 .thumb-center-elt .second-color-txt, .thumb-center-elt .first-color-txt {
   padding-bottom: 8px; }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1024px) {
   .thumb-center-elt {
     padding-left: 26px; } }
 /*------------------------------------*/
@@ -940,7 +944,7 @@ body {
 body.nav-is-visible {
   position: fixed; }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1024px) {
   html.nav-is-visible {
     overflow-x: hidden;
     overflow-y: hidden; } }
@@ -1288,7 +1292,7 @@ a.hover-effect:hover .underlined::after, .hover-effect:hover .underlined::after,
     font-size: 120px;
     font-size: 15vw; } }
 /* mobil and Tablets only*/
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1024px) {
   .nav-quote-bg h2 {
     color: rgba(51, 51, 51, 0.02); } }
 /* desktop Monitore */
@@ -1319,7 +1323,7 @@ a.hover-effect:hover .underlined::after, .hover-effect:hover .underlined::after,
 
   .menu-main-wrapper {
     top: 71px !important; } }
-@media only screen and (max-height: 701px) and (min-width: 1025px) {
+@media only screen and (max-height: 701px) and (min-width: 1024px) {
   .menu-out {
     left: auto;
     top: auto;
@@ -1433,14 +1437,22 @@ body {
   -webkit-align-self: center;
       -ms-flex-item-align: center;
           align-self: center;
-  padding-left: 260px;
-  top: -56px; }
+  top: -56px;
+  height: auto;
+  padding-left: 260px; }
+
+.Site-highlight-right .headline {
+  padding: 13px;
+  box-sizing: border-box;
+  background: #F4DDDC;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px); }
 
 .Site-highlight-one, .Site-highlight-two, .Site-highlight-three {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 70%;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -1647,7 +1659,7 @@ body {
 
   .grid-description {
     padding-top: 22px; } }
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1024px) {
   .nav-hightlight-main {
     padding-left: 26px; }
 
@@ -1674,7 +1686,7 @@ body {
 
   .grid-description {
     padding-top: 47px; } }
-@media only screen and (min-width: 1441px) {
+@media only screen and (min-width: 1440px) {
   .grid-highlight-left {
     height: 624px !important; }
 
@@ -1764,7 +1776,7 @@ body {
 
   .grid-one-height {
     height: 208px; } }
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1024px) {
   .grid-one-width {
     -webkit-box-flex: 1;
     -webkit-flex: 1 25%;
@@ -1794,7 +1806,7 @@ body {
 
   .grid-one-height {
     height: 260px; } }
-@media only screen and (min-width: 1441px) {
+@media only screen and (min-width: 1440px) {
   .vertical-centered-content {
     margin-top: 208px; }
 
@@ -1973,7 +1985,7 @@ body {
   .no-touch .nav-elt h3 {
     -webkit-transition: color 0.5s ease;
     transition: color 0.5s ease; } }
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1024px) {
   .no-touch .menu-button:hover .menuBgEffect p {
     visibility: visible;
     opacity: 1;
