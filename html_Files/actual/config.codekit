@@ -1518,17 +1518,6 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/Axe_1_960x604.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 722280,
-		"inputAbbreviatedPath": "\/Axe_1_960x604.png",
-		"outputAbbreviatedPath": "\/Axe_1_960x604.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/contact.html": {
 		"fileType": 8192,
 		"ignore": 0,

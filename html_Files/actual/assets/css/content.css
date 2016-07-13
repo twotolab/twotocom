@@ -1187,6 +1187,9 @@ body {
   opacity: 0.95;
   */ }
 
+.header.-contact {
+  position: fixed; }
+
 .content-bg {
   background-color: #F9F7F2;
   bottom: auto;
@@ -1246,6 +1249,9 @@ body {
   box-sizing: border-box;
   max-width: 884px;
   padding-top: 26px; }
+
+.contact-content .headline {
+  margin-top: 52px; }
 
 .next-project {
   padding-bottom: 156px; }
@@ -1643,6 +1649,9 @@ body {
   .simple-copy, .info-elt {
     width: 50%; } }
 @media only screen and (min-width: 1024px) {
+  .contact-content .headline {
+    margin-top: 0; }
+
   .projects-wrapper {
     padding-top: 0; }
 

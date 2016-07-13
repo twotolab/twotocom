@@ -27,11 +27,21 @@ jQuery(document).ready(function($) {
         effectTime:100
 
     });
-    
+    	/*------------------------------------------------------*/
+	/* ------------- Touch Device Detection------------------*/
+	/*------------------------------------------------------*/
+	// Touch Device Detection
+	if (isTouchDevice() === true) {
+		$('html').addClass('touch');
+		//alert("hello with touch");
+	} else{
+		$('html').addClass('no-touch');
+		//alert("hello no-touch");
+	}
 	/*------------------------------------------------------*/
 	/* ------------- onScrollAnimation------------------*/
 	/*------------------------------------------------------*/
-	
+	if (isTouchDevice() === false)  {
 	$( window ).scroll(function() {
 				if(!$('body').hasClass('nav-is-visible') ) {
 					$('.onScrollAnimation').hide();
@@ -42,21 +52,16 @@ jQuery(document).ready(function($) {
 	    			}, 250) );
 				}
     		});
-    
+    }
     /*------------------------------------------------------*/
 	/* ------------- onScroll-actions------------------*/
 	/*------------------------------------------------------*/
-   //var changeHeader = 50;
    var currentPoxY;
    var firstVisit = true;
    var headerContainerHeight;
-   //var posYHeader;
    var headerStatusOpen=true;
    
-   
-   $(window).scroll(function() {
-	   currentPoxY =$(this).scrollTop();
-	   //if (currentPoxY > 0) {
+   //if (currentPoxY > 0) {
 	   	 
 	   	 if(firstVisit){
 	    	$('body, html').scrollTop(0,0);
@@ -64,10 +69,14 @@ jQuery(document).ready(function($) {
 	    	$("html, body").animate({
 		        scrollTop: 0
 		    }, 500);  
+		    
 	    	firstVisit=false;
 	    	//console.log('scroll'+currentPoxY);	
     		}
     	//}
+   
+   $(window).scroll(function() {
+	   currentPoxY =$(this).scrollTop();
     	checkHeaderPos();
 	});
 	
@@ -138,17 +147,7 @@ jQuery(document).ready(function($) {
 		updateHeaderHeight();
 	});
 	//checkHeaderPos();
-	/*------------------------------------------------------*/
-	/* ------------- Touch Device Detection------------------*/
-	/*------------------------------------------------------*/
-	// Touch Device Detection
-	if (isTouchDevice() === true) {
-		$('html').addClass('touch');
-		//alert("hello with touch");
-	} else{
-		$('html').addClass('no-touch');
-		//alert("hello no-touch");
-	}
+
 	/*------------------------------------------------------*/
 	/* ------------- breakpoint------------------*/
 	/*------------------------------------------------------*/

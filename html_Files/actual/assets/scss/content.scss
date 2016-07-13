@@ -29,6 +29,7 @@ body {
 	height: 100%;
 	flex: 1;
 }
+
 .header{
 	position: relative;
 	display: inline-block;
@@ -38,6 +39,10 @@ body {
 	opacity: 0.95;
 	*/
 }
+.header.-contact{	
+	position: fixed;
+}
+
 .content-bg{
 	background-color: $first_color;
 	//margin-top: 300px;
@@ -107,6 +112,9 @@ body {
 	
 	padding-top: $grid_height_unit*1;
 	//padding-bottom: $grid_height_unit*1;
+}
+.contact-content .headline{
+	margin-top: $grid_height_unit*2;
 }
 .next-project{
 	padding-bottom: $grid_height_unit*6;
@@ -534,7 +542,7 @@ color: $second_color;
 	text-transform: uppercase;
 }
 @media only screen and (min-width: $media_tablet_width) {
-
+	
 	.project-main .headline {
 		text-align: center;
 	}
@@ -605,6 +613,9 @@ color: $second_color;
 }
 @media only screen and (min-width: $media_desktop_width) {
 
+	.contact-content .headline{
+	margin-top: 0;
+}
 	.projects-wrapper{
 	padding-top: 0;
 	}
