@@ -362,8 +362,15 @@ a.hover-effect:hover .underlined::after,.hover-effect:hover .underlined::after,a
 		right:0;
 		left:0;
 		bottom:auto;
-		top:$grid_halfHeight_unit;
+		top:$grid_halfHeight_unit*4;
+	}
+	.header-with-bg .menu-wrapper{
+		top:-5px;
 		
+		
+		.menu-open{
+			background:none !important;
+		}
 	}
 	.menu-main-wrapper{
 		top:19px+$grid_height_unit*2 !important;

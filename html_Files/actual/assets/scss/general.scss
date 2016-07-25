@@ -198,7 +198,10 @@ a .small-underlined::after{
 /////// backgrounds
 
 .first-background {
-	background-color:$first_background_color;
+	background-color:$first_background_color !important;
+}
+.first-highlight-background {
+	background-color:$first_highlight_color !important;
 }
 .second-background {
 	background-color:$second_background_color !important;

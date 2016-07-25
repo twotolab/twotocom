@@ -243,7 +243,10 @@ a .small-underlined::after {
   visibility: hidden; }
 
 .first-background {
-  background-color: #F9F7F2; }
+  background-color: #F9F7F2 !important; }
+
+.first-highlight-background {
+  background-color: #F4DDDC !important; }
 
 .second-background {
   background-color: #333 !important; }
@@ -1053,7 +1056,12 @@ a.hover-effect:hover .underlined::after, .hover-effect:hover .underlined::after,
     right: 0;
     left: 0;
     bottom: auto;
-    top: 13px; }
+    top: 52px; }
+
+  .header-with-bg .menu-wrapper {
+    top: -5px; }
+    .header-with-bg .menu-wrapper .menu-open {
+      background: none !important; }
 
   .menu-main-wrapper {
     top: 71px !important; } }
@@ -1728,6 +1736,8 @@ body {
 .touch .main-content, .no-touch .main-content {
   opacity: 1;
   transition: all .5s ease; }
+.touch .menu-wrapper, .no-touch .menu-wrapper {
+  transition: all 0.6s ease-out; }
 
 .one_highlight_color-background, .two_highlight_color-background, .three_highlight_color-background {
   transition: background-color 1000ms linear; }
