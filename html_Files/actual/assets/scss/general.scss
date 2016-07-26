@@ -200,8 +200,8 @@ a .small-underlined::after{
 .first-background {
 	background-color:$first_background_color !important;
 }
-.first-highlight-background {
-	background-color:$first_highlight_color !important;
+.menu-background-color {
+	background-color:$first_highlight_color;
 }
 .second-background {
 	background-color:$second_background_color !important;

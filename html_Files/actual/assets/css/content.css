@@ -245,8 +245,8 @@ a .small-underlined::after {
 .first-background {
   background-color: #F9F7F2 !important; }
 
-.first-highlight-background {
-  background-color: #F4DDDC !important; }
+.menu-background-color {
+  background-color: #F4DDDC; }
 
 .second-background {
   background-color: #333 !important; }
@@ -586,7 +586,7 @@ h1.-dynamic {
   padding: 13px;
   box-sizing: border-box; }
 
-.header-with-bg .header {
+.fix-top-header .header {
   background-color: rgba(249, 247, 242, 0.8); }
 
 .header {
@@ -905,6 +905,9 @@ header {
   justify-content: center;
   cursor: pointer; }
 
+.menu-background-color {
+  background-color: rgba(249, 247, 242, 0.8); }
+
 .menu-center {
   position: relative;
   align-self: center;
@@ -935,6 +938,9 @@ header {
     .menuBgEffect .bottomEffect p {
       transform: translateY(100%);
       opacity: 0; }
+
+.fix-top-header .menuBgEffect {
+  display: none; }
 
 .menu-close {
   display: none; }
@@ -1058,13 +1064,16 @@ a.hover-effect:hover .underlined::after, .hover-effect:hover .underlined::after,
     bottom: auto;
     top: 52px; }
 
-  .header-with-bg .menu-wrapper {
+  .fix-top-header .menu-wrapper {
     top: -5px; }
-    .header-with-bg .menu-wrapper .menu-open {
+    .fix-top-header .menu-wrapper .menu-open {
       background: none !important; }
 
   .menu-main-wrapper {
-    top: 71px !important; } }
+    top: 71px !important; }
+
+  .menu-background-color {
+    background-color: rgba(249, 247, 242, 0.2); } }
 @media only screen and (max-height: 701px) and (min-width: 1024px) {
   .menu-out {
     left: auto;
@@ -1729,8 +1738,7 @@ body {
   opacity: 0; }
 .touch .second-menu-wrapper, .no-touch .second-menu-wrapper {
   opacity: 1;
-  transition: all .3s ease;
-  transition-delay: .6s; }
+  transition: all .6s ease; }
 .touch .right-navi-is-open .content-main, .touch .right-navi-is-open .project-main, .no-touch .right-navi-is-open .content-main, .no-touch .right-navi-is-open .project-main {
   opacity: .1;
   transition: all .5s ease; }

@@ -99,9 +99,9 @@ jQuery(document).ready(function($) {
 		colorSelect = _arr[_actualHighlight];
 		lastcolorSelect = _arr[_lastHighlight];
 		//
-		$('.menu-button .first-background').removeClass(lastcolorSelect+'_highlight_color-background');
+		$('.menu-button .menu-background-color').removeClass(lastcolorSelect+'_highlight_color-background');
 		$('.nav-hover-bg-effect').removeClass(lastcolorSelect+'_highlight_color-background');
-		$('.menu-button .first-background').addClass(colorSelect+'_highlight_color-background');
+		$('.menu-button .menu-background-color').addClass(colorSelect+'_highlight_color-background');
 		$('.nav-hover-bg-effect').addClass(colorSelect+'_highlight_color-background');
 	
 		if(colorSelect !== lastcolorSelect){

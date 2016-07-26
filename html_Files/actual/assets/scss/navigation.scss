@@ -171,6 +171,9 @@ header {
 	justify-content:center;
 	cursor:pointer;
 }
+.menu-background-color{
+	background-color:transparentize($first_color, 0.2);
+}
 
 .menu-center {
 	position: relative;
@@ -218,6 +221,9 @@ header {
 	}
 }
 
+.fix-top-header .menuBgEffect{
+	display: none;
+}
 .menu-close {
 	display:none;
 }
@@ -364,7 +370,7 @@ a.hover-effect:hover .underlined::after,.hover-effect:hover .underlined::after,a
 		bottom:auto;
 		top:$grid_halfHeight_unit*4;
 	}
-	.header-with-bg .menu-wrapper{
+	.fix-top-header .menu-wrapper{
 		top:-5px;
 		
 		
@@ -374,6 +380,9 @@ a.hover-effect:hover .underlined::after,.hover-effect:hover .underlined::after,a
 	}
 	.menu-main-wrapper{
 		top:19px+$grid_height_unit*2 !important;
+	}
+	.menu-background-color{
+		background-color:transparentize($first_color, 0.8);
 	}
 
 }

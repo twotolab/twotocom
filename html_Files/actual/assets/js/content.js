@@ -39,21 +39,7 @@ jQuery(document).ready(function($) {
 		$('html').addClass('no-touch');
 		//alert("hello no-touch");
 	}
-	/*------------------------------------------------------*/
-	/* ------------- onScrollAnimation------------------*/
-	/*------------------------------------------------------*/
-	if (isTouchDevice() === false) {
-		$(window).scroll(function() {
-			if (!$('body').hasClass('nav-is-visible')) {
-				$('.onScrollAnimation').hide();
-				clearTimeout($.data(this, "scrollCheck"));
-				$.data(this, "scrollCheck", setTimeout(function() {
-					//$('.onScrollAnimation').clearQueue();
-					$('.onScrollAnimation').stop(true, true).delay(500).fadeIn(300);
-				}, 250));
-			}
-		});
-	}
+
 	/*------------------------------------------------------*/
 	/* ------------- onScroll-actions------------------*/
 	/*------------------------------------------------------*/
@@ -98,10 +84,10 @@ jQuery(document).ready(function($) {
 				$('.header-bg').stop(true, true).delay(600).css({
 					"opacity": "0"
 				});
-				if ($('body').hasClass('header-with-bg')) {
-					$('body').removeClass('header-with-bg');
+				if ($('body').hasClass('fix-top-header')) {
+					$('body').removeClass('fix-top-header');
 				} else {
-					$('body').addClass('header-with-bg');
+					$('body').addClass('fix-top-header');
 				}
 				headerStatusOpen = false;
 				console.log('headerStatusOpen 1:' + headerStatusOpen);
@@ -114,10 +100,10 @@ jQuery(document).ready(function($) {
 				$('.header-bg').css({
 					"opacity": "1"
 				});
-				if ($('body').hasClass('header-with-bg')) {
-					$('body').removeClass('header-with-bg');
+				if ($('body').hasClass('fix-top-header')) {
+					$('body').removeClass('fix-top-header');
 				} else {
-					$('body').addClass('header-with-bg');
+					$('body').addClass('fix-top-header');
 				}
 				headerStatusOpen = true;
 				console.log('headerStatusOpen 2:' + headerStatusOpen);
@@ -131,6 +117,28 @@ jQuery(document).ready(function($) {
 			height: headerContainerHeight
 		});
 	}
+	/*------------------------------------------------------*/
+	/* ------------- onScrollAnimation------------------*/
+	/*------------------------------------------------------*/
+	/* too irritating!!!
+	/**
+	if (isTouchDevice() === false) {
+		if(headerStatusOpen){
+			$(window).scroll(function() {
+				if (!$('body').hasClass('nav-is-visible')) {
+					$('.onScrollAnimation').hide();
+					clearTimeout($.data(this, "scrollCheck"));
+					$.data(this, "scrollCheck", setTimeout(function() {
+						//$('.onScrollAnimation').clearQueue();
+						$('.onScrollAnimation').stop(true, true).delay(500).fadeIn(300);
+					}, 250));
+				}
+			});
+		} else{
+			//$('.onScrollAnimation').stop(true, true).delay(500).fadeIn(300);
+		}
+	}
+	*/
 	/*------------------------------------------------------*/
 	/* ------------- breakpoint------------------*/
 	/*------------------------------------------------------*/
@@ -208,7 +216,7 @@ jQuery(document).ready(function($) {
 	function introDefaultAnimation() {
 		$('.header').stop(true, true).delay(600).fadeIn(600);
 		$('.footer').stop(true, true).delay(1200).fadeIn(600);
-		$('.menu-wrapper').stop(true, true).delay(1200).fadeIn(600);
+		$('.menu-wrapper').stop(true, true).delay(600).fadeIn(600);
 		$('.second-menu-wrapper').stop(true, true).delay(1200).fadeIn(600);
 	}
 
