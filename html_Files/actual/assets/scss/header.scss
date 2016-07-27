@@ -13,9 +13,11 @@
 	
 }
 .fix-top-header .header{
-		background-color: $transparent_first_color;
+		transition: all 0.3s ease-out 0.3s;
+		background-color: transparentize($first_color, 0.4);
 }
 .header{
+	transition: all 0.3s ease-out;
 	display:flex !important;
 	flex-direction: row;
 }

@@ -57,19 +57,18 @@ body {
 	padding-top: 0;
 }
 .responsbigimg{
-	display: none !important;
-	visibility: hidden;
-}
-.aaaaaa{
-	visibility: hidden;
+	//display: none !important;
+	//visibility: hidden;
+	display:block !important;
+	visibility: visible;
 }
 .zoomUpthumbs .responsimg{
 	display:none;
 	visibility: hidden;
 }
 .zoomUpthumbs .responsbigimg{
-	display:block !important;
-	visibility: visible;
+	//display:block !important;
+	//visibility: visible;
 }
 .content-main, .project-main{
 	position:relative;

@@ -221,7 +221,7 @@ header {
 	}
 }
 
-.fix-top-header .menuBgEffect{
+.fix-top-menu .menuBgEffect{
 	display: none;
 }
 .menu-close {
@@ -370,11 +370,12 @@ a.hover-effect:hover .underlined::after,.hover-effect:hover .underlined::after,a
 		bottom:auto;
 		top:$grid_halfHeight_unit*4;
 	}
-	.fix-top-header .menu-wrapper{
+	.fix-top-menu .menu-wrapper{
 		top:-5px;
 		
 		
 		.menu-open{
+			transition: all 0.3s ease-out 0.3s;
 			background:none !important;
 		}
 	}

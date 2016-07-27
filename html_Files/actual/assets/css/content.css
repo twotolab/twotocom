@@ -587,9 +587,11 @@ h1.-dynamic {
   box-sizing: border-box; }
 
 .fix-top-header .header {
-  background-color: rgba(249, 247, 242, 0.8); }
+  transition: all 0.3s ease-out 0.3s;
+  background-color: rgba(249, 247, 242, 0.6); }
 
 .header {
+  transition: all 0.3s ease-out;
   display: flex !important;
   flex-direction: row; }
 
@@ -939,7 +941,7 @@ header {
       transform: translateY(100%);
       opacity: 0; }
 
-.fix-top-header .menuBgEffect {
+.fix-top-menu .menuBgEffect {
   display: none; }
 
 .menu-close {
@@ -1064,9 +1066,10 @@ a.hover-effect:hover .underlined::after, .hover-effect:hover .underlined::after,
     bottom: auto;
     top: 52px; }
 
-  .fix-top-header .menu-wrapper {
+  .fix-top-menu .menu-wrapper {
     top: -5px; }
-    .fix-top-header .menu-wrapper .menu-open {
+    .fix-top-menu .menu-wrapper .menu-open {
+      transition: all 0.3s ease-out 0.3s;
       background: none !important; }
 
   .menu-main-wrapper {
@@ -1217,19 +1220,12 @@ body {
   padding-top: 0; }
 
 .responsbigimg {
-  display: none !important;
-  visibility: hidden; }
-
-.aaaaaa {
-  visibility: hidden; }
+  display: block !important;
+  visibility: visible; }
 
 .zoomUpthumbs .responsimg {
   display: none;
   visibility: hidden; }
-
-.zoomUpthumbs .responsbigimg {
-  display: block !important;
-  visibility: visible; }
 
 .content-main, .project-main {
   position: relative;
