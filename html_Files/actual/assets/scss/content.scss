@@ -51,11 +51,9 @@ body {
 	//top: 100px;
 	bottom: auto;
 	z-index: -700000;
-	padding-top: $grid_height_unit*2;
+	//padding-top: $grid_height_unit*2;
 }
-.project-main .content-bg{
-	padding-top: 0;
-}
+
 .responsbigimg{
 	//display: none !important;
 	//visibility: hidden;
@@ -133,6 +131,7 @@ body {
 
 .headline .info,.next-project .info {
 	margin-top: $grid_height_unit;
+	padding-bottom: $grid_height_unit*6;
 }
 .contact-content .headline .info {
 	margin-top: $grid_height_unit*2;
@@ -140,13 +139,14 @@ body {
 .introduction{
 	text-align: center;
 	margin:0 auto;
-	padding-top: $grid_height_unit*2;
+	//padding-top: $grid_height_unit*2;
 	max-width: $grid_height_unit*24;
 	margin-bottom: $grid_height_unit*2;
 }
 @media only screen and (min-width: $media_desktop_width) {
 	.introduction{
 		margin-bottom: $grid_height_unit*4;
+		padding-top: $grid_height_unit*3;
 	}
 }
 

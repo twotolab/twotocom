@@ -618,7 +618,7 @@ h1.-dynamic {
   width: 100%;
   background: #F0EDE4;
   z-index: -1000;
-  height: 676px;
+  height: 26px;
   overflow: hidden;
   opacity: 0;
   max-width: 1920px !important; }
@@ -1213,11 +1213,7 @@ body {
 .content-bg {
   background-color: #F9F7F2;
   bottom: auto;
-  z-index: -700000;
-  padding-top: 52px; }
-
-.project-main .content-bg {
-  padding-top: 0; }
+  z-index: -700000; }
 
 .responsbigimg {
   display: block !important;
@@ -1282,7 +1278,8 @@ body {
   line-height: 26px; }
 
 .headline .info, .next-project .info {
-  margin-top: 26px; }
+  margin-top: 26px;
+  padding-bottom: 156px; }
 
 .contact-content .headline .info {
   margin-top: 52px; }
@@ -1290,13 +1287,13 @@ body {
 .introduction {
   text-align: center;
   margin: 0 auto;
-  padding-top: 52px;
   max-width: 624px;
   margin-bottom: 52px; }
 
 @media only screen and (min-width: 1024px) {
   .introduction {
-    margin-bottom: 104px; } }
+    margin-bottom: 104px;
+    padding-top: 78px; } }
 .project-main .introduction {
   padding-top: 13px;
   padding-bottom: 13px; }

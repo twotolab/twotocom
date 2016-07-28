@@ -39,8 +39,6 @@
 	margin-left: $grid_halfHeight_unit;
 }
 /////
-.header-inside{
-	}
 	
 .header-bg{
 	position:fixed;
@@ -48,7 +46,7 @@
 	width: 100%;
 	background: $darker_first_color; 
 	z-index: $zIndex--header-bg;
-	height:$grid_height_unit*26;
+	height:$grid_height_unit;
 	overflow: hidden;
 	opacity:0;
 	max-width: $media_Max_width;

@@ -66,14 +66,17 @@ jQuery(document).ready(function($) {
 	function checkHeaderPos() {
 		if (currentPoxY > headerContainerHeight) {
 			if (headerStatusOpen) {
-				//$('.header-bg').css({"transition": "all 0.3s ease-out"});
 				$('.header-bg').css({
 					"transition": "none"
 				});
 				$('.header-bg').stop(true, true).delay(600).css({
 					"opacity": "0"
 				});
-
+				if ($('body').hasClass('fix-top-header')) {
+					$('body').removeClass('fix-top-header');
+				} else {
+					$('body').addClass('fix-top-header');
+				}
 				headerStatusOpen = false;
 				//console.log('headerStatusOpen 1:' + headerStatusOpen);
 			}
@@ -85,7 +88,11 @@ jQuery(document).ready(function($) {
 				$('.header-bg').css({
 					"opacity": "1"
 				});
-
+				if ($('body').hasClass('fix-top-header')) {
+					$('body').removeClass('fix-top-header');
+				} else {
+					$('body').addClass('fix-top-header');
+				}
 				headerStatusOpen = true;
 				//console.log('headerStatusOpen 2:' + headerStatusOpen);
 			}
@@ -98,11 +105,7 @@ jQuery(document).ready(function($) {
 				} else {
 					$('body').addClass('fix-top-menu');
 				}	
-				if ($('body').hasClass('fix-top-header')) {
-					$('body').removeClass('fix-top-header');
-				} else {
-					$('body').addClass('fix-top-header');
-				}
+				
 				menuStatusOpen =false;		
 				
 			}
@@ -113,20 +116,15 @@ jQuery(document).ready(function($) {
 				} else {
 					$('body').addClass('fix-top-menu');
 				}	
-				if ($('body').hasClass('fix-top-header')) {
-					$('body').removeClass('fix-top-header');
-				} else {
-					$('body').addClass('fix-top-header');
-				}
-				menuStatusOpen =true;		
 				
+				menuStatusOpen =true;				
 			}
-			}
+		}
 			
 	}
 
 	function updateHeaderHeight() {
-		headerContainerHeight = $('.header-inside').height() + added;
+		headerContainerHeight = $('.header-inside').height();
 		$('.header-bg').css({
 			height: headerContainerHeight
 		});
@@ -229,12 +227,15 @@ jQuery(document).ready(function($) {
 	/* ------------- intro Animations ------------------*/
 	/*------------------------------------------------------*/
 	$('.header').hide();
+	$('.header-bg').hide();
 	$('.footer').hide();
 	$('.menu-wrapper').hide();
 	$('.second-menu-wrapper').hide();
 
+
 	function introDefaultAnimation() {
 		$('.header').stop(true, true).delay(600).fadeIn(600);
+		$('.header-bg').stop(true, true).delay(600).fadeIn(600);
 		$('.footer').stop(true, true).delay(1200).fadeIn(600);
 		$('.menu-wrapper').stop(true, true).delay(600).fadeIn(600);
 		$('.second-menu-wrapper').stop(true, true).delay(1200).fadeIn(600);
