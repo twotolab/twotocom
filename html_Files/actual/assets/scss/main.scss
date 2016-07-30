@@ -87,9 +87,6 @@ body {
 .Site-highlight-right .headline{
 	padding: 13px;
 	box-sizing: border-box;
-	//background: $first_highlight_color;
-	//backdrop-filter: blur(10px);
-	//mix-blend-mode:multiply;
 }
 
 .Site-highlight-one,.Site-highlight-two,.Site-highlight-three{
@@ -149,6 +146,30 @@ body {
 	left: 0;
 	
 }
+ .nav-hightlight-effect-info {
+   transition: all 0.3s ease-out;
+ }
+ .nav-hightlight-effect-first {
+  transition: all 0.3s ease-out 0.2s;
+ }
+  .nav-hightlight-effect-second {
+  transition: all 0.3s ease-out 0.4s;
+ }
+   .nav-hightlight-effect-third {
+  transition: all 0.3s ease-out 0.6s;
+
+ }
+  .nav-hightlight-effect-info, .nav-hightlight-effect-first, .nav-hightlight-effect-second, .nav-hightlight-effect-third {
+  transform: translate3d($grid_halfHeight_unit,0,0) ;
+  opacity: 0;
+ }
+ 
+
+.nav-hightlight-effect-start {
+  transform: translate3d(0,0,0);
+   opacity: 1;
+ }
+ 
 .nav-hightlight.grid-content{
 	width: auto;
 }

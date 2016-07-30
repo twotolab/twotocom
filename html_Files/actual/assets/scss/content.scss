@@ -107,6 +107,10 @@ body {
 	padding-top: $grid_height_unit*1;
 	//padding-bottom: $grid_height_unit*1;
 }
+.contact-content {
+	height: inherit;
+}
+
 .contact-content .headline{
 	margin-top: $grid_height_unit*2;
 }

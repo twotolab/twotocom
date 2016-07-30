@@ -208,7 +208,7 @@ jQuery(document).ready(function($) {
 	$('.header').hide();
 	$('.footer').hide();
 	$('.menu-wrapper').hide();
-	$('.nav-hightlight').hide();
+	//$('.nav-hightlight').hide();
 	
 	function introDefaultAnimation(){
 		$('.header').stop(true, true).delay(1000).fadeIn(1200);
@@ -218,7 +218,11 @@ jQuery(document).ready(function($) {
 		
 	}
 	function introMainAnimation(){
-		$('.nav-hightlight').stop(true, true).delay(1000).fadeIn(600);
+		//$('.nav-hightlight').stop(true, true).delay(600).fadeIn(600);
+		$('.nav-info').addClass('nav-hightlight-effect-start');
+		$('.nav-one').addClass('nav-hightlight-effect-start');
+		$('.nav-two').addClass('nav-hightlight-effect-start');
+		$('.nav-three').addClass('nav-hightlight-effect-start');
 	}
 	Pace.on('hide', function(){
       console.log('done'+colorSelect);

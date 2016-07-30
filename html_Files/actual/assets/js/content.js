@@ -253,6 +253,7 @@ jQuery(document).ready(function($) {
 		});
 		introDefaultAnimation();
 		introContentnAnimation();
+		
 		if(!$('.contact-content').is(':visible') ){
 			// exception for contact
 			AOS.init({
@@ -261,5 +262,6 @@ jQuery(document).ready(function($) {
 				duration: 1000
 			});
 		}
+		
 	});
 });

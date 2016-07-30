@@ -603,7 +603,8 @@ h1.-dynamic {
 .header-left, .header-middle, .header-right {
   display: flex;
   align-items: center;
-  flex: 1; }
+  flex: 1;
+  height: 100%; }
 
 .header-right {
   display: none;
