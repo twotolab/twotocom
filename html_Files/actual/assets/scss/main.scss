@@ -87,8 +87,8 @@ body {
 .Site-highlight-right .headline{
 	padding: 13px;
 	box-sizing: border-box;
-	background: $first_highlight_color;
-	backdrop-filter: blur(10px);
+	//background: $first_highlight_color;
+	//backdrop-filter: blur(10px);
 	//mix-blend-mode:multiply;
 }
 
@@ -176,7 +176,7 @@ body {
 		width: 0;
 		height: 0;
 		z-index:$zIndex--animatedBG;
-		background-color:$darker_first_color;
+		background-color:transparentize($second_color,0.90);//$darker_first_color;
 }
 .nav-hightlight-element h4{
 		position: relative;

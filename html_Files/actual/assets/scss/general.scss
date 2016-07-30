@@ -87,6 +87,9 @@ body {
 	width: 0;
 	background-color: $first_typo_color;
 }
+ .-thumb-underlined::after {
+	background-color: $second_typo_color;
+}
 .small-underlined::after {
 	content:'';
 	display:block;

@@ -213,7 +213,7 @@ jQuery(document).ready(function($) {
 	function introDefaultAnimation(){
 		$('.header').stop(true, true).delay(1000).fadeIn(1200);
 		$('.footer').stop(true, true).delay(1000).fadeIn(1200);
-		$('.menu-wrapper').stop(true, true).delay(1000).fadeIn(600);
+		$('.menu-wrapper').stop(true, true).delay(600).toggle().css({opacity:"0"}).delay(600).animate({opacity:"1"},"1200");
 		//console.log("colorSelect: "+colorSelect);
 		
 	}

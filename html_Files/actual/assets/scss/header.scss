@@ -13,8 +13,8 @@
 	
 }
 .fix-top-header .header{
-		transition: all 0.3s ease-out 0.3s;
-		background-color: transparentize($first_color, 0.4);
+		transition: all 0.3s ease-out;
+		background-color: $first_color;//transparentize($first_color, 0.1);
 }
 .header{
 	transition: all 0.3s ease-out;
@@ -64,14 +64,17 @@
 	background-image:    url(https://source.unsplash.com/featured/?sky);
 
 }
-.header-shrink {
-	transition: all 0.3s ease-out;
-	transform: translate3d(0,-$grid_height_unit*26,0);
-}
-.-zoomup{
-	opacity:1;
-}
 
+.header-zoom-default {
+  transition: all 1s ease-out;
+  transform: scale3d(0.8,0.8,1)
+ 
+ }
+
+.header-zoom-up {
+  transform: scale3d(1,1,1)
+ }
+ 
 /* tablet */
 @media only screen and (min-width: $media_tablet_width) {
 	.header{

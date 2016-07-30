@@ -13,7 +13,7 @@
 </head>
 
 <body class="site">   
-    <header class="header -contact hideDuringLoading">
+   <header class="header hideDuringLoading">
             <div class="header-left">
                 <a href="index.html"><div class="icons-font">A</div></a><p id="header-info" class="header-info">— Contact</p>
             </div>
@@ -21,7 +21,7 @@
                 <p class="header-info"><!-- here text--></p>
             </div>
             <div class="header-right">
-                <p class="header-info">— FON +49 (0)176-24041994</p>
+                <p class="header-info">FON +49 (0)176-24041994</p>
 			</div>    
     </header>
     <main class="contact-content noOpacity hideDuringLoading">
@@ -80,11 +80,20 @@
            </div><!-- END headline-->
         </div>
 	</main><!-- contact-content-->
-	<!--  NAV Start-->
+<!--  NAV Start-->
 	 <nav class="nav hideDuringLoading">
         <ul class="nav-main">
 	        <li class="nav-quote-bg"><h2 class="nav-bg-quote">navigation</h2></li>      
 	        <li class="nav-placeholder">&nbsp;</li>
+	        <li class="naviline">
+            <a class="nav-link" href="index.html">
+            	<div class=" hover-effect">
+	                <div class="underlined">
+	                    <h4>Highlights</h4>
+	                </div>
+	        	</div>
+	        </a>
+            </li>
             <li class="naviline">
                 <a class="nav-link" href="projects.html">
 	                <div class=" hover-effect">
@@ -93,15 +102,6 @@
 		                </div>
 		        	</div>
 	        	</a>
-            </li>
-            <li class="naviline">
-            <a class="nav-link" href="XINGwindows10.html">
-            	<div class=" hover-effect">
-	                <div class="underlined">
-	                    <h4>Articles</h4>
-	                </div>
-	        	</div>
-	        </a>
             </li>
             <li class="naviline">
                 <a class="nav-link" href="about.html">
@@ -113,37 +113,36 @@
                 </a>
             </li>
             <li class="naviline">
-                <a href="contact.html">
-	                <div class=" hover-effect">
-			                <div class="underlined">
-			                    <h4>Contact</h4>
-			                </div>
-			        </div>
-		        </a>
+                <a class="nav-link" href="contact.html">
+                	<div class=" hover-effect">
+		                <div class="underlined">
+		                    <h4>Contact</h4>
+		                </div>
+		        	</div>
+                </a>
             </li>
         </ul>
     </nav>
     <!--  NAV End-->
 	<section class="menu-wrapper onScrollAnimation hideDuringLoading">
-             <a class="menu-button" href="#0">
-	            <div class="menu-open circle menu-background-color hover-effect">
-	                <div class="menu-center">
-	                     <div class="small-underlined">
-		                     <h6>menu</h6>
-		                  </div>
-	                </div>
-		             <div class="menuBgEffect no-mobil-and-tablet">    
-				           <div class="menuBgText topEffect"><p>contact</p></div>
-			         </div>
-		                 
-	            </div>
-				 
-	            <div class="menu-close dark-circle second-background hover-zoomUp-effect">
-	                <div class="icon-close-inverted hover-zoomUp-effect target-effect">
-	                    B
-	                </div>
-	            </div>
-            </a>
+        <a class="menu-button" href="#0">
+        <div class="menu-open circle menu-background-color hover-effect">
+            <div class="menu-center">
+                <div class="small-underlined">
+                    <h6>menu</h6>
+                </div><!-- <div class="only-mobil-and-tablet"><i class="fa fa-bars fa-lg"></i></div> -->
+                  
+            </div>
+            <div class="menuBgEffect">    
+				<div class="menuBgText bottomEffect"><p>contact</p></div>
+		    </div>
+        </div>
+
+        <div class="menu-close dark-circle second-background hover-zoomUp-effect">
+            <div class="icon-close-inverted target-effect">
+                B
+            </div>
+        </div></a>
     </section>
     
     <footer class="footer -fixed hideDuringLoading">
@@ -161,21 +160,8 @@
 <script src="assets/js/jquery.min-min.js"></script>
 <script src="assets/js/breakpoint.js"></script>
 <script src="assets/js/content.js"></script>
-<!-- for faster clicks on Mobil-->
-<script type="application/javascript" src="assets/js/fastclick.js"></script> 
-<script type="application/javascript">
-	window.addEventListener('load', function() {
-		var textInput = document.querySelector('input');
-
-		FastClick.attach(document.body);
-		Array.prototype.forEach.call(document.getElementsByClassName('test'), function(testEl) {
-			testEl.addEventListener('click', function() {
-				textInput.focus();
-			}, false)
-		});
-	}, false);
-</script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.lazy/1.6.7/jquery.lazy.min.js"></script>
 <script src="assets/js/pace.min.js"></script>
+<script src="https://cdn.rawgit.com/michalsnik/aos/1.2.0/dist/aos.js"></script>
 </body>
 </html>

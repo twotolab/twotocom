@@ -72,6 +72,7 @@ body.right-navi-is-open {
 	transition-property:transform;
 	transition-duration:.6s;
 	transition-timing-function:cubic-bezier(.23,.52,.25,1);
+	opacity: 1;
 }
 
 .right-navi-is-open .second-menu-wrapper {
