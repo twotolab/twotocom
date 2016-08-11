@@ -201,11 +201,14 @@ body {
 }
 .nav-hightlight-element h4{
 		position: relative;
-		padding: 8px 10px 4px 10px;
-		top: -8px;
+		padding: 12px 10px 6px 10px;
+		top: -12px;
 		left: -10px;
 		z-index: $zIndex--nav-hightlight-element--h4;
 		
+}
+.nav-hightlight-element h4.underlined::after{
+		margin-top: 6px;
 }
 
 .nav-hightlight-element .activ h4{
@@ -233,8 +236,15 @@ body {
 .nav-hightlight a,.nav-hightlight p{
 	float: left;
 	pointer-events:auto;
+	//
+}
+.nav-hightlight-info{
 	padding-bottom: $grid_height_unit;
 }
+.nav-hightlight-element a{
+	padding-bottom: $grid_halfHeight_unit;
+}
+
 .Site-highlight-wrapper p{
 	padding-bottom: $grid_height_unit;
 }
@@ -303,7 +313,7 @@ body {
 	}
 	
 	.nav-hightlight-element a{
-	  padding-bottom: $grid_height_unit;
+	  padding-bottom: $grid_halfHeight_unit;
 
 	}
 	.grid-highlight-left{

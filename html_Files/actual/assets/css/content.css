@@ -893,9 +893,10 @@ header {
   color: #333; }
 
 .nav-main li a h4 {
-  padding-top: 13px;
-  padding-bottom: 4px;
-  position: relative; }
+  padding-top: 0px;
+  padding-bottom: 0px;
+  position: relative;
+  height: inherit; }
 
 .navi-selected a h4 {
   color: gray; }

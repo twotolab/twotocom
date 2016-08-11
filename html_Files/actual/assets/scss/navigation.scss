@@ -139,18 +139,12 @@ header {
 .nav-main li,.nav-main li h4 {
 	color:$first_typo_color;//$second_typo_color;
 }
-.nav-main li a h4 {
-	//text-transform:uppercase;
-}
 
 .nav-main li a h4 {
-	padding-top:13px;
-	padding-bottom:4px;
+	padding-top:0px;
+	padding-bottom:0px;
 	position:relative;
-}
-
-.nav-main li a:hover h4,.nav-main li a:active h4{
-	//color:lighten($first_typo_color, 80%);
+	height: inherit;
 }
 
 .navi-selected a h4 {
