@@ -41,11 +41,13 @@
 }
 /* tablet */
 @media only screen and (min-width: $media_tablet_width) {
+
 	}
 
 /* desktop Monitore */
 @media only screen and (min-width: $media_desktop_width) {
 
+	.no-touch{
 	.footer-left,.footer-right,.footer-middle  {
 		display: flex;
 		flex: 1;
@@ -64,6 +66,7 @@
 	.footer-right-left,.footer-right-right {
 		display:block;
 		width: inherit;
+	}
 	}
 }
 /* HD desktop Monitore */

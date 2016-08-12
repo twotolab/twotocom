@@ -302,7 +302,7 @@ a .small-underlined::after {
   visibility: hidden; }
 
 /* tablet */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   .only-mobil, .no-tablet {
     display: none !important;
     visibility: hidden; }
@@ -705,18 +705,15 @@ h1.-dynamic {
 /* tablet */
 /* desktop Monitore */
 @media only screen and (min-width: 1024px) {
-  .footer-left, .footer-right, .footer-middle {
+  .no-touch .footer-left, .no-touch .footer-right, .no-touch .footer-middle {
     display: flex;
     flex: 1; }
-
-  .footer-middle {
+  .no-touch .footer-middle {
     align-items: center;
     flex-direction: column; }
-
-  .footer-right {
+  .no-touch .footer-right {
     display: flex; }
-
-  .footer-right-left, .footer-right-right {
+  .no-touch .footer-right-left, .no-touch .footer-right-right {
     display: block;
     width: inherit; } }
 /* HD desktop Monitore */
@@ -1178,7 +1175,7 @@ body.right-navi-is-open {
 @media only screen and (min-width: 760px) {
   .second-navigation-Wrapper {
     width: 320px; } }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1025px) {
   .secondary-button .menu-open {
     box-shadow: none; }
 

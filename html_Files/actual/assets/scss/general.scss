@@ -273,7 +273,7 @@ a .small-underlined::after{
 	visibility: hidden;
 }
 /* tablet */
-@media only screen and (min-width:$media_tablet_width) {
+@media only screen and (min-width:$media_tablet_width+1) {
 	.only-mobil,.no-tablet{
 		display:none !important;
 		visibility: hidden;

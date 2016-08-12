@@ -105,7 +105,7 @@ body.right-navi-is-open {
 	}
 }
 
-@media only screen and (min-width: $media_desktop_width) {
+@media only screen and (min-width: $media_desktop_width+1) {
 	.secondary-button .menu-open{
 	box-shadow:none;
 	}
