@@ -10,11 +10,13 @@
 	
 	padding:$grid_halfHeight_unit;
 	box-sizing:border-box;
+
 	
 }
 .fix-top-header .header{
-		transition: all 0.3s ease-out;
-		background-color: $first_color;//transparentize($first_color, 0.1);
+		transition: color 0.3s ease-out;
+		background-color: $first_color;//transparentize($first_color, 0.1);	
+		border-bottom: 1px solid $line-color;
 }
 .header{
 	transition: all 0.3s ease-out;

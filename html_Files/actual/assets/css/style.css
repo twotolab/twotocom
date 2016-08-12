@@ -659,9 +659,10 @@ h1.-dynamic {
   box-sizing: border-box; }
 
 .fix-top-header .header {
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-  background-color: #F9F7F2; }
+  -webkit-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out;
+  background-color: #F9F7F2;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.1); }
 
 .header {
   -webkit-transition: all 0.3s ease-out;
