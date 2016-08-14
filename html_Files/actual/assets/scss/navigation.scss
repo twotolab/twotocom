@@ -383,6 +383,7 @@ a.hover-effect:hover .underlined::after,.hover-effect:hover .underlined::after,a
 }
 
 @media only screen and (max-height: 701px) and (min-width: $media_desktop_width) {
+/*	
 	.menu-out {
 		left:auto;
 		top:auto;
@@ -393,4 +394,5 @@ a.hover-effect:hover .underlined::after,.hover-effect:hover .underlined::after,a
 	.nav-intro {
 		visibility:visible;
 	}
+	*/
 }
