@@ -792,6 +792,138 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/imgs\/projects\/JimBlockApp_1_2496x1872.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/assets\/imgs\/projects\/JimBlockApp_1_2496x1872.jpg",
+		"outputAbbreviatedPath": "\/assets\/imgs\/projects\/JimBlockApp_1_2496x1872.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/imgs\/projects\/JimBlockApp_1_312x234.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 24567,
+		"inputAbbreviatedPath": "\/assets\/imgs\/projects\/JimBlockApp_1_312x234.jpg",
+		"outputAbbreviatedPath": "\/assets\/imgs\/projects\/JimBlockApp_1_312x234.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/imgs\/projects\/JimBlockApp_1_960x604.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 144254,
+		"inputAbbreviatedPath": "\/assets\/imgs\/projects\/JimBlockApp_1_960x604.jpg",
+		"outputAbbreviatedPath": "\/assets\/imgs\/projects\/JimBlockApp_1_960x604.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/imgs\/projects\/JimBlockApp_2_2496x1872.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/assets\/imgs\/projects\/JimBlockApp_2_2496x1872.jpg",
+		"outputAbbreviatedPath": "\/assets\/imgs\/projects\/JimBlockApp_2_2496x1872.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/imgs\/projects\/JimBlockApp_2_312x234.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 18219,
+		"inputAbbreviatedPath": "\/assets\/imgs\/projects\/JimBlockApp_2_312x234.jpg",
+		"outputAbbreviatedPath": "\/assets\/imgs\/projects\/JimBlockApp_2_312x234.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/imgs\/projects\/JimBlockApp_2_960x604.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 109654,
+		"inputAbbreviatedPath": "\/assets\/imgs\/projects\/JimBlockApp_2_960x604.jpg",
+		"outputAbbreviatedPath": "\/assets\/imgs\/projects\/JimBlockApp_2_960x604.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/imgs\/projects\/JimBlockApp_3_2496x1872.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/assets\/imgs\/projects\/JimBlockApp_3_2496x1872.jpg",
+		"outputAbbreviatedPath": "\/assets\/imgs\/projects\/JimBlockApp_3_2496x1872.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/imgs\/projects\/JimBlockApp_3_312x234.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 18704,
+		"inputAbbreviatedPath": "\/assets\/imgs\/projects\/JimBlockApp_3_312x234.jpg",
+		"outputAbbreviatedPath": "\/assets\/imgs\/projects\/JimBlockApp_3_312x234.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/imgs\/projects\/JimBlockApp_3_960x604.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 114051,
+		"inputAbbreviatedPath": "\/assets\/imgs\/projects\/JimBlockApp_3_960x604.jpg",
+		"outputAbbreviatedPath": "\/assets\/imgs\/projects\/JimBlockApp_3_960x604.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/imgs\/projects\/JimBlockApp_4_2496x1872.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/assets\/imgs\/projects\/JimBlockApp_4_2496x1872.jpg",
+		"outputAbbreviatedPath": "\/assets\/imgs\/projects\/JimBlockApp_4_2496x1872.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/imgs\/projects\/JimBlockApp_4_312x234.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 21065,
+		"inputAbbreviatedPath": "\/assets\/imgs\/projects\/JimBlockApp_4_312x234.jpg",
+		"outputAbbreviatedPath": "\/assets\/imgs\/projects\/JimBlockApp_4_312x234.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/imgs\/projects\/JimBlockApp_4_960x604.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 129682,
+		"inputAbbreviatedPath": "\/assets\/imgs\/projects\/JimBlockApp_4_960x604.jpg",
+		"outputAbbreviatedPath": "\/assets\/imgs\/projects\/JimBlockApp_4_960x604.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/imgs\/projects\/Minicabrio_1_2496x1872.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
