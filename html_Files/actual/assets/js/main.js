@@ -81,10 +81,22 @@ jQuery(document).ready(function($) {
 		var actualSelection =eltArray[_actualHighlight];
 		eltArray.splice(_actualHighlight, 1);
 		var target ='.Site-highlight-'+actualSelection;
+		
+		colorSelect = _arr[_actualHighlight];
+		lastcolorSelect = _arr[_lastHighlight];
+		
+		
 		//document.getElementById('header-info').innerHTML ="actualSelection: "+actualSelection+ "// restArray: "+eltArray+"// third: "+eltArray[1];
 		if( $(target).hasClass('loading') ) {
 			$(target).removeClass('loading');
-			//$(target+' .Site-highlight-left img').hide().stop(true, true).delay(100).fadeIn(600);
+			if($('html').hasClass('touch')){
+				$('.nav-hightlight.grid-content.-bg').removeClass(lastcolorSelect+'_highlight_color_transparent-background');
+				$('.nav-hightlight.grid-content.-bg').addClass(colorSelect+'_highlight_color_transparent-background');
+			}
+			$(target+'  .Site-highlight-right .headline').removeClass(lastcolorSelect+'_highlight_color_transparent-background');
+			$(target+'  .Site-highlight-right .headline').addClass(colorSelect+'_highlight_color_transparent-background');
+
+			//$(target+'  .Site-highlight-right .headline.-bg').stop(true, true).css({opacity:"0"}).delay(1000).animate({opacity:"0.7"},"300");
 			$(target+'  .Site-highlight-right .headline p').stop(true, true).css({marginLeft:"-10px",opacity:"0"}).delay(1200).animate({marginLeft: "0px",opacity:"1"},"300");
 			$(target+'  .Site-highlight-right .headline h1').stop(true, true).css({marginLeft:"-10px",opacity:"0"}).delay(1400).animate({marginLeft: "0px",opacity:"1"},"300");
 			$(target+' .Site-highlight-right .headline a').stop(true, true).css({marginLeft:"-10px",opacity:"0"}).delay(1600).animate({marginLeft: "0px",opacity:"1"},"300");
@@ -98,6 +110,11 @@ jQuery(document).ready(function($) {
 
 		colorSelect = _arr[_actualHighlight];
 		lastcolorSelect = _arr[_lastHighlight];
+		
+		//var eltArray= [];
+		//var actualSelection =eltArray[_actualHighlight];
+		//var target ='.Site-highlight-'+actualSelection;
+
 		//
 		$('.menu-button .menu-background-color').removeClass(lastcolorSelect+'_highlight_color-background');
 		$('.nav-hover-bg-effect').removeClass(lastcolorSelect+'_highlight_color-background');

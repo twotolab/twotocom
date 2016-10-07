@@ -228,7 +228,6 @@ body {
 	top: auto;
 	bottom: 0;
 	right: 0;
-	
 }
 .zoom-button{
 	
@@ -236,6 +235,9 @@ body {
 
 	width: 26px;
 	height: 26px;
+	left:-13px;
+	top :-20px;
+	position: absolute;
 	z-index: 1000000;
 	opacity: 1;
 	}
