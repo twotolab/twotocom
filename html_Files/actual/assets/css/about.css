@@ -87,13 +87,22 @@ body {
   opacity: 0; }
 
 .one_highlight_color-background {
-  background-color: #F4DDDC !important; }
+  background-color: #E9EDB0 !important; }
 
 .two_highlight_color-background {
-  background-color: #A4ECD9 !important; }
+  background-color: #DBCCB0 !important; }
 
 .three_highlight_color-background {
-  background-color: #F9CEB0 !important; }
+  background-color: #E8DFDA !important; }
+
+.one_highlight_color_transparent-background {
+  background-color: rgba(233, 237, 176, 0.7); }
+
+.two_highlight_color_transparent-background {
+  background-color: rgba(219, 204, 176, 0.7); }
+
+.three_highlight_color_transparent-background {
+  background-color: rgba(232, 223, 218, 0.7); }
 
 /*---------------------*/
 .vertical-center-headline {
@@ -249,7 +258,7 @@ a .small-underlined::after {
   background-color: #F9F7F2 !important; }
 
 .menu-background-color {
-  background-color: #F4DDDC; }
+  background-color: #E9EDB0; }
 
 .second-background {
   background-color: #333 !important; }
@@ -261,7 +270,7 @@ a .small-underlined::after {
   background-color: rgba(26, 26, 26, 0.7) !important; }
 
 .lab-bg {
-  background-color: #F9CEB0 !important; }
+  background-color: #E8DFDA !important; }
 
 .darker-bg {
   background-color: #F0EDE4 !important; }
