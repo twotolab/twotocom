@@ -96,7 +96,7 @@ jQuery(document).ready(function($) {
 			$(target+'  .Site-highlight-right .headline').removeClass(lastcolorSelect+'_highlight_color_transparent-background');
 			$(target+'  .Site-highlight-right .headline').addClass(colorSelect+'_highlight_color_transparent-background');
 
-			//$(target+'  .Site-highlight-right .headline.-bg').stop(true, true).css({opacity:"0"}).delay(1000).animate({opacity:"0.7"},"300");
+			$(target+'  .Site-highlight-right .headline.-bg').stop(true, true).css({opacity:"0"}).delay(1000).animate({opacity:"1"},"300");
 			$(target+'  .Site-highlight-right .headline p').stop(true, true).css({marginLeft:"-10px",opacity:"0"}).delay(1200).animate({marginLeft: "0px",opacity:"1"},"300");
 			$(target+'  .Site-highlight-right .headline h1').stop(true, true).css({marginLeft:"-10px",opacity:"0"}).delay(1400).animate({marginLeft: "0px",opacity:"1"},"300");
 			$(target+' .Site-highlight-right .headline a').stop(true, true).css({marginLeft:"-10px",opacity:"0"}).delay(1600).animate({marginLeft: "0px",opacity:"1"},"300");
