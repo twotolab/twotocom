@@ -10,7 +10,27 @@
     <link href="assets/css/reset.css" rel="stylesheet" type="text/css">
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
 </head>
+
 <body class="site">
+	<!---->
+    <section class="pattern">
+        <div class="pattern-horizontal"></div>
+
+        <div class="pattern-vertical"></div>
+        <!-- -->
+	    <svg width="100%" height="100%">
+		  <pattern id="pattern-elements" 
+		           x="0" 
+		           y="0" 
+		           width="13" 
+		           height="13" patternUnits="userSpaceOnUse" patternContentUnits="userSpaceOnUse">
+		     <rect id="pattern-elt" cx="10" cy="10"width="13" height="1" fill= "red" fill-opacity="0.2"/>
+		  </pattern>
+		  <rect id="rect" x="0" y="0" width="100%" height="100%" fill="url(#pattern-elements)" />
+	  
+		</svg>
+		<!-- -->
+    </section><!--  pattern End-->
     <header class="header hideDuringLoading">
             <div class="header-left">
                 <a href="index.html"><div class="icons-font">A</div></a><p id="header-info" class="header-info">— PORTFOLIO OF PATRICK DECAIX</p>
@@ -25,22 +45,6 @@
     <main class="main-content noOpacity hideDuringLoading">
 	     <div class="Site-highlight-wrapper">
 		    <div class="Site-highlight-one loading grid-content">
-			    <div class="Site-highlight-left grid-elt grid-two-unit"><img class="" alt="" width="1640" height="1024" src="assets/imgs/highlight_book.jpg"></div>
-			    <div class="Site-highlight-right grid-elt grid-two-unit no-mobil-and-tablet">
-				    <div class="headline -bg">
-		                <p class="info">Available from Dec'16</p>
-		                <h1>Let's work together!</h1>
-		                <a class="hover-effect" href="contact.html">
-			                <div class="round ">
-								<svg viewBox="0 0 40 40">
-									<path d="M11.8,3.7L28.2,20L11.8,36.3"></path>
-								</svg>
-							</div>&nbsp;&nbsp;<span class="small-underlined" >talk to me</span>
-						</a>
-		            </div><!-- headline-->
-		        </div><!-- Site-highlight-right-->
-            </div><!-- Site-highlight-one-->
-            <div class="Site-highlight-two loading grid-content">
 			    <div class="Site-highlight-left grid-elt grid-two-unit"><img class="" alt="" width="1640" height="1024" src="assets/imgs/highlight_xgw10.jpg"></div>
 			    <div class="Site-highlight-right grid-elt grid-two-unit no-mobil-and-tablet">
 				    <div class="headline -bg">
@@ -55,14 +59,30 @@
 						</a>
 		            </div><!-- headline-->
 		        </div><!-- Site-highlight-right-->
-            </div><!-- Site-highlight-two-->
-		    <div class="Site-highlight-three loading grid-content">
-			    <div class="Site-highlight-left grid-elt grid-two-unit"><img class="" alt="" width="1640" height="1024" src="assets/imgs/highlight_dp.jpg"></div>
+            </div><!-- Site-highlight-one-->
+            <div class="Site-highlight-two loading grid-content">
+			    <div class="Site-highlight-left grid-elt grid-two-unit"><img class="" alt="" width="1640" height="1024" src="assets/imgs/highlight_jb.jpg"></div>
 			    <div class="Site-highlight-right grid-elt grid-two-unit no-mobil-and-tablet">
 				    <div class="headline -bg">
-		                <p class="info">UX roundtable HH</p>
-		                <h1>Controlled</br>Mutations</h1>
-		                <a class="hover-effect" href="https://www.xing.com/events/ui-design-patterns-kontrollierte-mutation-designprozess-1729274?sc_o=ev9658_share_mail">
+		                <p class="info">Jim Block App</p>
+		                <h1>Making Designers Hungry</h1>
+		                <a class="hover-effect" href="projects.html">
+			                <div class="round ">
+								<svg viewBox="0 0 40 40">
+									<path d="M11.8,3.7L28.2,20L11.8,36.3"></path>
+								</svg>
+							</div>&nbsp;&nbsp;<span class="small-underlined" >see more</span>
+						</a>
+		            </div><!-- headline-->
+		        </div><!-- Site-highlight-right-->
+            </div><!-- Site-highlight-two-->
+		    <div class="Site-highlight-three loading grid-content">
+			    <div class="Site-highlight-left grid-elt grid-two-unit"><img class="" alt="" width="1640" height="1024" src="assets/imgs/highlight_golf.jpg"></div>
+			    <div class="Site-highlight-right grid-elt grid-two-unit no-mobil-and-tablet">
+				    <div class="headline -bg">
+		                <p class="info">VW Golf Catalog</p>
+		                <h1>Golf 7</br>Ipad App</h1>
+		                <a class="hover-effect" href="projects.html">
 			                <div class="round ">
 								<svg viewBox="0 0 40 40">
 									<path d="M11.8,3.7L28.2,20L11.8,36.3"></path>
@@ -77,9 +97,9 @@
 	     <nav class="nav-hightlight grid-content -bg">
 		      <ul class="nav-hightlight-main">
 			      <li class="nav-hightlight-element nav-info nav-hightlight-effect-info"> <p class="nav-hightlight-info no-mobil">— Highlights</p></li>
-				  <li class="nav-hightlight-element nav-one nav-hightlight-effect-first"><a class="nav-hightlight-button hover-effect activ" href="contact.html"><h5 class="">01.</h5></div><h4 class="underlined"><div id="animatedBG" class="animatedBG"></div>Hire me</h4></a></li>
-				  <li class="nav-hightlight-element nav-two nav-hightlight-effect-second"><a class="nav-hightlight-button hover-effect" href="projects.html"><h5 class="">02.</h5><h4 class="underlined"><div id="animatedBG" class="animatedBG"></div>Windows 10 App</h4></a></li>
-				  <li class="nav-hightlight-element nav-three nav-hightlight-effect-third"><a class="nav-hightlight-button hover-effect" href="https://www.xing.com/events/ui-design-patterns-kontrollierte-mutation-designprozess-1729274?sc_o=ev9658_share_mail"><h5 class="">03.</h5><h4 class="underlined"><div id="animatedBG" class="animatedBG"></div>Design Patterns</h4><a/></li>
+				  <li class="nav-hightlight-element nav-one nav-hightlight-effect-first"><a class="nav-hightlight-button hover-effect activ" href="projects.html#xingw10"><h5 class="">01.</h5></div><h4 class="underlined"><div id="animatedBG" class="animatedBG"></div>XING Windows 10</h4></a></li>
+				  <li class="nav-hightlight-element nav-two nav-hightlight-effect-second"><a class="nav-hightlight-button hover-effect" href="projects.html#jb"><h5 class="">03.</h5><h4 class="underlined"><div id="animatedBG" class="animatedBG"></div>Jim Block App</h4></a></li>
+				  <li class="nav-hightlight-element nav-three nav-hightlight-effect-third"><a class="nav-hightlight-button hover-effect" href="projects.html#vwgolf"><h5 class="">02.</h5><h4 class="underlined"><div id="animatedBG" class="animatedBG"></div>VW Golf Catalog</h4><a/></li>
 
 		        <!-- <li class="nav-hightlight-element"><a class="nav-hightlight-info -link no-mobil" href="about.html"> <p>— About</p></a></li>-->
 		       </ul>
@@ -166,6 +186,7 @@
             </div>
            
     </footer>
+    
 <script src="assets/js/jquery.min-min.js"></script>
 <script src="assets/js/breakpoint.js"></script>
 <script src="assets/js/main.js"></script>

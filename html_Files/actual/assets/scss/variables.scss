@@ -45,9 +45,9 @@ $Lighter_darker_first_color:rgba(240, 237, 228, 0.3);
 $transparent_first_color:transparentize($first_color, 0.2);
 
 
-$first_highlight_color:#E9EDB0;
-$second_highlight_color:#DBCCB0;
-$third_highlight_color:#E8DFDA;
+$first_highlight_color:#F5DEDD;//#CFDC00;
+$second_highlight_color:#D8E333;
+$third_highlight_color:#A8F1E1;//#DBCCB0;
 
 $second_darker_color: darken($second_color, 10%);
 

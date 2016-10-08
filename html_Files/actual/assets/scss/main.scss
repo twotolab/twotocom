@@ -79,14 +79,16 @@ body {
 	//padding-left: $grid_height_unit*10;
 	top: 0;//-$grid_height_unit*2-4px;
 	height: auto;
-	padding-left: $grid_height_unit*10;
-	
-	
-	
+	padding-left: 0;
+	align-content: flex-end;
+	display: flex;
+	flex-direction: row;
 }
 .Site-highlight-right .headline{
 	padding: 13px;
 	box-sizing: border-box;
+	width: $grid_height_unit*12;
+	align-self: flex-end;
 }
 .Site-highlight-right .headline.-bg{
 	padding: 26px;
@@ -363,6 +365,7 @@ body {
 		font-size: 48px;
 		line-height: 52px;	
 	}
+
 	.vertical-centered-content{
 		margin-top: 52px;
 	}
@@ -388,6 +391,12 @@ body {
 		.nav-hightlight-main{
 		padding-left:  $grid_height_unit*4;
 	}
+	.Site-highlight-right{
+		padding-left: $grid_height_unit*13;
+		.headline{
+			align-self: flex-start;
+		}
+	}		
 }
 
 /*------------------------------------*/

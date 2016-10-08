@@ -48,7 +48,7 @@
 	position:fixed;
 	top:0;
 	width: 100%;
-	background: $darker_first_color; 
+	background: #facfb1;// $darker_first_color; 
 	z-index: $zIndex--header-bg;
 	height:$grid_height_unit;
 	overflow: hidden;
@@ -61,7 +61,7 @@
     background-size:     cover;                      
     background-repeat:   no-repeat;
     background-position: center center;  
-    background-image:    url(../imgs/interview_bg.png);
+    //background-image:    url(../imgs/interview_3_bg.jpg);
 
 }
 .image-test-bg{
