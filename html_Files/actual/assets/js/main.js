@@ -1,3 +1,5 @@
+var Pace;
+
 function isTouchDevice() {
 	var DocumentTouch;
     return true === ("ontouchstart" in window || window.DocumentTouch && document instanceof DocumentTouch);
@@ -241,9 +243,9 @@ jQuery(document).ready(function($) {
 		$('.nav-two').addClass('nav-hightlight-effect-start');
 		$('.nav-three').addClass('nav-hightlight-effect-start');
 	}
+	
 	Pace.on('hide', function(){
-      console.log('done'+colorSelect);
-      
+     	// console.log('done'+colorSelect);
       $('.hideDuringLoading').css({visibility:"visible",opacity:"1"});
       introDefaultAnimation();
       introMainAnimation();

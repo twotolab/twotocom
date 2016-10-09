@@ -21,11 +21,11 @@
 }
 
 .pace-inactive {
-  display: none;
-  height: 0;
+  	display: none;
+ 	 height: 0;
 }
 .pace-running > *:not(.pace) {
-  opacity:0;
+  	opacity:0;
 }
 .pace-done{
 	opacity: 1;
