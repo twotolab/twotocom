@@ -419,10 +419,20 @@ a .small-underlined::after {
   display: none; }
 
 @font-face {
-  font-family: 'heuristicabold';
+  font-family: 'Merriweather-Regular';
   font-style: normal;
   font-weight: 400;
-  src: local("heuristica bold"), url(../fonts/heuristica-bold-webfont.woff) format("woff"); }
+  src: local("Merriweather Regular"), url(../fonts/Merriweather-Regular.ttf) format("ttf"); }
+@font-face {
+  font-family: 'Merriweather-Black.ttf';
+  font-style: normal;
+  font-weight: 900;
+  src: local("Merriweather Black"), url(../fonts/Merriweather-Black.ttf) format("ttf"); }
+@font-face {
+  font-family: 'Merriweather-Bold.ttf';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Merriweather Bold"), url(../fonts/Merriweather-Bold.ttf) format("ttf"); }
 @font-face {
   font-family: 'Bebas Neue Bold';
   font-style: normal;
@@ -463,17 +473,19 @@ body, p {
   letter-spacing: 0; }
 
 h1 {
-  font-family: 'Merriweather',Georgia,serif;
+  font-family: 'Merriweather-Bold',serif;
   font-size: 48px;
   font-weight: 700;
+  font-style: normal;
   color: #333;
   line-height: 56px;
   letter-spacing: 0px; }
 
 h2 {
-  font-family: 'Merriweather',Georgia,serif;
+  font-family: 'Merriweather-Black',Georgia,serif;
   font-weight: 900;
   font-size: 36px;
+  font-style: normal;
   color: #333;
   line-height: 52px; }
 
@@ -486,9 +498,10 @@ h3 {
   font-style: normal; }
 
 h4 {
-  font-family: 'Merriweather',Georgia,serif;
+  font-family: 'Merriweather-Bold',Georgia,serif;
   font-weight: 700;
   font-size: 24px;
+  font-style: normal;
   color: #333;
   line-height: 39px; }
 
