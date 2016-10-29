@@ -1287,6 +1287,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/imgs\/projects\/Win10Xing_3_2496x1872.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/assets\/imgs\/projects\/Win10Xing_3_2496x1872.jpg",
+		"outputAbbreviatedPath": "\/assets\/imgs\/projects\/Win10Xing_3_2496x1872.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/imgs\/projects\/Win10Xing_3_312x234.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -1309,6 +1320,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/imgs\/projects\/Win10Xing_4_2496x1872.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/assets\/imgs\/projects\/Win10Xing_4_2496x1872.jpg",
+		"outputAbbreviatedPath": "\/assets\/imgs\/projects\/Win10Xing_4_2496x1872.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/imgs\/projects\/Win10Xing_4_312x234.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -1316,6 +1338,17 @@
 		"initialSize": 117836,
 		"inputAbbreviatedPath": "\/assets\/imgs\/projects\/Win10Xing_4_312x234.jpg",
 		"outputAbbreviatedPath": "\/assets\/imgs\/projects\/Win10Xing_4_312x234.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/imgs\/projects\/Win10Xing_4_960x604.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/assets\/imgs\/projects\/Win10Xing_4_960x604.jpg",
+		"outputAbbreviatedPath": "\/assets\/imgs\/projects\/Win10Xing_4_960x604.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1696,6 +1729,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/interview.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/interview_old.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/interview_old.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0

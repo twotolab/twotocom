@@ -259,9 +259,7 @@ jQuery(document).ready(function($) {
 		introContentnAnimation();
 		
 		if(!$('.contact-content').is(':visible') ){
-			// exception for contact
 			AOS.init({
-				disable: 'mobile',
 				easing: 'ease-out',
 				duration: 1000
 			});
