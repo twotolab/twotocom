@@ -15,6 +15,9 @@ jQuery(document).ready(function($) {
 		effect: 'fadeIn',
 		effectTime: 100
 	});
+	 function asdvas(){
+
+a
 	/*------------------------------------------------------*/
 	/* ------------- Touch Device Detection------------------*/
 	/*------------------------------------------------------*/
@@ -37,18 +40,18 @@ jQuery(document).ready(function($) {
 	var headerStatusOpen = true;
 	var menuStatusOpen = true;
 	//var added = 105; //104;
-	
+
 	function scrollToTop(){
 		$('body, html').scrollTop(0, 0);
 		$("html, body").animate({
 			scrollTop: 0
 		}, 500);
-		firstVisit = false;	
+		firstVisit = false;
 	}
-	
+
 	function headlerHandler() {
 		//if ($('.header-bg').length){
-		
+
 			if (firstVisit) {
 				scrollToTop();
 			}
@@ -63,7 +66,7 @@ jQuery(document).ready(function($) {
 		// }
 	}
 	headlerHandler();
-	
+
 	function checkHeaderPos() {
 		if (currentPoxY > headerContainerHeight) {
 			if (headerStatusOpen) {
@@ -97,17 +100,17 @@ jQuery(document).ready(function($) {
 				headerStatusOpen = true;
 				//console.log('headerStatusOpen 2:' + headerStatusOpen);
 			}
-		} 		
+		}
 		 if (currentPoxY > menuReactY) {
 			if (menuStatusOpen) {
 				if ($('body').hasClass('fix-top-menu')) {
 					$('body').removeClass('fix-top-menu');
 				} else {
 					$('body').addClass('fix-top-menu');
-				}	
-				
-				menuStatusOpen =false;		
-				
+				}
+
+				menuStatusOpen =false;
+
 			}
 		} else if (currentPoxY <= menuReactY) {
 			if (!menuStatusOpen) {
@@ -115,12 +118,12 @@ jQuery(document).ready(function($) {
 					$('body').removeClass('fix-top-menu');
 				} else {
 					$('body').addClass('fix-top-menu');
-				}	
-				
-				menuStatusOpen =true;				
+				}
+
+				menuStatusOpen =true;
 			}
 		}
-			
+
 	}
 	function withFixedHeader(){
 		return  $('.header').css('position') === 'fixed'? 0:56;
@@ -197,10 +200,10 @@ jQuery(document).ready(function($) {
 
 				bind: "event",
 				threshold: 0,
-				afterLoad: function(element) {           
+				afterLoad: function(element) {
                     element.css({top:"104px",opacity:"0"}).animate({top:"0px",opacity:"1"},"2000");
             	}
-                
+
             });
 		}
 	});
@@ -257,13 +260,13 @@ jQuery(document).ready(function($) {
 		});
 		introDefaultAnimation();
 		introContentnAnimation();
-		
+
 		if(!$('.contact-content').is(':visible') ){
 			AOS.init({
 				easing: 'ease-out',
 				duration: 1000
 			});
 		}
-		
+
 	});
 });

@@ -8,27 +8,26 @@
 		transition-duration:.6s;
 		transition-timing-function:cubic-bezier(.81,0,.5,.5);
 	}
-.touch, .no-touch {	
+.touch, .no-touch {
 ///////// with touch
 	.nav-is-visible .nav-quote-bg{
 		transform:translateX(0);
 		transition-duration:1.2s;
 		transition-timing-function:cubic-bezier(0,.55,.49,.99);
 	}
-	
 	.header-left .info,.logo {
 		transition-delay:.6s;
-	}	
+	}
 	.nav-is-visible .header-left .info,.nav-is-visible .logo {
 		color:$second_typo_color;
 		transition-delay:0s;
 		//defaulttransition:all .5s ease;
 	}
-	
+
 	.nav-is-visible .second-menu-wrapper {
 		opacity:0;
 	}
-	
+
 	.second-menu-wrapper {
 		opacity:1;
 		transition:all .6s ease;
@@ -39,7 +38,7 @@
 		opacity:.1;
 		transition:all .5s ease;
 	}
-	
+
 	.main-content {
 		opacity:1;
 		transition:all .5s ease;
@@ -52,97 +51,97 @@
 	}
 
 }
-	
+
 	.one_highlight_color-background,.two_highlight_color-background,.three_highlight_color-background {
 		//background-color: black !important;
-		
+
 		transition: background-color 1000ms linear;
 	}
-.no-touch {	 
-	
+.no-touch {
+
 
 	// mobile touch detection via javascript
 	@media only screen and (min-width: $media_tablet_width) {
-		
-		/// underlined effects	
+
+		/// underlined effects
 		.underlined:after,.underlined:after,.big-underlined:after,.small-underlined:after {
-			
+
 			transition:width .5s;
 			transform:scaleX(0);
 			transform-origin:left;
 			transition:transform .4s;
 		}
 		.big-underlined:after {
-			
+
 			min-width: $grid_height_unit*4;
 			transform:scaleX(0.5);
 		}
 		.thumb-.big-underlined:after {
-			
+
 			min-width: $grid_height_unit*2;
 			transform:scaleX(0.5);
 		}
 
-		
+
 		.menu-button .underlined:after ,.menu-button .big-underlined:after,.menu-button .small-underlined:after,a.nav-link .underlined::after{
 			transform-origin:center;
 			transform:scaleX(0);
 		}
-		
+
 		a.thumb-hover-effect:hover .underlined::after,.thumb-hover-effect:hover .big-underlined::after,.thumb-hover-effect:hover .small-underlined:after,a.nav-link:hover .underlined::after {
 			transform:scaleX(1);
 			transition:transform .4s;
 		}
 
-		
-		/// hover-preview effects	
+
+		/// hover-preview effects
 		.thumb-hover-preview-effect:hover .thumb-center-elt.with-image {
 			box-shadow:inset 0 0 0 200px $highlight_transparent_color;
 			transition:box-shadow .4s;
 			//mix-blend-mode:screen;
 		}
-		
+
 		.thumb-hover-preview-effect .thumb-center-elt.with-image {
 			box-shadow:inset 0 0 0 0 $highlight_dark_color;
 			transition:box-shadow .4s;
 			//mix-blend-mode:screen;
 		}
-		
+
 		.thumb-hover-preview-effect:hover .thumb-center-elt {
 			box-shadow:inset 0 0 0 200px $highlight_dark_color;
 			transition:box-shadow .4s;
 		}
-		
+
 		.thumb-hover-preview-effect:hover .first-color-txt h3,.thumb-hover-preview-effect:hover .first-color-txt p {
 			color:$second_typo_color;
 		}
-		
+
 		.thumb-hover-preview-effect .thumb-image-Text {
 			transform:scale(1);
 			transition:transform .4s;
 		}
-		
+
 		.thumb-hover-preview-effect:hover .thumb-image-Text {
 			transform:scale(1.2);
 			transition:transform .4s;
 		}
-		
+
 		.thumb-hover-preview-effect .first-color-txt,.thumb-hover-preview-effect .second-color-txt {
 			transform:scale(1);
 			transition:transform .2s;
 		}
-		
+
 		.thumb-hover-preview-effect:hover .first-color-txt,.thumb-hover-preview-effect:hover .second-color-txt {
 			transform:scale(1.1);
 			transition:transform .8s;
 		}
 		//////////////
-				
+
 		.hover-zoomUp-effect .target-effect {
 			transform:scale(1);
 			transition:transform .2s;
 		}
-		
+
 		.hover-zoomUp-effect:hover .target-effect {
 			transform:scale(1.2);
 			transition:transform .2s;
@@ -159,7 +158,7 @@
 			transition:transform .1s;
 			transition-timing-function:ease-in-out;
 		}
-		
+
 		.nav-elt:hover .nav-hover-bg-effect {
 			transform:scaleX(1);
 			transition:transform .3s;
@@ -174,7 +173,7 @@
 		}
 	}
 	@media only screen and (min-width: $media_desktop_width) {
-		
+
 		.menu-button:hover .menuBgEffect p {
 			visibility: visible;
 			opacity: 1;
