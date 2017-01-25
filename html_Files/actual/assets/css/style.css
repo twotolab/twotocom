@@ -97,6 +97,24 @@ body {
 .three_highlight_color_transparent-background {
   background-color: rgba(168, 241, 225, 0.7); }
 
+.xingw10-bg {
+  background-color: #E9EDB0; }
+
+.asphalt-bg {
+  background-color: #AFE2D5; }
+
+.jb-bg {
+  background-color: #F9DFDA; }
+
+.golf-bg {
+  background-color: #DBCCB0; }
+
+.cabrio-bg {
+  background-color: #D3C600; }
+
+.axe-bg {
+  background-color: #B189BC; }
+
 /*---------------------*/
 .vertical-center-headline {
   height: 100%;
