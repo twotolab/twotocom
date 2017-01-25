@@ -13,9 +13,6 @@
 /* HD desktop Monitore max */
 /*------------------------------------*    $colors
 \*------------------------------------*/
-.nhkjh {
-  background-color: #181818; }
-
 /**/
 /*------------------------------------*    z-index : from lowest to highest
 \*------------------------------------*/
@@ -266,7 +263,7 @@ a .small-underlined::after {
   background-color: #181818 !important; }
 
 .transparent-second-background {
-  background-color: rgba(26, 26, 26, 0.7) !important; }
+  background-color: rgba(26, 25, 25, 0.7) !important; }
 
 .lab-bg {
   background-color: #A8F1E1 !important; }
@@ -921,7 +918,7 @@ header {
   justify-content: center; }
 
 .nav-main li.info p {
-  color: gray;
+  color: #807f7f;
   display: flex;
   flex-direction: column;
   align-self: center;
@@ -954,7 +951,7 @@ header {
   height: inherit; }
 
 .navi-selected a h4 {
-  color: gray; }
+  color: #807f7f; }
 
 .navi-selected a:hover h4 {
   background-color: #333 !important; }

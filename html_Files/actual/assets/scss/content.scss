@@ -79,6 +79,26 @@ body {
 .project-main{
 	z-index:auto;
 }
+.xingw10-bg{
+  background-color: #E9EDB0;
+}
+
+.asphalt-bg{
+  background-color: #AFE2D5;
+}
+.jb-bg{
+  background-color: #F9DFDA;
+}
+.golf-bg{
+  background-color: #DBCCB0;
+}
+.cabrio-bg{
+  background-color: #D3C600;
+}
+.axe-bg{
+  background-color: #B189BC;
+}
+
 .right-navi-is-open .content-main,.right-navi-is-open .project-main,.right-navi-is-open .header-bg{
 	opacity: 0.2 !important;
 }
@@ -103,7 +123,7 @@ body {
 	position:relative;
 	box-sizing: border-box;
 	max-width: $grid_height_unit*34;
-	
+
 	padding-top: $grid_height_unit*1;
 	//padding-bottom: $grid_height_unit*1;
 }
@@ -118,10 +138,10 @@ body {
 	padding-bottom: $grid_height_unit*6;
 }
 .next-project .info{
-	margin-bottom: $grid_halfHeight_unit;	
+	margin-bottom: $grid_halfHeight_unit;
 }
 .next-project h4{
-	margin-bottom: $grid_halfHeight_unit;	
+	margin-bottom: $grid_halfHeight_unit;
 	text-transform: none;
 	letter-spacing: normal;
 }
@@ -152,7 +172,7 @@ body {
 	//text-align: left;
 	//margin:0;
 	padding-top: $grid_halfHeight_unit*3;
-	margin-bottom: 0;
+	margin-bottom: $grid_height_unit*2;
 
 }
 @media only screen and (min-width: $media_desktop_width) {
@@ -162,7 +182,7 @@ body {
 	}
 	.project-main .bigTxt{
 		margin-bottom: $grid_height_unit;
-		padding-bottom: $grid_halfHeight_unit;
+		padding-bottom: $grid_halfHeight_unit*3;
 	}
 	.headline .info,.next-project .info {
 	margin-top: $grid_height_unit;
@@ -230,7 +250,7 @@ body {
 	right: 0;
 }
 .zoom-button{
-	
+
 	background-color: transparentize($first_color, 0.6) ;
 
 	width: 26px;
@@ -258,7 +278,7 @@ body {
 	display: none;
 }
 .zoomUpthumbs .zoom-button {
-	
+
 }
 .zoomUpthumbs .zoom-button .-down{
 	display:block;
@@ -288,7 +308,7 @@ body {
 	width: 100%;
 	height: 260px;
 	padding-bottom: $grid_height_unit;
-	
+
 }
 .extra-top-padding{
 	padding-top: $grid_halfHeight_unit;
@@ -297,7 +317,7 @@ body {
 	position: absolute;
 	right: 0;
 	left: auto;
-	
+
 }
 .projects-wrapper{
 	padding-top: $grid_height_unit;
@@ -308,8 +328,8 @@ body {
 .bg-alternate:nth-child(odd){
 	background-color: $Lighter_darker_first_color;
 	//background-color: red;
-	
-	
+
+
 }
 .bg-alternate:nth-child(even){
 	//background-color: $Lighter_darker_first_color;
@@ -332,17 +352,17 @@ body {
 	margin-right: auto;
 	width: 100%;
 	position: relative;
-	
+
 	display: flex;
 	display: row;
 	justify-content: flex-start;
 	flex-wrap: wrap;
-	
+
 	overflow: hidden;
 	align-items: flex-start;
 	// 25 / 25 / 25 /25 diplay desktop
 	// 15 / 35 / 35 /15 diplay tablet
-	
+
 }
 .grid-four-wrapper .grid-one-unit,.grid-four-wrapper .grid-two-unit,.grid-four-wrapper .grid-three-unit,grid-four-wrapper .grid-space-elt{
 	height: 260px;
@@ -353,7 +373,7 @@ body {
 	flex-wrap: wrap-reverse;
 }
 .grid-four-wrapper.-mobile-reverse .grid-text-elt{
-	
+
 	//height: auto;
 	height: 100% !important;
 	}
@@ -420,11 +440,12 @@ body {
 	}
 	.grid-thumb-elt,.grid-thumb-txt {
 		flex: 1 35%;
+		padding-bottom: $grid_height_unit*2;
 	}
 	.grid-four-wrapper.-mobile-reverse {
 	flex-flow: row;
 }
-}	
+}
 @media only screen and (min-width: $media_desktop_width) {
 	.grid-space-elt{
 		display: flex;
@@ -459,7 +480,7 @@ body {
 	.zoomUpthumbs .grid-thumb-elt,.zoomUpthumbs .grid-thumb-txt {
 		flex: 1 100%;
 	}
-}	
+}
 
 .grid-space-elt{
 	// should be empty
@@ -469,7 +490,7 @@ body {
 
 	//width: 100%; // default full width mobil
 	//height: 260px;
-	
+
 }
 .grid-pict-elt.-thumb img{
 	width: 100%;
@@ -490,7 +511,7 @@ body {
 	display: flex;
 	flex-direction: column;
 }
-	
+
 	.centered-image {
     	min-height: inherit;
     	img{
@@ -535,7 +556,7 @@ body {
     overflow: hidden;
 }
 .grid-pict-elt img{
-	position: relative;	
+	position: relative;
 }
 .grid-text-elt{
 	//padding-top:$grid_height_unit;
@@ -552,24 +573,24 @@ body {
 	}
 
 .grid-text-elt p.info,.grid-thumb-txt p.info ,.contact-content p.info.-header{
-	font-size: 10px;
-	font-weight: 200;
+	font-size: 12px;
+	font-weight: 300;
 	text-transform: uppercase;
 }
 @media only screen and (min-width: $media_tablet_width) {
-	
+
 	.project-main .headline {
 		text-align: center;
 	}
 	.project-main h5 {
 		font-size:24px;
-		line-height:$grid_height_unit*1.5;		
+		line-height:$grid_height_unit*1.5;
 	}
 	.project-main .bigTxt {
 		text-align: center;
 		padding-top: $grid_halfHeight_unit*6;
-		margin-bottom: $grid_height_unit;
-			
+		margin-bottom: $grid_height_unit*3;
+
 	}
 	.right-image,.left-image{
 	 align-items: flex-start;
@@ -642,7 +663,7 @@ body {
 	.half-left-width-text{
 		left: -50%;
 		width: 50%;
-	}	
+	}
 	.half-right-width-text{
 		right: -50%;
 		width: 50%;
@@ -652,10 +673,10 @@ body {
 	}
 	.header{
 		position: fixed;
-	}	
+	}
 	.full-width-container .centered-image {
-	    min-height:50vh;	
-	    max-height:60vh;	
+	    min-height:50vh;
+	    max-height:60vh;
 	}
 	.grid-thumb-txt{
 		padding-bottom: $grid_height_unit*1;

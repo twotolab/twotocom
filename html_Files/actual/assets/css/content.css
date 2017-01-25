@@ -13,9 +13,6 @@
 /* HD desktop Monitore max */
 /*------------------------------------*    $colors
 \*------------------------------------*/
-.nhkjh {
-  background-color: #181818; }
-
 /**/
 /*------------------------------------*    z-index : from lowest to highest
 \*------------------------------------*/
@@ -266,7 +263,7 @@ a .small-underlined::after {
   background-color: #181818 !important; }
 
 .transparent-second-background {
-  background-color: rgba(26, 26, 26, 0.7) !important; }
+  background-color: rgba(26, 25, 25, 0.7) !important; }
 
 .lab-bg {
   background-color: #A8F1E1 !important; }
@@ -921,7 +918,7 @@ header {
   justify-content: center; }
 
 .nav-main li.info p {
-  color: gray;
+  color: #807f7f;
   display: flex;
   flex-direction: column;
   align-self: center;
@@ -954,7 +951,7 @@ header {
   height: inherit; }
 
 .navi-selected a h4 {
-  color: gray; }
+  color: #807f7f; }
 
 .navi-selected a:hover h4 {
   background-color: #333 !important; }
@@ -1294,6 +1291,24 @@ body {
 .project-main {
   z-index: auto; }
 
+.xingw10-bg {
+  background-color: #E9EDB0; }
+
+.asphalt-bg {
+  background-color: #AFE2D5; }
+
+.jb-bg {
+  background-color: #F9DFDA; }
+
+.golf-bg {
+  background-color: #DBCCB0; }
+
+.cabrio-bg {
+  background-color: #D3C600; }
+
+.axe-bg {
+  background-color: #B189BC; }
+
 .right-navi-is-open .content-main, .right-navi-is-open .project-main, .right-navi-is-open .header-bg {
   opacity: 0.2 !important; }
 
@@ -1355,7 +1370,7 @@ body {
 
 .project-main .bigTxt {
   padding-top: 39px;
-  margin-bottom: 0; }
+  margin-bottom: 52px; }
 
 @media only screen and (min-width: 1024px) {
   .bigTxt {
@@ -1363,7 +1378,7 @@ body {
     padding-top: 104px; }
   .project-main .bigTxt {
     margin-bottom: 26px;
-    padding-bottom: 13px; }
+    padding-bottom: 39px; }
   .headline .info, .next-project .info {
     margin-top: 26px;
     padding-bottom: 104px; } }
@@ -1555,7 +1570,8 @@ body {
   .grid-four-wrapper .grid-one-with-space-unit.grid-pict-elt {
     width: 50%; }
   .grid-thumb-elt, .grid-thumb-txt {
-    flex: 1 35%; }
+    flex: 1 35%;
+    padding-bottom: 52px; }
   .grid-four-wrapper.-mobile-reverse {
     flex-flow: row; } }
 
@@ -1652,8 +1668,8 @@ body {
   text-align: right; }
 
 .grid-text-elt p.info, .grid-thumb-txt p.info, .contact-content p.info.-header {
-  font-size: 10px;
-  font-weight: 200;
+  font-size: 12px;
+  font-weight: 300;
   text-transform: uppercase; }
 
 @media only screen and (min-width: 768px) {
@@ -1665,7 +1681,7 @@ body {
   .project-main .bigTxt {
     text-align: center;
     padding-top: 78px;
-    margin-bottom: 26px; }
+    margin-bottom: 78px; }
   .right-image, .left-image {
     align-items: flex-start; }
   .half-right-width-text {

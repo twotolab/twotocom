@@ -7,7 +7,7 @@
 		"uuidString": "5837DDFF-A93F-4130-B7A5-3996A7B62FC9"
 		}
 	],
-"creatorBuild": "25444",
+"creatorBuild": "25504",
 "files": {
 	"\/about.html": {
 		"ft": 8192,
@@ -379,14 +379,6 @@
 		"oF": 0,
 		"opt": 0
 		},
-	"\/assets\/imgs\/JB_hand.png": {
-		"ft": 32768,
-		"iS": 299436,
-		"oA": 0,
-		"oAP": "\/assets\/imgs\/JB_hand.png",
-		"oF": 0,
-		"opt": 0
-		},
 	"\/assets\/imgs\/JB_hand_big.png": {
 		"ft": 32768,
 		"iS": 179929,
@@ -523,102 +515,6 @@
 		"oF": 0,
 		"opt": 0
 		},
-	"\/assets\/imgs\/projects\/Axe_1_2496x1872.jpg": {
-		"ft": 16384,
-		"iS": 289071,
-		"oA": 0,
-		"oAP": "\/assets\/imgs\/projects\/Axe_1_2496x1872.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/assets\/imgs\/projects\/Axe_1_312x234.jpg": {
-		"ft": 16384,
-		"iS": 21671,
-		"oA": 0,
-		"oAP": "\/assets\/imgs\/projects\/Axe_1_312x234.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/assets\/imgs\/projects\/Axe_1_960x604.jpg": {
-		"ft": 16384,
-		"iS": 0,
-		"oA": 0,
-		"oAP": "\/assets\/imgs\/projects\/Axe_1_960x604.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/assets\/imgs\/projects\/Axe_2_2496x1872.jpg": {
-		"ft": 16384,
-		"iS": 225574,
-		"oA": 0,
-		"oAP": "\/assets\/imgs\/projects\/Axe_2_2496x1872.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/assets\/imgs\/projects\/Axe_2_312x234.jpg": {
-		"ft": 16384,
-		"iS": 0,
-		"oA": 0,
-		"oAP": "\/assets\/imgs\/projects\/Axe_2_312x234.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/assets\/imgs\/projects\/Axe_2_960x604.jpg": {
-		"ft": 16384,
-		"iS": 0,
-		"oA": 0,
-		"oAP": "\/assets\/imgs\/projects\/Axe_2_960x604.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/assets\/imgs\/projects\/Axe_3_2496x1872.jpg": {
-		"ft": 16384,
-		"iS": 277927,
-		"oA": 0,
-		"oAP": "\/assets\/imgs\/projects\/Axe_3_2496x1872.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/assets\/imgs\/projects\/Axe_3_312x234.jpg": {
-		"ft": 16384,
-		"iS": 0,
-		"oA": 0,
-		"oAP": "\/assets\/imgs\/projects\/Axe_3_312x234.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/assets\/imgs\/projects\/Axe_3_960x604.jpg": {
-		"ft": 16384,
-		"iS": 0,
-		"oA": 0,
-		"oAP": "\/assets\/imgs\/projects\/Axe_3_960x604.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/assets\/imgs\/projects\/Axe_4_2496x1872.jpg": {
-		"ft": 16384,
-		"iS": 228377,
-		"oA": 0,
-		"oAP": "\/assets\/imgs\/projects\/Axe_4_2496x1872.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/assets\/imgs\/projects\/Axe_4_312x234.jpg": {
-		"ft": 16384,
-		"iS": 0,
-		"oA": 0,
-		"oAP": "\/assets\/imgs\/projects\/Axe_4_312x234.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/assets\/imgs\/projects\/Axe_4_960x604.jpg": {
-		"ft": 16384,
-		"iS": 0,
-		"oA": 0,
-		"oAP": "\/assets\/imgs\/projects\/Axe_4_960x604.jpg",
-		"oF": 0,
-		"opt": 0
-		},
 	"\/assets\/imgs\/projects\/Golf_1_2496x1872.jpg": {
 		"ft": 16384,
 		"iS": 191595,
@@ -712,102 +608,6 @@
 		"iS": 0,
 		"oA": 0,
 		"oAP": "\/assets\/imgs\/projects\/Golf_4_960x604.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/assets\/imgs\/projects\/JimBlockApp_1_2496x1872.jpg": {
-		"ft": 16384,
-		"iS": 213982,
-		"oA": 0,
-		"oAP": "\/assets\/imgs\/projects\/JimBlockApp_1_2496x1872.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/assets\/imgs\/projects\/JimBlockApp_1_312x234.jpg": {
-		"ft": 16384,
-		"iS": 23314,
-		"oA": 0,
-		"oAP": "\/assets\/imgs\/projects\/JimBlockApp_1_312x234.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/assets\/imgs\/projects\/JimBlockApp_1_960x604.jpg": {
-		"ft": 16384,
-		"iS": 137449,
-		"oA": 0,
-		"oAP": "\/assets\/imgs\/projects\/JimBlockApp_1_960x604.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/assets\/imgs\/projects\/JimBlockApp_2_2496x1872.jpg": {
-		"ft": 16384,
-		"iS": 158760,
-		"oA": 0,
-		"oAP": "\/assets\/imgs\/projects\/JimBlockApp_2_2496x1872.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/assets\/imgs\/projects\/JimBlockApp_2_312x234.jpg": {
-		"ft": 16384,
-		"iS": 17098,
-		"oA": 0,
-		"oAP": "\/assets\/imgs\/projects\/JimBlockApp_2_312x234.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/assets\/imgs\/projects\/JimBlockApp_2_960x604.jpg": {
-		"ft": 16384,
-		"iS": 102740,
-		"oA": 0,
-		"oAP": "\/assets\/imgs\/projects\/JimBlockApp_2_960x604.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/assets\/imgs\/projects\/JimBlockApp_3_2496x1872.jpg": {
-		"ft": 16384,
-		"iS": 163040,
-		"oA": 0,
-		"oAP": "\/assets\/imgs\/projects\/JimBlockApp_3_2496x1872.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/assets\/imgs\/projects\/JimBlockApp_3_312x234.jpg": {
-		"ft": 16384,
-		"iS": 16171,
-		"oA": 0,
-		"oAP": "\/assets\/imgs\/projects\/JimBlockApp_3_312x234.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/assets\/imgs\/projects\/JimBlockApp_3_960x604.jpg": {
-		"ft": 16384,
-		"iS": 103043,
-		"oA": 0,
-		"oAP": "\/assets\/imgs\/projects\/JimBlockApp_3_960x604.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/assets\/imgs\/projects\/JimBlockApp_4_2496x1872.jpg": {
-		"ft": 16384,
-		"iS": 190886,
-		"oA": 0,
-		"oAP": "\/assets\/imgs\/projects\/JimBlockApp_4_2496x1872.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/assets\/imgs\/projects\/JimBlockApp_4_312x234.jpg": {
-		"ft": 16384,
-		"iS": 19822,
-		"oA": 0,
-		"oAP": "\/assets\/imgs\/projects\/JimBlockApp_4_312x234.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/assets\/imgs\/projects\/JimBlockApp_4_960x604.jpg": {
-		"ft": 16384,
-		"iS": 122573,
-		"oA": 0,
-		"oAP": "\/assets\/imgs\/projects\/JimBlockApp_4_960x604.jpg",
 		"oF": 0,
 		"opt": 0
 		},
@@ -1099,6 +899,390 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/assets\/imgs\/projects_all\/Archi_1_2496x1872.jpg": {
+		"ft": 16384,
+		"iS": 960244,
+		"oA": 0,
+		"oAP": "\/assets\/imgs\/projects_all\/Archi_1_2496x1872.jpg",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/assets\/imgs\/projects_all\/Archi_1_312x234.jpg": {
+		"ft": 16384,
+		"iS": 95158,
+		"oA": 0,
+		"oAP": "\/assets\/imgs\/projects_all\/Archi_1_312x234.jpg",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/assets\/imgs\/projects_all\/Archi_1_960x604.jpg": {
+		"ft": 16384,
+		"iS": 652049,
+		"oA": 0,
+		"oAP": "\/assets\/imgs\/projects_all\/Archi_1_960x604.jpg",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/assets\/imgs\/projects_all\/Archi_2_2496x1872.jpg": {
+		"ft": 16384,
+		"iS": 1705962,
+		"oA": 0,
+		"oAP": "\/assets\/imgs\/projects_all\/Archi_2_2496x1872.jpg",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/assets\/imgs\/projects_all\/Archi_2_312x234.jpg": {
+		"ft": 16384,
+		"iS": 173191,
+		"oA": 0,
+		"oAP": "\/assets\/imgs\/projects_all\/Archi_2_312x234.jpg",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/assets\/imgs\/projects_all\/Archi_2_960x604.jpg": {
+		"ft": 16384,
+		"iS": 1115292,
+		"oA": 0,
+		"oAP": "\/assets\/imgs\/projects_all\/Archi_2_960x604.jpg",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/assets\/imgs\/projects_all\/Archi_3_2496x1872.jpg": {
+		"ft": 16384,
+		"iS": 1664262,
+		"oA": 0,
+		"oAP": "\/assets\/imgs\/projects_all\/Archi_3_2496x1872.jpg",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/assets\/imgs\/projects_all\/Archi_3_312x234.jpg": {
+		"ft": 16384,
+		"iS": 128965,
+		"oA": 0,
+		"oAP": "\/assets\/imgs\/projects_all\/Archi_3_312x234.jpg",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/assets\/imgs\/projects_all\/Archi_3_960x604.jpg": {
+		"ft": 16384,
+		"iS": 1086935,
+		"oA": 0,
+		"oAP": "\/assets\/imgs\/projects_all\/Archi_3_960x604.jpg",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/assets\/imgs\/projects_all\/Archi_4_2496x1872.jpg": {
+		"ft": 16384,
+		"iS": 3352372,
+		"oA": 0,
+		"oAP": "\/assets\/imgs\/projects_all\/Archi_4_2496x1872.jpg",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/assets\/imgs\/projects_all\/Archi_4_312x234.jpg": {
+		"ft": 16384,
+		"iS": 231222,
+		"oA": 0,
+		"oAP": "\/assets\/imgs\/projects_all\/Archi_4_312x234.jpg",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/assets\/imgs\/projects_all\/Archi_4_960x604.jpg": {
+		"ft": 16384,
+		"iS": 2029496,
+		"oA": 0,
+		"oAP": "\/assets\/imgs\/projects_all\/Archi_4_960x604.jpg",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/assets\/imgs\/projects_all\/bmw_india_1_2496x1872.jpg": {
+		"ft": 16384,
+		"iS": 428778,
+		"oA": 0,
+		"oAP": "\/assets\/imgs\/projects_all\/bmw_india_1_2496x1872.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/imgs\/projects_all\/bmw_india_1_312x234.jpg": {
+		"ft": 16384,
+		"iS": 45541,
+		"oA": 0,
+		"oAP": "\/assets\/imgs\/projects_all\/bmw_india_1_312x234.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/imgs\/projects_all\/bmw_india_1_960x604.jpg": {
+		"ft": 16384,
+		"iS": 249311,
+		"oA": 0,
+		"oAP": "\/assets\/imgs\/projects_all\/bmw_india_1_960x604.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/imgs\/projects_all\/bmw_india_2_2496x1872.jpg": {
+		"ft": 16384,
+		"iS": 1135990,
+		"oA": 0,
+		"oAP": "\/assets\/imgs\/projects_all\/bmw_india_2_2496x1872.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/imgs\/projects_all\/bmw_india_2_312x234.jpg": {
+		"ft": 16384,
+		"iS": 87360,
+		"oA": 0,
+		"oAP": "\/assets\/imgs\/projects_all\/bmw_india_2_312x234.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/imgs\/projects_all\/bmw_india_2_960x604.jpg": {
+		"ft": 16384,
+		"iS": 630914,
+		"oA": 0,
+		"oAP": "\/assets\/imgs\/projects_all\/bmw_india_2_960x604.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/imgs\/projects_all\/bmw_india_3_2496x1872.jpg": {
+		"ft": 16384,
+		"iS": 457806,
+		"oA": 0,
+		"oAP": "\/assets\/imgs\/projects_all\/bmw_india_3_2496x1872.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/imgs\/projects_all\/bmw_india_3_312x234.jpg": {
+		"ft": 16384,
+		"iS": 51414,
+		"oA": 0,
+		"oAP": "\/assets\/imgs\/projects_all\/bmw_india_3_312x234.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/imgs\/projects_all\/bmw_india_3_960x604.jpg": {
+		"ft": 16384,
+		"iS": 275346,
+		"oA": 0,
+		"oAP": "\/assets\/imgs\/projects_all\/bmw_india_3_960x604.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/imgs\/projects_all\/bmw_india_4_2496x1872.jpg": {
+		"ft": 16384,
+		"iS": 1218515,
+		"oA": 0,
+		"oAP": "\/assets\/imgs\/projects_all\/bmw_india_4_2496x1872.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/imgs\/projects_all\/bmw_india_4_312x234.jpg": {
+		"ft": 16384,
+		"iS": 109751,
+		"oA": 0,
+		"oAP": "\/assets\/imgs\/projects_all\/bmw_india_4_312x234.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/imgs\/projects_all\/bmw_india_4_960x604.jpg": {
+		"ft": 16384,
+		"iS": 711540,
+		"oA": 0,
+		"oAP": "\/assets\/imgs\/projects_all\/bmw_india_4_960x604.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/imgs\/projects_all\/Mazda_1_2496x1872.jpg": {
+		"ft": 16384,
+		"iS": 2669851,
+		"oA": 0,
+		"oAP": "\/assets\/imgs\/projects_all\/Mazda_1_2496x1872.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/imgs\/projects_all\/Mazda_1_312x234.jpg": {
+		"ft": 16384,
+		"iS": 289604,
+		"oA": 0,
+		"oAP": "\/assets\/imgs\/projects_all\/Mazda_1_312x234.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/imgs\/projects_all\/Mazda_1_960x604.jpg": {
+		"ft": 16384,
+		"iS": 1765574,
+		"oA": 0,
+		"oAP": "\/assets\/imgs\/projects_all\/Mazda_1_960x604.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/imgs\/projects_all\/Mazda_2_2496x1872.jpg": {
+		"ft": 16384,
+		"iS": 1766188,
+		"oA": 0,
+		"oAP": "\/assets\/imgs\/projects_all\/Mazda_2_2496x1872.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/imgs\/projects_all\/Mazda_2_312x234.jpg": {
+		"ft": 16384,
+		"iS": 183949,
+		"oA": 0,
+		"oAP": "\/assets\/imgs\/projects_all\/Mazda_2_312x234.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/imgs\/projects_all\/Mazda_2_960x604.jpg": {
+		"ft": 16384,
+		"iS": 1181730,
+		"oA": 0,
+		"oAP": "\/assets\/imgs\/projects_all\/Mazda_2_960x604.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/imgs\/projects_all\/Mazda_3_2496x1872.jpg": {
+		"ft": 16384,
+		"iS": 1388339,
+		"oA": 0,
+		"oAP": "\/assets\/imgs\/projects_all\/Mazda_3_2496x1872.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/imgs\/projects_all\/Mazda_3_312x234.jpg": {
+		"ft": 16384,
+		"iS": 170082,
+		"oA": 0,
+		"oAP": "\/assets\/imgs\/projects_all\/Mazda_3_312x234.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/imgs\/projects_all\/Mazda_3_960x604.jpg": {
+		"ft": 16384,
+		"iS": 916062,
+		"oA": 0,
+		"oAP": "\/assets\/imgs\/projects_all\/Mazda_3_960x604.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/imgs\/projects_all\/Mazda_4_2496x1872.jpg": {
+		"ft": 16384,
+		"iS": 1918535,
+		"oA": 0,
+		"oAP": "\/assets\/imgs\/projects_all\/Mazda_4_2496x1872.jpg",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/assets\/imgs\/projects_all\/Mazda_4_312x234.jpg": {
+		"ft": 16384,
+		"iS": 233698,
+		"oA": 0,
+		"oAP": "\/assets\/imgs\/projects_all\/Mazda_4_312x234.jpg",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/assets\/imgs\/projects_all\/Mazda_4_960x604.jpg": {
+		"ft": 16384,
+		"iS": 1331364,
+		"oA": 0,
+		"oAP": "\/assets\/imgs\/projects_all\/Mazda_4_960x604.jpg",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/assets\/imgs\/projects_all\/Nivea_1_2496x1872.jpg": {
+		"ft": 16384,
+		"iS": 2027127,
+		"oA": 0,
+		"oAP": "\/assets\/imgs\/projects_all\/Nivea_1_2496x1872.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/imgs\/projects_all\/Nivea_1_312x234.jpg": {
+		"ft": 16384,
+		"iS": 217429,
+		"oA": 0,
+		"oAP": "\/assets\/imgs\/projects_all\/Nivea_1_312x234.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/imgs\/projects_all\/Nivea_1_960x604.jpg": {
+		"ft": 16384,
+		"iS": 1365241,
+		"oA": 0,
+		"oAP": "\/assets\/imgs\/projects_all\/Nivea_1_960x604.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/imgs\/projects_all\/Nivea_2_2496x1872.jpg": {
+		"ft": 16384,
+		"iS": 1834615,
+		"oA": 0,
+		"oAP": "\/assets\/imgs\/projects_all\/Nivea_2_2496x1872.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/imgs\/projects_all\/Nivea_2_312x234.jpg": {
+		"ft": 16384,
+		"iS": 177461,
+		"oA": 0,
+		"oAP": "\/assets\/imgs\/projects_all\/Nivea_2_312x234.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/imgs\/projects_all\/Nivea_2_960x604.jpg": {
+		"ft": 16384,
+		"iS": 1209293,
+		"oA": 0,
+		"oAP": "\/assets\/imgs\/projects_all\/Nivea_2_960x604.jpg",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/assets\/imgs\/projects_all\/Nivea_3_2496x1872.jpg": {
+		"ft": 16384,
+		"iS": 907106,
+		"oA": 0,
+		"oAP": "\/assets\/imgs\/projects_all\/Nivea_3_2496x1872.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/imgs\/projects_all\/Nivea_3_312x234.jpg": {
+		"ft": 16384,
+		"iS": 119950,
+		"oA": 0,
+		"oAP": "\/assets\/imgs\/projects_all\/Nivea_3_312x234.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/imgs\/projects_all\/Nivea_3_960x604.jpg": {
+		"ft": 16384,
+		"iS": 627200,
+		"oA": 0,
+		"oAP": "\/assets\/imgs\/projects_all\/Nivea_3_960x604.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/imgs\/projects_all\/Nivea_4_2496x1872.jpg": {
+		"ft": 16384,
+		"iS": 1354715,
+		"oA": 0,
+		"oAP": "\/assets\/imgs\/projects_all\/Nivea_4_2496x1872.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/imgs\/projects_all\/Nivea_4_312x234.jpg": {
+		"ft": 16384,
+		"iS": 151914,
+		"oA": 0,
+		"oAP": "\/assets\/imgs\/projects_all\/Nivea_4_312x234.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/imgs\/projects_all\/Nivea_4_960x604.jpg": {
+		"ft": 16384,
+		"iS": 922857,
+		"oA": 0,
+		"oAP": "\/assets\/imgs\/projects_all\/Nivea_4_960x604.jpg",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/assets\/js\/breakpoint.js": {
 		"ft": 64,
 		"mi": 1,
@@ -1111,9 +1295,9 @@
 	"\/assets\/js\/content.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "\/assets\/js\/min\/content-min.js",
-		"oF": 1,
+		"oF": 0,
 		"sC": 1,
 		"tS": 0
 		},
@@ -1159,6 +1343,15 @@
 		"oA": 1,
 		"oAP": "\/assets\/js\/min\/main-min.js",
 		"oF": 1,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/js\/min\/content-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/min\/min\/content-min-min.js",
+		"oF": 0,
 		"sC": 1,
 		"tS": 0
 		},
@@ -1601,16 +1794,16 @@
 		"oAP": "\/interview.html",
 		"oF": 0
 		},
-	"\/interview_old.html": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/interview_old.html",
-		"oF": 0
-		},
 	"\/projects.html": {
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/projects.html",
+		"oF": 0
+		},
+	"\/projects_all.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/projects_all.html",
 		"oF": 0
 		},
 	"\/sass-lint.yml": {
@@ -2084,6 +2277,10 @@
 			"active": 0,
 			"optionString": "{'properties': 'always'}"
 			},
+		"capitalized-comments": {
+			"active": 0,
+			"optionString": "'always', {'ignoreInlineComments': false, 'ignoreConsecutiveComments': false}"
+			},
 		"class-methods-use-this": {
 			"active": 0,
 			"optionString": "{'exceptMethods': []}"
@@ -2248,6 +2445,10 @@
 			"active": 0,
 			"optionString": "{'max': 10}, {'ignoreTopLevelFunctions': true}"
 			},
+		"max-statements-per-line": {
+			"active": 0,
+			"optionString": "{'max': 1}"
+			},
 		"multiline-ternary": {
 			"active": 0,
 			"optionString": "'always'"
@@ -2277,6 +2478,10 @@
 			"optionString": ""
 			},
 		"no-array-constructor": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-await-in-loop": {
 			"active": 0,
 			"optionString": ""
 			},
@@ -2612,6 +2817,10 @@
 			"active": 0,
 			"optionString": "'except-parens'"
 			},
+		"no-return-await": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-script-url": {
 			"active": 0,
 			"optionString": ""
@@ -2816,6 +3025,10 @@
 			"active": 0,
 			"optionString": "{'destructuring': 'any', 'ignoreReadBeforeAssign': false}"
 			},
+		"prefer-destructuring": {
+			"active": 0,
+			"optionString": "{'array': true, 'object': true}, {'enforceForRenamedProperties': false}"
+			},
 		"prefer-numeric-literals": {
 			"active": 0,
 			"optionString": ""
@@ -2843,6 +3056,10 @@
 		"radix": {
 			"active": 0,
 			"optionString": "'always'"
+			},
+		"require-await": {
+			"active": 0,
+			"optionString": ""
 			},
 		"require-jsdoc": {
 			"active": 0,
@@ -3676,6 +3893,10 @@
 			},
 		"space-colon": {
 			"active": 1,
+			"flagValue": -1
+			},
+		"support-ie8": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"toplevel": {
