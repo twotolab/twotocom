@@ -218,16 +218,20 @@ jQuery(document).ready(function($) {
             });
 		}
 	});
-	$(document).on('mousemove', function(e){
-    $('.moveZoomButt').offset({left: e.pageX, top: e.pageY});
+	if (isTouchDevice() === false) {
+		$(document).on('mousemove', function(e){
+	    $('.moveZoomButt').offset({left: e.pageX, top: e.pageY});
+		});
+	$(window).scroll(function() {
+	    $('.zoom-button').stop(true, true).animate({
+				opacity: "0"
+			}, "1200").animate({
+				opacity: "1"
+			}, "1200");
 	});
-$(window).scroll(function() {
-    $('.zoom-button').stop(true, true).animate({
-			opacity: "0"
-		}, "1200").animate({
-			opacity: "1"
-		}, "1200");
-});
+	} else {
+		$('.moveZoomButt').addClass('zoomMobileTablet');
+	}
 	/*------------------------------------------------------*/
 	/* ------------- intro Animations ------------------*/
 	/*------------------------------------------------------*/

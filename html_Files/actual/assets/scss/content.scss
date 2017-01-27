@@ -228,10 +228,14 @@ body {
 	right: 0;
 	z-index: $zIndex--zoomUp;
 }
+.zoomMobileTablet{
+	left: $grid_height_unit*2;
+	right: auto;
+	top: inherit;
+	bottom: $grid_height_unit*1;
+}
 .zoom-button{
-
 	background-color: $second_color;
-
 	width: $grid_height_unit*2;
 	height: $grid_height_unit*2;
 	border-radius: $grid_height_unit*1;
@@ -251,9 +255,17 @@ body {
 	margin-top: -2px+ $grid_halfHeight_unit ;
 
 }
-.zoom-button  p span{
+.zoomMobileTablet .zoom-button{
+	width: $grid_height_unit*1.5;
+	height: $grid_height_unit*1.5;
+	border-radius: $grid_height_unit*1;
+}
+.zoomMobileTablet .zoom-button  p{
+	font-size: $grid_height_unit*1.5;
+	margin-top: 6px ;
 
 }
+
 .zoom-button .-down{
 	display: none;
 }

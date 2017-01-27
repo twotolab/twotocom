@@ -1438,6 +1438,12 @@ body {
   right: 0;
   z-index: 2000; }
 
+.zoomMobileTablet {
+  left: 52px;
+  right: auto;
+  top: inherit;
+  bottom: 26px; }
+
 .zoom-button {
   background-color: #333;
   width: 52px;
@@ -1455,6 +1461,15 @@ body {
   text-align: center;
   font-weight: 100;
   margin-top: 11px; }
+
+.zoomMobileTablet .zoom-button {
+  width: 39px;
+  height: 39px;
+  border-radius: 26px; }
+
+.zoomMobileTablet .zoom-button p {
+  font-size: 39px;
+  margin-top: 6px; }
 
 .zoom-button .-down {
   display: none; }
