@@ -1973,6 +1973,9 @@ body {
     transition: -webkit-transform .8s;
     transition: transform .8s;
     transition: transform .8s, -webkit-transform .8s; }
+  .no-touch .zoom-button-wrapper {
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out; }
   .no-touch .hover-zoomUp-effect .target-effect {
     -webkit-transform: scale(1);
             transform: scale(1);

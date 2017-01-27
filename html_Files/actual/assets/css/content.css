@@ -1437,33 +1437,29 @@ body {
   right: 0; }
 
 .zoom-button {
-  background-color: rgba(249, 247, 242, 0.4);
-  width: 26px;
-  height: 26px;
-  left: -13px;
-  top: -20px;
+  background-color: #333;
+  width: 52px;
+  height: 52px;
+  border-radius: 26px;
+  left: -31.2px;
+  top: -33.8px;
   position: absolute;
   z-index: 1000000;
   opacity: 1; }
 
-.no-touch .zoom-button {
-  opacity: 0;
-  transition: opacity .6s ease; }
-
 .zoom-button p {
-  color: #333;
-  font-size: 26px;
-  font-weight: 200;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  text-align: center; }
+  position: relative;
+  color: #F9F7F2;
+  font-size: 52px;
+  text-align: center;
+  font-weight: 100;
+  margin-top: 11px; }
 
 .zoom-button .-down {
   display: none; }
 
 .zoomUpthumbs .zoom-button .-down {
-  display: block;
-  color: #333; }
+  display: block; }
 
 .zoomUpthumbs .zoom-button .-up {
   display: none; }
@@ -1847,6 +1843,8 @@ body {
   .no-touch .thumb-hover-preview-effect:hover .first-color-txt, .no-touch .thumb-hover-preview-effect:hover .second-color-txt {
     transform: scale(1.1);
     transition: transform .8s; }
+  .no-touch .zoom-button-wrapper {
+    transition: all 0.3s ease-out; }
   .no-touch .hover-zoomUp-effect .target-effect {
     transform: scale(1);
     transition: transform .2s; }

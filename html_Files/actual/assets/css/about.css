@@ -1433,6 +1433,8 @@ h1 {
   .no-touch .thumb-hover-preview-effect:hover .first-color-txt, .no-touch .thumb-hover-preview-effect:hover .second-color-txt {
     transform: scale(1.1);
     transition: transform .8s; }
+  .no-touch .zoom-button-wrapper {
+    transition: all 0.3s ease-out; }
   .no-touch .hover-zoomUp-effect .target-effect {
     transform: scale(1);
     transition: transform .2s; }

@@ -232,27 +232,27 @@ body {
 }
 .zoom-button{
 
-	background-color: transparentize($first_color, 0.6) ;
+	background-color: $second_color;
 
-	width: 26px;
-	height: 26px;
-	left:-13px;
-	top :-20px;
+	width: $grid_height_unit*2;
+	height: $grid_height_unit*2;
+	border-radius: $grid_height_unit*1;
+	left:-$grid_height_unit*1.2;
+	top :-$grid_height_unit*1.3;
 	position: absolute;
 	z-index: 1000000;
 	opacity: 1;
 	}
-.no-touch .zoom-button{
-	opacity: 0;
-	transition:opacity .6s ease;
-}
-.zoom-button p{
-	color: $second_color;
-	font-size: 26px;
-	font-weight: 200;
-	padding-top: 0px;
-	padding-bottom: 0px;
+.zoom-button  p{
+	position: relative;
+	color: $first_color;
+	font-size: $grid_height_unit*2;
 	text-align: center;
+	font-weight: 100;
+	margin-top: -2px+ $grid_halfHeight_unit ;
+
+}
+.zoom-button  p span{
 
 }
 .zoom-button .-down{
@@ -263,7 +263,7 @@ body {
 }
 .zoomUpthumbs .zoom-button .-down{
 	display:block;
-	color: $second_color;
+
 }
 .zoomUpthumbs .zoom-button .-up{
 		display:none;
