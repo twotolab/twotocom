@@ -200,7 +200,9 @@ jQuery(document).ready(function($) {
 			$(this).parent().removeClass('zoomUpthumbs');
 			//scrollToTop();
 			scrollToTopY(lastCurrentPoxY);
-
+			$(this).parent().find('img.responsbigimg').css({
+				display: "0"
+			});
 		} else {
 			console.log("currentPoxY"+currentPoxY);
 			lastCurrentPoxY = currentPoxY;
@@ -210,7 +212,7 @@ jQuery(document).ready(function($) {
 				bind: "event",
 				threshold: 0,
 				afterLoad: function(element) {
-                    element.css({top:"104px",opacity:"0"}).animate({top:"0px",opacity:"1"},"2000");
+                    element.css({top:"104px",opacity:"0"}).animate({top:"0px",opacity:"1"},"500");
             	}
 
             });
@@ -222,7 +224,7 @@ jQuery(document).ready(function($) {
 $(window).scroll(function() {
     $('.zoom-button').stop(true, true).animate({
 			opacity: "0"
-		}, "600").animate({
+		}, "1200").animate({
 			opacity: "1"
 		}, "1200");
 });
@@ -238,7 +240,7 @@ $(window).scroll(function() {
 	function introDefaultAnimation() {
 		$('.header').stop(true, true).delay(600).fadeIn(1200);
 		$('.footer').stop(true, true).delay(1200).fadeIn(1200);
-		$('.menu-wrapper').stop(true, true).delay(600).toggle().css({opacity:"0"}).delay(600).animate({opacity:"1"},"1200");
+		$('.menu-wrapper').stop(true, true).delay(600).toggle().delay(600).animate({opacity:"1"},"1200");
 		$('.second-menu-wrapper').stop(true, true).delay(1200).fadeIn(1200);
 	}
 

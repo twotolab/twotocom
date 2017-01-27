@@ -1290,10 +1290,11 @@ body {
 
 .responsbigimg {
   display: block !important;
-  visibility: visible; }
+  visibility: visible;
+  min-width: 0 !important; }
 
 .zoomUpthumbs .responsimg {
-  display: none;
+  display: none !important;
   visibility: hidden; }
 
 .content-main, .project-main {
@@ -1434,7 +1435,8 @@ body {
   left: auto;
   top: auto;
   bottom: 0;
-  right: 0; }
+  right: 0;
+  z-index: 2000; }
 
 .zoom-button {
   background-color: #333;
@@ -1444,7 +1446,6 @@ body {
   left: -31.2px;
   top: -33.8px;
   position: absolute;
-  z-index: 1000000;
   opacity: 1; }
 
 .zoom-button p {
