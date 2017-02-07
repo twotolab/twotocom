@@ -235,20 +235,20 @@ body {
 	bottom: $grid_height_unit*1;
 }
 .zoom-button{
-	background-color: $second_color;
+	background-color: transparentize($first_color, 0.2);
 	width: $grid_height_unit*2;
 	height: $grid_height_unit*2;
 	border-radius: $grid_height_unit*1;
 	left:-$grid_height_unit*1.2;
 	top :-$grid_height_unit*1.3;
 	position:absolute;
-
 	opacity: 1;
+	box-shadow:0 1px 10px 0 $first_shadow_color;
 	}
 
 .zoom-button  p{
 	position: relative;
-	color: $first_color;
+	color: $second_color;
 	font-size: $grid_height_unit*2;
 	text-align: center;
 	font-weight: 100;
@@ -256,13 +256,16 @@ body {
 
 }
 .zoomMobileTablet .zoom-button{
+
 	width: $grid_height_unit*1.5;
 	height: $grid_height_unit*1.5;
 	border-radius: $grid_height_unit*1;
 }
 .zoomMobileTablet .zoom-button  p{
 	font-size: $grid_height_unit*1.5;
-	margin-top: 6px ;
+	margin-top: 7px;
+	margin-left: 1px;
+
 
 }
 

@@ -259,14 +259,6 @@
 		"oF": 0,
 		"opt": 0
 		},
-	"\/assets\/imgs\/highlight_book.jpg": {
-		"ft": 16384,
-		"iS": 1640760,
-		"oA": 0,
-		"oAP": "\/assets\/imgs\/highlight_book.jpg",
-		"oF": 0,
-		"opt": 0
-		},
 	"\/assets\/imgs\/highlight_dp.jpg": {
 		"ft": 16384,
 		"iS": 2899130,
@@ -1967,6 +1959,14 @@
 		"oA": 0,
 		"oAP": "\/contact.html",
 		"oF": 0
+		},
+	"\/highlight_book.jpg": {
+		"ft": 16384,
+		"iS": 2961247,
+		"oA": 0,
+		"oAP": "\/highlight_book.jpg",
+		"oF": 0,
+		"opt": 0
 		},
 	"\/imprint.html": {
 		"ft": 8192,

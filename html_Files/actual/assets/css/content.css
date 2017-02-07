@@ -1445,18 +1445,19 @@ body {
   bottom: 26px; }
 
 .zoom-button {
-  background-color: #333;
+  background-color: rgba(249, 247, 242, 0.8);
   width: 52px;
   height: 52px;
   border-radius: 26px;
   left: -31.2px;
   top: -33.8px;
   position: absolute;
-  opacity: 1; }
+  opacity: 1;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.05); }
 
 .zoom-button p {
   position: relative;
-  color: #F9F7F2;
+  color: #333;
   font-size: 52px;
   text-align: center;
   font-weight: 100;
@@ -1469,7 +1470,8 @@ body {
 
 .zoomMobileTablet .zoom-button p {
   font-size: 39px;
-  margin-top: 6px; }
+  margin-top: 7px;
+  margin-left: 1px; }
 
 .zoom-button .-down {
   display: none; }
